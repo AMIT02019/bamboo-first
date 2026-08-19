@@ -88,11 +88,13 @@ button {
   background-color: var(--olive);
   color: var(--cream);
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08);
-  transition: padding 0.35s cubic-bezier(0.25, 0.8, 0.25, 1),
+  transition: transform 0.38s cubic-bezier(0.16, 1, 0.3, 1),
+              padding 0.35s cubic-bezier(0.25, 0.8, 0.25, 1),
               background-color 0.35s ease,
               box-shadow 0.35s ease,
               backdrop-filter 0.35s ease;
   padding: 16px 0 14px;
+  transform: translateY(0);
 }
 
 .site-header.scrolled {
@@ -101,6 +103,11 @@ button {
   backdrop-filter: blur(14px);
   -webkit-backdrop-filter: blur(14px);
   box-shadow: 0 4px 22px rgba(0, 0, 0, 0.2);
+}
+
+.site-header.header-hidden {
+  transform: translateY(-100%);
+  box-shadow: none;
 }
 
 .header-container {

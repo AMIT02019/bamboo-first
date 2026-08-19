@@ -370,30 +370,57 @@
   });
 
   /* -------------------------------------------------------------
-     1. Sticky Animated Header with Scroll Shrink
+     1. Sticky Animated Header: Disappear on Scroll Down, Appear on Scroll Up
      ------------------------------------------------------------- */
   function initStickyHeader() {
     const header = document.querySelector('.site-header');
     if (!header) return;
 
+    let lastScrollY = Math.max(0, window.scrollY || window.pageYOffset || 0);
     let ticking = false;
+    const deltaThreshold = 6; // minimum scroll movement to trigger state
+    const topThreshold = 50; // top offset before hide behavior is active
+
+    function updateHeader() {
+      const currentScrollY = Math.max(0, window.scrollY || window.pageYOffset || 0);
+      const delta = currentScrollY - lastScrollY;
+      const mobileNavOpen = document.querySelector('.header-col-center.open');
+      const searchActive = document.querySelector('.search-dropdown.open');
+
+      // 1. Top of page state
+      if (currentScrollY <= 15) {
+        header.classList.remove('scrolled');
+        header.classList.remove('header-hidden');
+      } else {
+        header.classList.add('scrolled');
+
+        // 2. Hide / Reveal only if mobile menu or search isn't open
+        if (!mobileNavOpen && !searchActive) {
+          if (delta > deltaThreshold && currentScrollY > topThreshold) {
+            // Scrolling DOWN -> Header Disappears
+            header.classList.add('header-hidden');
+          } else if (delta < -deltaThreshold) {
+            // Scrolling UP -> Header Appears
+            header.classList.remove('header-hidden');
+          }
+        } else {
+          header.classList.remove('header-hidden');
+        }
+      }
+
+      lastScrollY = currentScrollY;
+      ticking = false;
+    }
 
     function onScroll() {
       if (!ticking) {
-        window.requestAnimationFrame(() => {
-          if (window.scrollY > 15) {
-            header.classList.add('scrolled');
-          } else {
-            header.classList.remove('scrolled');
-          }
-          ticking = false;
-        });
+        window.requestAnimationFrame(updateHeader);
         ticking = true;
       }
     }
 
     window.addEventListener('scroll', onScroll, { passive: true });
-    onScroll(); // initial check
+    updateHeader(); // Initial run
   }
 
   /* -------------------------------------------------------------
