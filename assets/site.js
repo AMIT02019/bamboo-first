@@ -405,7 +405,6 @@
       const trigger = dd.querySelector('.nav-dropdown-trigger');
       if (!trigger) return;
 
-      // Click toggle for touch / mobile
       trigger.addEventListener('click', (e) => {
         if (window.innerWidth <= 860) {
           e.preventDefault();
@@ -442,7 +441,6 @@
       }
     });
 
-    // Close when clicking any nav link on mobile
     centerCol.querySelectorAll('.main-nav a').forEach(link => {
       link.addEventListener('click', () => {
         if (window.innerWidth <= 860) {
@@ -463,7 +461,6 @@
       const input = box.querySelector('input');
       if (!input) return;
 
-      // Create dropdown
       let dropdown = box.querySelector('.search-dropdown');
       if (!dropdown) {
         dropdown = document.createElement('div');
@@ -482,14 +479,12 @@
         const inSubfolder = window.location.pathname.includes('/post/');
         const prefix = inSubfolder ? '../' : '';
 
-        // Search products
         const matchingProducts = PRODUCTS.filter(p => 
           p.name.toLowerCase().includes(query) || 
           p.category.toLowerCase().includes(query) ||
           p.desc.toLowerCase().includes(query)
         );
 
-        // Search blogs
         const matchingBlogs = BLOGS.filter(b => 
           b.title.toLowerCase().includes(query) || 
           b.category.toLowerCase().includes(query)
@@ -533,7 +528,6 @@
         dropdown.classList.add('open');
       });
 
-      // Close on outside click
       document.addEventListener('click', (e) => {
         if (!box.contains(e.target)) {
           dropdown.classList.remove('open');
@@ -667,6 +661,7 @@
       modal = document.createElement('div');
       modal.id = 'productQuickViewModal';
       modal.className = 'quickview-modal';
+      modal.style.display = 'none'; // hidden by default!
       modal.innerHTML = `
         <div class="quickview-backdrop"></div>
         <div class="quickview-dialog" role="dialog" aria-modal="true">
@@ -700,6 +695,7 @@
 
     function closeModal() {
       modal.classList.remove('open');
+      modal.style.display = 'none';
     }
 
     if (backdrop) backdrop.addEventListener('click', closeModal);
@@ -746,6 +742,9 @@
       const waText = encodeURIComponent(`Hello Bamboo First, I would like to order: ${data.name} (${data.price}). Please share ordering and delivery details.`);
       document.getElementById('qvWhatsAppBtn').href = `https://wa.me/919152848332?text=${waText}`;
 
+      modal.style.display = 'flex';
+      // force reflow
+      void modal.offsetWidth;
       modal.classList.add('open');
     }
   }
