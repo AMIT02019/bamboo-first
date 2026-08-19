@@ -54,13 +54,6 @@ body {
   color: var(--ink);
   line-height: 1.65;
   overflow-x: hidden;
-  padding-top: 132px;
-}
-
-@media (max-width: 860px) {
-  body {
-    padding-top: 80px;
-  }
 }
 
 img {
@@ -87,7 +80,7 @@ button {
    ========================================================================== */
 
 .site-header {
-  position: fixed;
+  position: sticky;
   top: 0;
   left: 0;
   width: 100%;
