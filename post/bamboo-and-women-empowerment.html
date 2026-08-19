@@ -4,55 +4,70 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Bamboo and Women Empowerment | Bamboo First Blog</title>
-<meta name="description" content="Bamboo First is more than just a brand; it's a movement rooted in rural India empowering hundreds of tribal women in Palghar.">
+<meta name="description" content="Bamboo First is more than just a brand; it's an economic movement rooted in rural Palghar empowering hundreds of tribal women.">
 <link rel="icon" type="image/jpeg" href="https://static.wixstatic.com/media/c61a37_e3a74c17422047bfadd2b833b3b80562~mv2.jpg">
 <link rel="stylesheet" href="../assets/site.css">
 </head>
 <body>
 
-<!-- SITE HEADER -->
+<!-- AUTHENTIC SITE HEADER -->
 <header class="site-header">
-  <div class="header-row">
-    <a href="../index.html" class="logo-mark" aria-label="Bamboo First Home">
-      <img src="https://static.wixstatic.com/media/c61a37_f0156aeabc774009b6f872ba276dd058~mv2.png" alt="Bamboo First logo">
-    </a>
-    
-    <div class="search-box">
-      <input type="text" placeholder="Search handcrafted bamboo products & stories..." aria-label="Search">
-      <button aria-label="Search">
-        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="7"/><path d="M21 21l-4.35-4.35"/></svg>
+  <div class="header-container">
+    <!-- Left Column: Logo -->
+    <div class="header-col-left">
+      <a href="../index.html" class="site-logo" aria-label="Bamboo First Home">
+        <img src="https://static.wixstatic.com/media/c61a37_f0156aeabc774009b6f872ba276dd058~mv2.png/v1/fill/w_88,h_120,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/bamboo%20first%20beige%20logo_4x.png" alt="Bamboo First Beige Logo" width="88" height="120">
+      </a>
+    </div>
+
+    <!-- Center Column: Search (Top) + Nav Links (Bottom) -->
+    <div class="header-col-center">
+      <div class="search-bar-wrap">
+        <div class="search-box">
+          <span class="search-icon-left" aria-hidden="true">
+            <svg width="15" height="15" viewBox="5 5 14 14" fill="currentColor"><path d="m15.683 14.6 3.265 3.265a.2.2 0 0 1 0 .282l-.8.801a.2.2 0 0 1-.283 0l-3.266-3.265a5.961 5.961 0 1 1 1.084-1.084zm-4.727 1.233a4.877 4.877 0 1 0 0-9.754 4.877 4.877 0 0 0 0 9.754"></path></svg>
+          </span>
+          <input type="search" placeholder="Search" aria-label="Search" autocomplete="off">
+          <button type="submit" aria-label="Search">
+            <svg width="15" height="15" viewBox="5 5 14 14" fill="currentColor"><path d="m15.683 14.6 3.265 3.265a.2.2 0 0 1 0 .282l-.8.801a.2.2 0 0 1-.283 0l-3.266-3.265a5.961 5.961 0 1 1 1.084-1.084zm-4.727 1.233a4.877 4.877 0 1 0 0-9.754 4.877 4.877 0 0 0 0 9.754"></path></svg>
+          </button>
+        </div>
+      </div>
+
+      <nav class="main-nav" id="mainNav">
+        <a href="../index.html" class="nav-link">Home</a>
+        <a href="../product-catalogue.html" class="nav-link">Product Catalogue</a>
+        <a href="../ecotourism.html" class="nav-link">Ecotourism</a>
+        <div class="nav-dropdown">
+          <span class="nav-dropdown-trigger nav-link">
+            About Us
+            <svg width="10" height="10" viewBox="0 0 16 11" fill="currentColor"><path d="M8 10.5L16 1.86193L14.7387 0.5L8 7.77613L1.26133 0.499999L-5.95321e-08 1.86193L8 10.5Z"></path></svg>
+          </span>
+          <div class="nav-dropdown-menu">
+            <a href="../our-story.html">Our Story</a>
+            <a href="../our-mentors.html">Our Mentors</a>
+          </div>
+        </div>
+        <a href="../media.html" class="nav-link">Media</a>
+        <a href="../contact-us.html" class="nav-link">Contact Us</a>
+        <a href="../events.html" class="nav-link">Events</a>
+      </nav>
+    </div>
+
+    <!-- Right Column: Product Catalogue Button + Mobile Menu -->
+    <div class="header-col-right">
+      <a href="https://static.wixstatic.com/media/c61a37_8fabb9eb61c84d79bd15fe12e4bc0d72~mv2.png" target="_blank" rel="noopener" class="catalogue-download-btn" aria-label="Product Catalogue">
+        <span>Product Catalogue</span>
+        <svg viewBox="0 0 256 256" height="20" width="20" xmlns="http://www.w3.org/2000/svg">
+          <path d="m212.24 83.76-56-56A6 6 0 0 0 152 26H56a14 14 0 0 0-14 14v176a14 14 0 0 0 14 14h144a14 14 0 0 0 14-14V88a6 6 0 0 0-1.76-4.24M158 46.48 193.52 82H158ZM200 218H56a2 2 0 0 1-2-2V40a2 2 0 0 1 2-2h90v50a6 6 0 0 0 6 6h50v122a2 2 0 0 1-2 2m-43.76-62.24a6 6 0 0 1 0 8.48l-24 24a6 6 0 0 1-8.48 0l-24-24a6 6 0 0 1 8.48-8.48L122 169.51V120a6 6 0 0 1 12 0v49.51l13.76-13.75a6 6 0 0 1 8.48 0"></path>
+        </svg>
+      </a>
+
+      <button class="menu-toggle" id="menuToggle" aria-label="Toggle navigation menu">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M3 6h18M3 12h18M3 18h18"/></svg>
       </button>
     </div>
-
-    <a href="../product-catalogue.html" class="header-cta">
-      Product Catalogue
-      <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 3v14M6 11l6 6 6-6M4 21h16"/></svg>
-    </a>
-
-    <button class="menu-toggle" id="menuToggle" aria-label="Toggle navigation menu" aria-expanded="false">
-      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M3 6h18M3 12h18M3 18h18"/></svg>
-    </button>
   </div>
-
-  <nav class="main-nav" id="mainNav">
-    <a href="../index.html">Home</a>
-    <a href="../product-catalogue.html">Product Catalogue</a>
-    <a href="../ecotourism.html">Ecotourism</a>
-    <div class="nav-dropdown">
-      <span class="nav-dropdown-trigger">
-        About Us 
-        <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6"/></svg>
-      </span>
-      <div class="nav-dropdown-menu">
-        <a href="../our-story.html">Our Story</a>
-        <a href="../our-mentors.html">Our Mentors</a>
-      </div>
-    </div>
-    <a href="../media.html">Media</a>
-    <a href="../contact-us.html">Contact Us</a>
-    <a href="../events.html">Events</a>
-    <a href="../blog.html" class="active">Blog</a>
-  </nav>
 </header>
 
 <!-- PAGE HERO -->
@@ -65,16 +80,16 @@
   <div class="wrap" style="max-width:800px;">
     <div class="eyebrow" style="color:var(--ink-soft); margin-bottom:1em;">Dec 19, 2024 &nbsp;&middot;&nbsp; 1 min read &nbsp;&middot;&nbsp; Bamboo First</div>
     <h2 style="color:var(--olive); font-size:clamp(1.8rem, 3vw, 2.5rem); margin-bottom:0.3em;">Bamboo and Women Empowerment</h2>
-    <h3 style="color:var(--ink-soft); font-family:var(--font-body); font-weight:400; font-size:1.15rem; margin-bottom:1.6em;">Building Economic Self-Reliance in Rural Palghar</h3>
+    <h3 style="color:var(--ink-soft); font-family:var(--font-body); font-weight:400; font-size:1.15rem; margin-bottom:1.6em;">A Grassroots Movement for Self-Reliance</h3>
     
     <div style="font-size:1.02rem; color:var(--ink); line-height:1.8;">
-      <p>Bamboo First is more than just an artisan brand; it is an economic movement rooted in rural Palghar. By transferring ownership of the enterprise directly to tribal women shareholders, the Vikramgad Bamboo Udyog Producer Company Limited has disrupted traditional top-down development models.</p>
+      <p>Bamboo First is more than just a brand; it's an economic movement rooted in rural Palghar empowering hundreds of tribal matriarchs. In many rural areas, women face systemic barriers to employment and financial autonomy.</p>
       
-      <p>Today, 90% of the company's 253+ founding shareholders are tribal women. These women are not merely factory workers or wage-earners; they are board directors, financial controllers, master trainers, and custodians of community enterprise.</p>
+      <p>Through dedicated training hubs and Common Facility Centres supported by Keshav Srushti and NABARD, women receive end-to-end training in raw bamboo harvesting, processing, product design, quality control, packaging, and commercial enterprise management.</p>
       
-      <p>This leadership model has transformed household dynamics across 25+ villages. Women who once faced seasonal distress migration now operate flourishing home workstations, earn consistent monthly revenues, and lead community development councils.</p>
+      <p>Today, these artisans are not just workers &mdash; they are shareholders and board directors of the Vikramgad Bamboo Udyog Producer Company Limited. They own their company, set their production targets, and inspire younger generations of girls in their villages to aim high.</p>
       
-      <p>As India marches toward <em>Atmanirbharta</em>, the women of Vikramgad stand as proof that local sustainability and women-led entrepreneurship can spark nationwide transformation.</p>
+      <p>The success of Bamboo First exemplifies how ancient natural resources combined with modern mentorship can catalyze lasting social reform.</p>
     </div>
 
     <div style="margin-top:2.5rem; padding-top:2rem; border-top:1px solid var(--line-dark); display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:16px;">
@@ -93,21 +108,21 @@
         <div class="thumb"><img src="https://static.wixstatic.com/media/c61a37_c19a4dddcbad4a71abf494ec44b61373~mv2.png" alt="Empowering Women Through Craft"></div>
         <div class="meta">Dec 19, 2024 &nbsp;&middot;&nbsp; 1 min read</div>
         <h4>Empowering Women Through Craft</h4>
-        <p>How rural tribal women are transforming local economies with handicrafts.</p>
+        <p>A testament to the skill and resilience of rural women artisans.</p>
+      </a>
+
+      <a class="blog-card" href="the-eco-warriors-guide-to-bamboo-products.html">
+        <div class="thumb"><img src="https://static.wixstatic.com/media/nsplsh_f37f4538f5c74dfbac88d84c5f318625~mv2.jpg" alt="The Eco-Warrior's Guide to Bamboo Products"></div>
+        <div class="meta">Dec 19, 2024 &nbsp;&middot;&nbsp; 1 min read</div>
+        <h4>The Eco-Warrior's Guide to Bamboo Products</h4>
+        <p>Everyday choices that create lasting impact for families and communities.</p>
       </a>
 
       <a class="blog-card" href="sustainable-living-eco-friendly-homes.html">
         <div class="thumb"><img src="https://static.wixstatic.com/media/c61a37_f42eb9e9b3754bec9ce910b568f55c30~mv2.jpeg" alt="Sustainable Living: Eco-Friendly Homes"></div>
         <div class="meta">Dec 19, 2024 &nbsp;&middot;&nbsp; 2 min read</div>
         <h4>Sustainable Living: Eco-Friendly Homes</h4>
-        <p>Creating natural harmonies in modern interior spaces.</p>
-      </a>
-
-      <a class="blog-card" href="from-forest-to-fabric.html">
-        <div class="thumb"><img src="https://static.wixstatic.com/media/c61a37_1d0eb38eb5bd4bb5b9f16e023d9b38aa~mv2.jpeg" alt="From Forest to Fabric"></div>
-        <div class="meta">Dec 19, 2024 &nbsp;&middot;&nbsp; 1 min read</div>
-        <h4>From Forest to Fabric</h4>
-        <p>The journey from forest harvesting to fine bamboo lattice weaving.</p>
+        <p>Creating natural harmony and warmth inside modern homes.</p>
       </a>
     </div>
   </div>

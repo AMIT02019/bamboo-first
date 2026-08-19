@@ -10,49 +10,64 @@
 </head>
 <body>
 
-<!-- SITE HEADER -->
+<!-- AUTHENTIC SITE HEADER -->
 <header class="site-header">
-  <div class="header-row">
-    <a href="index.html" class="logo-mark" aria-label="Bamboo First Home">
-      <img src="https://static.wixstatic.com/media/c61a37_f0156aeabc774009b6f872ba276dd058~mv2.png" alt="Bamboo First logo">
-    </a>
-    
-    <div class="search-box">
-      <input type="text" placeholder="Search handcrafted bamboo products & stories..." aria-label="Search">
-      <button aria-label="Search">
-        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="7"/><path d="M21 21l-4.35-4.35"/></svg>
+  <div class="header-container">
+    <!-- Left Column: Logo -->
+    <div class="header-col-left">
+      <a href="index.html" class="site-logo" aria-label="Bamboo First Home">
+        <img src="https://static.wixstatic.com/media/c61a37_f0156aeabc774009b6f872ba276dd058~mv2.png/v1/fill/w_88,h_120,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/bamboo%20first%20beige%20logo_4x.png" alt="Bamboo First Beige Logo" width="88" height="120">
+      </a>
+    </div>
+
+    <!-- Center Column: Search (Top) + Nav Links (Bottom) -->
+    <div class="header-col-center">
+      <div class="search-bar-wrap">
+        <div class="search-box">
+          <span class="search-icon-left" aria-hidden="true">
+            <svg width="15" height="15" viewBox="5 5 14 14" fill="currentColor"><path d="m15.683 14.6 3.265 3.265a.2.2 0 0 1 0 .282l-.8.801a.2.2 0 0 1-.283 0l-3.266-3.265a5.961 5.961 0 1 1 1.084-1.084zm-4.727 1.233a4.877 4.877 0 1 0 0-9.754 4.877 4.877 0 0 0 0 9.754"></path></svg>
+          </span>
+          <input type="search" placeholder="Search" aria-label="Search" autocomplete="off">
+          <button type="submit" aria-label="Search">
+            <svg width="15" height="15" viewBox="5 5 14 14" fill="currentColor"><path d="m15.683 14.6 3.265 3.265a.2.2 0 0 1 0 .282l-.8.801a.2.2 0 0 1-.283 0l-3.266-3.265a5.961 5.961 0 1 1 1.084-1.084zm-4.727 1.233a4.877 4.877 0 1 0 0-9.754 4.877 4.877 0 0 0 0 9.754"></path></svg>
+          </button>
+        </div>
+      </div>
+
+      <nav class="main-nav" id="mainNav">
+        <a href="index.html" class="nav-link">Home</a>
+        <a href="product-catalogue.html" class="nav-link">Product Catalogue</a>
+        <a href="ecotourism.html" class="nav-link">Ecotourism</a>
+        <div class="nav-dropdown">
+          <span class="nav-dropdown-trigger nav-link">
+            About Us
+            <svg width="10" height="10" viewBox="0 0 16 11" fill="currentColor"><path d="M8 10.5L16 1.86193L14.7387 0.5L8 7.77613L1.26133 0.499999L-5.95321e-08 1.86193L8 10.5Z"></path></svg>
+          </span>
+          <div class="nav-dropdown-menu">
+            <a href="our-story.html">Our Story</a>
+            <a href="our-mentors.html">Our Mentors</a>
+          </div>
+        </div>
+        <a href="media.html" class="nav-link active">Media</a>
+        <a href="contact-us.html" class="nav-link">Contact Us</a>
+        <a href="events.html" class="nav-link">Events</a>
+      </nav>
+    </div>
+
+    <!-- Right Column: Product Catalogue Button + Mobile Menu -->
+    <div class="header-col-right">
+      <a href="https://static.wixstatic.com/media/c61a37_8fabb9eb61c84d79bd15fe12e4bc0d72~mv2.png" target="_blank" rel="noopener" class="catalogue-download-btn" aria-label="Product Catalogue">
+        <span>Product Catalogue</span>
+        <svg viewBox="0 0 256 256" height="20" width="20" xmlns="http://www.w3.org/2000/svg">
+          <path d="m212.24 83.76-56-56A6 6 0 0 0 152 26H56a14 14 0 0 0-14 14v176a14 14 0 0 0 14 14h144a14 14 0 0 0 14-14V88a6 6 0 0 0-1.76-4.24M158 46.48 193.52 82H158ZM200 218H56a2 2 0 0 1-2-2V40a2 2 0 0 1 2-2h90v50a6 6 0 0 0 6 6h50v122a2 2 0 0 1-2 2m-43.76-62.24a6 6 0 0 1 0 8.48l-24 24a6 6 0 0 1-8.48 0l-24-24a6 6 0 0 1 8.48-8.48L122 169.51V120a6 6 0 0 1 12 0v49.51l13.76-13.75a6 6 0 0 1 8.48 0"></path>
+        </svg>
+      </a>
+
+      <button class="menu-toggle" id="menuToggle" aria-label="Toggle navigation menu">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M3 6h18M3 12h18M3 18h18"/></svg>
       </button>
     </div>
-
-    <a href="product-catalogue.html" class="header-cta">
-      Product Catalogue
-      <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 3v14M6 11l6 6 6-6M4 21h16"/></svg>
-    </a>
-
-    <button class="menu-toggle" id="menuToggle" aria-label="Toggle navigation menu" aria-expanded="false">
-      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M3 6h18M3 12h18M3 18h18"/></svg>
-    </button>
   </div>
-
-  <nav class="main-nav" id="mainNav">
-    <a href="index.html">Home</a>
-    <a href="product-catalogue.html">Product Catalogue</a>
-    <a href="ecotourism.html">Ecotourism</a>
-    <div class="nav-dropdown">
-      <span class="nav-dropdown-trigger">
-        About Us 
-        <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6"/></svg>
-      </span>
-      <div class="nav-dropdown-menu">
-        <a href="our-story.html">Our Story</a>
-        <a href="our-mentors.html">Our Mentors</a>
-      </div>
-    </div>
-    <a href="media.html" class="active">Media</a>
-    <a href="contact-us.html">Contact Us</a>
-    <a href="events.html">Events</a>
-    <a href="blog.html">Blog</a>
-  </nav>
 </header>
 
 <!-- PAGE HERO -->
