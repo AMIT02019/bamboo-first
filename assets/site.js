@@ -310,6 +310,9 @@
     }
   ];
 
+  // Expose PRODUCTS globally for product.html
+  window.PRODUCTS = PRODUCTS;
+
   // Blog Articles Database for Search
   const BLOGS = [
     {
@@ -523,7 +526,7 @@
           html = `<div class="search-empty">No results found for &ldquo;${escapeHtml(query)}&rdquo;</div>`;
         } else {
           matchingProducts.slice(0, 5).forEach(p => {
-            const targetUrl = prefix + `product-catalogue.html#${p.id}`;
+            const targetUrl = prefix + `product.html?id=${p.id}`;
             html += `
               <a href="${targetUrl}" class="search-item" data-product-id="${p.id}">
                 <img src="${p.img}" alt="${p.name}" class="search-item-thumb">
@@ -703,9 +706,12 @@
               <div class="quickview-price" id="qvPrice">INR 0/-</div>
               <p class="quickview-desc" id="qvDesc"></p>
               <div class="quickview-highlights" id="qvHighlights"></div>
-              <div style="display:flex; gap:12px; flex-wrap:wrap;">
+              <div style="display:flex; gap:10px; flex-wrap:wrap; align-items:center;">
                 <a href="#" class="btn btn-solid-olive" id="qvWhatsAppBtn" target="_blank" rel="noopener">
                   Order on WhatsApp
+                </a>
+                <a href="#" class="btn btn-outline-olive btn-sm" id="qvProductPageLink">
+                  View Full Details &rarr;
                 </a>
                 <button type="button" class="btn btn-outline-olive btn-sm quickview-close-btn">Close</button>
               </div>
@@ -768,6 +774,13 @@
 
       const waText = encodeURIComponent(`Hello Bamboo First, I would like to order: ${data.name} (${data.price}). Please share ordering and delivery details.`);
       document.getElementById('qvWhatsAppBtn').href = `https://wa.me/919152848332?text=${waText}`;
+
+      const inSubfolder = window.location.pathname.includes('/post/');
+      const prefix = inSubfolder ? '../' : '';
+      const productPageLink = document.getElementById('qvProductPageLink');
+      if (productPageLink) {
+        productPageLink.href = prefix + `product.html?id=${data.id}`;
+      }
 
       modal.style.display = 'flex';
       // force reflow

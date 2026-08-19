@@ -1,5 +1,5 @@
 /* ==========================================================================
-   BAMBOO FIRST — COMPLETE DESIGN SYSTEM & STYLESHEET
+   BAMBOO FIRST — COMPLETE & UNIFIED DESIGN SYSTEM
    Replicated from https://www.bamboofirst.in/
    ========================================================================== */
 
@@ -76,7 +76,7 @@ button {
 }
 
 /* ==========================================================================
-   STICKY & ANIMATED HEADER
+   STICKY & ANIMATED HEADER (SMART SCROLL: DISAPPEAR / REAPPEAR)
    ========================================================================== */
 
 .site-header {
@@ -1302,6 +1302,9 @@ button {
 
 .product-card .card-actions {
   margin-top: auto;
+  display: flex;
+  gap: 8px;
+  justify-content: center;
 }
 
 .highlight-item {
@@ -1313,6 +1316,458 @@ button {
   0% { transform: scale(1); box-shadow: 0 0 0 0 rgba(82, 106, 61, 0.6); }
   50% { transform: scale(1.03); box-shadow: 0 0 0 12px rgba(82, 106, 61, 0); }
   100% { transform: scale(1); }
+}
+
+/* ==========================================================================
+   INDIVIDUAL PRODUCT DETAIL PAGE STYLES
+   ========================================================================== */
+
+.breadcrumb-nav {
+  padding: 16px 0;
+  background-color: var(--cream-soft);
+  border-bottom: 1px solid var(--line-dark);
+  font-size: 0.88rem;
+}
+
+.breadcrumb-list {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  flex-wrap: wrap;
+  list-style: none;
+  color: var(--ink-soft);
+}
+
+.breadcrumb-list a {
+  color: var(--olive);
+  font-weight: 500;
+}
+
+.breadcrumb-list a:hover {
+  text-decoration: underline;
+}
+
+.breadcrumb-sep {
+  color: var(--ink-light);
+  font-size: 0.8rem;
+}
+
+.product-detail-layout {
+  display: grid;
+  grid-template-columns: 1fr 1.15fr;
+  gap: 50px;
+  align-items: start;
+  margin-top: 40px;
+  margin-bottom: 60px;
+}
+
+.product-gallery {
+  position: sticky;
+  top: 110px;
+}
+
+.gallery-main-wrap {
+  background: #ffffff;
+  border: 1px solid var(--line-dark);
+  border-radius: 8px;
+  padding: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 440px;
+  overflow: hidden;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.04);
+}
+
+.gallery-main-wrap img {
+  max-height: 380px;
+  max-width: 100%;
+  object-fit: contain;
+  transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.gallery-main-wrap:hover img {
+  transform: scale(1.08);
+}
+
+.gallery-thumbs {
+  display: flex;
+  gap: 12px;
+  margin-top: 16px;
+}
+
+.gallery-thumb-item {
+  width: 72px;
+  height: 72px;
+  border-radius: 6px;
+  border: 2px solid transparent;
+  background: #ffffff;
+  padding: 6px;
+  cursor: pointer;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.06);
+  transition: all 0.25s ease;
+}
+
+.gallery-thumb-item.active,
+.gallery-thumb-item:hover {
+  border-color: var(--olive);
+  transform: translateY(-2px);
+}
+
+.gallery-thumb-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.product-info-panel {
+  display: flex;
+  flex-direction: column;
+}
+
+.product-info-panel .product-cat-tag {
+  font-size: 0.8rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: var(--olive);
+  background: rgba(82, 106, 61, 0.12);
+  padding: 4px 10px;
+  border-radius: 4px;
+  align-self: flex-start;
+  margin-bottom: 12px;
+}
+
+.product-info-panel h1 {
+  font-family: var(--font-display);
+  font-size: clamp(2rem, 3.5vw, 2.8rem);
+  font-weight: 400;
+  color: var(--ink);
+  line-height: 1.2;
+  margin-bottom: 8px;
+}
+
+.product-info-panel .product-sku {
+  font-size: 0.82rem;
+  color: var(--ink-light);
+  margin-bottom: 16px;
+}
+
+.product-price-box {
+  display: flex;
+  align-items: baseline;
+  gap: 14px;
+  padding: 16px 0;
+  border-top: 1px solid var(--line-dark);
+  border-bottom: 1px solid var(--line-dark);
+  margin-bottom: 24px;
+}
+
+.product-price-box .price-amount {
+  font-family: var(--font-accent);
+  font-size: 2.2rem;
+  font-weight: 700;
+  color: var(--olive);
+}
+
+.product-price-box .price-note {
+  font-size: 0.86rem;
+  color: var(--ink-soft);
+}
+
+.stock-status-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 0.88rem;
+  font-weight: 600;
+  color: #2e7d32;
+  margin-bottom: 20px;
+}
+
+.stock-dot {
+  width: 9px;
+  height: 9px;
+  border-radius: 50%;
+  background: #2e7d32;
+  box-shadow: 0 0 0 3px rgba(46, 125, 50, 0.2);
+}
+
+.product-short-desc {
+  font-size: 1.02rem;
+  color: var(--ink-soft);
+  line-height: 1.7;
+  margin-bottom: 24px;
+}
+
+.product-highlights-list {
+  list-style: none;
+  margin-bottom: 28px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.product-highlights-list li {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 0.95rem;
+  color: var(--ink);
+}
+
+.product-highlights-list li svg {
+  color: var(--olive);
+  flex-shrink: 0;
+}
+
+.order-actions-box {
+  background: #ffffff;
+  border: 1px solid var(--line-dark);
+  border-radius: 8px;
+  padding: 24px;
+  margin-bottom: 30px;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.04);
+}
+
+.qty-calc-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  margin-bottom: 20px;
+  flex-wrap: wrap;
+}
+
+.qty-stepper {
+  display: inline-flex;
+  align-items: center;
+  border: 1.5px solid var(--line-dark);
+  border-radius: 6px;
+  overflow: hidden;
+  background: #fafaf8;
+}
+
+.qty-stepper button {
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: var(--ink);
+  transition: background-color 0.2s ease;
+}
+
+.qty-stepper button:hover {
+  background-color: var(--line-dark);
+}
+
+.qty-stepper input {
+  width: 50px;
+  height: 40px;
+  text-align: center;
+  border: none;
+  border-left: 1px solid var(--line-dark);
+  border-right: 1px solid var(--line-dark);
+  background: #ffffff;
+  font-family: var(--font-accent);
+  font-size: 1.05rem;
+  font-weight: 600;
+  color: var(--ink);
+  outline: none;
+}
+
+.total-calc-display {
+  font-family: var(--font-accent);
+  font-size: 1.1rem;
+  color: var(--ink);
+}
+
+.total-calc-display strong {
+  color: var(--olive);
+  font-size: 1.3rem;
+}
+
+.action-buttons-group {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.btn-whatsapp-large {
+  background-color: #25d366;
+  color: #ffffff;
+  font-size: 1.05rem;
+  font-weight: 600;
+  padding: 15px 24px;
+  border-radius: 6px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  transition: all 0.28s ease;
+  box-shadow: 0 4px 14px rgba(37, 211, 102, 0.3);
+}
+
+.btn-whatsapp-large:hover {
+  background-color: #1ebc59;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(37, 211, 102, 0.45);
+  color: #ffffff;
+}
+
+.share-strip {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-top: 18px;
+  padding-top: 18px;
+  border-top: 1px dashed var(--line-dark);
+  font-size: 0.88rem;
+  color: var(--ink-soft);
+}
+
+.share-btn {
+  padding: 6px 12px;
+  border-radius: 4px;
+  border: 1px solid var(--line-dark);
+  background: #ffffff;
+  font-size: 0.82rem;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.share-btn:hover {
+  border-color: var(--olive);
+  color: var(--olive);
+}
+
+/* Tabs Section */
+.product-tabs-section {
+  margin-top: 50px;
+  margin-bottom: 70px;
+}
+
+.tab-nav-bar {
+  display: flex;
+  gap: 10px;
+  border-bottom: 2px solid var(--line-dark);
+  margin-bottom: 30px;
+  overflow-x: auto;
+}
+
+.tab-nav-btn {
+  padding: 12px 24px;
+  font-family: var(--font-accent);
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: var(--ink-soft);
+  border-bottom: 3px solid transparent;
+  margin-bottom: -2px;
+  transition: all 0.25s ease;
+  white-space: nowrap;
+}
+
+.tab-nav-btn.active,
+.tab-nav-btn:hover {
+  color: var(--olive);
+  border-bottom-color: var(--olive);
+}
+
+.tab-pane-content {
+  display: none;
+  background: #ffffff;
+  border: 1px solid var(--line-dark);
+  border-radius: 8px;
+  padding: 36px;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.04);
+}
+
+.tab-pane-content.active {
+  display: block;
+}
+
+.tab-pane-content h3 {
+  font-family: var(--font-display);
+  font-size: 1.6rem;
+  color: var(--olive);
+  margin-bottom: 16px;
+}
+
+.tab-pane-content p {
+  color: var(--ink-soft);
+  font-size: 0.98rem;
+  line-height: 1.8;
+  margin-bottom: 16px;
+}
+
+.spec-table-wrap {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.spec-table-wrap tr {
+  border-bottom: 1px solid #f0f0f0;
+}
+
+.spec-table-wrap tr:last-child {
+  border-bottom: none;
+}
+
+.spec-table-wrap th {
+  text-align: left;
+  padding: 12px 16px;
+  background-color: #fafaf8;
+  color: var(--ink);
+  font-size: 0.9rem;
+  width: 35%;
+  font-family: var(--font-accent);
+}
+
+.spec-table-wrap td {
+  padding: 12px 16px;
+  color: var(--ink-soft);
+  font-size: 0.92rem;
+}
+
+/* Impact & Gifting Box */
+.artisan-impact-banner {
+  background-color: var(--sage-pale2);
+  border: 1px solid var(--line-dark);
+  border-radius: 8px;
+  padding: 32px;
+  display: flex;
+  align-items: center;
+  gap: 28px;
+  margin-bottom: 60px;
+}
+
+.artisan-impact-banner img {
+  width: 110px;
+  height: 110px;
+  border-radius: 50%;
+  object-fit: cover;
+  flex-shrink: 0;
+  border: 3px solid var(--olive);
+}
+
+.artisan-impact-banner h4 {
+  font-family: var(--font-display);
+  font-size: 1.4rem;
+  color: var(--olive);
+  margin-bottom: 6px;
+}
+
+.artisan-impact-banner p {
+  font-size: 0.94rem;
+  color: var(--ink);
+  line-height: 1.65;
+  margin: 0;
 }
 
 /* ==========================================================================
@@ -1888,6 +2343,24 @@ button {
 
   .product-grid {
     grid-template-columns: repeat(2, 1fr);
+  }
+
+  .product-detail-layout {
+    grid-template-columns: 1fr;
+    gap: 36px;
+  }
+
+  .product-gallery {
+    position: static;
+  }
+
+  .gallery-main-wrap {
+    height: 340px;
+  }
+
+  .artisan-impact-banner {
+    flex-direction: column;
+    text-align: center;
   }
 
   .footer-top {
