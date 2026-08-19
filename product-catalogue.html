@@ -1,0 +1,448 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Product Catalogue | Bamboo First</title>
+<meta name="description" content="Shop handcrafted bamboo products from Bamboo First — key chains, pen stands, trays, toys, gift hampers and more. Handcrafted by tribal women artisans of Palghar.">
+<link rel="icon" type="image/jpeg" href="https://static.wixstatic.com/media/c61a37_e3a74c17422047bfadd2b833b3b80562~mv2.jpg">
+<link rel="stylesheet" href="assets/site.css">
+</head>
+<body>
+
+<!-- SITE HEADER -->
+<header class="site-header">
+  <div class="header-row">
+    <a href="index.html" class="logo-mark" aria-label="Bamboo First Home">
+      <img src="https://static.wixstatic.com/media/c61a37_f0156aeabc774009b6f872ba276dd058~mv2.png" alt="Bamboo First logo">
+    </a>
+    
+    <div class="search-box">
+      <input type="text" placeholder="Search handcrafted bamboo products & stories..." aria-label="Search">
+      <button aria-label="Search">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="7"/><path d="M21 21l-4.35-4.35"/></svg>
+      </button>
+    </div>
+
+    <a href="product-catalogue.html" class="header-cta">
+      Product Catalogue
+      <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 3v14M6 11l6 6 6-6M4 21h16"/></svg>
+    </a>
+
+    <button class="menu-toggle" id="menuToggle" aria-label="Toggle navigation menu" aria-expanded="false">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M3 6h18M3 12h18M3 18h18"/></svg>
+    </button>
+  </div>
+
+  <nav class="main-nav" id="mainNav">
+    <a href="index.html">Home</a>
+    <a href="product-catalogue.html" class="active">Product Catalogue</a>
+    <a href="ecotourism.html">Ecotourism</a>
+    <div class="nav-dropdown">
+      <span class="nav-dropdown-trigger">
+        About Us 
+        <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6"/></svg>
+      </span>
+      <div class="nav-dropdown-menu">
+        <a href="our-story.html">Our Story</a>
+        <a href="our-mentors.html">Our Mentors</a>
+      </div>
+    </div>
+    <a href="media.html">Media</a>
+    <a href="contact-us.html">Contact Us</a>
+    <a href="events.html">Events</a>
+    <a href="blog.html">Blog</a>
+  </nav>
+</header>
+
+<!-- PAGE HERO -->
+<div class="page-hero" style="background-image:url('https://static.wixstatic.com/media/nsplsh_4a6f4a4a2d767958336349~mv2.jpg');">
+  <h1>Product Catalogue</h1>
+</div>
+
+<!-- CATALOGUE SECTION -->
+<section class="section" style="padding-top:60px;">
+  <div class="wrap">
+    
+    <!-- Controls: Categories + Search -->
+    <div class="catalogue-controls">
+      <div class="filter-bar">
+        <button class="filter-pill active" data-category="all">All Products</button>
+        <button class="filter-pill" data-category="Stationery & Office">Stationery &amp; Office</button>
+        <button class="filter-pill" data-category="Home & Kitchen">Home &amp; Kitchen</button>
+        <button class="filter-pill" data-category="Decor & Lifestyle">Decor &amp; Lifestyle</button>
+        <button class="filter-pill" data-category="Toys & Crafts">Toys &amp; Crafts</button>
+        <button class="filter-pill" data-category="Gift Hampers & Specials">Gift Hampers</button>
+      </div>
+
+      <div class="catalogue-search-wrap">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="color:var(--ink-soft);"><circle cx="11" cy="11" r="7"/><path d="M21 21l-4.35-4.35"/></svg>
+        <input type="text" id="catalogueSearch" placeholder="Filter products by name..." aria-label="Filter products">
+      </div>
+    </div>
+
+    <!-- Product Grid -->
+    <div class="product-grid">
+      <!-- 1 -->
+      <div class="product-card" id="key-chain" data-category="Stationery & Accessories">
+        <div class="thumb" title="Click to view details"><img src="https://static.wixstatic.com/media/c61a37_8fabb9eb61c84d79bd15fe12e4bc0d72~mv2.png" alt="Key Chain"></div>
+        <h4>Key Chain</h4>
+        <div class="price">INR 40/-</div>
+        <div class="card-actions">
+          <a href="https://wa.me/919152848332?text=Hello%20Bamboo%20First,%20I%20would%20like%20to%20order%20the%20Key%20Chain%20(INR%2040)." class="btn btn-outline-olive btn-sm" target="_blank" rel="noopener">Buy on WhatsApp</a>
+        </div>
+      </div>
+
+      <!-- 2 -->
+      <div class="product-card" id="paper-weight" data-category="Stationery & Office">
+        <div class="thumb" title="Click to view details"><img src="https://static.wixstatic.com/media/c61a37_dd8bebea2f38413b82f8a05784100be4~mv2.png" alt="Paper Weight"></div>
+        <h4>Paper Weight</h4>
+        <div class="price">INR 80/-</div>
+        <div class="card-actions">
+          <a href="https://wa.me/919152848332?text=Hello%20Bamboo%20First,%20I%20would%20like%20to%20order%20the%20Paper%20Weight%20(INR%2080)." class="btn btn-outline-olive btn-sm" target="_blank" rel="noopener">Buy on WhatsApp</a>
+        </div>
+      </div>
+
+      <!-- 3 -->
+      <div class="product-card" id="round-pen-stand" data-category="Stationery & Office">
+        <div class="thumb" title="Click to view details"><img src="https://static.wixstatic.com/media/c61a37_a559b67bc40643589fd518737a0ec1b1~mv2.png" alt="Round Pen Stand"></div>
+        <h4>Round Pen Stand</h4>
+        <div class="price">INR 100/-</div>
+        <div class="card-actions">
+          <a href="https://wa.me/919152848332?text=Hello%20Bamboo%20First,%20I%20would%20like%20to%20order%20the%20Round%20Pen%20Stand%20(INR%20100)." class="btn btn-outline-olive btn-sm" target="_blank" rel="noopener">Buy on WhatsApp</a>
+        </div>
+      </div>
+
+      <!-- 4 -->
+      <div class="product-card" id="candy-holder" data-category="Home & Kitchen">
+        <div class="thumb" title="Click to view details"><img src="https://static.wixstatic.com/media/c61a37_d0f6f4ee8b38401bb0f8e4bc4afb75a8~mv2.png" alt="Candy Holder"></div>
+        <h4>Candy Holder</h4>
+        <div class="price">INR 100/-</div>
+        <div class="card-actions">
+          <a href="https://wa.me/919152848332?text=Hello%20Bamboo%20First,%20I%20would%20like%20to%20order%20the%20Candy%20Holder%20(INR%20100)." class="btn btn-outline-olive btn-sm" target="_blank" rel="noopener">Buy on WhatsApp</a>
+        </div>
+      </div>
+
+      <!-- 5 -->
+      <div class="product-card" id="square-serving-tray-small" data-category="Home & Kitchen">
+        <div class="thumb" title="Click to view details"><img src="https://static.wixstatic.com/media/c61a37_ba6741a42033478c97fa5021250d6236~mv2.png" alt="Square Serving Tray Small"></div>
+        <h4>Square Serving Tray Small</h4>
+        <div class="price">INR 100/-</div>
+        <div class="card-actions">
+          <a href="https://wa.me/919152848332?text=Hello%20Bamboo%20First,%20I%20would%20like%20to%20order%20the%20Square%20Serving%20Tray%20Small%20(INR%20100)." class="btn btn-outline-olive btn-sm" target="_blank" rel="noopener">Buy on WhatsApp</a>
+        </div>
+      </div>
+
+      <!-- 6 -->
+      <div class="product-card" id="gifting-bottle-packaging" data-category="Gift Hampers & Specials">
+        <div class="thumb" title="Click to view details"><img src="https://static.wixstatic.com/media/c61a37_6b61e926641f4d7b92062d60ab6b2858~mv2.png" alt="Gifting Bottle Packaging"></div>
+        <h4>Gifting Bottle Packaging</h4>
+        <div class="price">INR 125/-</div>
+        <div class="card-actions">
+          <a href="https://wa.me/919152848332?text=Hello%20Bamboo%20First,%20I%20would%20like%20to%20order%20the%20Gifting%20Bottle%20Packaging%20(INR%20125)." class="btn btn-outline-olive btn-sm" target="_blank" rel="noopener">Buy on WhatsApp</a>
+        </div>
+      </div>
+
+      <!-- 7 -->
+      <div class="product-card" id="bowl" data-category="Home & Kitchen">
+        <div class="thumb" title="Click to view details"><img src="https://static.wixstatic.com/media/c61a37_84f5671ca38844f7b3f5ae0ef3f52e4a~mv2.png" alt="Bowl"></div>
+        <h4>Bowl</h4>
+        <div class="price">INR 140/-</div>
+        <div class="card-actions">
+          <a href="https://wa.me/919152848332?text=Hello%20Bamboo%20First,%20I%20would%20like%20to%20order%20the%20Bowl%20(INR%20140)." class="btn btn-outline-olive btn-sm" target="_blank" rel="noopener">Buy on WhatsApp</a>
+        </div>
+      </div>
+
+      <!-- 8 -->
+      <div class="product-card" id="planter" data-category="Decor & Lifestyle">
+        <div class="thumb" title="Click to view details"><img src="https://static.wixstatic.com/media/c61a37_c35f7bb01966469e960111c8dcc447d2~mv2.png" alt="Planter"></div>
+        <h4>Planter</h4>
+        <div class="price">INR 150/-</div>
+        <div class="card-actions">
+          <a href="https://wa.me/919152848332?text=Hello%20Bamboo%20First,%20I%20would%20like%20to%20order%20the%20Planter%20(INR%20150)." class="btn btn-outline-olive btn-sm" target="_blank" rel="noopener">Buy on WhatsApp</a>
+        </div>
+      </div>
+
+      <!-- 9 -->
+      <div class="product-card" id="book-cover" data-category="Stationery & Accessories">
+        <div class="thumb" title="Click to view details"><img src="https://static.wixstatic.com/media/c61a37_619cb29fbe614905aa4b8f9310968cc4~mv2.png" alt="Book Cover"></div>
+        <h4>Book Cover</h4>
+        <div class="price">INR 150/-</div>
+        <div class="card-actions">
+          <a href="https://wa.me/919152848332?text=Hello%20Bamboo%20First,%20I%20would%20like%20to%20order%20the%20Book%20Cover%20(INR%20150)." class="btn btn-outline-olive btn-sm" target="_blank" rel="noopener">Buy on WhatsApp</a>
+        </div>
+      </div>
+
+      <!-- 10 -->
+      <div class="product-card" id="square-pen-stand" data-category="Stationery & Office">
+        <div class="thumb" title="Click to view details"><img src="https://static.wixstatic.com/media/c61a37_104ea47ac63d453787b8ab649dbd322c~mv2.png" alt="Square Pen Stand"></div>
+        <h4>Square Pen Stand</h4>
+        <div class="price">INR 160/-</div>
+        <div class="card-actions">
+          <a href="https://wa.me/919152848332?text=Hello%20Bamboo%20First,%20I%20would%20like%20to%20order%20the%20Square%20Pen%20Stand%20(INR%20160)." class="btn btn-outline-olive btn-sm" target="_blank" rel="noopener">Buy on WhatsApp</a>
+        </div>
+      </div>
+
+      <!-- 11 -->
+      <div class="product-card" id="mu-pen-stand" data-category="Stationery & Office">
+        <div class="thumb" title="Click to view details"><img src="https://static.wixstatic.com/media/c61a37_112a6965894b468fa382cbb64bdbf410~mv2.png" alt="M-U- Pen Stand"></div>
+        <h4>M-U- Pen Stand</h4>
+        <div class="price">INR 160/-</div>
+        <div class="card-actions">
+          <a href="https://wa.me/919152848332?text=Hello%20Bamboo%20First,%20I%20would%20like%20to%20order%20the%20M-U-%20Pen%20Stand%20(INR%20160)." class="btn btn-outline-olive btn-sm" target="_blank" rel="noopener">Buy on WhatsApp</a>
+        </div>
+      </div>
+
+      <!-- 12 -->
+      <div class="product-card" id="zig-zag-pen-stand" data-category="Stationery & Office">
+        <div class="thumb" title="Click to view details"><img src="https://static.wixstatic.com/media/c61a37_4b2067e12eed4521a1cb281d5507cbf5~mv2.png" alt="Zig-Zag Pen Stand"></div>
+        <h4>Zig-Zag Pen Stand</h4>
+        <div class="price">INR 160/-</div>
+        <div class="card-actions">
+          <a href="https://wa.me/919152848332?text=Hello%20Bamboo%20First,%20I%20would%20like%20to%20order%20the%20Zig-Zag%20Pen%20Stand%20(INR%20160)." class="btn btn-outline-olive btn-sm" target="_blank" rel="noopener">Buy on WhatsApp</a>
+        </div>
+      </div>
+
+      <!-- 13 -->
+      <div class="product-card" id="toy-car" data-category="Toys & Crafts">
+        <div class="thumb" title="Click to view details"><img src="https://static.wixstatic.com/media/c61a37_7249094ea6a34450a5a2fcbcb0bb7e1f~mv2.png" alt="Toy Car"></div>
+        <h4>Toy Car</h4>
+        <div class="price">INR 175/-</div>
+        <div class="card-actions">
+          <a href="https://wa.me/919152848332?text=Hello%20Bamboo%20First,%20I%20would%20like%20to%20order%20the%20Toy%20Car%20(INR%20175)." class="btn btn-outline-olive btn-sm" target="_blank" rel="noopener">Buy on WhatsApp</a>
+        </div>
+      </div>
+
+      <!-- 14 -->
+      <div class="product-card" id="fruit-basket" data-category="Home & Kitchen">
+        <div class="thumb" title="Click to view details"><img src="https://static.wixstatic.com/media/c61a37_cc4bfeee594f4c84b74a71bbe7b36e93~mv2.png" alt="Fruit Basket"></div>
+        <h4>Fruit Basket</h4>
+        <div class="price">INR 200/-</div>
+        <div class="card-actions">
+          <a href="https://wa.me/919152848332?text=Hello%20Bamboo%20First,%20I%20would%20like%20to%20order%20the%20Fruit%20Basket%20(INR%20200)." class="btn btn-outline-olive btn-sm" target="_blank" rel="noopener">Buy on WhatsApp</a>
+        </div>
+      </div>
+
+      <!-- 15 -->
+      <div class="product-card" id="tea-coaster" data-category="Home & Kitchen">
+        <div class="thumb" title="Click to view details"><img src="https://static.wixstatic.com/media/c61a37_04397502c83d4557a4d7b19ef6c617cf~mv2.png" alt="Tea Coaster"></div>
+        <h4>Tea Coaster Set</h4>
+        <div class="price">INR 200/-</div>
+        <div class="card-actions">
+          <a href="https://wa.me/919152848332?text=Hello%20Bamboo%20First,%20I%20would%20like%20to%20order%20the%20Tea%20Coaster%20Set%20(INR%20200)." class="btn btn-outline-olive btn-sm" target="_blank" rel="noopener">Buy on WhatsApp</a>
+        </div>
+      </div>
+
+      <!-- 16 -->
+      <div class="product-card" id="flower-fruit-basket" data-category="Home & Kitchen">
+        <div class="thumb" title="Click to view details"><img src="https://static.wixstatic.com/media/c61a37_0749293a43c7461883b525cab5130fe3~mv2.png" alt="Flower / Fruit Basket"></div>
+        <h4>Flower / Fruit Basket</h4>
+        <div class="price">INR 200/-</div>
+        <div class="card-actions">
+          <a href="https://wa.me/919152848332?text=Hello%20Bamboo%20First,%20I%20would%20like%20to%20order%20the%20Flower%20/%20Fruit%20Basket%20(INR%20200)." class="btn btn-outline-olive btn-sm" target="_blank" rel="noopener">Buy on WhatsApp</a>
+        </div>
+      </div>
+
+      <!-- 17 -->
+      <div class="product-card" id="tea-light-holder" data-category="Decor & Lifestyle">
+        <div class="thumb" title="Click to view details"><img src="https://static.wixstatic.com/media/c61a37_7a61408b59cb409aa774f862a2b7de56~mv2.png" alt="Tea Light Holder"></div>
+        <h4>Tea Light Holder</h4>
+        <div class="price">INR 200/-</div>
+        <div class="card-actions">
+          <a href="https://wa.me/919152848332?text=Hello%20Bamboo%20First,%20I%20would%20like%20to%20order%20the%20Tea%20Light%20Holder%20(INR%20200)." class="btn btn-outline-olive btn-sm" target="_blank" rel="noopener">Buy on WhatsApp</a>
+        </div>
+      </div>
+
+      <!-- 18 -->
+      <div class="product-card" id="national-flag" data-category="Decor & Lifestyle">
+        <div class="thumb" title="Click to view details"><img src="https://static.wixstatic.com/media/c61a37_52ea109a6c444317a94bd03bb38363c5~mv2.png" alt="National Flag"></div>
+        <h4>National Flag Stand</h4>
+        <div class="price">INR 225/-</div>
+        <div class="card-actions">
+          <a href="https://wa.me/919152848332?text=Hello%20Bamboo%20First,%20I%20would%20like%20to%20order%20the%20National%20Flag%20Stand%20(INR%20225)." class="btn btn-outline-olive btn-sm" target="_blank" rel="noopener">Buy on WhatsApp</a>
+        </div>
+      </div>
+
+      <!-- 19 -->
+      <div class="product-card" id="square-serving-tray-medium" data-category="Home & Kitchen">
+        <div class="thumb" title="Click to view details"><img src="https://static.wixstatic.com/media/c61a37_a725080d99d948688b0036f0d3cffd5c~mv2.png" alt="Square Serving Tray Medium"></div>
+        <h4>Square Serving Tray Medium</h4>
+        <div class="price">INR 250/-</div>
+        <div class="card-actions">
+          <a href="https://wa.me/919152848332?text=Hello%20Bamboo%20First,%20I%20would%20like%20to%20order%20the%20Square%20Serving%20Tray%20Medium%20(INR%20250)." class="btn btn-outline-olive btn-sm" target="_blank" rel="noopener">Buy on WhatsApp</a>
+        </div>
+      </div>
+
+      <!-- 20 -->
+      <div class="product-card" id="amplifier" data-category="Decor & Lifestyle">
+        <div class="thumb" title="Click to view details"><img src="https://static.wixstatic.com/media/c61a37_9362516b4cca4f1c9912d806db98cac3~mv2.png" alt="Amplifier"></div>
+        <h4>Amplifier Speaker</h4>
+        <div class="price">INR 260/-</div>
+        <div class="card-actions">
+          <a href="https://wa.me/919152848332?text=Hello%20Bamboo%20First,%20I%20would%20like%20to%20order%20the%20Amplifier%20Speaker%20(INR%20260)." class="btn btn-outline-olive btn-sm" target="_blank" rel="noopener">Buy on WhatsApp</a>
+        </div>
+      </div>
+
+      <!-- 21 -->
+      <div class="product-card" id="breakfast-tray" data-category="Home & Kitchen">
+        <div class="thumb" title="Click to view details"><img src="https://static.wixstatic.com/media/c61a37_63e3cc01fd3142f99748264fb262e9ed~mv2.png" alt="Breakfast Tray"></div>
+        <h4>Breakfast Tray</h4>
+        <div class="price">INR 300/-</div>
+        <div class="card-actions">
+          <a href="https://wa.me/919152848332?text=Hello%20Bamboo%20First,%20I%20would%20like%20to%20order%20the%20Breakfast%20Tray%20(INR%20300)." class="btn btn-outline-olive btn-sm" target="_blank" rel="noopener">Buy on WhatsApp</a>
+        </div>
+      </div>
+
+      <!-- 22 -->
+      <div class="product-card" id="serving-tray" data-category="Home & Kitchen">
+        <div class="thumb" title="Click to view details"><img src="https://static.wixstatic.com/media/c61a37_901b46c8f6304bc7b2d77f73950538e2~mv2.png" alt="Serving Tray"></div>
+        <h4>Serving Tray Large</h4>
+        <div class="price">INR 300/-</div>
+        <div class="card-actions">
+          <a href="https://wa.me/919152848332?text=Hello%20Bamboo%20First,%20I%20would%20like%20to%20order%20the%20Serving%20Tray%20Large%20(INR%20300)." class="btn btn-outline-olive btn-sm" target="_blank" rel="noopener">Buy on WhatsApp</a>
+        </div>
+      </div>
+
+      <!-- 23 -->
+      <div class="product-card" id="bullock-cart" data-category="Toys & Crafts">
+        <div class="thumb" title="Click to view details"><img src="https://static.wixstatic.com/media/c61a37_9067b3763cf8462d94bdbc0c3b22b1ae~mv2.png" alt="Bullock Cart"></div>
+        <h4>Bullock Cart Showpiece</h4>
+        <div class="price">INR 325/-</div>
+        <div class="card-actions">
+          <a href="https://wa.me/919152848332?text=Hello%20Bamboo%20First,%20I%20would%20like%20to%20order%20the%20Bullock%20Cart%20Showpiece%20(INR%20325)." class="btn btn-outline-olive btn-sm" target="_blank" rel="noopener">Buy on WhatsApp</a>
+        </div>
+      </div>
+
+      <!-- 24 -->
+      <div class="product-card" id="makeup-jewellery-box" data-category="Decor & Lifestyle">
+        <div class="thumb" title="Click to view details"><img src="https://static.wixstatic.com/media/c61a37_a363f068e387408fb49bc7363026d882~mv2.png" alt="Makeup / Jewellery Box"></div>
+        <h4>Makeup / Jewellery Box</h4>
+        <div class="price">INR 500/-</div>
+        <div class="card-actions">
+          <a href="https://wa.me/919152848332?text=Hello%20Bamboo%20First,%20I%20would%20like%20to%20order%20the%20Makeup%20/%20Jewellery%20Box%20(INR%20500)." class="btn btn-outline-olive btn-sm" target="_blank" rel="noopener">Buy on WhatsApp</a>
+        </div>
+      </div>
+
+      <!-- 25 -->
+      <div class="product-card" id="wall-clock" data-category="Decor & Lifestyle">
+        <div class="thumb" title="Click to view details"><img src="https://static.wixstatic.com/media/c61a37_e0e44bf648604ac0b9e355071ee9901a~mv2.png" alt="Wall Clock"></div>
+        <h4>Wall Clock</h4>
+        <div class="price">INR 600/-</div>
+        <div class="card-actions">
+          <a href="https://wa.me/919152848332?text=Hello%20Bamboo%20First,%20I%20would%20like%20to%20order%20the%20Wall%20Clock%20(INR%20600)." class="btn btn-outline-olive btn-sm" target="_blank" rel="noopener">Buy on WhatsApp</a>
+        </div>
+      </div>
+
+      <!-- 26 -->
+      <div class="product-card" id="auto-rikshaw" data-category="Toys & Crafts">
+        <div class="thumb" title="Click to view details"><img src="https://static.wixstatic.com/media/c61a37_93196ff39d824e519e33fdbdb0902f57~mv2.png" alt="Auto Rikshaw"></div>
+        <h4>Auto Rickshaw Model</h4>
+        <div class="price">INR 650/-</div>
+        <div class="card-actions">
+          <a href="https://wa.me/919152848332?text=Hello%20Bamboo%20First,%20I%20would%20like%20to%20order%20the%20Auto%20Rickshaw%20Model%20(INR%20650)." class="btn btn-outline-olive btn-sm" target="_blank" rel="noopener">Buy on WhatsApp</a>
+        </div>
+      </div>
+
+      <!-- 27 -->
+      <div class="product-card" id="gift-hamper-1" data-category="Gift Hampers & Specials">
+        <div class="thumb" title="Click to view details"><img src="https://static.wixstatic.com/media/c61a37_8e4135c74a0f4e7e91475185e5a24b19~mv2.png" alt="Gift Hamper - 1"></div>
+        <h4>Gift Hamper - 1</h4>
+        <div class="price">INR 480/-</div>
+        <div class="card-actions">
+          <a href="https://wa.me/919152848332?text=Hello%20Bamboo%20First,%20I%20would%20like%20to%20order%20Gift%20Hamper%20-%201%20(INR%20480)." class="btn btn-outline-olive btn-sm" target="_blank" rel="noopener">Buy on WhatsApp</a>
+        </div>
+      </div>
+
+      <!-- 28 -->
+      <div class="product-card" id="gift-hamper-2" data-category="Gift Hampers & Specials">
+        <div class="thumb" title="Click to view details"><img src="https://static.wixstatic.com/media/c61a37_d4bea34f33d7471a9228d263af20cd5a~mv2.png" alt="Gift Hamper - 2"></div>
+        <h4>Gift Hamper - 2</h4>
+        <div class="price">INR 690/-</div>
+        <div class="card-actions">
+          <a href="https://wa.me/919152848332?text=Hello%20Bamboo%20First,%20I%20would%20like%20to%20order%20Gift%20Hamper%20-%202%20(INR%20690)." class="btn btn-outline-olive btn-sm" target="_blank" rel="noopener">Buy on WhatsApp</a>
+        </div>
+      </div>
+
+      <!-- 29 -->
+      <div class="product-card" id="gift-hamper-3" data-category="Gift Hampers & Specials">
+        <div class="thumb" title="Click to view details"><img src="https://static.wixstatic.com/media/c61a37_4fbe8e2ad6a94836aa7cba0b956f9dc9~mv2.png" alt="Gift Hamper - 3"></div>
+        <h4>Gift Hamper - 3</h4>
+        <div class="price">INR 900/-</div>
+        <div class="card-actions">
+          <a href="https://wa.me/919152848332?text=Hello%20Bamboo%20First,%20I%20would%20like%20to%20order%20Gift%20Hamper%20-%203%20(INR%20900)." class="btn btn-outline-olive btn-sm" target="_blank" rel="noopener">Buy on WhatsApp</a>
+        </div>
+      </div>
+
+      <!-- 30 -->
+      <div class="product-card" id="gift-hamper-4" data-category="Gift Hampers & Specials">
+        <div class="thumb" title="Click to view details"><img src="https://static.wixstatic.com/media/c61a37_d655e9ae186b44e29814088b20918946~mv2.png" alt="Gift Hamper - 4"></div>
+        <h4>Gift Hamper - 4</h4>
+        <div class="price">INR 1305/-</div>
+        <div class="card-actions">
+          <a href="https://wa.me/919152848332?text=Hello%20Bamboo%20First,%20I%20would%20like%20to%20order%20Gift%20Hamper%20-%204%20(INR%201305)." class="btn btn-outline-olive btn-sm" target="_blank" rel="noopener">Buy on WhatsApp</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- No results message -->
+    <div id="noProductsNotice" style="display:none; text-align:center; padding:50px 20px;">
+      <p style="font-size:1.1rem; color:var(--ink-soft);">No products found matching your filter or search.</p>
+    </div>
+
+    <!-- Info Notice -->
+    <div class="center" style="margin-top:3.5rem; background:#fff; border:1px solid var(--line-dark); padding:30px;">
+      <h3 style="color:var(--olive); margin-bottom:.4em;">Corporate &amp; Custom Orders</h3>
+      <p style="color:var(--ink-soft); max-width:680px; margin:0 auto 1.4em;">Looking for bulk orders, customized eco-friendly gifting hampers for festivals, conferences, or wedding favors? Reach out to our artisan coordination team.</p>
+      <a href="contact-us.html" class="btn btn-solid-olive">Contact for Bulk Orders</a>
+    </div>
+
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="site-footer">
+  <div class="footer-top">
+    <div>
+      <img src="https://static.wixstatic.com/media/c61a37_e3a74c17422047bfadd2b833b3b80562~mv2.jpg" alt="Bamboo First seal">
+      <p style="margin-top:14px; font-size:0.88rem; color:var(--cream-soft);">Vikramgad Bamboo Udyog Producer Company Limited. Supported by NABARD &amp; Keshav Srushti.</p>
+    </div>
+    
+    <div>
+      <h5>Helpful Links</h5>
+      <ul>
+        <li><a href="product-catalogue.html">Product Catalogue</a></li>
+        <li><a href="ecotourism.html">Eco-tourism</a></li>
+        <li><a href="media.html">Media</a></li>
+        <li><a href="blog.html">Blogs</a></li>
+        <li><a href="events.html">Events</a></li>
+      </ul>
+    </div>
+    
+    <div>
+      <h5>Company</h5>
+      <ul>
+        <li><a href="our-story.html">Our Story</a></li>
+        <li><a href="our-mentors.html">Our Mentors</a></li>
+        <li><a href="contact-us.html">Contact Us</a></li>
+      </ul>
+    </div>
+    
+    <div>
+      <h5>Contact</h5>
+      <address>
+        <strong>Registered Office:</strong><br>
+        Shop no. 1, 1st Floor, Arihant Heights, Above Janki Sarees, Vikramgad-Jawhar Rd, Vikramgad, Dist. Palghar, Maharashtra 401605 &ndash; INDIA<br><br>
+        <strong>Phone:</strong> +91 9152848332 / +91 7021490824<br>
+        <strong>Email:</strong> bamboofirstwebsite@gmail.com
+      </address>
+    </div>
+  </div>
+  
+  <div class="footer-bottom">
+    &copy; 2026 by Bamboo First &bull; Vikramgad Bamboo Udyog Producer Company Ltd. All rights reserved.
+  </div>
+</footer>
+
+<script src="assets/site.js"></script>
+</body>
+</html>
