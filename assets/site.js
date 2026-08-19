@@ -373,7 +373,7 @@
   });
 
   /* -------------------------------------------------------------
-     1. Sticky Animated Header: Disappear on Scroll Down, Appear on Scroll Up
+     1. Fixed Animated Header: Disappear on Scroll Down, Appear on Scroll Up
      ------------------------------------------------------------- */
   function initStickyHeader() {
     const header = document.querySelector('.site-header');
@@ -381,8 +381,9 @@
 
     let lastScrollY = Math.max(0, window.scrollY || window.pageYOffset || 0);
     let ticking = false;
-    const deltaThreshold = 6; // minimum scroll movement to trigger state
-    const topThreshold = 50; // top offset before hide behavior is active
+    const hideThreshold = 120; // Only hide after scrolling past 120px
+    const deltaDown = 8;       // Minimum downwards movement to trigger hide
+    const deltaUp = 6;         // Minimum upwards movement to trigger reveal
 
     function updateHeader() {
       const currentScrollY = Math.max(0, window.scrollY || window.pageYOffset || 0);
@@ -390,20 +391,19 @@
       const mobileNavOpen = document.querySelector('.header-col-center.open');
       const searchActive = document.querySelector('.search-dropdown.open');
 
-      // 1. Top of page state
-      if (currentScrollY <= 15) {
+      // Top of page: always visible and not scrolled
+      if (currentScrollY <= 20) {
         header.classList.remove('scrolled');
         header.classList.remove('header-hidden');
       } else {
         header.classList.add('scrolled');
 
-        // 2. Hide / Reveal only if mobile menu or search isn't open
         if (!mobileNavOpen && !searchActive) {
-          if (delta > deltaThreshold && currentScrollY > topThreshold) {
-            // Scrolling DOWN -> Header Disappears
+          if (currentScrollY > hideThreshold && delta > deltaDown) {
+            // User is scrolling DOWN -> Hide header
             header.classList.add('header-hidden');
-          } else if (delta < -deltaThreshold) {
-            // Scrolling UP -> Header Appears
+          } else if (delta < -deltaUp) {
+            // User is scrolling UP -> Reveal header
             header.classList.remove('header-hidden');
           }
         } else {
