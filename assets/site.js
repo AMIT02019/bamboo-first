@@ -1,6 +1,6 @@
 /**
- * Bamboo First — Shared Interactive JavaScript
- * Live Search, Hero Carousel, Catalogue Filters, Quick View Modal, Toast, Floating WhatsApp
+ * Bamboo First — Interactive Engine & Animation Controller
+ * Header Scroll Effects, Dropdown Animation, Live Search, Carousel, Filters & Modals
  */
 
 (function () {
@@ -356,9 +356,11 @@
     }
   ];
 
-  // DOM Loaded
+  // DOM Loaded Trigger
   document.addEventListener('DOMContentLoaded', () => {
-    initHeaderMobileNav();
+    initStickyHeader();
+    initDropdownInteraction();
+    initMobileNav();
     initLiveSearch();
     initHeroCarousel();
     initCatalogueFilters();
@@ -368,32 +370,90 @@
   });
 
   /* -------------------------------------------------------------
-     1. Mobile Navigation & Dropdowns
+     1. Sticky Animated Header with Scroll Shrink
      ------------------------------------------------------------- */
-  function initHeaderMobileNav() {
-    const toggle = document.getElementById('menuToggle');
-    const centerCol = document.querySelector('.header-col-center');
-    const nav = document.getElementById('mainNav');
-    if (!toggle) return;
+  function initStickyHeader() {
+    const header = document.querySelector('.site-header');
+    if (!header) return;
 
-    toggle.addEventListener('click', (e) => {
-      e.stopPropagation();
-      if (centerCol) {
-        centerCol.classList.toggle('open');
-      } else if (nav) {
-        nav.classList.toggle('open');
+    let ticking = false;
+
+    function onScroll() {
+      if (!ticking) {
+        window.requestAnimationFrame(() => {
+          if (window.scrollY > 15) {
+            header.classList.add('scrolled');
+          } else {
+            header.classList.remove('scrolled');
+          }
+          ticking = false;
+        });
+        ticking = true;
       }
+    }
+
+    window.addEventListener('scroll', onScroll, { passive: true });
+    onScroll(); // initial check
+  }
+
+  /* -------------------------------------------------------------
+     2. Dropdown Animation & Touch Handler
+     ------------------------------------------------------------- */
+  function initDropdownInteraction() {
+    const dropdowns = document.querySelectorAll('.nav-dropdown');
+    dropdowns.forEach(dd => {
+      const trigger = dd.querySelector('.nav-dropdown-trigger');
+      if (!trigger) return;
+
+      // Click toggle for touch / mobile
+      trigger.addEventListener('click', (e) => {
+        if (window.innerWidth <= 860) {
+          e.preventDefault();
+          dd.classList.toggle('open');
+        }
+      });
     });
 
     document.addEventListener('click', (e) => {
-      if (centerCol && centerCol.classList.contains('open') && !centerCol.contains(e.target) && e.target !== toggle) {
-        centerCol.classList.remove('open');
-      }
+      dropdowns.forEach(dd => {
+        if (!dd.contains(e.target)) {
+          dd.classList.remove('open');
+        }
+      });
     });
   }
 
   /* -------------------------------------------------------------
-     2. Live Search with Dropdown Overlay
+     3. Mobile Navigation Drawer
+     ------------------------------------------------------------- */
+  function initMobileNav() {
+    const toggle = document.getElementById('menuToggle');
+    const centerCol = document.querySelector('.header-col-center');
+    if (!toggle || !centerCol) return;
+
+    toggle.addEventListener('click', (e) => {
+      e.stopPropagation();
+      centerCol.classList.toggle('open');
+    });
+
+    document.addEventListener('click', (e) => {
+      if (centerCol.classList.contains('open') && !centerCol.contains(e.target) && e.target !== toggle) {
+        centerCol.classList.remove('open');
+      }
+    });
+
+    // Close when clicking any nav link on mobile
+    centerCol.querySelectorAll('.main-nav a').forEach(link => {
+      link.addEventListener('click', () => {
+        if (window.innerWidth <= 860) {
+          centerCol.classList.remove('open');
+        }
+      });
+    });
+  }
+
+  /* -------------------------------------------------------------
+     4. Live Search with Dropdown Overlay
      ------------------------------------------------------------- */
   function initLiveSearch() {
     const searchBoxes = document.querySelectorAll('.search-box');
@@ -411,7 +471,6 @@
         box.appendChild(dropdown);
       }
 
-      // Input event listener
       input.addEventListener('input', (e) => {
         const query = e.target.value.trim().toLowerCase();
         if (query.length < 2) {
@@ -420,7 +479,6 @@
           return;
         }
 
-        // Determine if we are in subfolder (e.g. /post/)
         const inSubfolder = window.location.pathname.includes('/post/');
         const prefix = inSubfolder ? '../' : '';
 
@@ -442,7 +500,6 @@
         if (matchingProducts.length === 0 && matchingBlogs.length === 0) {
           html = `<div class="search-empty">No results found for &ldquo;${escapeHtml(query)}&rdquo;</div>`;
         } else {
-          // Add Products
           matchingProducts.slice(0, 5).forEach(p => {
             const targetUrl = prefix + `product-catalogue.html#${p.id}`;
             html += `
@@ -457,7 +514,6 @@
             `;
           });
 
-          // Add Blogs
           matchingBlogs.slice(0, 3).forEach(b => {
             const targetUrl = prefix + b.url;
             html += `
@@ -487,7 +543,7 @@
   }
 
   /* -------------------------------------------------------------
-     3. Hero Slider Carousel
+     5. Hero Slider Carousel
      ------------------------------------------------------------- */
   function initHeroCarousel() {
     const slider = document.querySelector('.hero-slider');
@@ -501,7 +557,6 @@
     const nextBtn = slider.querySelector('.hero-arrow.right');
     const indicatorsContainer = slider.querySelector('.hero-indicators');
 
-    // Build indicator dots
     if (indicatorsContainer) {
       indicatorsContainer.innerHTML = '';
       slides.forEach((_, i) => {
@@ -527,7 +582,6 @@
     if (prevBtn) prevBtn.addEventListener('click', () => goToSlide(currentIndex - 1));
     if (nextBtn) nextBtn.addEventListener('click', () => goToSlide(currentIndex + 1));
 
-    // Auto Advance every 6 seconds
     let slideTimer = setInterval(() => goToSlide(currentIndex + 1), 6000);
 
     slider.addEventListener('mouseenter', () => clearInterval(slideTimer));
@@ -538,7 +592,7 @@
   }
 
   /* -------------------------------------------------------------
-     4. Product Catalogue Interactive Filter & Search
+     6. Product Catalogue Filters & Search
      ------------------------------------------------------------- */
   function initCatalogueFilters() {
     const pills = document.querySelectorAll('.filter-pill');
@@ -591,7 +645,6 @@
       });
     }
 
-    // Scroll-to & highlight from URL hash
     if (window.location.hash) {
       const targetId = window.location.hash.substring(1);
       const targetCard = document.getElementById(targetId);
@@ -606,10 +659,9 @@
   }
 
   /* -------------------------------------------------------------
-     5. Product Quick-View Modal
+     7. Product Quick-View Modal
      ------------------------------------------------------------- */
   function initQuickViewModal() {
-    // Create modal DOM if not already present
     let modal = document.getElementById('productQuickViewModal');
     if (!modal) {
       modal = document.createElement('div');
@@ -658,7 +710,6 @@
       if (e.key === 'Escape' && modal.classList.contains('open')) closeModal();
     });
 
-    // Attach click triggers to product cards
     document.querySelectorAll('.product-card').forEach(card => {
       const thumb = card.querySelector('.thumb');
       const title = card.querySelector('h4');
@@ -667,9 +718,7 @@
       if (!cardId) return;
 
       const triggerHandler = (e) => {
-        // Prevent opening modal if clicking WhatsApp direct button
         if (e.target.closest('a')) return;
-        
         const productData = PRODUCTS.find(p => p.id === cardId);
         if (productData) {
           openModal(productData);
@@ -702,10 +751,9 @@
   }
 
   /* -------------------------------------------------------------
-     6. Forms & Toast Notification
+     8. Forms & Toast Notification
      ------------------------------------------------------------- */
   function initForms() {
-    // Inject toast element
     let toast = document.getElementById('siteToast');
     if (!toast) {
       toast = document.createElement('div');
@@ -720,9 +768,7 @@
       setTimeout(() => toast.classList.remove('show'), 4000);
     }
 
-    // Attach to all inquiry & subscribe forms
     document.querySelectorAll('form').forEach(form => {
-      // Don't intercept search forms
       if (form.classList.contains('search-box') || form.closest('.search-box')) return;
 
       form.addEventListener('submit', (e) => {
@@ -741,7 +787,7 @@
   }
 
   /* -------------------------------------------------------------
-     7. Floating WhatsApp Widget
+     9. Floating WhatsApp Widget
      ------------------------------------------------------------- */
   function initFloatingWhatsApp() {
     if (document.querySelector('.whatsapp-float')) return;
