@@ -53,7 +53,15 @@
 </div>
 <!-- Right Column: Product Catalogue Button + Mobile Menu -->
 <div class="header-col-right">
-<a aria-label="Product Catalogue" class="catalogue-download-btn" href="https://static.wixstatic.com/media/c61a37_8fabb9eb61c84d79bd15fe12e4bc0d72~mv2.png" rel="noopener" target="_blank">
+<a aria-label="Shopping Cart" class="header-cart-btn" href="cart.html">
+<svg fill="none" height="20" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24" width="20">
+<circle cx="9" cy="21" r="1"></circle>
+<circle cx="20" cy="21" r="1"></circle>
+<path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path>
+</svg>
+<span class="cart-count-badge" style="display:none;">0</span>
+</a>
+<a href="assets/bamboo-first-product-catalogue.pdf" target="_blank" rel="noopener noreferrer" class="catalogue-download-btn" aria-label="Download Product Catalogue PDF">
 <span>Product Catalogue</span>
 <svg height="20" viewbox="0 0 256 256" width="20" xmlns="http://www.w3.org/2000/svg">
 <path d="m212.24 83.76-56-56A6 6 0 0 0 152 26H56a14 14 0 0 0-14 14v176a14 14 0 0 0 14 14h144a14 14 0 0 0 14-14V88a6 6 0 0 0-1.76-4.24M158 46.48 193.52 82H158ZM200 218H56a2 2 0 0 1-2-2V40a2 2 0 0 1 2-2h90v50a6 6 0 0 0 6 6h50v122a2 2 0 0 1-2 2m-43.76-62.24a6 6 0 0 1 0 8.48l-24 24a6 6 0 0 1-8.48 0l-24-24a6 6 0 0 1 8.48-8.48L122 169.51V120a6 6 0 0 1 12 0v49.51l13.76-13.75a6 6 0 0 1 8.48 0"></path>
@@ -65,37 +73,147 @@
 </div>
 </div>
 </header>
-<!-- 1. HERO SLIDER -->
-<section class="hero-slider">
-<div class="hero-slide active">
-<div class="hero-bg" style="background-image:url('https://static.wixstatic.com/media/nsplsh_4a6f4a4a2d767958336349~mv2.jpg');"></div>
-<div class="hero-inner">
-<h1>A brand owned by<br/>Tribal Artisans</h1>
-<p class="lead">Discover the synergy of Empowerment, Employment &amp; Environmental sustainability.</p>
-<a class="btn btn-outline-cream" href="product-catalogue.html">Shop Here</a>
-</div>
-</div>
-<div class="hero-slide">
-<div class="hero-bg" style="background-image:url('https://static.wixstatic.com/media/nsplsh_396b6b536955796e4b6649~mv2_d_4000_3000_s_4_2.jpg');"></div>
-<div class="hero-inner">
-<h1>Empowering 800+<br/>Tribal Women</h1>
-<p class="lead">Preserving India's ancient handicrafts while creating sustainable livelihoods in rural Palghar.</p>
-<a class="btn btn-outline-cream" href="our-story.html">Our Story</a>
-</div>
-</div>
-<div class="hero-slide">
-<div class="hero-bg" style="background-image:url('https://static.wixstatic.com/media/nsplsh_a38a5295a801475ebdb50cdb8c9de82d~mv2.jpg');"></div>
-<div class="hero-inner">
-<h1>Experience Village<br/>Eco-Tourism</h1>
-<p class="lead">Immerse yourself in nature, hands-on bamboo craft workshops, and authentic tribal culture.</p>
-<a class="btn btn-outline-cream" href="ecotourism.html">Explore Ecotourism</a>
-</div>
-</div>
-<button aria-label="Previous slide" class="hero-arrow left">❮</button>
-<button aria-label="Next slide" class="hero-arrow right">❯</button>
-<div class="hero-indicators"></div>
+<!-- 1. HERO BANNER - BAMBOO KANDIL FESTIVE HERO (SAME TO SAME AS BAMBOOFIRST.IN) -->
+<section class="hero-kandil-section" id="heroBanner">
+  <div class="hero-kandil-wrap">
+    <div class="hero-kandil-media">
+      <picture>
+        <source srcset="assets/bamboo-kandil-hero.webp" type="image/webp">
+        <img src="assets/bamboo-kandil-hero.jpg" alt="Bamboo Kandil Handcrafted in bamboo by tribal women artisans of Vikramgad, Palghar" class="hero-kandil-img" width="1024" height="608" fetchpriority="high">
+      </picture>
+      <!-- Interactive Hotspot Overlays -->
+      <a href="product.html?id=kandil-sahyadri-big" class="kandil-hotspot hotspot-sahyadri" title="Sahyadri (Big) - ₹900 (Non-Foldable)" aria-label="Sahyadri (Big) Bamboo Kandil ₹900"></a>
+      <a href="product.html?id=kandil-anjaneri-big" class="kandil-hotspot hotspot-anjaneri" title="Anjaneri (Big) - ₹900 (Foldable)" aria-label="Anjaneri (Big) Bamboo Kandil ₹900"></a>
+      <a href="product.html?id=kandil-shivneri-big" class="kandil-hotspot hotspot-shivneri" title="Shivneri (Big) - ₹900 (Non-Foldable)" aria-label="Shivneri (Big) Bamboo Kandil ₹900"></a>
+      <a href="product.html?id=kandil-purandar-big" class="kandil-hotspot hotspot-purandar" title="Purandar (Big) - ₹900 (Non-Foldable)" aria-label="Purandar (Big) Bamboo Kandil ₹900"></a>
+
+      <!-- Direct Action Buttons overlaying banner buttons -->
+      <a href="https://wa.me/917021490824?text=Hello%20Bamboo%20First%2C%20I%20want%20to%20order%20Bamboo%20Kandils." target="_blank" rel="noopener noreferrer" class="kandil-action-btn btn-whatsapp-overlay" aria-label="Order on WhatsApp" title="Order on WhatsApp">
+        <span class="sr-only" style="position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);border:0;">Order on WhatsApp</span>
+      </a>
+      <a href="tel:+917021490824" class="kandil-action-btn btn-call-overlay" aria-label="Call +91 70214 90824" title="Call +91 70214 90824">
+        <span class="sr-only" style="position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);border:0;">Call +91 70214 90824</span>
+      </a>
+    </div>
+
+    <!-- Mobile-optimized Quick Action bar -->
+    <div class="hero-kandil-mobile-actions">
+      <a href="https://wa.me/917021490824?text=Hello%20Bamboo%20First%2C%20I%20want%20to%20order%20Bamboo%20Kandils." target="_blank" rel="noopener noreferrer" class="btn-kandil-pill btn-kandil-wa">
+        <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor"><path d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.582 2.128 2.182-.573c.978.58 1.911.928 3.145.929 3.178 0 5.767-2.587 5.768-5.766.001-3.187-2.575-5.771-5.764-5.771zm3.392 8.244c-.144.405-.837.774-1.17.824-.311.045-.698.059-1.146-.086-.314-.102-.71-.237-1.229-.462-2.184-.952-3.608-3.18-3.717-3.326-.11-.144-.888-1.182-.888-2.254 0-1.073.562-1.601.762-1.819.199-.219.435-.274.58-.274.145 0 .29.002.417.008.134.006.313-.051.488.37.181.435.617 1.507.671 1.617.054.11.09.238.018.383-.073.145-.109.236-.217.363-.109.127-.229.284-.327.382-.109.109-.222.228-.096.445.127.218.563.928 1.209 1.503.832.742 1.534.972 1.752 1.081.218.109.345.091.472-.055.127-.145.545-.636.69-.854.145-.218.29-.182.49-.109.199.073 1.272.6 1.49.709.218.109.363.164.417.255.054.091.054.527-.09 1.042z"/></svg>
+        Order on WhatsApp
+      </a>
+      <a href="tel:+917021490824" class="btn-kandil-pill btn-kandil-call">
+        <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+        Call +91 70214 90824
+      </a>
+    </div>
+  </div>
 </section>
-<!-- 2. RAKSHA BANDHAN 2026 FEATURE STRIP -->
+<!-- 2. FESTIVE DIWALI BAMBOO KANDIL SPOTLIGHT -->
+<section class="section" id="kandil-collection" style="background:linear-gradient(135deg, #fdfbf7 0%, #f7f2ea 100%); border-bottom:1px solid #ebdcc5; padding-top:60px; padding-bottom:60px;">
+<div class="wrap">
+<div class="center-head" style="margin-bottom:2.5rem;">
+<span class="badge" style="background:#b3261e; color:#fff; font-size:0.85rem; padding:5px 14px; border-radius:20px; font-weight:600; text-transform:uppercase; letter-spacing:0.8px;">Festive New Arrivals</span>
+<h2 style="font-size:2.4rem; margin-top:10px;">Handcrafted Bamboo Kandil Collection</h2>
+<p style="max-width:740px; margin:0 auto; font-size:1.05rem; color:var(--ink-soft); line-height:1.6;">
+<em>"Your One Diwali lantern can illuminate two homes this festive season."</em><br/>
+An Initiative by <strong>Keshav Srushti</strong>, Supported by <strong>NABARD</strong>. 100% Eco-Friendly, Handcrafted with love by Tribal Sisters in Vikramgad, Palghar.
+</p>
+</div>
+<!-- Grid of the 6 Festive Kandils -->
+<div class="product-grid" style="grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap:24px;">
+<!-- Sahyadri (Big) -->
+<div class="product-card" data-category="Festive &amp; Kandil" id="home-kandil-sahyadri-big">
+<div class="thumb" onclick="window.location.href='product.html?id=kandil-sahyadri-big'" style="cursor:pointer;" title="Click to view details">
+<img alt="Sahyadri (Big) Bamboo Kandil" loading="lazy" src="assets/products/kandil-sahyadri-big.webp"/>
+<span class="badge" style="background:#b3261e; color:#fff;">Diwali Special</span>
+</div>
+<h4><a href="product.html?id=kandil-sahyadri-big">Sahyadri (Big) Bamboo Kandil</a></h4>
+<div class="price">INR 900/-</div>
+<div class="product-size">Non-Foldable • Grand Entrance Lantern</div>
+<div class="card-actions">
+<button class="btn btn-solid-olive btn-sm btn-add-to-cart" onclick="window.addToCart('kandil-sahyadri-big', 1)" type="button">Add to Cart</button>
+<a class="btn btn-outline-olive btn-sm" href="product.html?id=kandil-sahyadri-big">Details →</a>
+</div>
+</div>
+<!-- Anjaneri (Big) -->
+<div class="product-card" data-category="Festive &amp; Kandil" id="home-kandil-anjaneri-big">
+<div class="thumb" onclick="window.location.href='product.html?id=kandil-anjaneri-big'" style="cursor:pointer;" title="Click to view details">
+<img alt="Anjaneri (Big) Bamboo Kandil" loading="lazy" src="assets/products/kandil-anjaneri-big.webp"/>
+<span class="badge" style="background:#b3261e; color:#fff;">Diwali Special</span>
+</div>
+<h4><a href="product.html?id=kandil-anjaneri-big">Anjaneri (Big) Bamboo Kandil</a></h4>
+<div class="price">INR 900/-</div>
+<div class="product-size">Foldable • Ambient Lattice Glow</div>
+<div class="card-actions">
+<button class="btn btn-solid-olive btn-sm btn-add-to-cart" onclick="window.addToCart('kandil-anjaneri-big', 1)" type="button">Add to Cart</button>
+<a class="btn btn-outline-olive btn-sm" href="product.html?id=kandil-anjaneri-big">Details →</a>
+</div>
+</div>
+<!-- Shivneri (Big) -->
+<div class="product-card" data-category="Festive &amp; Kandil" id="home-kandil-shivneri-big">
+<div class="thumb" onclick="window.location.href='product.html?id=kandil-shivneri-big'" style="cursor:pointer;" title="Click to view details">
+<img alt="Shivneri (Big) Bamboo Kandil" loading="lazy" src="assets/products/kandil-shivneri-big.webp"/>
+<span class="badge" style="background:#b3261e; color:#fff;">Diwali Special</span>
+</div>
+<h4><a href="product.html?id=kandil-shivneri-big">Shivneri (Big) Bamboo Kandil</a></h4>
+<div class="price">INR 900/-</div>
+<div class="product-size">Non-Foldable • Warli Motifs</div>
+<div class="card-actions">
+<button class="btn btn-solid-olive btn-sm btn-add-to-cart" onclick="window.addToCart('kandil-shivneri-big', 1)" type="button">Add to Cart</button>
+<a class="btn btn-outline-olive btn-sm" href="product.html?id=kandil-shivneri-big">Details →</a>
+</div>
+</div>
+<!-- Purandar (Big) -->
+<div class="product-card" data-category="Festive &amp; Kandil" id="home-kandil-purandar-big">
+<div class="thumb" onclick="window.location.href='product.html?id=kandil-purandar-big'" style="cursor:pointer;" title="Click to view details">
+<img alt="Purandar (Big) Bamboo Kandil" loading="lazy" src="assets/products/kandil-purandar-big.webp"/>
+<span class="badge" style="background:#b3261e; color:#fff;">Diwali Special</span>
+</div>
+<h4><a href="product.html?id=kandil-purandar-big">Purandar (Big) Bamboo Kandil</a></h4>
+<div class="price">INR 900/-</div>
+<div class="product-size">Non-Foldable • Cylindrical Weave</div>
+<div class="card-actions">
+<button class="btn btn-solid-olive btn-sm btn-add-to-cart" onclick="window.addToCart('kandil-purandar-big', 1)" type="button">Add to Cart</button>
+<a class="btn btn-outline-olive btn-sm" href="product.html?id=kandil-purandar-big">Details →</a>
+</div>
+</div>
+<!-- Sahyadri (Small) -->
+<div class="product-card" data-category="Festive &amp; Kandil" id="home-kandil-sahyadri-small">
+<div class="thumb" onclick="window.location.href='product.html?id=kandil-sahyadri-small'" style="cursor:pointer;" title="Click to view details">
+<img alt="Sahyadri (Small) Bamboo Kandil" loading="lazy" src="assets/products/kandil-sahyadri-small.webp"/>
+<span class="badge" style="background:#b3261e; color:#fff;">Diwali Special</span>
+</div>
+<h4><a href="product.html?id=kandil-sahyadri-small">Sahyadri (Small) Bamboo Kandil</a></h4>
+<div class="price">INR 600/-</div>
+<div class="product-size">Non-Foldable • Compact Accent Lantern</div>
+<div class="card-actions">
+<button class="btn btn-solid-olive btn-sm btn-add-to-cart" onclick="window.addToCart('kandil-sahyadri-small', 1)" type="button">Add to Cart</button>
+<a class="btn btn-outline-olive btn-sm" href="product.html?id=kandil-sahyadri-small">Details →</a>
+</div>
+</div>
+<!-- Anjaneri (Small) -->
+<div class="product-card" data-category="Festive &amp; Kandil" id="home-kandil-anjaneri-small">
+<div class="thumb" onclick="window.location.href='product.html?id=kandil-anjaneri-small'" style="cursor:pointer;" title="Click to view details">
+<img alt="Anjaneri (Small) Bamboo Kandil" loading="lazy" src="assets/products/kandil-anjaneri-small.webp"/>
+<span class="badge" style="background:#b3261e; color:#fff;">Diwali Special</span>
+</div>
+<h4><a href="product.html?id=kandil-anjaneri-small">Anjaneri (Small) Bamboo Kandil</a></h4>
+<div class="price">INR 600/-</div>
+<div class="product-size">Foldable • Petite Festive Lantern</div>
+<div class="card-actions">
+<button class="btn btn-solid-olive btn-sm btn-add-to-cart" onclick="window.addToCart('kandil-anjaneri-small', 1)" type="button">Add to Cart</button>
+<a class="btn btn-outline-olive btn-sm" href="product.html?id=kandil-anjaneri-small">Details →</a>
+</div>
+</div>
+</div>
+<div class="center" style="margin-top:2.5rem; display:flex; justify-content:center; gap:16px; flex-wrap:wrap;">
+<a class="btn btn-solid-olive" href="product-catalogue.html?cat=Festive" style="padding:12px 28px;">View All Festive Kandils →</a>
+<a class="btn btn-outline-olive" href="https://wa.me/919152848332?text=Hello%20Bamboo%20First,%20I%20would%20like%20to%20place%20a%20festive%20order%20for%20Diwali%20Bamboo%20Kandils." rel="noopener" style="padding:12px 28px;" target="_blank">Bulk Festive Order on WhatsApp</a>
+</div>
+</div>
+</section>
+<!-- 3. RAKSHA BANDHAN 2026 FEATURE STRIP -->
 <section class="rakhi-split" id="rakhi-section">
 <div class="col-left">
 <h2>A Thread of Love.<br/>A Gift That Creates Lasting Impact.</h2>
@@ -121,89 +239,129 @@
 <div><img alt="Tribal women artisans crafting bamboo articles" src="https://static.wixstatic.com/media/c61a37_ec708996a2d74672b255d9a842173ac9~mv2.jpeg"/></div>
 <div><img alt="Tribal artisan celebration in Vikramgad" src="https://static.wixstatic.com/media/c61a37_0ba36b7fc331431ab745ac3f26c8629a~mv2.jpeg"/></div>
 </div>
-<!-- 4. PRODUCT CATALOGUE PREVIEW -->
+<!-- 5. PRODUCT CATALOGUE PREVIEW (UPDATED WITH AUTHENTIC PRODUCTS) -->
 <section class="section">
 <div class="wrap">
 <div class="center-head">
-<h2>Product Catalogue</h2>
-<p>Handcrafted with precision and care from 100% natural, sustainable bamboo.</p>
+<h2>Product Catalogue Showcase</h2>
+<p>Handcrafted with precision and care from 100% natural, sustainable bamboo by tribal artisans.</p>
 </div>
 <div class="product-grid">
-<!-- 1 -->
-<div class="product-card" data-category="Stationery &amp; Accessories" id="key-chain">
-<div class="thumb" onclick="window.location.href='product.html?id=key-chain'" style="cursor:pointer;"><img alt="Key Chain" src="https://static.wixstatic.com/media/c61a37_8fabb9eb61c84d79bd15fe12e4bc0d72~mv2.png"/></div>
-<h4><a href="product.html?id=key-chain">Key Chain</a></h4>
-<div class="price">INR 40/-</div>
-<div class="card-actions">
-<a class="btn btn-outline-olive btn-sm" href="https://wa.me/919152848332?text=Hello%20Bamboo%20First,%20I%20would%20like%20to%20order%20the%20Key%20Chain%20(INR%2040)." rel="noopener" target="_blank">Buy Now</a>
+<!-- Planter -->
+<div class="product-card" data-category="Home &amp; Kitchen" id="home-planter">
+<div class="thumb" onclick="window.location.href='product.html?id=planter'" style="cursor:pointer;" title="Click to view details">
+<img alt="Planter" loading="lazy" src="assets/products/planter.webp"/>
+<span class="badge">Home &amp; Garden</span>
 </div>
-</div>
-<!-- 2 -->
-<div class="product-card" data-category="Stationery &amp; Office" id="paper-weight">
-<div class="thumb" onclick="window.location.href='product.html?id=paper-weight'" style="cursor:pointer;"><img alt="Paper Weight" src="https://static.wixstatic.com/media/c61a37_dd8bebea2f38413b82f8a05784100be4~mv2.png"/></div>
-<h4><a href="product.html?id=paper-weight">Paper Weight</a></h4>
-<div class="price">INR 80/-</div>
-<div class="card-actions">
-<a class="btn btn-outline-olive btn-sm" href="https://wa.me/919152848332?text=Hello%20Bamboo%20First,%20I%20would%20like%20to%20order%20the%20Paper%20Weight%20(INR%2080)." rel="noopener" target="_blank">Buy Now</a>
-</div>
-</div>
-<!-- 3 -->
-<div class="product-card" data-category="Stationery &amp; Office" id="round-pen-stand">
-<div class="thumb" onclick="window.location.href='product.html?id=round-pen-stand'" style="cursor:pointer;"><img alt="Round Pen Stand" src="https://static.wixstatic.com/media/c61a37_a559b67bc40643589fd518737a0ec1b1~mv2.png"/></div>
-<h4><a href="product.html?id=round-pen-stand">Round Pen Stand</a></h4>
-<div class="price">INR 100/-</div>
-<div class="card-actions">
-<a class="btn btn-outline-olive btn-sm" href="https://wa.me/919152848332?text=Hello%20Bamboo%20First,%20I%20would%20like%20to%20order%20the%20Round%20Pen%20Stand%20(INR%20100)." rel="noopener" target="_blank">Buy Now</a>
-</div>
-</div>
-<!-- 4 -->
-<div class="product-card" data-category="Home &amp; Kitchen" id="candy-holder">
-<div class="thumb" onclick="window.location.href='product.html?id=candy-holder'" style="cursor:pointer;"><img alt="Candy Holder" src="https://static.wixstatic.com/media/c61a37_d0f6f4ee8b38401bb0f8e4bc4afb75a8~mv2.png"/></div>
-<h4><a href="product.html?id=candy-holder">Candy Holder</a></h4>
-<div class="price">INR 100/-</div>
-<div class="card-actions">
-<a class="btn btn-outline-olive btn-sm" href="https://wa.me/919152848332?text=Hello%20Bamboo%20First,%20I%20would%20like%20to%20order%20the%20Candy%20Holder%20(INR%20100)." rel="noopener" target="_blank">Buy Now</a>
-</div>
-</div>
-<!-- 5 -->
-<div class="product-card" data-category="Home &amp; Kitchen" id="square-serving-tray-small">
-<div class="thumb" onclick="window.location.href='product.html?id=square-serving-tray-small'" style="cursor:pointer;"><img alt="Square Serving Tray Small" src="https://static.wixstatic.com/media/c61a37_ba6741a42033478c97fa5021250d6236~mv2.png"/></div>
-<h4><a href="product.html?id=square-serving-tray-small">Square Serving Tray Small</a></h4>
-<div class="price">INR 100/-</div>
-<div class="card-actions">
-<a class="btn btn-outline-olive btn-sm" href="https://wa.me/919152848332?text=Hello%20Bamboo%20First,%20I%20would%20like%20to%20order%20the%20Square%20Serving%20Tray%20Small%20(INR%20100)." rel="noopener" target="_blank">Buy Now</a>
-</div>
-</div>
-<!-- 6 -->
-<div class="product-card" data-category="Gift Hampers &amp; Specials" id="gifting-bottle-packaging">
-<div class="thumb" onclick="window.location.href='product.html?id=gifting-bottle-packaging'" style="cursor:pointer;"><img alt="Gifting Bottle Packaging" src="https://static.wixstatic.com/media/c61a37_6b61e926641f4d7b92062d60ab6b2858~mv2.png"/></div>
-<h4><a href="product.html?id=gifting-bottle-packaging">Gifting Bottle Packaging</a></h4>
-<div class="price">INR 125/-</div>
-<div class="card-actions">
-<a class="btn btn-outline-olive btn-sm" href="https://wa.me/919152848332?text=Hello%20Bamboo%20First,%20I%20would%20like%20to%20order%20the%20Gifting%20Bottle%20Packaging%20(INR%20125)." rel="noopener" target="_blank">Buy Now</a>
-</div>
-</div>
-<!-- 7 -->
-<div class="product-card" data-category="Home &amp; Kitchen" id="bowl">
-<div class="thumb" onclick="window.location.href='product.html?id=bowl'" style="cursor:pointer;"><img alt="Bowl" src="https://static.wixstatic.com/media/c61a37_84f5671ca38844f7b3f5ae0ef3f52e4a~mv2.png"/></div>
-<h4><a href="product.html?id=bowl">Bowl</a></h4>
-<div class="price">INR 140/-</div>
-<div class="card-actions">
-<a class="btn btn-outline-olive btn-sm" href="https://wa.me/919152848332?text=Hello%20Bamboo%20First,%20I%20would%20like%20to%20order%20the%20Bowl%20(INR%20140)." rel="noopener" target="_blank">Buy Now</a>
-</div>
-</div>
-<!-- 8 -->
-<div class="product-card" data-category="Decor &amp; Lifestyle" id="planter">
-<div class="thumb" onclick="window.location.href='product.html?id=planter'" style="cursor:pointer;"><img alt="Planter" src="https://static.wixstatic.com/media/c61a37_c35f7bb01966469e960111c8dcc447d2~mv2.png"/></div>
 <h4><a href="product.html?id=planter">Planter</a></h4>
-<div class="price">INR 150/-</div>
+<div class="price">INR 225/-</div>
+<div class="product-size">Size: 4 x 4 x 10 in</div>
 <div class="card-actions">
-<a class="btn btn-outline-olive btn-sm" href="https://wa.me/919152848332?text=Hello%20Bamboo%20First,%20I%20would%20like%20to%20order%20the%20Planter%20(INR%20150)." rel="noopener" target="_blank">Buy Now</a>
+<button class="btn btn-solid-olive btn-sm btn-add-to-cart" onclick="window.addToCart('planter', 1)" type="button">Add to Cart</button>
+<a class="btn btn-outline-olive btn-sm" href="product.html?id=planter">Details →</a>
+</div>
+</div>
+<!-- Wall Clock -->
+<div class="product-card" data-category="Decor &amp; Lifestyle" id="home-wall-clock">
+<div class="thumb" onclick="window.location.href='product.html?id=wall-clock'" style="cursor:pointer;" title="Click to view details">
+<img alt="Wall Clock" loading="lazy" src="assets/products/wall-clock.webp"/>
+<span class="badge">Decor</span>
+</div>
+<h4><a href="product.html?id=wall-clock">Wall Clock</a></h4>
+<div class="price">INR 450/-</div>
+<div class="product-size">Size: 10 x 10 x 1.5 in</div>
+<div class="card-actions">
+<button class="btn btn-solid-olive btn-sm btn-add-to-cart" onclick="window.addToCart('wall-clock', 1)" type="button">Add to Cart</button>
+<a class="btn btn-outline-olive btn-sm" href="product.html?id=wall-clock">Details →</a>
+</div>
+</div>
+<!-- Tea Coaster -->
+<div class="product-card" data-category="Home &amp; Kitchen" id="home-tea-coaster">
+<div class="thumb" onclick="window.location.href='product.html?id=tea-coaster'" style="cursor:pointer;" title="Click to view details">
+<img alt="Tea Coaster" loading="lazy" src="assets/products/tea-coaster.webp"/>
+<span class="badge">Dining</span>
+</div>
+<h4><a href="product.html?id=tea-coaster">Tea Coaster</a></h4>
+<div class="price">INR 200/-</div>
+<div class="product-size">Set of 6 • Size: 3.5 x 3.5 x 2.5 in</div>
+<div class="card-actions">
+<button class="btn btn-solid-olive btn-sm btn-add-to-cart" onclick="window.addToCart('tea-coaster', 1)" type="button">Add to Cart</button>
+<a class="btn btn-outline-olive btn-sm" href="product.html?id=tea-coaster">Details →</a>
+</div>
+</div>
+<!-- Zig-Zag Pen Stand -->
+<div class="product-card" data-category="Stationery &amp; Office" id="home-zig-zag-pen-stand">
+<div class="thumb" onclick="window.location.href='product.html?id=zig-zag-pen-stand'" style="cursor:pointer;" title="Click to view details">
+<img alt="Zig-Zag Pen Stand" loading="lazy" src="assets/products/zig-zag-pen-stand.webp"/>
+<span class="badge">Stationery</span>
+</div>
+<h4><a href="product.html?id=zig-zag-pen-stand">Zig-Zag Pen Stand</a></h4>
+<div class="price">INR 160/-</div>
+<div class="product-size">Size: 5.5 x 2.5 x 4 in</div>
+<div class="card-actions">
+<button class="btn btn-solid-olive btn-sm btn-add-to-cart" onclick="window.addToCart('zig-zag-pen-stand', 1)" type="button">Add to Cart</button>
+<a class="btn btn-outline-olive btn-sm" href="product.html?id=zig-zag-pen-stand">Details →</a>
+</div>
+</div>
+<!-- National Flag Stand -->
+<div class="product-card" data-category="Decor &amp; Lifestyle" id="home-national-flag">
+<div class="thumb" onclick="window.location.href='product.html?id=national-flag'" style="cursor:pointer;" title="Click to view details">
+<img alt="National Flag Stand" loading="lazy" src="assets/products/national-flag.webp"/>
+<span class="badge">Decor</span>
+</div>
+<h4><a href="product.html?id=national-flag">National Flag Stand</a></h4>
+<div class="price">INR 225/-</div>
+<div class="product-size">Size: 3 x 2.5 x 13 in</div>
+<div class="card-actions">
+<button class="btn btn-solid-olive btn-sm btn-add-to-cart" onclick="window.addToCart('national-flag', 1)" type="button">Add to Cart</button>
+<a class="btn btn-outline-olive btn-sm" href="product.html?id=national-flag">Details →</a>
+</div>
+</div>
+<!-- Serving Tray -->
+<div class="product-card" data-category="Home &amp; Kitchen" id="home-serving-tray">
+<div class="thumb" onclick="window.location.href='product.html?id=serving-tray'" style="cursor:pointer;" title="Click to view details">
+<img alt="Serving Tray" loading="lazy" src="assets/products/serving-tray.webp"/>
+<span class="badge">Kitchen</span>
+</div>
+<h4><a href="product.html?id=serving-tray">Serving Tray</a></h4>
+<div class="price">INR 450/-</div>
+<div class="product-size">Size: 13 x 9.5 x 2 in</div>
+<div class="card-actions">
+<button class="btn btn-solid-olive btn-sm btn-add-to-cart" onclick="window.addToCart('serving-tray', 1)" type="button">Add to Cart</button>
+<a class="btn btn-outline-olive btn-sm" href="product.html?id=serving-tray">Details →</a>
+</div>
+</div>
+<!-- Fruit Basket -->
+<div class="product-card" data-category="Home &amp; Kitchen" id="home-fruit-basket">
+<div class="thumb" onclick="window.location.href='product.html?id=fruit-basket'" style="cursor:pointer;" title="Click to view details">
+<img alt="Fruit Basket" loading="lazy" src="assets/products/fruit-basket.webp"/>
+<span class="badge">Dining</span>
+</div>
+<h4><a href="product.html?id=fruit-basket">Fruit Basket</a></h4>
+<div class="price">INR 300/-</div>
+<div class="product-size">Size: 9 x 9 x 4.5 in</div>
+<div class="card-actions">
+<button class="btn btn-solid-olive btn-sm btn-add-to-cart" onclick="window.addToCart('fruit-basket', 1)" type="button">Add to Cart</button>
+<a class="btn btn-outline-olive btn-sm" href="product.html?id=fruit-basket">Details →</a>
+</div>
+</div>
+<!-- Toy Car -->
+<div class="product-card" data-category="Toys &amp; Crafts" id="home-toy-car">
+<div class="thumb" onclick="window.location.href='product.html?id=toy-car'" style="cursor:pointer;" title="Click to view details">
+<img alt="Toy Car" loading="lazy" src="assets/products/toy-car.webp"/>
+<span class="badge">Toys</span>
+</div>
+<h4><a href="product.html?id=toy-car">Toy Car</a></h4>
+<div class="price">INR 175/-</div>
+<div class="product-size">Size: 6.5 x 3 x 2.5 in</div>
+<div class="card-actions">
+<button class="btn btn-solid-olive btn-sm btn-add-to-cart" onclick="window.addToCart('toy-car', 1)" type="button">Add to Cart</button>
+<a class="btn btn-outline-olive btn-sm" href="product.html?id=toy-car">Details →</a>
 </div>
 </div>
 </div>
 <div class="center" style="margin-top:3.2rem;">
-<a class="btn btn-outline-olive" href="product-catalogue.html">View All 20+ Products</a>
+<a class="btn btn-solid-olive" href="product-catalogue.html" style="font-weight:600; padding:15px 36px; font-size:1.1rem; box-shadow:0 4px 14px rgba(77,88,43,0.25);">Explore Complete Handcrafted Catalogue (All 32 Products) →</a>
 </div>
 </div>
 </section>
