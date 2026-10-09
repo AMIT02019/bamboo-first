@@ -1744,17 +1744,19 @@ button {
 }
 
 .gallery-main-wrap {
-  background: #fdfcf9;
-  border: 1.5px solid #ebe5d6;
+  background: #ffffff;
+  border: 1px solid #ebe5d6;
   border-radius: 12px;
-  padding: 24px;
+  padding: 0;
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 480px;
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  height: auto;
   position: relative;
   overflow: hidden;
-  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.04);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
   cursor: zoom-in;
   transition: border-color 0.3s ease;
 }
@@ -1764,9 +1766,12 @@ button {
 }
 
 .gallery-main-wrap img {
-  max-height: 420px;
-  max-width: 92%;
-  object-fit: contain;
+  width: 100%;
+  height: 100%;
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: cover;
+  object-position: center center;
   transition: transform 0.35s cubic-bezier(0.16, 1, 0.3, 1);
   display: block;
 }
@@ -1854,7 +1859,7 @@ button {
 .gallery-thumb-item img {
   width: 100%;
   height: 100%;
-  object-fit: contain;
+  object-fit: cover;
   border-radius: 4px;
 }
 
@@ -2688,9 +2693,6 @@ button {
   .product-gallery {
     position: static;
   }
-  .gallery-main-wrap {
-    height: 400px;
-  }
   .why-bamboo-grid,
   .reviews-grid {
     grid-template-columns: 1fr;
@@ -2699,10 +2701,6 @@ button {
 }
 
 @media (max-width: 768px) {
-  .gallery-main-wrap {
-    height: 330px;
-    padding: 16px;
-  }
   .trust-matrix-grid {
     grid-template-columns: 1fr;
   }
@@ -3426,10 +3424,6 @@ button {
 
   .product-gallery {
     position: static;
-  }
-
-  .gallery-main-wrap {
-    height: 340px;
   }
 
   .artisan-impact-banner {
