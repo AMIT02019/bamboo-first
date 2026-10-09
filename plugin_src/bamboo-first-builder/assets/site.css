@@ -2103,6 +2103,48 @@ button {
   font-weight: 600;
 }
 
+.product-quick-features {
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+  background: rgba(45, 80, 22, 0.04);
+  border: 1px dashed rgba(45, 80, 22, 0.22);
+  border-radius: 8px;
+  padding: 11px 15px;
+  margin-bottom: 20px;
+}
+
+.quick-feature-item {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 0.88rem;
+  color: var(--ink);
+  font-weight: 500;
+}
+
+.quick-feature-item svg {
+  color: var(--olive);
+  flex-shrink: 0;
+}
+
+.jump-desc-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  font-size: 0.84rem;
+  color: var(--olive);
+  text-decoration: underline;
+  font-weight: 600;
+  margin-top: 3px;
+  cursor: pointer;
+  transition: color 0.2s ease;
+}
+
+.jump-desc-link:hover {
+  color: var(--ochre);
+}
+
 .product-short-desc {
   font-size: 1.02rem;
   color: var(--ink-soft);

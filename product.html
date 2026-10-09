@@ -189,24 +189,20 @@
           </div>
         </div>
 
-        <!-- Heartfelt Mission / Cause Hook -->
-        <div class="impact-mission-box">
-          <div class="impact-mission-quote">
-            <em>"Your One purchase illuminates two homes — your home and the tribal artisan's family in rural Palghar."</em>
+        <!-- Quick Trust / Key Features Bar -->
+        <div class="product-quick-features">
+          <div class="quick-feature-item">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+            <span>100% Solid Seasoned Bamboo &bull; Naturally Pest-Treated</span>
           </div>
-          <div class="impact-mission-meta">
-            Supported by <strong>NABARD</strong> &bull; An initiative of <strong>Keshav Srushti</strong>
+          <div class="quick-feature-item">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+            <span>Handmade with Love by Tribal Sisters in Vikramgad, Palghar</span>
           </div>
+          <a href="#productTabsSection" class="jump-desc-link" id="btnJumpToDesc">
+            <span>Read full description &amp; craftsmanship story &darr;</span>
+          </a>
         </div>
-
-        <p class="product-short-desc" id="detailDesc">
-          Loading handcrafted product details...
-        </p>
-
-        <!-- Highlights List -->
-        <ul class="product-highlights-list" id="detailHighlights">
-          <!-- Inserted by JS -->
-        </ul>
 
         <!-- Order / Cart Actions Box -->
         <div class="order-actions-box">
@@ -295,31 +291,55 @@
 </section>
 
 <!-- PRODUCT SPECIFICATION & CRAFT TABS -->
-<section class="product-tabs-section" style="padding-top: 10px; padding-bottom: 40px;">
+<section class="product-tabs-section" id="productTabsSection" style="padding-top: 15px; padding-bottom: 40px;">
   <div class="wrap">
-    <div class="tab-nav-bar">
-      <button class="tab-nav-btn active" data-tab="tab-craft">Craftsmanship &amp; Story</button>
+    <div class="tab-nav-bar" id="productTabsNav">
+      <button class="tab-nav-btn active" data-tab="tab-description">Description</button>
       <button class="tab-nav-btn" data-tab="tab-specs">Technical Specifications</button>
       <button class="tab-nav-btn" data-tab="tab-care">Care &amp; Durability</button>
       <button class="tab-nav-btn" data-tab="tab-shipping">Eco Packaging &amp; Delivery</button>
     </div>
 
-    <!-- Tab 1: Craftsmanship -->
-    <div class="tab-pane-content active" id="tab-craft">
-      <h3>The Artisan's Touch</h3>
-      <p id="tabCraftText">
-        Every piece is meticulously handcrafted by tribal women artisans belonging to the Vikramgad Bamboo Udyog Producer Company Limited. Harvested from local mature bamboo thickets in the rural forests of Palghar, each bamboo culm is seasoned, precision-cut, and manually lathed using time-honored tribal craftsmanship techniques passed down through generations.
-      </p>
-      <p>
-        By eliminating synthetic industrial resins and plastics, we preserve the natural grain, warmth, and strength of sustainable Indian bamboo while ensuring ethical wages and dignity of labor for our rural producers.
-      </p>
-      <div style="background:#fcfbf7; border:1px solid #ece5d6; border-radius:8px; padding:16px 20px; margin-top:20px; display:flex; align-items:center; gap:16px;">
-        <span style="font-size:2rem;">🤝</span>
-        <div>
-          <strong style="color:var(--olive); font-size:0.95rem;">Empowering Tribal Women in 25+ Palghar Villages</strong>
-          <p style="font-size:0.86rem; color:var(--ink-soft); margin:4px 0 0 0; line-height:1.5;">
-            Bamboo First operates in direct partnership with <strong>NABARD</strong> (National Bank for Agriculture and Rural Development) and <strong>Keshav Srushti</strong> to foster women's micro-enterprises and village self-reliance.
-          </p>
+    <!-- Tab 1: Description -->
+    <div class="tab-pane-content active" id="tab-description">
+      <!-- Heartfelt Mission / Cause Hook -->
+      <div class="impact-mission-box">
+        <div class="impact-mission-quote">
+          <em>"Your One purchase illuminates two homes &mdash; your home and the tribal artisan's family in rural Palghar."</em>
+        </div>
+        <div class="impact-mission-meta">
+          SUPPORTED BY NABARD &bull; AN INITIATIVE OF KESHAV SRUSHTI
+        </div>
+      </div>
+
+      <div class="tab-desc-wrap">
+        <p class="product-short-desc" id="detailDesc" style="font-size: 1.05rem; line-height: 1.75; color: var(--ink); margin-bottom: 22px;">
+          Loading handcrafted product details...
+        </p>
+
+        <!-- Highlights List -->
+        <ul class="product-highlights-list" id="detailHighlights" style="margin-bottom: 30px;">
+          <!-- Inserted by JS -->
+        </ul>
+      </div>
+
+      <!-- Artisan's Touch Craftsmanship Story -->
+      <div class="artisan-craft-section" style="border-top: 1px solid var(--line); padding-top: 24px; margin-top: 24px;">
+        <h3 style="font-family: var(--font-heading); font-size: 1.35rem; color: var(--ink); margin-bottom: 12px;">The Artisan's Touch &amp; Heritage</h3>
+        <p id="tabCraftText" style="font-size: 0.96rem; line-height: 1.7; color: var(--ink-soft); margin-bottom: 16px;">
+          Every piece is meticulously handcrafted by tribal women artisans belonging to the Vikramgad Bamboo Udyog Producer Company Limited. Harvested from local mature bamboo thickets in the rural forests of Palghar, each bamboo culm is seasoned, precision-cut, and manually lathed using time-honored tribal craftsmanship techniques passed down through generations.
+        </p>
+        <p style="font-size: 0.96rem; line-height: 1.7; color: var(--ink-soft); margin-bottom: 20px;">
+          By eliminating synthetic industrial resins and plastics, we preserve the natural grain, warmth, and strength of sustainable Indian bamboo while ensuring ethical wages and dignity of labor for our rural producers.
+        </p>
+        <div style="background:#fcfbf7; border:1px solid #ece5d6; border-radius:8px; padding:18px 22px; display:flex; align-items:center; gap:16px;">
+          <span style="font-size:2.2rem; line-height:1;">🤝</span>
+          <div>
+            <strong style="color:var(--olive); font-size:1rem; display:block; margin-bottom:4px;">Empowering Tribal Women in 25+ Palghar Villages</strong>
+            <p style="font-size:0.88rem; color:var(--ink-soft); margin:0; line-height:1.5;">
+              Bamboo First operates in direct partnership with <strong>NABARD</strong> (National Bank for Agriculture and Rural Development) and <strong>Keshav Srushti</strong> to foster women's micro-enterprises and village self-reliance.
+            </p>
+          </div>
         </div>
       </div>
     </div>

@@ -1431,6 +1431,17 @@
       };
     });
 
+    const jumpDescBtn = document.getElementById('btnJumpToDesc');
+    if (jumpDescBtn) {
+      jumpDescBtn.addEventListener('click', (e) => {
+        e.preventDefault();
+        const descTabBtn = document.querySelector('.tab-nav-btn[data-tab="tab-description"]');
+        if (descTabBtn) descTabBtn.click();
+        const tabsSec = document.getElementById('productTabsSection');
+        if (tabsSec) tabsSec.scrollIntoView({ behavior: 'smooth' });
+      });
+    }
+
     // 11. Populate Related Products
     const relatedGrid = document.getElementById('relatedProductsGrid');
     if (relatedGrid) {
