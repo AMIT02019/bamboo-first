@@ -2025,57 +2025,61 @@ button {
 }
 
 .product-price-box {
-  padding: 16px 0;
-  border-top: 1px solid #ebe5d6;
-  border-bottom: 1px solid #ebe5d6;
-  margin-bottom: 20px;
+  padding: 12px 0;
+  border-top: 1px solid #eee8dc;
+  border-bottom: 1px solid #eee8dc;
+  margin-bottom: 18px;
 }
 
 .price-main-wrap {
   display: flex;
   align-items: baseline;
-  gap: 14px;
+  gap: 10px;
   flex-wrap: wrap;
 }
 
 .product-price-box .price-amount {
-  font-family: var(--font-accent);
-  font-size: 2.3rem;
-  font-weight: 700;
+  font-family: var(--font-body);
+  font-size: 1.45rem;
+  font-weight: 600;
   color: var(--olive);
-  line-height: 1;
+  line-height: 1.2;
+  letter-spacing: -0.01em;
 }
 
 .price-mrp {
-  font-family: var(--font-accent);
-  font-size: 1.25rem;
-  color: #888888;
+  font-family: var(--font-body);
+  font-size: 0.95rem;
+  color: #8c8c8c;
   text-decoration: line-through;
+  font-weight: 400;
 }
 
 .price-save-badge {
-  background: #e8f5e9;
+  background: #eef6ec;
   color: #2e7d32;
-  font-family: var(--font-accent);
-  font-size: 0.82rem;
-  font-weight: 700;
-  padding: 4px 10px;
+  font-family: var(--font-body);
+  font-size: 0.76rem;
+  font-weight: 600;
+  padding: 2px 7px;
   border-radius: 4px;
-  letter-spacing: 0.02em;
+  letter-spacing: 0.01em;
 }
 
 .price-tax-note {
   display: flex;
   align-items: center;
-  gap: 6px;
-  font-size: 0.82rem;
-  color: #666;
-  margin-top: 8px;
+  gap: 5px;
+  font-size: 0.78rem;
+  color: #767676;
+  margin-top: 5px;
 }
 
 .price-tax-note svg {
-  color: var(--olive);
+  color: #767676;
   flex-shrink: 0;
+  width: 13px;
+  height: 13px;
 }
 
 .impact-mission-box {
@@ -2244,14 +2248,15 @@ button {
 }
 
 .total-calc-display {
-  font-family: var(--font-accent);
-  font-size: 1.05rem;
+  font-family: var(--font-body);
+  font-size: 0.95rem;
   color: var(--ink);
 }
 
 .total-calc-display strong {
   color: var(--olive);
-  font-size: 1.3rem;
+  font-size: 1.15rem;
+  font-weight: 600;
   margin-left: 4px;
 }
 
