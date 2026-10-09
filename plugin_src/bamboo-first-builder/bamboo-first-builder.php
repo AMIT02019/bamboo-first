@@ -39,10 +39,10 @@ class Bamboo_First_Elementor_Builder {
         );
         
         // Enqueue Bamboo First Unified CSS (v1.2.3)
-        wp_enqueue_style('bamboo-site-css', plugins_url('assets/site.css', __FILE__), [], '1.2.3');
+        wp_enqueue_style('bamboo-site-css', plugins_url('assets/site.css', __FILE__), [], '1.2.4');
 
-        // Enqueue Bamboo First Interactive JS (v1.2.3)
-        wp_enqueue_script('bamboo-site-js', plugins_url('assets/site.js', __FILE__), ['jquery'], '1.2.3', true);
+        // Enqueue Bamboo First Interactive JS (v1.2.4)
+        wp_enqueue_script('bamboo-site-js', plugins_url('assets/site.js', __FILE__), ['jquery'], '1.2.4', true);
     }
 
     public function add_admin_menu() {

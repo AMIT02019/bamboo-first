@@ -2210,46 +2210,111 @@ button {
 }
 
 .qty-stepper {
-  display: inline-flex;
-  align-items: center;
-  border: 1.5px solid #dcd7ca;
-  border-radius: 6px;
-  overflow: hidden;
-  background: #fafaf8;
+  display: inline-flex !important;
+  align-items: stretch !important;
+  border: 1px solid #d4cdbd !important;
+  border-radius: 6px !important;
+  overflow: hidden !important;
+  background: #ffffff !important;
+  height: 42px !important;
+  width: auto !important;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.04) !important;
 }
 
-.qty-stepper button {
-  width: 40px;
-  height: 40px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 1.2rem;
-  font-weight: 600;
-  color: var(--ink);
-  background: transparent;
-  border: none;
-  cursor: pointer;
-  transition: background-color 0.2s ease;
+.qty-stepper button,
+.qty-stepper button[type="button"],
+.qty-stepper button#qtyMinus,
+.qty-stepper button#qtyPlus {
+  width: 42px !important;
+  min-width: 42px !important;
+  max-width: 42px !important;
+  height: 42px !important;
+  padding: 0 !important;
+  margin: 0 !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  font-family: inherit !important;
+  color: var(--ink) !important;
+  background: #fbf9f5 !important;
+  background-color: #fbf9f5 !important;
+  border: none !important;
+  border-radius: 0 !important;
+  cursor: pointer !important;
+  outline: none !important;
+  transition: background-color 0.15s ease, color 0.15s ease !important;
+  user-select: none !important;
+  -webkit-user-select: none !important;
+  box-shadow: none !important;
+  text-decoration: none !important;
 }
 
-.qty-stepper button:hover {
-  background-color: #eee9dc;
+.qty-stepper button svg,
+.qty-stepper button[type="button"] svg {
+  color: var(--ink) !important;
+  stroke: var(--ink) !important;
+  flex-shrink: 0 !important;
+  transition: stroke 0.15s ease !important;
 }
 
-.qty-stepper input {
-  width: 50px;
-  height: 40px;
-  text-align: center;
-  border: none;
-  border-left: 1px solid #dcd7ca;
-  border-right: 1px solid #dcd7ca;
-  background: #ffffff;
-  font-family: var(--font-accent);
-  font-size: 1.05rem;
-  font-weight: 600;
-  color: var(--ink);
-  outline: none;
+.qty-stepper button:hover,
+.qty-stepper button:focus,
+.qty-stepper button:active,
+.qty-stepper button[type="button"]:hover,
+.qty-stepper button[type="button"]:focus,
+.qty-stepper button[type="button"]:active,
+.qty-stepper button#qtyMinus:hover,
+.qty-stepper button#qtyMinus:focus,
+.qty-stepper button#qtyMinus:active,
+.qty-stepper button#qtyPlus:hover,
+.qty-stepper button#qtyPlus:focus,
+.qty-stepper button#qtyPlus:active {
+  background: #ede6d8 !important;
+  background-color: #ede6d8 !important;
+  color: var(--olive) !important;
+  border: none !important;
+  outline: none !important;
+  box-shadow: none !important;
+}
+
+.qty-stepper button:hover svg,
+.qty-stepper button:focus svg,
+.qty-stepper button:active svg {
+  stroke: var(--olive) !important;
+}
+
+.qty-stepper input,
+.qty-stepper input[type="number"],
+.qty-stepper input#qtyInput {
+  width: 52px !important;
+  min-width: 52px !important;
+  max-width: 52px !important;
+  height: 42px !important;
+  padding: 0 !important;
+  margin: 0 !important;
+  text-align: center !important;
+  border: none !important;
+  border-left: 1px solid #d4cdbd !important;
+  border-right: 1px solid #d4cdbd !important;
+  border-radius: 0 !important;
+  background: #ffffff !important;
+  background-color: #ffffff !important;
+  font-family: var(--font-body) !important;
+  font-size: 1.15rem !important;
+  font-weight: 600 !important;
+  color: var(--ink) !important;
+  line-height: 42px !important;
+  outline: none !important;
+  box-shadow: none !important;
+  -moz-appearance: textfield !important;
+  appearance: textfield !important;
+}
+
+.qty-stepper input::-webkit-outer-spin-button,
+.qty-stepper input::-webkit-inner-spin-button {
+  -webkit-appearance: none !important;
+  margin: 0 !important;
+  display: none !important;
 }
 
 .total-calc-display {
