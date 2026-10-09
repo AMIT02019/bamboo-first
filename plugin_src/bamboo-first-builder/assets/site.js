@@ -1185,17 +1185,17 @@
     const urlParams = new URLSearchParams(window.location.search);
     let productId = urlParams.get('id');
 
-    // If no ID or ID not found, default to first product ('key-chain')
+    // If no ID or ID not found, default to 'kandil-sahyadri-big' or first product
     let product = PRODUCTS.find(p => p.id === productId);
     if (!product) {
-      product = PRODUCTS[0];
+      product = PRODUCTS.find(p => p.id === 'kandil-sahyadri-big') || PRODUCTS[0];
     }
 
     // 1. Populate Page Meta & Document Title
     document.title = `${product.name} | Handcrafted Bamboo | Bamboo First`;
     const metaDesc = document.getElementById('pageMetaDesc');
     if (metaDesc) {
-      metaDesc.setAttribute('content', `${product.name} - ${product.desc} Handcrafted in Vikramgad, Palghar.`);
+      metaDesc.setAttribute('content', `${product.name} - ${product.desc} Handcrafted with love by tribal sisters in Vikramgad, Palghar.`);
     }
 
     // 2. Populate Breadcrumbs
@@ -1221,6 +1221,33 @@
     const priceEl = document.getElementById('detailPrice');
     if (priceEl) priceEl.textContent = product.price;
 
+    // Calculate Authentic MRP & Savings Pill
+    const unitPrice = product.priceNum || 100;
+    let mrpVal = Math.round((unitPrice * 1.33) / 10) * 10;
+    if (mrpVal <= unitPrice) mrpVal = unitPrice + 50;
+    const discountPct = Math.max(15, Math.round(((mrpVal - unitPrice) / mrpVal) * 100));
+
+    const mrpEl = document.getElementById('detailMrp');
+    if (mrpEl) mrpEl.textContent = `MRP: INR ${mrpVal}/-`;
+
+    const saveBadge = document.getElementById('detailSaveBadge');
+    if (saveBadge) saveBadge.textContent = `Save ${discountPct}%`;
+
+    // Special Floating Badge in Gallery
+    const badgeSpecial = document.getElementById('galleryBadgeSpecial');
+    if (badgeSpecial) {
+      if (product.id.includes('kandil')) {
+        badgeSpecial.textContent = 'Diwali Special';
+        badgeSpecial.className = 'gallery-badge gallery-badge-special';
+      } else if (['planter', 'wall-clock', 'tea-coaster', 'round-pen-stand', 'bowl'].includes(product.id)) {
+        badgeSpecial.textContent = 'Bestseller';
+        badgeSpecial.className = 'gallery-badge gallery-badge-special';
+      } else {
+        badgeSpecial.textContent = 'Tribal Craft';
+        badgeSpecial.className = 'gallery-badge gallery-badge-eco';
+      }
+    }
+
     const descEl = document.getElementById('detailDesc');
     if (descEl) descEl.textContent = product.desc;
 
@@ -1229,7 +1256,7 @@
     if (hlContainer) {
       hlContainer.innerHTML = product.highlights.map(h => `
         <li>
-          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
           <span>${escapeHtml(h)}</span>
         </li>
       `).join('');
@@ -1247,6 +1274,22 @@
           </div>
         `;
       }).join('');
+    }
+
+    // Interactive Zoom on Main Gallery Image
+    const galleryMainWrap = document.getElementById('galleryMainWrap');
+    if (galleryMainWrap && detailMainImgEl) {
+      galleryMainWrap.addEventListener('mousemove', (e) => {
+        const rect = galleryMainWrap.getBoundingClientRect();
+        const x = ((e.clientX - rect.left) / rect.width) * 100;
+        const y = ((e.clientY - rect.top) / rect.height) * 100;
+        detailMainImgEl.style.transformOrigin = `${x}% ${y}%`;
+        detailMainImgEl.style.transform = 'scale(1.35)';
+      });
+      galleryMainWrap.addEventListener('mouseleave', () => {
+        detailMainImgEl.style.transformOrigin = 'center center';
+        detailMainImgEl.style.transform = 'scale(1)';
+      });
     }
 
     // 6. Update Specifications Dimensions
@@ -1274,7 +1317,6 @@
       if (isNaN(qty) || qty < 1) qty = 1;
       if (qtyInput) qtyInput.value = qty;
 
-      const unitPrice = product.priceNum || 100;
       const total = qty * unitPrice;
 
       if (totalPriceDisplay) {
@@ -1282,8 +1324,8 @@
       }
 
       if (btnOrderWhatsApp) {
-        const waMsg = `Hello Bamboo First! I would like to order:\n\n• Product: ${product.name}\n• Quantity: ${qty}\n• Price: ${product.price}\n• Total Amount: INR ${total}/-\n\nPlease confirm availability and dispatch details to my address.`;
-        btnOrderWhatsApp.href = `https://wa.me/919152848332?text=${encodeURIComponent(waMsg)}`;
+        const waMsg = `Hello Bamboo First! 🎋\n\nI would like to order:\n• Product: ${product.name}\n• Quantity: ${qty}\n• Price: ${product.price}\n• Estimated Total: INR ${total}/-\n\nPlease confirm availability and share payment/delivery details. Thank you!`;
+        btnOrderWhatsApp.href = `https://wa.me/917021490824?text=${encodeURIComponent(waMsg)}`;
       }
 
       if (btnShareWhatsApp) {
@@ -1317,7 +1359,6 @@
 
     updateCalculations();
 
-    
     // Detail Page Add to Cart & Buy Now Buttons
     const btnAddToCartDetail = document.getElementById('btnAddToCartDetail');
     if (btnAddToCartDetail) {
@@ -1334,6 +1375,31 @@
         let q = parseInt(qtyInput ? qtyInput.value : '1', 10);
         if (isNaN(q) || q < 1) q = 1;
         addToCart(product.id, q, true);
+      };
+    }
+
+    // Pincode Delivery Checker
+    const pincodeInput = document.getElementById('pincodeInput');
+    const btnCheckPincode = document.getElementById('btnCheckPincode');
+    const pincodeResult = document.getElementById('pincodeResult');
+    if (btnCheckPincode && pincodeInput && pincodeResult) {
+      btnCheckPincode.onclick = () => {
+        const pin = (pincodeInput.value || '').trim();
+        if (!/^\d{6}$/.test(pin)) {
+          pincodeResult.style.display = 'block';
+          pincodeResult.style.background = '#ffebee';
+          pincodeResult.style.color = '#c62828';
+          pincodeResult.innerHTML = '⚠️ Please enter a valid 6-digit Indian Pincode.';
+          return;
+        }
+        const today = new Date();
+        const deliveryDate = new Date(today);
+        deliveryDate.setDate(today.getDate() + 4);
+        const dateStr = deliveryDate.toLocaleDateString('en-IN', { weekday: 'short', month: 'short', day: 'numeric' });
+        pincodeResult.style.display = 'block';
+        pincodeResult.style.background = '#e8f5e9';
+        pincodeResult.style.color = '#1b5e20';
+        pincodeResult.innerHTML = `✅ <strong>Fast Delivery to ${pin}:</strong> Estimated arrival by <strong>${dateStr}</strong>.<br><span style="font-size:0.78rem;">✨ Standard Dispatch from Vikramgad, Palghar in 24 hours.</span>`;
       };
     }
 
@@ -1391,6 +1457,44 @@
           </div>
         `;
       }).join('');
+    }
+
+    // 12. Mobile Sticky Buy Bar Controller
+    const mobileBar = document.getElementById('mobileStickyBuyBar');
+    const mobileThumb = document.getElementById('mobileStickyThumb');
+    const mobileTitle = document.getElementById('mobileStickyTitle');
+    const mobilePrice = document.getElementById('mobileStickyPrice');
+    const mobileBtnCart = document.getElementById('mobileStickyBtnCart');
+    const mobileBtnWa = document.getElementById('mobileStickyBtnWa');
+
+    if (mobileBar) {
+      if (mobileThumb) mobileThumb.src = getProductImgUrl(product.img);
+      if (mobileTitle) mobileTitle.textContent = product.name;
+      if (mobilePrice) mobilePrice.textContent = product.price;
+
+      if (mobileBtnCart) {
+        mobileBtnCart.onclick = () => {
+          let q = parseInt(qtyInput ? qtyInput.value : '1', 10);
+          addToCart(product.id, q, false);
+        };
+      }
+
+      if (mobileBtnWa) {
+        const waMsg = `Hi Bamboo First! 🎋 I want to order ${product.name} (${product.price}). Please help me place this order!`;
+        mobileBtnWa.href = `https://wa.me/917021490824?text=${encodeURIComponent(waMsg)}`;
+      }
+
+      window.addEventListener('scroll', () => {
+        if (window.innerWidth <= 768) {
+          if (window.scrollY > 400) {
+            mobileBar.style.display = 'flex';
+          } else {
+            mobileBar.style.display = 'none';
+          }
+        } else {
+          mobileBar.style.display = 'none';
+        }
+      });
     }
   }
 

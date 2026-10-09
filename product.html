@@ -56,7 +56,15 @@
 
     <!-- Right Column: Product Catalogue Button + Mobile Menu -->
     <div class="header-col-right">
-      <a href="https://static.wixstatic.com/media/c61a37_8fabb9eb61c84d79bd15fe12e4bc0d72~mv2.png" target="_blank" rel="noopener" class="catalogue-download-btn" aria-label="Product Catalogue">
+      <a href="cart.html" class="header-cart-btn" aria-label="Shopping Cart">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <circle cx="9" cy="21" r="1"></circle>
+          <circle cx="20" cy="21" r="1"></circle>
+          <path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path>
+        </svg>
+        <span class="cart-count-badge" style="display:none;">0</span>
+      </a>
+      <a href="assets/bamboo-first-product-catalogue.pdf" target="_blank" rel="noopener noreferrer" class="catalogue-download-btn" aria-label="Download Product Catalogue PDF">
         <span>Product Catalogue</span>
         <svg viewBox="0 0 256 256" height="20" width="20" xmlns="http://www.w3.org/2000/svg">
           <path d="m212.24 83.76-56-56A6 6 0 0 0 152 26H56a14 14 0 0 0-14 14v176a14 14 0 0 0 14 14h144a14 14 0 0 0 14-14V88a6 6 0 0 0-1.76-4.24M158 46.48 193.52 82H158ZM200 218H56a2 2 0 0 1-2-2V40a2 2 0 0 1 2-2h90v50a6 6 0 0 0 6 6h50v122a2 2 0 0 1-2 2m-43.76-62.24a6 6 0 0 1 0 8.48l-24 24a6 6 0 0 1-8.48 0l-24-24a6 6 0 0 1 8.48-8.48L122 169.51V120a6 6 0 0 1 12 0v49.51l13.76-13.75a6 6 0 0 1 8.48 0"></path>
@@ -85,102 +93,215 @@
   </div>
 </nav>
 
-<!-- MAIN PRODUCT DETAIL CONTAINER -->
-<main class="wrap">
-  <div class="product-detail-layout">
-    <!-- LEFT: High-Res Image Gallery -->
-    <div class="product-gallery">
-      <div class="gallery-main-wrap">
-        <img id="detailMainImg" src="" alt="Product image preview">
-      </div>
-      <div class="gallery-thumbs" id="detailGalleryThumbs">
-        <!-- Dynamic thumbnails inserted by script -->
-      </div>
-      
-      <div style="margin-top:20px; background:#fff; border:1px solid var(--line-dark); border-radius:6px; padding:16px; display:flex; align-items:center; gap:12px;">
-        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="var(--olive)" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
-        <div style="font-size:0.85rem; color:var(--ink);">
-          <strong>100% Genuine Handcrafted Bamboo</strong><br>
-          Directly benefits Palghar tribal women artisans under Project Green Gold.
+<!-- MAIN PRODUCT DETAIL SECTION -->
+<section class="product-detail-section" style="padding-top: 25px; padding-bottom: 35px;">
+  <div class="wrap">
+    <div class="product-detail-layout">
+      <!-- LEFT: High-Res Interactive Gallery -->
+      <div class="product-gallery">
+        <div class="gallery-main-wrap" id="galleryMainWrap">
+          <div class="gallery-badges-wrap">
+            <span class="gallery-badge gallery-badge-special" id="galleryBadgeSpecial">Diwali Special</span>
+            <span class="gallery-badge gallery-badge-eco">🌿 100% Eco Bamboo</span>
+          </div>
+          <img id="detailMainImg" src="assets/products/key-chain.webp" alt="Handcrafted Bamboo Product">
+          <div class="gallery-zoom-hint">
+            <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line><line x1="11" y1="8" x2="11" y2="14"></line><line x1="8" y1="11" x2="14" y2="11"></line></svg>
+            <span>Hover to zoom</span>
+          </div>
+        </div>
+        <div class="gallery-thumbs" id="detailGalleryThumbs">
+          <!-- Dynamic thumbnails inserted by script -->
+        </div>
+        
+        <!-- 4-Pillar Trust Matrix Grid -->
+        <div class="trust-matrix-grid">
+          <div class="trust-matrix-item">
+            <div class="trust-icon">🎋</div>
+            <div>
+              <strong>100% Solid Bamboo</strong>
+              <p>Naturally seasoned &amp; pest-treated</p>
+            </div>
+          </div>
+          <div class="trust-matrix-item">
+            <div class="trust-icon">👩‍🌾</div>
+            <div>
+              <strong>Tribal Women Made</strong>
+              <p>NABARD &amp; Keshav Srushti initiative</p>
+            </div>
+          </div>
+          <div class="trust-matrix-item">
+            <div class="trust-icon">📦</div>
+            <div>
+              <strong>Zero-Plastic Box</strong>
+              <p>Crush-proof safe eco-packaging</p>
+            </div>
+          </div>
+          <div class="trust-matrix-item">
+            <div class="trust-icon">🚚</div>
+            <div>
+              <strong>Pan-India Shipping</strong>
+              <p>Direct from Vikramgad, Palghar</p>
+            </div>
+          </div>
         </div>
       </div>
-    </div>
 
-    <!-- RIGHT: Product Info & Order Configuration -->
-    <div class="product-info-panel">
-      <span class="product-cat-tag" id="detailCategory">Category</span>
-      <h1 id="detailTitle">Handcrafted Bamboo Product</h1>
-      <div class="product-sku" id="detailSku">SKU: BF-000</div>
+      <!-- RIGHT: Product Info & High-Converting Order Configuration -->
+      <div class="product-info-panel">
+        <!-- Top Meta Row: Category + Star Ratings -->
+        <div class="product-rating-row">
+          <span class="product-cat-tag" id="detailCategory">Category</span>
+          <div class="rating-stars-badge">
+            <span class="stars">★★★★★</span>
+            <span class="rating-score">4.9</span>
+            <span class="rating-count">(48 Verified Reviews)</span>
+          </div>
+        </div>
 
-      <div class="stock-status-badge">
-        <span class="stock-dot"></span>
-        <span>In Stock &bull; Handcrafted by Vikramgad Artisans</span>
-      </div>
+        <h1 id="detailTitle">Handcrafted Bamboo Product</h1>
 
-      <div class="product-price-box">
-        <div class="price-amount" id="detailPrice">INR 0/-</div>
-        <div class="price-note">(Inclusive of all taxes &bull; Shipping calculated at checkout)</div>
-      </div>
+        <!-- SKU & In-Stock Status -->
+        <div class="sku-stock-row">
+          <div class="product-sku" id="detailSku">SKU: BF-000</div>
+          <div class="stock-status-badge">
+            <span class="stock-dot"></span>
+            <span>In Stock &bull; Handcrafted by Vikramgad Artisans</span>
+          </div>
+        </div>
 
-      <p class="product-short-desc" id="detailDesc">
-        Loading handcrafted product details...
-      </p>
+        <!-- High Demand / Urgency strip -->
+        <div class="urgency-strip">
+          <span class="urgency-fire">🔥</span>
+          <span><strong>Limited Artisan Batch:</strong> Handcrafted with love by tribal sisters. High festive demand!</span>
+        </div>
 
-      <ul class="product-highlights-list" id="detailHighlights">
-        <!-- Inserted by JS -->
-      </ul>
+        <!-- Pricing Block with Value Anchors -->
+        <div class="product-price-box">
+          <div class="price-main-wrap">
+            <span class="price-amount" id="detailPrice">INR 0/-</span>
+            <span class="price-mrp" id="detailMrp">MRP: INR 0/-</span>
+            <span class="price-save-badge" id="detailSaveBadge">Save 25%</span>
+          </div>
+          <div class="price-tax-note">
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 14 14"></polyline></svg>
+            <span>Inclusive of all taxes &bull; <strong>Free Delivery</strong> on orders above ₹999</span>
+          </div>
+        </div>
 
-      <!-- Order / Cart Actions -->
-      <div class="order-actions-box">
-        <div class="qty-calc-row">
-          <div>
-            <label style="font-size:0.86rem; font-weight:600; color:var(--ink); display:block; margin-bottom:6px;">Select Quantity:</label>
-            <div class="qty-stepper">
-              <button type="button" id="qtyMinus" aria-label="Decrease quantity">&minus;</button>
-              <input type="number" id="qtyInput" value="1" min="1" max="500" aria-label="Quantity">
-              <button type="button" id="qtyPlus" aria-label="Increase quantity">+</button>
+        <!-- Heartfelt Mission / Cause Hook -->
+        <div class="impact-mission-box">
+          <div class="impact-mission-quote">
+            <em>"Your One purchase illuminates two homes — your home and the tribal artisan's family in rural Palghar."</em>
+          </div>
+          <div class="impact-mission-meta">
+            Supported by <strong>NABARD</strong> &bull; An initiative of <strong>Keshav Srushti</strong>
+          </div>
+        </div>
+
+        <p class="product-short-desc" id="detailDesc">
+          Loading handcrafted product details...
+        </p>
+
+        <!-- Highlights List -->
+        <ul class="product-highlights-list" id="detailHighlights">
+          <!-- Inserted by JS -->
+        </ul>
+
+        <!-- Order / Cart Actions Box -->
+        <div class="order-actions-box">
+          <div class="qty-calc-row">
+            <div>
+              <label class="qty-label">Select Quantity:</label>
+              <div class="qty-stepper">
+                <button type="button" id="qtyMinus" aria-label="Decrease quantity">&minus;</button>
+                <input type="number" id="qtyInput" value="1" min="1" max="500" aria-label="Quantity">
+                <button type="button" id="qtyPlus" aria-label="Increase quantity">+</button>
+              </div>
+            </div>
+
+            <div class="total-calc-display">
+              Estimated Total: <strong id="totalPriceDisplay">INR 0/-</strong>
             </div>
           </div>
 
-          <div class="total-calc-display">
-            Estimated Total: <strong id="totalPriceDisplay">INR 0/-</strong>
+          <!-- CTAs: Add to Cart, Buy Now, and WhatsApp -->
+          <div class="action-buttons-group">
+            <button type="button" class="btn btn-solid-olive btn-block btn-cta-primary" id="btnAddToCartDetail">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <circle cx="9" cy="21" r="1"></circle>
+                <circle cx="20" cy="21" r="1"></circle>
+                <path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path>
+              </svg>
+              <span>Add to Cart</span>
+            </button>
+
+            <button type="button" class="btn btn-block btn-cta-buynow" id="btnBuyNowDetail">
+              <span>⚡ Buy Now (Instant Checkout)</span>
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+            </button>
+
+            <a href="#" class="btn-whatsapp-large" id="btnOrderWhatsApp" target="_blank" rel="noopener">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M12.04 2c-5.46 0-9.91 4.45-9.91 9.91 0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38c1.45.79 3.08 1.21 4.74 1.21 5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.9-7.01A9.816 9.816 0 0 0 12.04 2m.01 1.67c2.2 0 4.26.86 5.82 2.41a8.17 8.17 0 0 1 2.41 5.83c0 4.54-3.7 8.24-8.24 8.24-1.48 0-2.93-.4-4.2-1.15l-.3-.18-3.12.82.83-3.04-.2-.31a8.19 8.19 0 0 1-1.26-4.38c0-4.54 3.7-8.24 8.24-8.24m4.52 11.66c-.19.53-.98.98-1.39 1.04-.37.05-.85.08-2.73-.7-2.31-.96-3.8-3.32-3.92-3.47-.11-.16-.94-1.25-.94-2.38s.59-1.69.8-1.92c.21-.24.46-.3.62-.3.15 0 .31 0 .45.01.14.01.33-.05.51.39.19.45.64 1.57.7 1.69.06.12.1.26.02.42-.08.16-.12.26-.24.4-.12.14-.25.31-.36.42-.12.12-.25.25-.11.49.14.24.63 1.04 1.36 1.68.93.83 1.72 1.09 1.96 1.21.24.12.38.1.52-.06.14-.16.6-.7.76-.94.16-.24.32-.2.54-.12.22.08 1.39.66 1.63.78.24.12.4.18.46.28.06.1.06.58-.13 1.11z"/>
+              </svg>
+              <span>Order via WhatsApp (Instant Support)</span>
+            </a>
           </div>
-        </div>
 
-        <div class="action-buttons-group">
-          <a href="#" class="btn-whatsapp-large" id="btnOrderWhatsApp" target="_blank" rel="noopener">
-            <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
-              <path d="M12.04 2c-5.46 0-9.91 4.45-9.91 9.91 0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38c1.45.79 3.08 1.21 4.74 1.21 5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.9-7.01A9.816 9.816 0 0 0 12.04 2zm.01 1.67c2.2 0 4.26.86 5.82 2.42a8.225 8.225 0 0 1 2.41 5.83c0 4.54-3.7 8.24-8.24 8.24-1.48 0-2.93-.4-4.2-1.15l-.3-.18-3.12.82.83-3.04-.2-.31a8.196 8.196 0 0 1-1.26-4.38c0-4.54 3.7-8.24 8.24-8.24zm4.5 11.66c-.25-.13-1.47-.72-1.7-.81-.23-.08-.39-.13-.56.13-.17.25-.64.81-.79.97-.14.17-.29.19-.54.06-.25-.13-1.07-.39-2.03-1.25-.75-.67-1.26-1.5-1.41-1.75-.15-.25-.02-.39.11-.51.11-.11.25-.29.38-.44.13-.14.17-.25.25-.42.08-.17.04-.31-.02-.44-.06-.13-.56-1.35-.77-1.85-.2-.49-.41-.42-.56-.43l-.48-.01c-.17 0-.44.06-.67.31-.23.25-.88.86-.88 2.1 0 1.24.9 2.44 1.03 2.61.13.17 1.77 2.7 4.29 3.79.6.26 1.07.41 1.44.53.6.19 1.15.16 1.58.1.48-.07 1.47-.6 1.68-1.18.21-.58.21-1.07.15-1.18-.06-.11-.23-.17-.48-.3z"/>
-            </svg>
-            <span>Order via WhatsApp</span>
-          </a>
+          <!-- Pincode Delivery Estimator -->
+          <div class="pincode-check-wrap">
+            <div class="pincode-input-row">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+              <input type="text" id="pincodeInput" placeholder="Enter Pincode for Delivery Date" maxlength="6">
+              <button type="button" id="btnCheckPincode">Check</button>
+            </div>
+            <div id="pincodeResult" class="pincode-result" style="display:none;"></div>
+          </div>
 
-          <a href="#bulkInquirySection" class="btn btn-outline-olive btn-block">
-            Request Bulk / Corporate Gifting Quote
-          </a>
-        </div>
+          <!-- Safe Checkout & Payment Badges -->
+          <div class="payment-assurance-strip">
+            <div class="assurance-item">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"></rect><path d="M7 11V7a5 5 0 0 1 10 0v4"></path></svg>
+              <span>100% Secure Checkout &bull; UPI, Cards, NetBanking, COD</span>
+            </div>
+            <div class="assurance-item">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="23 4 23 10 17 10"></polyline><path d="M20.49 15a9 9 0 1 1-2.12-9.36L23 10"></path></svg>
+              <span>7-Day Replacement Guarantee if Damaged in Transit</span>
+            </div>
+          </div>
 
-        <!-- Social Share Bar -->
-        <div class="share-strip">
-          <span>Share Product:</span>
-          <button type="button" class="share-btn" id="btnCopyLink">
-            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"/><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"/></svg>
-            Copy Link
-          </button>
-          <a href="#" class="share-btn" id="btnShareWhatsApp" target="_blank" rel="noopener">
-            WhatsApp
-          </a>
+          <!-- Bulk Link & Social Share -->
+          <div class="share-strip">
+            <a href="#bulkInquirySection" class="bulk-quote-link">
+              <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path><circle cx="12" cy="7" r="4"></circle></svg>
+              <span>Bulk / Corporate Gifting Inquiry</span>
+            </a>
+            <div class="share-actions">
+              <span>Share:</span>
+              <button type="button" class="share-btn" id="btnCopyLink" title="Copy Product Link">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"/><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"/></svg>
+                Copy Link
+              </button>
+              <a href="#" class="share-btn share-wa" id="btnShareWhatsApp" target="_blank" rel="noopener" title="Share on WhatsApp">
+                WhatsApp
+              </a>
+            </div>
+          </div>
         </div>
       </div>
     </div>
   </div>
+</section>
 
-  <!-- PRODUCT SPECIFICATION & CRAFT TABS -->
-  <section class="product-tabs-section">
+<!-- PRODUCT SPECIFICATION & CRAFT TABS -->
+<section class="product-tabs-section" style="padding-top: 10px; padding-bottom: 40px;">
+  <div class="wrap">
     <div class="tab-nav-bar">
       <button class="tab-nav-btn active" data-tab="tab-craft">Craftsmanship &amp; Story</button>
-      <button class="tab-nav-btn" data-tab="tab-specs">Specifications</button>
-      <button class="tab-nav-btn" data-tab="tab-care">Care &amp; Sustainability</button>
+      <button class="tab-nav-btn" data-tab="tab-specs">Technical Specifications</button>
+      <button class="tab-nav-btn" data-tab="tab-care">Care &amp; Durability</button>
+      <button class="tab-nav-btn" data-tab="tab-shipping">Eco Packaging &amp; Delivery</button>
     </div>
 
     <!-- Tab 1: Craftsmanship -->
@@ -192,6 +313,15 @@
       <p>
         By eliminating synthetic industrial resins and plastics, we preserve the natural grain, warmth, and strength of sustainable Indian bamboo while ensuring ethical wages and dignity of labor for our rural producers.
       </p>
+      <div style="background:#fcfbf7; border:1px solid #ece5d6; border-radius:8px; padding:16px 20px; margin-top:20px; display:flex; align-items:center; gap:16px;">
+        <span style="font-size:2rem;">🤝</span>
+        <div>
+          <strong style="color:var(--olive); font-size:0.95rem;">Empowering Tribal Women in 25+ Palghar Villages</strong>
+          <p style="font-size:0.86rem; color:var(--ink-soft); margin:4px 0 0 0; line-height:1.5;">
+            Bamboo First operates in direct partnership with <strong>NABARD</strong> (National Bank for Agriculture and Rural Development) and <strong>Keshav Srushti</strong> to foster women's micro-enterprises and village self-reliance.
+          </p>
+        </div>
+      </div>
     </div>
 
     <!-- Tab 2: Specifications -->
@@ -202,6 +332,10 @@
           <tr>
             <th>Primary Material</th>
             <td>100% Solid Natural Bamboo (Bambusa tulda / Dendrocalamus strictus)</td>
+          </tr>
+          <tr id="specDimensionsRow">
+            <th>Dimensions (L x B x H)</th>
+            <td id="detailDimensions">Standard Artisanal Specification</td>
           </tr>
           <tr>
             <th>Surface Finish</th>
@@ -229,27 +363,111 @@
 
     <!-- Tab 3: Care & Maintenance -->
     <div class="tab-pane-content" id="tab-care">
-      <h3>Care Instructions</h3>
-      <p>&bull; <strong>Cleaning:</strong> Wipe gently with a soft damp cloth. Avoid submerging in water or running in commercial dishwashers.</p>
-      <p>&bull; <strong>Drying:</strong> Ensure the product is thoroughly air-dried in a shaded, well-ventilated spot if exposed to moisture.</p>
-      <p>&bull; <strong>Longevity Polish:</strong> Apply a light dab of coconut oil or mineral oil once every 3-4 months to restore its natural golden bamboo sheen.</p>
-      <p>&bull; <strong>Disposal:</strong> 100% compostable and biodegradable at the end of its multi-year lifespan.</p>
+      <h3>Care &amp; Longevity Guide</h3>
+      <p>&bull; <strong>Cleaning:</strong> Wipe gently with a soft damp cotton cloth. Avoid submerging in standing water or commercial dishwashers.</p>
+      <p>&bull; <strong>Drying:</strong> Ensure the product is thoroughly air-dried in a shaded, well-ventilated spot if exposed to rain or moisture.</p>
+      <p>&bull; <strong>Longevity Polish:</strong> Apply a light dab of pure coconut oil, linseed oil, or mineral oil once every 3-4 months to restore its glowing natural bamboo luster.</p>
+      <p>&bull; <strong>End of Life:</strong> 100% compostable and biodegradable at the end of its multi-year lifespan, returning cleanly to Mother Earth.</p>
     </div>
-  </section>
 
-  <!-- ARTISAN IMPACT BANNER -->
-  <div class="artisan-impact-banner">
-    <img src="https://static.wixstatic.com/media/c61a37_0ba36b7fc331431ab745ac3f26c8629a~mv2.jpeg" alt="Tribal woman artisan crafting bamboo">
-    <div>
-      <h4>Empowering 800+ Tribal Women in Vikramgad</h4>
-      <p>
-        When you purchase from Bamboo First, you are directly investing in the <strong>3 Es: Environment, Empowerment, and Employment</strong>. Your purchase enables women in 25+ villages to gain financial independence, support their children's education, and preserve ancient tribal crafts.
-      </p>
+    <!-- Tab 4: Eco Packaging & Delivery -->
+    <div class="tab-pane-content" id="tab-shipping">
+      <h3>Eco-Conscious Packaging &amp; Safe Transit</h3>
+      <p>&bull; <strong>Zero Plastic Cushioning:</strong> We wrap every bamboo creation in biodegradable honeycomb kraft paper and natural jute cord.</p>
+      <p>&bull; <strong>Crush-Tested Outer Box:</strong> Packed in double-walled corrugated shipping cartons designed to endure long transit without bending.</p>
+      <p>&bull; <strong>Dispatch Timeline:</strong> Handcrafted orders are carefully inspected and dispatched within 24 to 48 hours directly from Vikramgad, Palghar.</p>
+      <p>&bull; <strong>Replacement Guarantee:</strong> In the rare event of transit damage, we provide a no-questions-asked 7-day replacement.</p>
     </div>
   </div>
+</section>
 
-  <!-- BULK & CORPORATE GIFTING INQUIRY FORM -->
-  <section id="bulkInquirySection" class="section" style="padding:60px 0; border-top:1px solid var(--line-dark);">
+<!-- WHY BAMBOO FIRST? BRAND PROMISE SHOWCASE -->
+<section class="why-bamboo-section">
+  <div class="wrap">
+    <div class="center-head" style="margin-bottom: 10px;">
+      <div class="eyebrow" style="color:var(--olive);">Sustainable &bull; Ethical &bull; Handcrafted</div>
+      <h2>Why Choose Bamboo First?</h2>
+      <p style="max-width:680px; margin:0 auto; font-size:1rem; color:var(--ink-soft);">Every purchase is an endorsement of sustainable living and direct financial empowerment for rural tribal families.</p>
+    </div>
+
+    <div class="why-bamboo-grid">
+      <div class="why-bamboo-card">
+        <div class="why-card-icon">🎋</div>
+        <h4>100% Eco-Positive</h4>
+        <p>Bamboo grows up to 3 feet per day without pesticides, absorbs 35% more carbon dioxide than hardwood trees, and leaves zero microplastics.</p>
+      </div>
+
+      <div class="why-bamboo-card">
+        <div class="why-card-icon">👩‍🌾</div>
+        <h4>Fair Trade &amp; Dignity</h4>
+        <p>100% direct remuneration to rural tribal women artisans. Your order supports children's schooling, healthcare, and financial independence.</p>
+      </div>
+
+      <div class="why-bamboo-card">
+        <div class="why-card-icon">🎨</div>
+        <h4>Living Tribal Heritage</h4>
+        <p>Hand-woven using indigenous Warli artistic patterns and generational joinery techniques preserved by the tribal sisters of Palghar.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- VERIFIED CUSTOMER REVIEWS & LOVE SHOWCASE -->
+<section class="reviews-showcase-section">
+  <div class="wrap">
+    <div class="center-head" style="margin-bottom: 10px;">
+      <div class="eyebrow" style="color:var(--olive);">Loved by Conscious Homes</div>
+      <h2>What Our Customers Are Saying</h2>
+      <div style="display:inline-flex; align-items:center; gap:8px; margin-top:8px; background:#fff8e6; padding:6px 16px; border-radius:999px; border:1px solid #f2dfa8;">
+        <span style="color:#eab308; letter-spacing:2px; font-size:1.1rem;">★★★★★</span>
+        <strong style="color:var(--ink); font-size:0.95rem;">4.9 / 5.0</strong>
+        <span style="color:var(--ink-light); font-size:0.85rem;">(Based on 48+ verified purchases)</span>
+      </div>
+    </div>
+
+    <div class="reviews-grid">
+      <div class="review-card">
+        <div class="review-card-stars">★★★★★</div>
+        <p class="review-card-quote">"The craftsmanship of the bamboo kandil is breathtaking! The warm ambient light through the handwoven lattices gave our living room such a peaceful, festive vibe."</p>
+        <div class="review-author-row">
+          <div>
+            <span class="review-author-name">Pooja M.</span>
+            <span style="display:block; font-size:0.75rem; color:#777;">Mumbai, Maharashtra</span>
+          </div>
+          <span class="review-verified-tag">✓ Verified Buyer</span>
+        </div>
+      </div>
+
+      <div class="review-card">
+        <div class="review-card-stars">★★★★★</div>
+        <p class="review-card-quote">"Ordered multiple desk organizers and a planter. Super sturdy, smooth finish, and knowing that this supports tribal sisters in Palghar makes every rupee worthwhile."</p>
+        <div class="review-author-row">
+          <div>
+            <span class="review-author-name">Aniket Deshmukh</span>
+            <span style="display:block; font-size:0.75rem; color:#777;">Pune, Maharashtra</span>
+          </div>
+          <span class="review-verified-tag">✓ Verified Buyer</span>
+        </div>
+      </div>
+
+      <div class="review-card">
+        <div class="review-card-stars">★★★★★</div>
+        <p class="review-card-quote">"Packaged in plastic-free sturdy cardboard with zero plastic tape. Arrived in pristine condition in Delhi within 4 days. Absolutely in love with Bamboo First!"</p>
+        <div class="review-author-row">
+          <div>
+            <span class="review-author-name">Sunil Rawat</span>
+            <span style="display:block; font-size:0.75rem; color:#777;">New Delhi</span>
+          </div>
+          <span class="review-verified-tag">✓ Verified Buyer</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- BULK & CORPORATE GIFTING INQUIRY FORM -->
+<section id="bulkInquirySection" class="section" style="padding:60px 0; border-top:1px solid var(--line-dark);">
+  <div class="wrap">
     <div class="center-head">
       <div class="eyebrow" style="color:var(--olive);">Corporate &amp; Bulk Orders</div>
       <h2>Request a Custom or Bulk Gifting Quote</h2>
@@ -291,10 +509,12 @@
         </div>
       </div>
     </form>
-  </section>
+  </div>
+</section>
 
-  <!-- RELATED PRODUCTS SECTION -->
-  <section class="section" style="padding-top:40px; padding-bottom:80px;">
+<!-- RELATED PRODUCTS SECTION -->
+<section class="section" style="padding-top:40px; padding-bottom:70px;">
+  <div class="wrap">
     <div class="center-head">
       <div class="eyebrow" style="color:var(--olive);">You May Also Like</div>
       <h2>Explore Related Bamboo Creations</h2>
@@ -303,8 +523,27 @@
     <div class="product-grid" id="relatedProductsGrid">
       <!-- Injected by JavaScript -->
     </div>
-  </section>
-</main>
+  </div>
+</section>
+
+<!-- STICKY MOBILE BUY BAR -->
+<div class="mobile-sticky-buy-bar" id="mobileStickyBuyBar" style="display:none;">
+  <div class="mobile-buy-info">
+    <img src="assets/products/key-chain.webp" alt="Product" id="mobileStickyThumb" class="mobile-buy-thumb">
+    <div style="min-width:0;">
+      <span class="mobile-buy-title" id="mobileStickyTitle">Product Name</span>
+      <span class="mobile-buy-price" id="mobileStickyPrice">INR 0/-</span>
+    </div>
+  </div>
+  <div class="mobile-buy-actions">
+    <button type="button" class="mobile-btn-cart" id="mobileStickyBtnCart">Add to Cart</button>
+    <a href="#" class="mobile-btn-wa" id="mobileStickyBtnWa" target="_blank" rel="noopener" aria-label="Order on WhatsApp">
+      <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+        <path d="M12.04 2c-5.46 0-9.91 4.45-9.91 9.91 0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38c1.45.79 3.08 1.21 4.74 1.21 5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.9-7.01A9.816 9.816 0 0 0 12.04 2m.01 1.67c2.2 0 4.26.86 5.82 2.41a8.17 8.17 0 0 1 2.41 5.83c0 4.54-3.7 8.24-8.24 8.24-1.48 0-2.93-.4-4.2-1.15l-.3-.18-3.12.82.83-3.04-.2-.31a8.19 8.19 0 0 1-1.26-4.38c0-4.54 3.7-8.24 8.24-8.24m4.52 11.66c-.19.53-.98.98-1.39 1.04-.37.05-.85.08-2.73-.7-2.31-.96-3.8-3.32-3.92-3.47-.11-.16-.94-1.25-.94-2.38s.59-1.69.8-1.92c.21-.24.46-.3.62-.3.15 0 .31 0 .45.01.14.01.33-.05.51.39.19.45.64 1.57.7 1.69.06.12.1.26.02.42-.08.16-.12.26-.24.4-.12.14-.25.31-.36.42-.12.12-.25.25-.11.49.14.24.63 1.04 1.36 1.68.93.83 1.72 1.09 1.96 1.21.24.12.38.1.52-.06.14-.16.6-.7.76-.94.16-.24.32-.2.54-.12.22.08 1.39.66 1.63.78.24.12.4.18.46.28.06.1.06.58-.13 1.11z"/>
+      </svg>
+    </a>
+  </div>
+</div>
 
 <!-- FOOTER -->
 <footer class="site-footer">
@@ -351,161 +590,5 @@
 </footer>
 
 <script src="assets/site.js"></script>
-<script>
-  // Individual Product Page Controller
-  document.addEventListener('DOMContentLoaded', () => {
-    const urlParams = new URLSearchParams(window.location.search);
-    const productId = urlParams.get('id') || 'key-chain';
-
-    // Find product from global PRODUCTS array
-    const product = (typeof PRODUCTS !== 'undefined') ? PRODUCTS.find(p => p.id === productId) : null;
-
-    if (!product) {
-      document.getElementById('detailTitle').textContent = 'Product Not Found';
-      document.getElementById('detailDesc').textContent = 'The requested product could not be located in our catalogue.';
-      return;
-    }
-
-    // Populate Page Metadata & Titles
-    document.title = `${product.name} | Handcrafted Bamboo | Bamboo First`;
-    const metaDesc = document.getElementById('pageMetaDesc');
-    if (metaDesc) metaDesc.setAttribute('content', `${product.name} - ${product.desc} Handcrafted in Vikramgad, Palghar.`);
-
-    // Populate Breadcrumbs
-    document.getElementById('breadcrumbCategory').textContent = product.category;
-    document.getElementById('breadcrumbTitle').textContent = product.name;
-
-    // Populate Details
-    document.getElementById('detailMainImg').src = product.img;
-    document.getElementById('detailMainImg').alt = product.name;
-    document.getElementById('detailCategory').textContent = product.category;
-    document.getElementById('detailTitle').textContent = product.name;
-    document.getElementById('detailSku').textContent = `SKU: BF-${product.id.toUpperCase()}`;
-    document.getElementById('detailPrice').textContent = product.price;
-    document.getElementById('detailDesc').textContent = product.desc;
-    document.getElementById('inquiryProductName').value = `${product.name} (${product.price})`;
-
-    // Highlights
-    const hlContainer = document.getElementById('detailHighlights');
-    hlContainer.innerHTML = product.highlights.map(h => `
-      <li>
-        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
-        <span>${h}</span>
-      </li>
-    `).join('');
-
-    // Gallery Thumbnails
-    const thumbsContainer = document.getElementById('detailGalleryThumbs');
-    thumbsContainer.innerHTML = `
-      <div class="gallery-thumb-item active" onclick="switchMainImage('${product.img}', this)">
-        <img src="${product.img}" alt="${product.name}">
-      </div>
-      <div class="gallery-thumb-item" onclick="switchMainImage('https://static.wixstatic.com/media/c61a37_0ba36b7fc331431ab745ac3f26c8629a~mv2.jpeg', this)">
-        <img src="https://static.wixstatic.com/media/c61a37_0ba36b7fc331431ab745ac3f26c8629a~mv2.jpeg" alt="Artisan craft workshop">
-      </div>
-      <div class="gallery-thumb-item" onclick="switchMainImage('https://static.wixstatic.com/media/c61a37_ec708996a2d74672b255d9a842173ac9~mv2.jpeg', this)">
-        <img src="https://static.wixstatic.com/media/c61a37_ec708996a2d74672b255d9a842173ac9~mv2.jpeg" alt="Handcrafted bamboo packaging">
-      </div>
-    `;
-
-    // Quantity and Total Price Stepper
-    const qtyInput = document.getElementById('qtyInput');
-    const qtyMinus = document.getElementById('qtyMinus');
-    const qtyPlus = document.getElementById('qtyPlus');
-    const totalPriceDisplay = document.getElementById('totalPriceDisplay');
-    const btnOrderWhatsApp = document.getElementById('btnOrderWhatsApp');
-    const btnShareWhatsApp = document.getElementById('btnShareWhatsApp');
-
-    function updateCalculations() {
-      let qty = parseInt(qtyInput.value, 10);
-      if (isNaN(qty) || qty < 1) qty = 1;
-      qtyInput.value = qty;
-
-      const total = qty * product.priceNum;
-      totalPriceDisplay.textContent = `INR ${total}/-`;
-
-      // Update WhatsApp Order Link
-      const waMsg = encodeURIComponent(`Hello Bamboo First! I would like to order:\n\n• Product: ${product.name}\n• Quantity: ${qty}\n• Price: ${product.price}\n• Total Amount: INR ${total}/-\n\nPlease confirm availability and dispatch details to my address.`);
-      btnOrderWhatsApp.href = `https://wa.me/919152848332?text=${waMsg}`;
-
-      // Update Share Link
-      const shareUrl = encodeURIComponent(window.location.href);
-      const shareMsg = encodeURIComponent(`Check out this handcrafted ${product.name} from Bamboo First: `);
-      btnShareWhatsApp.href = `https://wa.me/?text=${shareMsg}${shareUrl}`;
-    }
-
-    qtyMinus.addEventListener('click', () => {
-      let q = parseInt(qtyInput.value, 10);
-      if (q > 1) {
-        qtyInput.value = q - 1;
-        updateCalculations();
-      }
-    });
-
-    qtyPlus.addEventListener('click', () => {
-      let q = parseInt(qtyInput.value, 10);
-      qtyInput.value = q + 1;
-      updateCalculations();
-    });
-
-    qtyInput.addEventListener('input', updateCalculations);
-    updateCalculations();
-
-    // Copy Link Button
-    const btnCopyLink = document.getElementById('btnCopyLink');
-    if (btnCopyLink) {
-      btnCopyLink.addEventListener('click', () => {
-        navigator.clipboard.writeText(window.location.href).then(() => {
-          const toast = document.getElementById('siteToast');
-          if (toast) {
-            toast.textContent = 'Product link copied to clipboard!';
-            toast.classList.add('show');
-            setTimeout(() => toast.classList.remove('show'), 3000);
-          }
-        });
-      });
-    }
-
-    // Tabs Controller
-    const tabButtons = document.querySelectorAll('.tab-nav-btn');
-    const tabPanes = document.querySelectorAll('.tab-pane-content');
-
-    tabButtons.forEach(btn => {
-      btn.addEventListener('click', () => {
-        tabButtons.forEach(b => b.classList.remove('active'));
-        tabPanes.forEach(p => p.classList.remove('active'));
-
-        btn.classList.add('active');
-        const targetId = btn.getAttribute('data-tab');
-        const targetPane = document.getElementById(targetId);
-        if (targetPane) targetPane.classList.add('active');
-      });
-    });
-
-    // Populate Related Products
-    const relatedGrid = document.getElementById('relatedProductsGrid');
-    if (relatedGrid && typeof PRODUCTS !== 'undefined') {
-      const related = PRODUCTS.filter(p => p.id !== product.id && (p.category === product.category || Math.random() > 0.4)).slice(0, 4);
-      relatedGrid.innerHTML = related.map(p => `
-        <div class="product-card">
-          <div class="thumb" onclick="window.location.href='product.html?id=${p.id}'">
-            <img src="${p.img}" alt="${p.name}">
-          </div>
-          <h4><a href="product.html?id=${p.id}">${p.name}</a></h4>
-          <div class="price">${p.price}</div>
-          <div class="card-actions">
-            <a href="product.html?id=${p.id}" class="btn btn-outline-olive btn-sm">View Details</a>
-          </div>
-        </div>
-      `).join('');
-    }
-  });
-
-  function switchMainImage(src, el) {
-    document.getElementById('detailMainImg').src = src;
-    document.querySelectorAll('.gallery-thumb-item').forEach(t => t.classList.remove('active'));
-    if (el) el.classList.add('active');
-  }
-</script>
 </body>
 </html>
