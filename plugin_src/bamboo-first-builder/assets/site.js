@@ -1215,6 +1215,103 @@
 
     if (detailTitleEl) detailTitleEl.textContent = product.name;
 
+    const subtitleEl = document.getElementById('detailSubtitle');
+    if (subtitleEl) {
+      if (product.id.includes('kandil')) {
+        subtitleEl.textContent = 'सह्याद्री बांबू कंदील · Grand Heritage Festive Lantern (Warm Ambient Glow)';
+      } else if (product.category && (product.category.includes('Office') || product.category.includes('Stationery'))) {
+        subtitleEl.textContent = 'Handcrafted Natural Desk Accent · 100% Solid Seasoned Bamboo';
+      } else if (product.category && product.category.includes('Kitchen')) {
+        subtitleEl.textContent = 'Artisanal Eco Tableware · Handcrafted by Palghar Tribal Sisters';
+      } else {
+        subtitleEl.textContent = 'Organic Artisan Home Accent · 100% Biodegradable & Handcrafted';
+      }
+    }
+
+    // Dynamic What's in the Box Checklist
+    const inBoxContainer = document.getElementById('detailInBoxList');
+    if (inBoxContainer) {
+      if (product.id.includes('kandil')) {
+        inBoxContainer.innerHTML = `
+          <div class="inbox-item">
+            <div class="inbox-icon">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="var(--olive)" stroke-width="2"><path d="M12 2v3m0 14v3M8 5h8l2 6-4 8H10L6 11l2-6z"/><line x1="12" y1="9" x2="12" y2="13"/></svg>
+            </div>
+            <div>
+              <strong>1× Handwoven Bamboo Lantern</strong>
+              <p>Pest-treated seasoned golden bamboo with handwoven lattices</p>
+            </div>
+          </div>
+          <div class="inbox-item">
+            <div class="inbox-icon">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="var(--olive)" stroke-width="2"><path d="M9 18h6m-4 4h2m-5-8.5a6 6 0 1 1 8 0c-.5.8-1 1.5-1 2.5h-6c0-1-.5-1.7-1-2.5z"/></svg>
+            </div>
+            <div>
+              <strong>1× Pre-Installed Bulb Socket &amp; Cord</strong>
+              <p>Standard E27/B22 brass/eco socket with 1-metre cord (ready to light)</p>
+            </div>
+          </div>
+          <div class="inbox-item">
+            <div class="inbox-icon">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="var(--olive)" stroke-width="2"><circle cx="12" cy="7" r="4"/><path d="M12 11v11m-6-5h12"/></svg>
+            </div>
+            <div>
+              <strong>1× Sturdy Ceiling Hanging Loop</strong>
+              <p>Reinforced natural jute/cotton loop ready to hang from any ceiling hook</p>
+            </div>
+          </div>
+          <div class="inbox-item">
+            <div class="inbox-icon">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="var(--olive)" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/></svg>
+            </div>
+            <div>
+              <strong>1× Authenticity Card &amp; Care Guide</strong>
+              <p>Signed certificate from the Vikramgad Tribal Women Producer Company</p>
+            </div>
+          </div>
+        `;
+      } else {
+        inBoxContainer.innerHTML = `
+          <div class="inbox-item">
+            <div class="inbox-icon">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="var(--olive)" stroke-width="2"><path d="M11 20A7 7 0 0 1 9.8 6.1C15.5 5 17 4.48 19 2c1 2 2 4.18 2 8 0 5.5-4.78 10-10 10Z"/><path d="M2 21c0-3 1.85-5.36 5.08-6C9.5 14.52 12 13 13 12"/></svg>
+            </div>
+            <div>
+              <strong>1× Handcrafted Bamboo Creation</strong>
+              <p>${escapeHtml(product.name)} ${product.dimensions ? `(${escapeHtml(product.dimensions)} in)` : ''}</p>
+            </div>
+          </div>
+          <div class="inbox-item">
+            <div class="inbox-icon">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="var(--olive)" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="2" ry="2"/><line x1="9" y1="9" x2="15" y2="15"/><line x1="15" y1="9" x2="9" y2="15"/></svg>
+            </div>
+            <div>
+              <strong>1× Eco Cotton/Jute Dust Wrap</strong>
+              <p>100% plastic-free biodegradable protective wrapping</p>
+            </div>
+          </div>
+          <div class="inbox-item">
+            <div class="inbox-icon">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="var(--olive)" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/></svg>
+            </div>
+            <div>
+              <strong>1× Authenticity Certificate</strong>
+              <p>Supported by NABARD &amp; Keshav Srushti</p>
+            </div>
+          </div>
+          <div class="inbox-item">
+            <div class="inbox-icon">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="var(--olive)" stroke-width="2"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+            </div>
+            <div>
+              <strong>1× Bamboo Care &amp; Longevity Guide</strong>
+              <p>Natural oil maintenance tips for decades of durability</p>
+            </div>
+          </div>
+        `;
+      }
+    }
+
     const skuEl = document.getElementById('detailSku');
     if (skuEl) skuEl.textContent = `SKU: BF-${product.id.toUpperCase().replace(/[^A-Z0-9]/g, '')}`;
 
@@ -1441,6 +1538,27 @@
         if (tabsSec) tabsSec.scrollIntoView({ behavior: 'smooth' });
       });
     }
+
+    // 10b. FAQ Accordion Controller
+    const faqItems = document.querySelectorAll('.faq-item');
+    faqItems.forEach(item => {
+      const qBtn = item.querySelector('.faq-question');
+      if (qBtn) {
+        qBtn.onclick = () => {
+          const isOpen = item.classList.contains('active');
+          faqItems.forEach(fi => {
+            fi.classList.remove('active');
+            const ico = fi.querySelector('.faq-toggle-icon');
+            if (ico) ico.textContent = '+';
+          });
+          if (!isOpen) {
+            item.classList.add('active');
+            const ico = item.querySelector('.faq-toggle-icon');
+            if (ico) ico.textContent = '−';
+          }
+        };
+      }
+    });
 
     // 11. Populate Related Products
     const relatedGrid = document.getElementById('relatedProductsGrid');

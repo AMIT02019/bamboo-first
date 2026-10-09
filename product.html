@@ -114,31 +114,39 @@
           <!-- Dynamic thumbnails inserted by script -->
         </div>
         
-        <!-- 4-Pillar Trust Matrix Grid -->
-        <div class="trust-matrix-grid">
-          <div class="trust-matrix-item">
-            <div class="trust-icon">🎋</div>
+        <!-- Luxury Artisan Assurance Bar -->
+        <div class="gallery-assurance-bar">
+          <div class="assurance-pill">
+            <span class="pill-icon">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="var(--olive)" stroke-width="2"><path d="M11 20A7 7 0 0 1 9.8 6.1C15.5 5 17 4.48 19 2c1 2 2 4.18 2 8 0 5.5-4.78 10-10 10Z"/><path d="M2 21c0-3 1.85-5.36 5.08-6C9.5 14.52 12 13 13 12"/></svg>
+            </span>
             <div>
-              <strong>100% Solid Bamboo</strong>
+              <strong>Solid Indian Bamboo</strong>
               <p>Naturally seasoned &amp; pest-treated</p>
             </div>
           </div>
-          <div class="trust-matrix-item">
-            <div class="trust-icon">👩‍🌾</div>
+          <div class="assurance-pill">
+            <span class="pill-icon">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="var(--olive)" stroke-width="2"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg>
+            </span>
             <div>
               <strong>Tribal Women Made</strong>
               <p>NABARD &amp; Keshav Srushti initiative</p>
             </div>
           </div>
-          <div class="trust-matrix-item">
-            <div class="trust-icon">📦</div>
+          <div class="assurance-pill">
+            <span class="pill-icon">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="var(--olive)" stroke-width="2"><rect x="2" y="3" width="20" height="14" rx="2" ry="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg>
+            </span>
             <div>
               <strong>Zero-Plastic Box</strong>
               <p>Crush-proof safe eco-packaging</p>
             </div>
           </div>
-          <div class="trust-matrix-item">
-            <div class="trust-icon">🚚</div>
+          <div class="assurance-pill">
+            <span class="pill-icon">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="var(--olive)" stroke-width="2"><rect x="1" y="3" width="15" height="13"/><polygon points="16 8 20 8 23 11 23 16 16 16 16 8"/><circle cx="5.5" cy="18.5" r="2.5"/><circle cx="18.5" cy="18.5" r="2.5"/></svg>
+            </span>
             <div>
               <strong>Pan-India Shipping</strong>
               <p>Direct from Vikramgad, Palghar</p>
@@ -149,9 +157,12 @@
 
       <!-- RIGHT: Product Info & High-Converting Order Configuration -->
       <div class="product-info-panel">
-        <!-- Top Meta Row: Category + Star Ratings -->
-        <div class="product-rating-row">
-          <span class="product-cat-tag" id="detailCategory">Category</span>
+        <!-- Top Meta Row: Category + Origin + Star Ratings -->
+        <div class="product-eyebrow-row">
+          <div style="display:flex; align-items:center; gap:8px; flex-wrap:wrap;">
+            <span class="product-cat-tag" id="detailCategory">Festive &amp; Kandil</span>
+            <span class="heritage-origin-tag">🌿 Vikramgad, Palghar Heritage</span>
+          </div>
           <div class="rating-stars-badge">
             <span class="stars">★★★★★</span>
             <span class="rating-score">4.9</span>
@@ -159,21 +170,22 @@
           </div>
         </div>
 
-        <h1 id="detailTitle">Handcrafted Bamboo Product</h1>
+        <h1 id="detailTitle">Sahyadri (Big) Bamboo Kandil</h1>
+        <p class="product-artisan-subtitle" id="detailSubtitle">सह्याद्री बांबू कंदील · Grand Heritage Festive Lantern (Warm Ambient Glow)</p>
 
         <!-- SKU & In-Stock Status -->
         <div class="sku-stock-row">
-          <div class="product-sku" id="detailSku">SKU: BF-000</div>
+          <div class="product-sku" id="detailSku">SKU: BF-KANDILSAHYADRIBIG</div>
           <div class="stock-status-badge">
             <span class="stock-dot"></span>
-            <span>In Stock &bull; Handcrafted by Vikramgad Artisans</span>
+            <span>In Stock &bull; Handcrafted by Tribal Sisters</span>
           </div>
         </div>
 
         <!-- High Demand / Urgency strip -->
         <div class="urgency-strip">
-          <span class="urgency-fire">🔥</span>
-          <span><strong>Limited Artisan Batch:</strong> Handcrafted with love by tribal sisters. High festive demand!</span>
+          <span class="urgency-fire">⚡</span>
+          <span><strong>Limited Artisan Batch:</strong> Handcrafted in limited weekly numbers by tribal women artisans in Palghar. High festive demand!</span>
         </div>
 
         <!-- Pricing Block with Value Anchors -->
@@ -184,8 +196,8 @@
             <span class="price-save-badge" id="detailSaveBadge">Save 25%</span>
           </div>
           <div class="price-tax-note">
-            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 14 14"></polyline></svg>
-            <span>Inclusive of all taxes &bull; <strong>Free Delivery</strong> on orders above ₹999</span>
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 14 14"></polyline></svg>
+            <span>Direct from Rural Producer Collective &bull; Inclusive of all taxes &bull; <strong>Free Delivery</strong> on orders above ₹999</span>
           </div>
         </div>
 
@@ -210,28 +222,39 @@
             </div>
           </div>
 
-          <!-- CTAs: Add to Cart, Buy Now, and WhatsApp -->
+          <!-- Dual High-Converting CTAs -->
           <div class="action-buttons-group">
-            <button type="button" class="btn btn-solid-olive btn-block btn-cta-primary" id="btnAddToCartDetail">
-              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                <circle cx="9" cy="21" r="1"></circle>
-                <circle cx="20" cy="21" r="1"></circle>
-                <path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path>
-              </svg>
-              <span>Add to Cart</span>
-            </button>
+            <div class="dual-cta-row">
+              <button type="button" class="btn btn-cta-primary" id="btnAddToCartDetail">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <circle cx="9" cy="21" r="1"></circle>
+                  <circle cx="20" cy="21" r="1"></circle>
+                  <path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path>
+                </svg>
+                <span>Add to Cart</span>
+              </button>
 
-            <button type="button" class="btn btn-block btn-cta-buynow" id="btnBuyNowDetail">
-              <span>⚡ Buy Now (Instant Checkout)</span>
-              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
-            </button>
+              <button type="button" class="btn btn-cta-buynow" id="btnBuyNowDetail">
+                <span>⚡ Buy Now (Instant Checkout)</span>
+              </button>
+            </div>
 
-            <a href="#" class="btn-whatsapp-large" id="btnOrderWhatsApp" target="_blank" rel="noopener">
-              <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor">
-                <path d="M12.04 2c-5.46 0-9.91 4.45-9.91 9.91 0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38c1.45.79 3.08 1.21 4.74 1.21 5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.9-7.01A9.816 9.816 0 0 0 12.04 2m.01 1.67c2.2 0 4.26.86 5.82 2.41a8.17 8.17 0 0 1 2.41 5.83c0 4.54-3.7 8.24-8.24 8.24-1.48 0-2.93-.4-4.2-1.15l-.3-.18-3.12.82.83-3.04-.2-.31a8.19 8.19 0 0 1-1.26-4.38c0-4.54 3.7-8.24 8.24-8.24m4.52 11.66c-.19.53-.98.98-1.39 1.04-.37.05-.85.08-2.73-.7-2.31-.96-3.8-3.32-3.92-3.47-.11-.16-.94-1.25-.94-2.38s.59-1.69.8-1.92c.21-.24.46-.3.62-.3.15 0 .31 0 .45.01.14.01.33-.05.51.39.19.45.64 1.57.7 1.69.06.12.1.26.02.42-.08.16-.12.26-.24.4-.12.14-.25.31-.36.42-.12.12-.25.25-.11.49.14.24.63 1.04 1.36 1.68.93.83 1.72 1.09 1.96 1.21.24.12.38.1.52-.06.14-.16.6-.7.76-.94.16-.24.32-.2.54-.12.22.08 1.39.66 1.63.78.24.12.4.18.46.28.06.1.06.58-.13 1.11z"/>
-              </svg>
-              <span>Order via WhatsApp (Instant Support)</span>
-            </a>
+            <!-- WhatsApp Concierge Assistance Card -->
+            <div class="wa-concierge-card">
+              <div class="wa-concierge-text">
+                <span class="wa-icon">💬</span>
+                <div>
+                  <strong>Prefer to Order or Inquire on WhatsApp?</strong>
+                  <p>Instant support from our Palghar artisan coordinator</p>
+                </div>
+              </div>
+              <a href="#" class="btn-wa-compact" id="btnOrderWhatsApp" target="_blank" rel="noopener">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+                  <path d="M12.04 2c-5.46 0-9.91 4.45-9.91 9.91 0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38c1.45.79 3.08 1.21 4.74 1.21 5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.9-7.01A9.816 9.816 0 0 0 12.04 2m.01 1.67c2.2 0 4.26.86 5.82 2.41a8.17 8.17 0 0 1 2.41 5.83c0 4.54-3.7 8.24-8.24 8.24-1.48 0-2.93-.4-4.2-1.15l-.3-.18-3.12.82.83-3.04-.2-.31a8.19 8.19 0 0 1-1.26-4.38c0-4.54 3.7-8.24 8.24-8.24m4.52 11.66c-.19.53-.98.98-1.39 1.04-.37.05-.85.08-2.73-.7-2.31-.96-3.8-3.32-3.92-3.47-.11-.16-.94-1.25-.94-2.38s.59-1.69.8-1.92c.21-.24.46-.3.62-.3.15 0 .31 0 .45.01.14.01.33-.05.51.39.19.45.64 1.57.7 1.69.06.12.1.26.02.42-.08.16-.12.26-.24.4-.12.14-.25.31-.36.42-.12.12-.25.25-.11.49.14.24.63 1.04 1.36 1.68.93.83 1.72 1.09 1.96 1.21.24.12.38.1.52-.06.14-.16.6-.7.76-.94.16-.24.32-.2.54-.12.22.08 1.39.66 1.63.78.24.12.4.18.46.28.06.1.06.58-.13 1.11z"/>
+                </svg>
+                <span>Chat on WhatsApp</span>
+              </a>
+            </div>
           </div>
 
           <!-- Pincode Delivery Estimator -->
@@ -244,15 +267,23 @@
             <div id="pincodeResult" class="pincode-result" style="display:none;"></div>
           </div>
 
-          <!-- Safe Checkout & Payment Badges -->
-          <div class="payment-assurance-strip">
-            <div class="assurance-item">
-              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"></rect><path d="M7 11V7a5 5 0 0 1 10 0v4"></path></svg>
-              <span>100% Secure Checkout &bull; UPI, Cards, NetBanking, COD</span>
+          <!-- 4-Point Buyer Confidence Grid -->
+          <div class="buyer-perks-grid">
+            <div class="perk-item">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path></svg>
+              <span><strong>100% Transit Safe</strong> &bull; Free replacement if damaged</span>
             </div>
-            <div class="assurance-item">
-              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="23 4 23 10 17 10"></polyline><path d="M20.49 15a9 9 0 1 1-2.12-9.36L23 10"></path></svg>
-              <span>7-Day Replacement Guarantee if Damaged in Transit</span>
+            <div class="perk-item">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 14 14"></polyline></svg>
+              <span><strong>Dispatches in 24 Hours</strong> from Vikramgad, Palghar</span>
+            </div>
+            <div class="perk-item">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"></rect><path d="M7 11V7a5 5 0 0 1 10 0v4"></path></svg>
+              <span><strong>Pre-fitted Bulb Socket &amp; Cord</strong> &bull; Ready to hang</span>
+            </div>
+            <div class="perk-item">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path></svg>
+              <span><strong>Empowers 250+ Tribal Women</strong> in rural Maharashtra</span>
             </div>
           </div>
 
@@ -275,6 +306,138 @@
           </div>
         </div>
       </div>
+    </div>
+  </div>
+</section>
+
+<!-- SENSORY EXPERIENCE SECTION: TRANSFORM YOUR LIVING SPACE -->
+<section class="product-experience-section">
+  <div class="wrap">
+    <div class="center-head">
+      <div class="eyebrow" style="color:var(--olive);">Handcrafted Atmosphere</div>
+      <h2>The Bamboo First Experience</h2>
+      <p style="max-width:680px; margin:0 auto; font-size:1rem; color:var(--ink-soft);">Bring the soothing aura of authentic tribal craftsmanship into your living space.</p>
+    </div>
+    <div class="experience-cards-grid">
+      <div class="experience-card">
+        <div class="exp-icon">
+          <svg width="34" height="34" viewBox="0 0 24 24" fill="none" stroke="var(--olive)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2v3m0 14v3M8 5h8l2 6-4 8H10L6 11l2-6z"/><line x1="12" y1="9" x2="12" y2="13"/></svg>
+        </div>
+        <h3>Intricate Shadow &amp; Ambient Glow</h3>
+        <p>Hand-split bamboo slats soften bulb light into a warm, meditative amber glow, casting intricate geometric lattice shadows across your walls and balcony.</p>
+      </div>
+      <div class="experience-card">
+        <div class="exp-icon">
+          <svg width="34" height="34" viewBox="0 0 24 24" fill="none" stroke="var(--olive)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+        </div>
+        <h3>Heirloom Quality for Years of Joy</h3>
+        <p>Unlike flimsy disposable paper or plastic lanterns that tear after a week, seasoned solid bamboo endures for years as a treasured festive centerpiece.</p>
+      </div>
+      <div class="experience-card">
+        <div class="exp-icon">
+          <svg width="34" height="34" viewBox="0 0 24 24" fill="none" stroke="var(--olive)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M11 20A7 7 0 0 1 9.8 6.1C15.5 5 17 4.48 19 2c1 2 2 4.18 2 8 0 5.5-4.78 10-10 10Z"/><path d="M2 21c0-3 1.85-5.36 5.08-6C9.5 14.52 12 13 13 12"/></svg>
+        </div>
+        <h3>100% Earth-Kind &amp; Zero Plastic</h3>
+        <p>Pure seasoned bamboo, natural cotton tassels, and vegetable dyes. When warmed by a bulb, it emits the clean, subtle scent of natural bamboo with zero toxic fumes.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- WHAT'S IN THE BOX SECTION -->
+<section class="product-in-box-section">
+  <div class="wrap">
+    <div class="center-head">
+      <div class="eyebrow" style="color:var(--olive);">Unbox &amp; Light in 60 Seconds</div>
+      <h2>What's Inside the Box?</h2>
+      <p style="max-width:680px; margin:0 auto; font-size:1rem; color:var(--ink-soft);">Completely assembled and ready to hang &mdash; no extra trips to the hardware store.</p>
+    </div>
+    <div class="inbox-grid" id="detailInBoxList">
+      <div class="inbox-item">
+        <div class="inbox-icon">
+          <svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="var(--olive)" stroke-width="2"><path d="M12 2v3m0 14v3M8 5h8l2 6-4 8H10L6 11l2-6z"/><line x1="12" y1="9" x2="12" y2="13"/></svg>
+        </div>
+        <div>
+          <strong>1× Handwoven Bamboo Creation</strong>
+          <p>Pest-treated seasoned golden bamboo with handwoven Warli-inspired lattices</p>
+        </div>
+      </div>
+      <div class="inbox-item">
+        <div class="inbox-icon">
+          <svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="var(--olive)" stroke-width="2"><path d="M9 18h6m-4 4h2m-5-8.5a6 6 0 1 1 8 0c-.5.8-1 1.5-1 2.5h-6c0-1-.5-1.7-1-2.5z"/></svg>
+        </div>
+        <div>
+          <strong>1× Pre-Installed Bulb Socket &amp; Cord</strong>
+          <p>Standard E27/B22 brass/eco socket with 1-metre cord (ready to light)</p>
+        </div>
+      </div>
+      <div class="inbox-item">
+        <div class="inbox-icon">
+          <svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="var(--olive)" stroke-width="2"><circle cx="12" cy="7" r="4"/><path d="M12 11v11m-6-5h12"/></svg>
+        </div>
+        <div>
+          <strong>1× Sturdy Ceiling Hanging Loop</strong>
+          <p>Reinforced natural jute/cotton loop ready to hang from any ceiling hook</p>
+        </div>
+      </div>
+      <div class="inbox-item">
+        <div class="inbox-icon">
+          <svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="var(--olive)" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/></svg>
+        </div>
+        <div>
+          <strong>1× Authenticity Card &amp; Care Guide</strong>
+          <p>Signed certificate from the Vikramgad Tribal Women Producer Company</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- COMPARISON SECTION: BAMBOO FIRST VS CHEAP MARKET LANTERNS -->
+<section class="product-comparison-section">
+  <div class="wrap">
+    <div class="center-head">
+      <div class="eyebrow" style="color:var(--olive);">The Conscious Choice</div>
+      <h2>Bamboo First vs. Mass-Market Plastic Lanterns</h2>
+      <p style="max-width:680px; margin:0 auto; font-size:1rem; color:var(--ink-soft);">See why conscious Indian households are switching to sustainable bamboo festive decor.</p>
+    </div>
+    <div class="comparison-table-wrap">
+      <table class="comparison-table">
+        <thead>
+          <tr>
+            <th>Feature &amp; Value</th>
+            <th class="col-highlight">Bamboo First Handcrafted</th>
+            <th class="col-muted">Cheap Plastic / Paper Lanterns</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><strong>Craft Material</strong></td>
+            <td class="col-highlight"><span style="color:#2e7d32; font-weight:700;">&#10003;</span> 100% Solid Seasoned Indian Bamboo</td>
+            <td class="col-muted"><span style="color:#c62828; font-weight:700;">&#10005;</span> Synthetic Plastic, Cheap PVC &amp; Paper</td>
+          </tr>
+          <tr>
+            <td><strong>Lifespan &amp; Durability</strong></td>
+            <td class="col-highlight"><span style="color:#2e7d32; font-weight:700;">&#10003;</span> Reusable for 5+ festive seasons (Heirloom)</td>
+            <td class="col-muted"><span style="color:#c62828; font-weight:700;">&#10005;</span> Flimsy; tears or breaks in 1 week</td>
+          </tr>
+          <tr>
+            <td><strong>Light &amp; Ambience</strong></td>
+            <td class="col-highlight"><span style="color:#2e7d32; font-weight:700;">&#10003;</span> Meditative warm lattice shadow projection</td>
+            <td class="col-muted"><span style="color:#c62828; font-weight:700;">&#10005;</span> Harsh glare or dim synthetic glow</td>
+          </tr>
+          <tr>
+            <td><strong>Environmental Impact</strong></td>
+            <td class="col-highlight"><span style="color:#2e7d32; font-weight:700;">&#10003;</span> 100% Biodegradable &amp; carbon-negative</td>
+            <td class="col-muted"><span style="color:#c62828; font-weight:700;">&#10005;</span> Non-recyclable microplastic landfill waste</td>
+          </tr>
+          <tr>
+            <td><strong>Social Impact</strong></td>
+            <td class="col-highlight"><span style="color:#2e7d32; font-weight:700;">&#10003;</span> 100% Direct fair wages to tribal women (NABARD)</td>
+            <td class="col-muted"><span style="color:#c62828; font-weight:700;">&#10005;</span> Middlemen &amp; overseas factory profit</td>
+          </tr>
+        </tbody>
+      </table>
     </div>
   </div>
 </section>
@@ -390,37 +553,6 @@
   </div>
 </section>
 
-<!-- WHY BAMBOO FIRST? BRAND PROMISE SHOWCASE -->
-<section class="why-bamboo-section">
-  <div class="wrap">
-    <div class="center-head" style="margin-bottom: 10px;">
-      <div class="eyebrow" style="color:var(--olive);">Sustainable &bull; Ethical &bull; Handcrafted</div>
-      <h2>Why Choose Bamboo First?</h2>
-      <p style="max-width:680px; margin:0 auto; font-size:1rem; color:var(--ink-soft);">Every purchase is an endorsement of sustainable living and direct financial empowerment for rural tribal families.</p>
-    </div>
-
-    <div class="why-bamboo-grid">
-      <div class="why-bamboo-card">
-        <div class="why-card-icon">🎋</div>
-        <h4>100% Eco-Positive</h4>
-        <p>Bamboo grows up to 3 feet per day without pesticides, absorbs 35% more carbon dioxide than hardwood trees, and leaves zero microplastics.</p>
-      </div>
-
-      <div class="why-bamboo-card">
-        <div class="why-card-icon">👩‍🌾</div>
-        <h4>Fair Trade &amp; Dignity</h4>
-        <p>100% direct remuneration to rural tribal women artisans. Your order supports children's schooling, healthcare, and financial independence.</p>
-      </div>
-
-      <div class="why-bamboo-card">
-        <div class="why-card-icon">🎨</div>
-        <h4>Living Tribal Heritage</h4>
-        <p>Hand-woven using indigenous Warli artistic patterns and generational joinery techniques preserved by the tribal sisters of Palghar.</p>
-      </div>
-    </div>
-  </div>
-</section>
-
 <!-- VERIFIED CUSTOMER REVIEWS & LOVE SHOWCASE -->
 <section class="reviews-showcase-section">
   <div class="wrap">
@@ -468,6 +600,55 @@
             <span style="display:block; font-size:0.75rem; color:#777;">New Delhi</span>
           </div>
           <span class="review-verified-tag">✓ Verified Buyer</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FREQUENTLY ASKED QUESTIONS SECTION -->
+<section class="product-faq-section">
+  <div class="wrap">
+    <div class="center-head">
+      <div class="eyebrow" style="color:var(--olive);">Common Questions</div>
+      <h2>Frequently Asked Questions</h2>
+      <p style="max-width:680px; margin:0 auto; font-size:1rem; color:var(--ink-soft);">Everything you need to know about our handcrafted bamboo creations.</p>
+    </div>
+    <div class="faq-accordion-list">
+      <div class="faq-item active">
+        <button type="button" class="faq-question">
+          <span>Does the lantern come with a bulb and holder?</span>
+          <span class="faq-toggle-icon">−</span>
+        </button>
+        <div class="faq-answer">
+          <p>Yes, every Bamboo First lantern comes pre-fitted with a standard electrical bulb holder assembly and 1-metre hanging wire. You simply insert any standard warm-white LED bulb (5W to 9W recommended) and hang it up!</p>
+        </div>
+      </div>
+      <div class="faq-item">
+        <button type="button" class="faq-question">
+          <span>Can I hang this lantern outdoors or on my balcony?</span>
+          <span class="faq-toggle-icon">+</span>
+        </button>
+        <div class="faq-answer">
+          <p>Yes! Our bamboo is naturally seasoned and treated against moisture and pests. It looks magnificent in covered balconies, verandas, porches, and entryways. We recommend sheltering it from direct heavy monsoon downpours.</p>
+        </div>
+      </div>
+      <div class="faq-item">
+        <button type="button" class="faq-question">
+          <span>How is it packed to prevent damage during shipping?</span>
+          <span class="faq-toggle-icon">+</span>
+        </button>
+        <div class="faq-answer">
+          <p>We pack each piece in 100% plastic-free, biodegradable honeycomb protective wrap inside a double-walled crush-tested corrugated carton. In the rare event of transit damage, we provide a free instant replacement under our 7-day safe transit guarantee.</p>
+        </div>
+      </div>
+      <div class="faq-item">
+        <button type="button" class="faq-question">
+          <span>How long does delivery take?</span>
+          <span class="faq-toggle-icon">+</span>
+        </button>
+        <div class="faq-answer">
+          <p>Orders are dispatched within 24 to 48 hours directly from our artisan center in Vikramgad, Palghar. Delivery typically takes 2-3 business days across Maharashtra and 4-6 business days across other states in India.</p>
         </div>
       </div>
     </div>
