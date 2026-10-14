@@ -1,211 +1,228 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
 <title>Eco-Tourism | Bamboo First</title>
-<meta name="description" content="Eco-tourism by VBUPCL — an immersive village experience of sustainable bamboo-based living, Warli art, Tarpa dance and artisan workshops in Vikramgad, Palghar.">
-<link rel="icon" type="image/jpeg" href="https://static.wixstatic.com/media/c61a37_e3a74c17422047bfadd2b833b3b80562~mv2.jpg">
-<link rel="stylesheet" href="assets/site.css">
+<meta content="Eco-tourism by VBUPCL — an immersive village experience of sustainable bamboo-based living, Warli art, Tarpa dance and artisan workshops in Vikramgad, Palghar." name="description"/>
+<link href="https://static.wixstatic.com/media/c61a37_e3a74c17422047bfadd2b833b3b80562~mv2.jpg" rel="icon" type="image/jpeg"/>
+<link href="assets/site.css" rel="stylesheet"/>
 </head>
 <body>
-
 <!-- AUTHENTIC SITE HEADER -->
 <header class="site-header">
-  <div class="header-container">
-    <!-- Left Column: Logo -->
-    <div class="header-col-left">
-      <a href="index.html" class="site-logo" aria-label="Bamboo First Home">
-        <img src="https://static.wixstatic.com/media/c61a37_f0156aeabc774009b6f872ba276dd058~mv2.png/v1/fill/w_88,h_120,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/bamboo%20first%20beige%20logo_4x.png" alt="Bamboo First Beige Logo" width="88" height="120">
-      </a>
-    </div>
-
-    <!-- Center Column: Search (Top) + Nav Links (Bottom) -->
-    <div class="header-col-center">
-      <div class="search-bar-wrap">
-        <div class="search-box">
-          <span class="search-icon-left" aria-hidden="true">
-            <svg width="15" height="15" viewBox="5 5 14 14" fill="currentColor"><path d="m15.683 14.6 3.265 3.265a.2.2 0 0 1 0 .282l-.8.801a.2.2 0 0 1-.283 0l-3.266-3.265a5.961 5.961 0 1 1 1.084-1.084zm-4.727 1.233a4.877 4.877 0 1 0 0-9.754 4.877 4.877 0 0 0 0 9.754"></path></svg>
-          </span>
-          <input type="search" placeholder="Search" aria-label="Search" autocomplete="off">
-          <button type="submit" aria-label="Search">
-            <svg width="15" height="15" viewBox="5 5 14 14" fill="currentColor"><path d="m15.683 14.6 3.265 3.265a.2.2 0 0 1 0 .282l-.8.801a.2.2 0 0 1-.283 0l-3.266-3.265a5.961 5.961 0 1 1 1.084-1.084zm-4.727 1.233a4.877 4.877 0 1 0 0-9.754 4.877 4.877 0 0 0 0 9.754"></path></svg>
-          </button>
-        </div>
-      </div>
-
-      <nav class="main-nav" id="mainNav">
-        <a href="index.html" class="nav-link">Home</a>
-        <a href="product-catalogue.html" class="nav-link">Product Catalogue</a>
-        <a href="ecotourism.html" class="nav-link active">Ecotourism</a>
-        <div class="nav-dropdown">
-          <span class="nav-dropdown-trigger nav-link">
-            About Us
-            <svg width="10" height="10" viewBox="0 0 16 11" fill="currentColor"><path d="M8 10.5L16 1.86193L14.7387 0.5L8 7.77613L1.26133 0.499999L-5.95321e-08 1.86193L8 10.5Z"></path></svg>
-          </span>
-          <div class="nav-dropdown-menu">
-            <a href="our-story.html">Our Story</a>
-            <a href="our-mentors.html">Our Mentors</a>
+<div class="header-container">
+<!-- Left Column: Logo -->
+<div class="header-col-left">
+<a aria-label="Bamboo First Home" class="site-logo" href="index.html">
+<img alt="Bamboo First Beige Logo" height="110" src="https://static.wixstatic.com/media/c61a37_f0156aeabc774009b6f872ba276dd058~mv2.png/v1/fill/w_88,h_120,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/bamboo%20first%20beige%20logo_4x.png" width="80"/>
+</a>
+</div>
+<!-- Center Column: Search (Top) + Nav Links (Bottom) -->
+<div class="header-col-center">
+<form action="product-catalogue.html" class="search-bar-wrap" method="get" onsubmit="if(!this.q.value.trim()){event.preventDefault();}">
+<div class="search-box">
+<input aria-label="Search" autocomplete="off" name="q" placeholder="Search" type="search"/>
+<button aria-label="Search" type="submit">
+<svg fill="currentColor" height="16" viewbox="0 0 24 24" width="16">
+<path d="M15.5 14h-.79l-.28-.27A6.471 6.471 0 0 0 16 9.5 6.5 6.5 0 1 0 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"></path>
+</svg>
+</button>
+</div>
+</form>
+<nav class="main-nav" id="mainNav">
+          <a class="nav-link" href="index.html">Home</a>
+          <a class="nav-link" href="product-catalogue.html">Product Catalogue</a>
+          <a class="nav-link active" href="ecotourism.html">Ecotourism</a>
+          <div class="nav-dropdown">
+            <a class="nav-link nav-dropdown-trigger" href="our-story.html" role="button" aria-haspopup="true" aria-expanded="false">
+              <span>About Us</span>
+              <svg class="dropdown-caret" viewBox="0 0 10 6" width="10" height="6" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M1 1l4 4 4-4"/>
+              </svg>
+            </a>
+            <div class="nav-dropdown-menu">
+              <a href="our-story.html" class="">Our Story</a>
+              <a href="our-mentors.html" class="">Our Mentors</a>
+            </div>
           </div>
-        </div>
-        <a href="media.html" class="nav-link">Media</a>
-        <a href="contact-us.html" class="nav-link">Contact Us</a>
-        <a href="events.html" class="nav-link">Events</a>
-      </nav>
-    </div>
-
-    <!-- Right Column: Product Catalogue Button + Mobile Menu -->
-    <div class="header-col-right">
-      <a href="cart.html" class="header-cart-btn" aria-label="Shopping Cart">
-        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-          <circle cx="9" cy="21" r="1"></circle>
-          <circle cx="20" cy="21" r="1"></circle>
-          <path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path>
-        </svg>
-        <span class="cart-count-badge" style="display:none;">0</span>
-      </a>
-      <a href="assets/bamboo-first-product-catalogue.pdf" target="_blank" rel="noopener noreferrer" class="catalogue-download-btn" aria-label="Download Product Catalogue PDF">
-        <span>Product Catalogue</span>
-        <svg viewBox="0 0 256 256" height="20" width="20" xmlns="http://www.w3.org/2000/svg">
-          <path d="m212.24 83.76-56-56A6 6 0 0 0 152 26H56a14 14 0 0 0-14 14v176a14 14 0 0 0 14 14h144a14 14 0 0 0 14-14V88a6 6 0 0 0-1.76-4.24M158 46.48 193.52 82H158ZM200 218H56a2 2 0 0 1-2-2V40a2 2 0 0 1 2-2h90v50a6 6 0 0 0 6 6h50v122a2 2 0 0 1-2 2m-43.76-62.24a6 6 0 0 1 0 8.48l-24 24a6 6 0 0 1-8.48 0l-24-24a6 6 0 0 1 8.48-8.48L122 169.51V120a6 6 0 0 1 12 0v49.51l13.76-13.75a6 6 0 0 1 8.48 0"></path>
-        </svg>
-      </a>
-
-      <button class="menu-toggle" id="menuToggle" aria-label="Toggle navigation menu">
-        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M3 6h18M3 12h18M3 18h18"/></svg>
-      </button>
-    </div>
-  </div>
+          <a class="nav-link" href="media.html">Media</a>
+          <a class="nav-link" href="contact-us.html">Contact Us</a>
+          <div class="nav-dropdown">
+            <a class="nav-link nav-dropdown-trigger" href="events.html" role="button" aria-haspopup="true" aria-expanded="false">
+              <span>Events</span>
+              <svg class="dropdown-caret" viewBox="0 0 10 6" width="10" height="6" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M1 1l4 4 4-4"/>
+              </svg>
+            </a>
+            <div class="nav-dropdown-menu">
+              <a href="mahila-swavalamban-kendre.html" class="">Mahila Swavalamban Kendre</a>
+              <a href="bamboo-nursery.html" class="">Bamboo Nursery</a>
+              <a href="events.html#3rd-agm">Bamboo First 3rd AGM</a>
+              <a href="events.html#rakshabandhan">Rakshabandhan at INS Angre</a>
+            </div>
+          </div>
+        </nav>
+</div>
+<!-- Right Column: Product Catalogue Button + Mobile Menu -->
+<div class="header-col-right">
+<a aria-label="Shopping Cart" class="header-cart-btn" href="cart.html">
+<svg fill="none" height="18" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24" width="18">
+<circle cx="9" cy="21" r="1"></circle>
+<circle cx="20" cy="21" r="1"></circle>
+<path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path>
+</svg>
+<span class="cart-count-badge" style="display:none;">0</span>
+</a>
+<a aria-label="Download Product Catalogue PDF" class="catalogue-download-btn" href="assets/bamboo-first-product-catalogue.pdf" rel="noopener noreferrer" target="_blank">
+<span>Product Catalogue</span>
+<svg fill="none" height="18" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8" viewbox="0 0 24 24" width="18">
+<path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+<polyline points="14 2 14 8 20 8"></polyline>
+<line x1="12" x2="12" y1="18" y2="12"></line>
+<line x1="9" x2="12" y1="15" y2="18"></line>
+<line x1="15" x2="12" y1="15" y2="18"></line>
+</svg>
+</a>
+<button aria-label="Toggle navigation menu" class="menu-toggle" id="menuToggle">
+<svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-width="2" viewbox="0 0 24 24"><path d="M3 6h18M3 12h18M3 18h18"></path></svg>
+</button>
+</div>
+</div>
 </header>
 
-<!-- PAGE HERO -->
-<div class="page-hero" style="background-image:url('https://static.wixstatic.com/media/nsplsh_a38a5295a801475ebdb50cdb8c9de82d~mv2.jpg');">
-  <h1>Eco-Tourism by VBUPCL</h1>
-</div>
+<!-- SECTION 1: HERO BANNER -->
+<section class="eco-hero-section">
+  <div class="eco-hero-overlay"></div>
+  <div class="eco-hero-content">
+    <h1 class="eco-hero-title">ECO-TOURISM<br>BY VBUPCL</h1>
+  </div>
+</section>
 
-<!-- WHO WE ARE & WHAT WE DO -->
-<section class="section">
-  <div class="wrap">
-    <div class="split-edge" style="background:transparent; gap:60px; grid-template-columns: 1fr 1fr;">
-      <div style="background:#fff; border:1px solid var(--line-dark); padding:44px 40px;">
-        <div class="eyebrow" style="color:var(--olive);">Our Identity</div>
-        <h3 style="color:var(--olive); font-size:1.8rem; margin-bottom:.6em;">Who we are?</h3>
-        <p style="color:var(--ink-soft); font-size:0.98rem; line-height:1.7;">Welcome to the world of sustainable tourism presented by &ldquo;Vikramgad Bamboo Udyog Producer Company Limited&rdquo; (VBUPCL). VBUPCL is a Producer Company supported by NABARD for bamboo craft artisans of Vikramgad block in Palghar district.</p>
-        <p style="color:var(--ink-soft); font-size:0.98rem; line-height:1.7;">It is an extension of the social initiative &ldquo;Project Green Gold&rdquo; led by Keshav Srushti since 2019 for skilling &amp; entrepreneurship development of tribal women. Employment, Empowerment &amp; Environment has been the core of the project. Hundreds of tribal lives have been transformed since then &amp; Bamboo Ecotourism has been an essential part of this successful journey.</p>
+<!-- SECTION 2: 3-COLUMN INFO GRID -->
+<section class="eco-three-cols-section">
+  <div class="eco-three-cols-container">
+    <div class="eco-col">
+      <h2 class="eco-col-title">Who we are?</h2>
+      <div class="eco-col-text">
+        <p>Welcome to the world of sustainable tourism presented by “Vikramgad Bamboo Udyog Producer Company Limited”. VBUPCL is a Producer Company supported by NABARD for bamboo craft artisans of Vikramgad block in Palghar district. It is an extension of social initiative “Project Green Gold” led by Keshav Srushti since 2019 for skilling &amp; entrepreneurship development of tribal women. Employment, Empowerment &amp; Environment has been the core of the project. Hundreds of tribal lives have been transformed since then &amp; Bamboo Ecotourism has been the essential part of the successful journey.</p>
       </div>
-      
-      <div style="background:#fff; border:1px solid var(--line-dark); padding:44px 40px;">
-        <div class="eyebrow" style="color:var(--olive);">Our Mission</div>
-        <h3 style="color:var(--olive); font-size:1.8rem; margin-bottom:.6em;">What we do?</h3>
-        <p style="color:var(--ink-soft); font-size:0.98rem; line-height:1.7;">We aim to create sustainable entrepreneurship opportunities for tribal communities through bamboo, with a special focus on empowering women, all while prioritising the protection of the natural environment.</p>
-        <p style="color:var(--ink-soft); font-size:0.98rem; line-height:1.7;">We have built a bridge to connect urban people with rural ways of sustainable living that strive to preserve nature, culture, art, values, and traditions of Bharat.</p>
+    </div>
+    <div class="eco-col">
+      <h2 class="eco-col-title">What we do?</h2>
+      <div class="eco-col-text">
+        <p>We aim to create sustainable entrepreneurship opportunities for tribal communities through bamboo, with a special focus on empowering women, all while prioritising the protection of the environment. We have built a bridge to connect urban people with rural way of sustainable living that strives to preserve nature, culture, art, values, and tradition of India.</p>
+      </div>
+    </div>
+    <div class="eco-col">
+      <h2 class="eco-col-title">What you get?</h2>
+      <div class="eco-col-text">
+        <p>Immerse yourself in a range of activities that connect you with the heart of village life. Witness various organic farm produce as per the season, enjoy the lush green nature during monsoons, and listen to captivating stories narrated by water bodies. Get hands-on experience in making bamboo crafts, Warli art, and much more. Live a day without gadgets and embrace a more human experience. Bring your family, cheerfulness over materialism.</p>
       </div>
     </div>
   </div>
 </section>
 
-<!-- TWO PHOTO ROW -->
-<div class="photo-row two">
-  <div><img src="https://static.wixstatic.com/media/c61a37_e1b6f05a36fb45d3a724230409febded~mv2.jpeg" alt="Scenic pond at the eco-tourism village site in Vikramgad"></div>
-  <div><img src="https://static.wixstatic.com/media/c61a37_0ba36b7fc331431ab745ac3f26c8629a~mv2.jpeg" alt="Visitors experiencing tribal welcome and village tour"></div>
-</div>
-
-<!-- WHAT YOU GET HIGHLIGHT -->
-<section class="section" style="background:var(--sage-pale2);">
-  <div class="wrap" style="max-width:860px; margin:0 auto; text-align:center;">
-    <div class="eyebrow" style="color:var(--olive-darker);">Experience Authenticity</div>
-    <h2 style="color:var(--olive-darker); font-size:clamp(2rem, 3.8vw, 2.8rem); margin-bottom:.5em;">What You Get?</h2>
-    <p style="color:var(--ink); font-size:1.05rem; line-height:1.75;">Immerse yourself in a range of activities that connect you with the heart of village life. Witness various organic farm produce as per the season, enjoy the lush green nature during monsoons, and listen to captivating stories narrated by pristine water bodies.</p>
-    <p style="color:var(--ink); font-size:1.05rem; line-height:1.75;">Get hands-on experience in making bamboo crafts, authentic Warli art, and much more. Live a day without gadgets and embrace a more human experience. Bring your family, and choose cheerfulness over materialism.</p>
-  </div>
-</section>
-
-<!-- DAY ITINERARY BREAKDOWN -->
-<section class="section">
-  <div class="wrap">
-    <div class="center-head">
-      <h2>Experience Eco Life First Hand</h2>
-      <p>A full-day immersive itinerary curated to rejuvenate your soul and support tribal artisans.</p>
-    </div>
-
-    <div style="display:grid; grid-template-columns:repeat(auto-fit, minmax(280px, 1fr)); gap:24px; margin-top:2rem;">
-      <div style="background:#fff; border:1px solid var(--line-dark); padding:30px; border-top:4px solid var(--olive);">
-        <h4 style="font-size:1.2rem; color:var(--olive); margin-bottom:.4em;">1. Traditional Welcome</h4>
-        <p style="color:var(--ink-soft); font-size:.92rem; margin:0;">Warm welcome amid vibrant rangolis, tribal tarpa dance, chiming lezims, and a refreshing cup of local herbal black tea.</p>
-      </div>
-
-      <div style="background:#fff; border:1px solid var(--line-dark); padding:30px; border-top:4px solid var(--olive);">
-        <h4 style="font-size:1.2rem; color:var(--olive); margin-bottom:.4em;">2. Bamboo Craft Workshop</h4>
-        <p style="color:var(--ink-soft); font-size:.92rem; margin:0;">Hands-on guided workshop where master tribal artisans teach you how to cut, shape, and weave bamboo into beautiful articles.</p>
-      </div>
-
-      <div style="background:#fff; border:1px solid var(--line-dark); padding:30px; border-top:4px solid var(--olive);">
-        <h4 style="font-size:1.2rem; color:var(--olive); margin-bottom:.4em;">3. Organic Village Lunch</h4>
-        <p style="color:var(--ink-soft); font-size:.92rem; margin:0;">Savour your tastebuds with authentic rustic lunch cooked on earthen stoves using fresh seasonal organic farm produce.</p>
-      </div>
-
-      <div style="background:#fff; border:1px solid var(--line-dark); padding:30px; border-top:4px solid var(--olive);">
-        <h4 style="font-size:1.2rem; color:var(--olive); margin-bottom:.4em;">4. Guided Nature &amp; Farm Walk</h4>
-        <p style="color:var(--ink-soft); font-size:.92rem; margin:0;">Explore local bamboo plantations, river streams, freshwater ponds, biodiversity corridors, and heritage village landmarks.</p>
-      </div>
-
-      <div style="background:#fff; border:1px solid var(--line-dark); padding:30px; border-top:4px solid var(--olive);">
-        <h4 style="font-size:1.2rem; color:var(--olive); margin-bottom:.4em;">5. Warli Art Workshop</h4>
-        <p style="color:var(--ink-soft); font-size:.92rem; margin:0;">Learn the geometric sacred folklore of authentic Warli painting directly from indigenous tribal Warli artists.</p>
-      </div>
-
-      <div style="background:#fff; border:1px solid var(--line-dark); padding:30px; border-top:4px solid var(--olive);">
-        <h4 style="font-size:1.2rem; color:var(--olive); margin-bottom:.4em;">6. Folk Dance &amp; Souvenirs</h4>
-        <p style="color:var(--ink-soft); font-size:.92rem; margin:0;">Join the rhythm in the joyous Gauri nritya folk dance and shop affordable handcrafted bamboo souvenirs directly from artisans.</p>
-      </div>
+<!-- SECTION 3: EXPERIENCE ECO LIFE FIRST HAND -->
+<section class="eco-experience-section">
+  <div class="eco-experience-container">
+    <h2 class="eco-experience-title">Experience eco life first hand</h2>
+    <div class="eco-experience-text">
+      <p>Your visit will be with a traditional welcome amid rangolis featuring the tribal tarpa dance and chiming lezims followed by a cup of refreshing black tea. Discover bamboo handicrafts first hand in a&nbsp; hands on workshop with the master artisan. Savour your tastebuds with early lunch of organic foods. Get going on a guided walk to visit the local farms, river streams, ponds and historical places. Spark your fine arts with an exclusive Warli art workshop. Immerse yourself in the tribal cultural traditions as you join the rhythm for a round of folk dance of Gauri nritya. Explore the bamboo handicrafts stall to shop for affordable sustainable products for your lifestyle or home decor or celebrations. End your day with a candid one on one chat with the villagers as you take home memories of a lifetime.</p>
     </div>
   </div>
 </section>
 
-<!-- ENQUIRY FORM -->
-<section class="section" style="background:var(--olive); color:var(--cream);">
-  <div class="wrap" style="max-width:680px;">
-    <div class="center-head">
-      <div class="eyebrow eyebrow-on-olive">Plan Your Trip</div>
-      <h2 style="color:var(--cream);">Eco-Tourism Enquiry &amp; Booking</h2>
-      <p style="color:var(--cream-soft);">Fill in the details below to register your family, school, college, or corporate group visit.</p>
+<!-- SECTION 4: VIDEO PLAYER -->
+<section class="eco-video-section">
+  <div class="eco-video-container">
+    <div class="eco-video-wrapper">
+      <iframe 
+        src="https://www.youtube.com/embed/RcZRcJaTqRk?autoplay=0&amp;mute=0&amp;controls=1&amp;loop=0&amp;playsinline=1" 
+        title="Gram deepotsav 2022 - Keshav Srushti" 
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+        referrerpolicy="strict-origin-when-cross-origin"
+        allowfullscreen>
+      </iframe>
     </div>
+  </div>
+</section>
 
-    <form class="form-grid on-olive">
-      <div class="full">
-        <label>Full Name*</label>
-        <input type="text" required placeholder="Enter your full name">
+<!-- SECTION 5: ECOTOURISM ENQUIRY FORM -->
+<section class="eco-enquiry-section">
+  <div class="eco-enquiry-container">
+    <h2 class="eco-enquiry-title">ECOTOURISM ENQUIRY FORM</h2>
+    <form class="eco-form" onsubmit="event.preventDefault(); alert('Thank you for registering your enquiry! Our team will contact you shortly.'); this.reset();">
+      <div class="eco-form-row full-width">
+        <label class="eco-label" for="ecoFullName">Full name</label>
+        <input class="eco-input" id="ecoFullName" name="fullName" type="text" autocomplete="name" />
       </div>
-      <div>
-        <label>Email Address*</label>
-        <input type="email" required placeholder="name@example.com">
+      <div class="eco-form-row-split">
+        <div class="eco-form-col">
+          <label class="eco-label" for="ecoEmail">Email <span class="eco-required">*</span></label>
+          <input class="eco-input" id="ecoEmail" name="email" type="email" required autocomplete="email" />
+        </div>
+        <div class="eco-form-col">
+          <label class="eco-label" for="ecoPhone">Phone <span class="eco-required">*</span></label>
+          <div class="eco-phone-wrap">
+            <span class="eco-phone-globe" aria-hidden="true">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+                <circle cx="12" cy="12" r="10"></circle>
+                <line x1="2" y1="12" x2="22" y2="12"></line>
+                <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1 4-10z"></path>
+              </svg>
+              <svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="margin-left:2px;">
+                <polyline points="6 9 12 15 18 9"></polyline>
+              </svg>
+            </span>
+            <input class="eco-input eco-input-phone" id="ecoPhone" name="phone" type="tel" required autocomplete="tel" />
+          </div>
+        </div>
       </div>
-      <div>
-        <label>Phone Number*</label>
-        <input type="tel" required placeholder="+91 98765 43210">
+      <div class="eco-form-row-split">
+        <div class="eco-form-col">
+          <label class="eco-label" for="ecoLocation">Location <span class="eco-required">*</span></label>
+          <input class="eco-input" id="ecoLocation" name="location" type="text" required />
+        </div>
+        <div class="eco-form-col">
+          <label class="eco-label" for="ecoDate">Visting Date (optional)</label>
+          <div class="eco-date-wrap">
+            <span class="eco-date-calendar-icon" aria-hidden="true">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+                <rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect>
+                <line x1="16" y1="2" x2="16" y2="6"></line>
+                <line x1="8" y1="2" x2="8" y2="6"></line>
+                <line x1="3" y1="10" x2="21" y2="10"></line>
+              </svg>
+            </span>
+            <input class="eco-input eco-input-date" id="ecoDate" name="visitingDate" type="text" onfocus="(this.type='date')" onblur="if(!this.value)this.type='text'" />
+          </div>
+        </div>
       </div>
-      <div>
-        <label>Your City / Location*</label>
-        <input type="text" required placeholder="e.g. Mumbai, Thane, Pune">
+      <div class="eco-form-row-split">
+        <div class="eco-form-col">
+          <label class="eco-label" for="ecoVisitors">How many visitors will be there?</label>
+          <div class="eco-select-wrap">
+            <select class="eco-input eco-select" id="ecoVisitors" name="visitors">
+              <option value="" disabled selected hidden></option>
+              <option value="1-5">1-5</option>
+              <option value="1-10">1-10</option>
+              <option value="1-20">1-20</option>
+              <option value="1-30">1-30</option>
+            </select>
+          </div>
+        </div>
+        <div class="eco-form-col">
+          <label class="eco-label" for="ecoCompany">Company name</label>
+          <input class="eco-input" id="ecoCompany" name="companyName" type="text" autocomplete="organization" />
+        </div>
       </div>
-      <div>
-        <label>Tentative Visiting Date</label>
-        <input type="date">
+      <div class="eco-form-row full-width">
+        <label class="eco-label" for="ecoMessage">Message</label>
+        <textarea class="eco-input eco-textarea" id="ecoMessage" name="message" rows="3"></textarea>
       </div>
-      <div>
-        <label>Number of Visitors</label>
-        <input type="number" min="1" placeholder="e.g. 4">
-      </div>
-      <div>
-        <label>Organization / Group Name (Optional)</label>
-        <input type="text" placeholder="e.g. ABC School, Family">
-      </div>
-      <div class="full">
-        <label>Special Requests / Message</label>
-        <textarea placeholder="Tell us about any preferences, dietary requirements, or specific workshop interests..."></textarea>
-      </div>
-      <div class="full" style="text-align:center; margin-top:10px;">
-        <button type="submit" class="btn btn-outline-cream btn-block">Submit Booking Request</button>
+      <div class="eco-form-submit-row">
+        <button class="eco-btn-register" type="submit">Register</button>
       </div>
     </form>
   </div>
@@ -213,48 +230,51 @@
 
 <!-- FOOTER -->
 <footer class="site-footer">
-  <div class="footer-top">
-    <div>
-      <img src="https://static.wixstatic.com/media/c61a37_e3a74c17422047bfadd2b833b3b80562~mv2.jpg" alt="Bamboo First seal">
-      <p style="margin-top:14px; font-size:0.88rem; color:var(--cream-soft);">Vikramgad Bamboo Udyog Producer Company Limited. Supported by NABARD &amp; Keshav Srushti.</p>
-    </div>
-    
-    <div>
-      <h5>Helpful Links</h5>
-      <ul>
-        <li><a href="product-catalogue.html">Product Catalogue</a></li>
-        <li><a href="ecotourism.html">Eco-tourism</a></li>
-        <li><a href="media.html">Media</a></li>
-        <li><a href="blog.html">Blogs</a></li>
-        <li><a href="events.html">Events</a></li>
-      </ul>
-    </div>
-    
-    <div>
-      <h5>Company</h5>
-      <ul>
-        <li><a href="our-story.html">Our Story</a></li>
-        <li><a href="our-mentors.html">Our Mentors</a></li>
-        <li><a href="contact-us.html">Contact Us</a></li>
-      </ul>
-    </div>
-    
-    <div>
-      <h5>Contact</h5>
-      <address>
-        <strong>Registered Office:</strong><br>
-        Shop no. 1, 1st Floor, Arihant Heights, Above Janki Sarees, Vikramgad-Jawhar Rd, Vikramgad, Dist. Palghar, Maharashtra 401605 &ndash; INDIA<br><br>
-        <strong>Phone:</strong> +91 9152848332 / +91 7021490824<br>
-        <strong>Email:</strong> bamboofirstwebsite@gmail.com
-      </address>
-    </div>
-  </div>
-  
-  <div class="footer-bottom">
-    &copy; 2026 by Bamboo First &bull; Vikramgad Bamboo Udyog Producer Company Ltd. All rights reserved.
-  </div>
+<div class="footer-wrap">
+<div class="footer-top-rule"></div>
+<div class="footer-cols">
+<!-- Col 1: Logo -->
+<div class="footer-col footer-col-logo">
+<a aria-label="Bamboo First Home" class="footer-logo-link" href="index.html">
+<img alt="Bamboo First Beige Logo" height="110" src="https://static.wixstatic.com/media/c61a37_f0156aeabc774009b6f872ba276dd058~mv2.png/v1/fill/w_88,h_120,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/bamboo%20first%20beige%20logo_4x.png" width="80"/>
+</a>
+</div>
+<!-- Col 2: Helpful Links -->
+<div class="footer-col">
+<h4 class="footer-col-title">Helpful Links</h4>
+<ul class="footer-links">
+<li><a href="product-catalogue.html">Product Catalogue</a></li>
+<li><a href="ecotourism.html">Eco-tourism</a></li>
+<li><a href="media.html">Media</a></li>
+<li><a href="blog.html">Blogs</a></li>
+</ul>
+</div>
+<!-- Col 3: Company -->
+<div class="footer-col">
+<h4 class="footer-col-title">Company</h4>
+<ul class="footer-links">
+<li><a href="our-story.html">Our Story</a></li>
+<li><a href="contact-us.html">Contact Us</a></li>
+</ul>
+</div>
+<!-- Col 4: Contact -->
+<div class="footer-col footer-col-contact">
+<h4 class="footer-col-title">Contact</h4>
+<div class="footer-contact-text">
+          Shop no. 1, First Floor, Arihant<br/>
+          Heights, Above Janki Sarees,<br/>
+          Vikramgad-Jawhar Rd,<br/>
+          Vikramgad District Palghar,<br/>
+          Maharashtra, 401605 – INDIA
+        </div>
+</div>
+</div>
+<div class="footer-bot-rule"></div>
+<div class="footer-bottom">
+      © 2025 by Bamboo First. Powered and secured by <a href="https://www.wix.com" rel="noopener noreferrer" target="_blank">Wix</a>
+</div>
+</div>
 </footer>
-
 <script src="assets/site.js"></script>
 </body>
 </html>

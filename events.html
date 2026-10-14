@@ -1,162 +1,173 @@
 <!DOCTYPE html>
+
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
 <title>Events &amp; Gatherings | Bamboo First</title>
-<meta name="description" content="Upcoming events, bamboo craft workshops, and exhibitions from Bamboo First and the Vikramgad Bamboo Udyog Producer Company.">
-<link rel="icon" type="image/jpeg" href="https://static.wixstatic.com/media/c61a37_e3a74c17422047bfadd2b833b3b80562~mv2.jpg">
-<link rel="stylesheet" href="assets/site.css">
+<meta content="Upcoming events, bamboo craft workshops, and exhibitions from Bamboo First and the Vikramgad Bamboo Udyog Producer Company." name="description"/>
+<link href="https://static.wixstatic.com/media/c61a37_e3a74c17422047bfadd2b833b3b80562~mv2.jpg" rel="icon" type="image/jpeg"/>
+<link href="assets/site.css" rel="stylesheet"/>
 </head>
 <body>
-
 <!-- AUTHENTIC SITE HEADER -->
 <header class="site-header">
-  <div class="header-container">
-    <!-- Left Column: Logo -->
-    <div class="header-col-left">
-      <a href="index.html" class="site-logo" aria-label="Bamboo First Home">
-        <img src="https://static.wixstatic.com/media/c61a37_f0156aeabc774009b6f872ba276dd058~mv2.png/v1/fill/w_88,h_120,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/bamboo%20first%20beige%20logo_4x.png" alt="Bamboo First Beige Logo" width="88" height="120">
-      </a>
-    </div>
-
-    <!-- Center Column: Search (Top) + Nav Links (Bottom) -->
-    <div class="header-col-center">
-      <div class="search-bar-wrap">
-        <div class="search-box">
-          <span class="search-icon-left" aria-hidden="true">
-            <svg width="15" height="15" viewBox="5 5 14 14" fill="currentColor"><path d="m15.683 14.6 3.265 3.265a.2.2 0 0 1 0 .282l-.8.801a.2.2 0 0 1-.283 0l-3.266-3.265a5.961 5.961 0 1 1 1.084-1.084zm-4.727 1.233a4.877 4.877 0 1 0 0-9.754 4.877 4.877 0 0 0 0 9.754"></path></svg>
-          </span>
-          <input type="search" placeholder="Search" aria-label="Search" autocomplete="off">
-          <button type="submit" aria-label="Search">
-            <svg width="15" height="15" viewBox="5 5 14 14" fill="currentColor"><path d="m15.683 14.6 3.265 3.265a.2.2 0 0 1 0 .282l-.8.801a.2.2 0 0 1-.283 0l-3.266-3.265a5.961 5.961 0 1 1 1.084-1.084zm-4.727 1.233a4.877 4.877 0 1 0 0-9.754 4.877 4.877 0 0 0 0 9.754"></path></svg>
-          </button>
-        </div>
-      </div>
-
-      <nav class="main-nav" id="mainNav">
-        <a href="index.html" class="nav-link">Home</a>
-        <a href="product-catalogue.html" class="nav-link">Product Catalogue</a>
-        <a href="ecotourism.html" class="nav-link">Ecotourism</a>
-        <div class="nav-dropdown">
-          <span class="nav-dropdown-trigger nav-link">
-            About Us
-            <svg width="10" height="10" viewBox="0 0 16 11" fill="currentColor"><path d="M8 10.5L16 1.86193L14.7387 0.5L8 7.77613L1.26133 0.499999L-5.95321e-08 1.86193L8 10.5Z"></path></svg>
-          </span>
-          <div class="nav-dropdown-menu">
-            <a href="our-story.html">Our Story</a>
-            <a href="our-mentors.html">Our Mentors</a>
+<div class="header-container">
+<!-- Left Column: Logo -->
+<div class="header-col-left">
+<a aria-label="Bamboo First Home" class="site-logo" href="index.html">
+<img alt="Bamboo First Beige Logo" height="110" src="https://static.wixstatic.com/media/c61a37_f0156aeabc774009b6f872ba276dd058~mv2.png/v1/fill/w_88,h_120,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/bamboo%20first%20beige%20logo_4x.png" width="80"/>
+</a>
+</div>
+<!-- Center Column: Search (Top) + Nav Links (Bottom) -->
+<div class="header-col-center">
+<form action="product-catalogue.html" class="search-bar-wrap" method="get" onsubmit="if(!this.q.value.trim()){event.preventDefault();}">
+<div class="search-box">
+<input aria-label="Search" autocomplete="off" name="q" placeholder="Search" type="search"/>
+<button aria-label="Search" type="submit">
+<svg fill="currentColor" height="16" viewbox="0 0 24 24" width="16">
+<path d="M15.5 14h-.79l-.28-.27A6.471 6.471 0 0 0 16 9.5 6.5 6.5 0 1 0 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"></path>
+</svg>
+</button>
+</div>
+</form>
+<nav class="main-nav" id="mainNav">
+          <a class="nav-link" href="index.html">Home</a>
+          <a class="nav-link" href="product-catalogue.html">Product Catalogue</a>
+          <a class="nav-link" href="ecotourism.html">Ecotourism</a>
+          <div class="nav-dropdown">
+            <a class="nav-link nav-dropdown-trigger" href="our-story.html" role="button" aria-haspopup="true" aria-expanded="false">
+              <span>About Us</span>
+              <svg class="dropdown-caret" viewBox="0 0 10 6" width="10" height="6" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M1 1l4 4 4-4"/>
+              </svg>
+            </a>
+            <div class="nav-dropdown-menu">
+              <a href="our-story.html" class="">Our Story</a>
+              <a href="our-mentors.html" class="">Our Mentors</a>
+            </div>
           </div>
-        </div>
-        <a href="media.html" class="nav-link">Media</a>
-        <a href="contact-us.html" class="nav-link">Contact Us</a>
-        <a href="events.html" class="nav-link active">Events</a>
-      </nav>
-    </div>
-
-    <!-- Right Column: Product Catalogue Button + Mobile Menu -->
-    <div class="header-col-right">
-      <a href="cart.html" class="header-cart-btn" aria-label="Shopping Cart">
-        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-          <circle cx="9" cy="21" r="1"></circle>
-          <circle cx="20" cy="21" r="1"></circle>
-          <path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path>
-        </svg>
-        <span class="cart-count-badge" style="display:none;">0</span>
-      </a>
-      <a href="assets/bamboo-first-product-catalogue.pdf" target="_blank" rel="noopener noreferrer" class="catalogue-download-btn" aria-label="Download Product Catalogue PDF">
-        <span>Product Catalogue</span>
-        <svg viewBox="0 0 256 256" height="20" width="20" xmlns="http://www.w3.org/2000/svg">
-          <path d="m212.24 83.76-56-56A6 6 0 0 0 152 26H56a14 14 0 0 0-14 14v176a14 14 0 0 0 14 14h144a14 14 0 0 0 14-14V88a6 6 0 0 0-1.76-4.24M158 46.48 193.52 82H158ZM200 218H56a2 2 0 0 1-2-2V40a2 2 0 0 1 2-2h90v50a6 6 0 0 0 6 6h50v122a2 2 0 0 1-2 2m-43.76-62.24a6 6 0 0 1 0 8.48l-24 24a6 6 0 0 1-8.48 0l-24-24a6 6 0 0 1 8.48-8.48L122 169.51V120a6 6 0 0 1 12 0v49.51l13.76-13.75a6 6 0 0 1 8.48 0"></path>
-        </svg>
-      </a>
-
-      <button class="menu-toggle" id="menuToggle" aria-label="Toggle navigation menu">
-        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M3 6h18M3 12h18M3 18h18"/></svg>
-      </button>
-    </div>
-  </div>
+          <a class="nav-link" href="media.html">Media</a>
+          <a class="nav-link" href="contact-us.html">Contact Us</a>
+          <div class="nav-dropdown">
+            <a class="nav-link nav-dropdown-trigger active" href="events.html" role="button" aria-haspopup="true" aria-expanded="false">
+              <span>Events</span>
+              <svg class="dropdown-caret" viewBox="0 0 10 6" width="10" height="6" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M1 1l4 4 4-4"/>
+              </svg>
+            </a>
+            <div class="nav-dropdown-menu">
+              <a href="mahila-swavalamban-kendre.html" class="">Mahila Swavalamban Kendre</a>
+              <a href="bamboo-nursery.html" class="">Bamboo Nursery</a>
+              <a href="events.html#3rd-agm">Bamboo First 3rd AGM</a>
+              <a href="events.html#rakshabandhan">Rakshabandhan at INS Angre</a>
+            </div>
+          </div>
+        </nav>
+</div>
+<!-- Right Column: Product Catalogue Button + Mobile Menu -->
+<div class="header-col-right">
+<a aria-label="Shopping Cart" class="header-cart-btn" href="cart.html">
+<svg fill="none" height="18" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24" width="18">
+<circle cx="9" cy="21" r="1"></circle>
+<circle cx="20" cy="21" r="1"></circle>
+<path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path>
+</svg>
+<span class="cart-count-badge" style="display:none;">0</span>
+</a>
+<a aria-label="Download Product Catalogue PDF" class="catalogue-download-btn" href="assets/bamboo-first-product-catalogue.pdf" rel="noopener noreferrer" target="_blank">
+<span>Product Catalogue</span>
+<svg fill="none" height="18" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8" viewbox="0 0 24 24" width="18">
+<path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+<polyline points="14 2 14 8 20 8"></polyline>
+<line x1="12" x2="12" y1="18" y2="12"></line>
+<line x1="9" x2="12" y1="15" y2="18"></line>
+<line x1="15" x2="12" y1="15" y2="18"></line>
+</svg>
+</a>
+<button aria-label="Toggle navigation menu" class="menu-toggle" id="menuToggle">
+<svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-width="2" viewbox="0 0 24 24"><path d="M3 6h18M3 12h18M3 18h18"></path></svg>
+</button>
+</div>
+</div>
 </header>
-
 <!-- PAGE HERO -->
 <div class="page-hero" style="background-image:url('https://static.wixstatic.com/media/c61a37_0ba36b7fc331431ab745ac3f26c8629a~mv2.jpeg');">
-  <h1>Events &amp; Workshops</h1>
+<h1>Events &amp; Workshops</h1>
 </div>
-
 <!-- EVENTS CONTENT -->
 <section class="section">
-  <div class="wrap" style="max-width:800px; text-align:center;">
-    <div class="center-head">
-      <div class="eyebrow" style="color:var(--olive);">Community Gatherings</div>
-      <h2>Upcoming Experiences</h2>
-    </div>
-
-    <div style="background:#fff; border:1px solid var(--line-dark); padding:50px 30px; margin-bottom:3rem; border-top:4px solid var(--olive);">
-      <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="var(--olive)" stroke-width="1.5" style="margin:0 auto 16px;"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
-      <h3 style="color:var(--olive); margin-bottom:.5em; font-size:1.5rem;">No Public Events Currently Scheduled</h3>
-      <p style="color:var(--ink-soft); font-size:1rem; max-width:540px; margin:0 auto 1.6em; line-height:1.6;">
+<div class="wrap" style="max-width:800px; text-align:center;">
+<div class="center-head">
+<div class="eyebrow" style="color:var(--olive);">Community Gatherings</div>
+<h2>Upcoming Experiences</h2>
+</div>
+<div style="background:#fff; border:1px solid var(--line-dark); padding:50px 30px; margin-bottom:3rem; border-top:4px solid var(--olive);">
+<svg fill="none" height="48" stroke="var(--olive)" stroke-width="1.5" style="margin:0 auto 16px;" viewbox="0 0 24 24" width="48"><rect height="18" rx="2" ry="2" width="18" x="3" y="4"></rect><line x1="16" x2="16" y1="2" y2="6"></line><line x1="8" x2="8" y1="2" y2="6"></line><line x1="3" x2="21" y1="10" y2="10"></line></svg>
+<h3 style="color:var(--olive); margin-bottom:.5em; font-size:1.5rem;">No Public Events Currently Scheduled</h3>
+<p style="color:var(--ink-soft); font-size:1rem; max-width:540px; margin:0 auto 1.6em; line-height:1.6;">
         We organize periodic bamboo handicraft workshops, seasonal farm tours, and artisan pop-ups. Sign up below to receive invitations to upcoming gatherings.
       </p>
-      <a href="ecotourism.html" class="btn btn-solid-olive">Book a Private Group Visit</a>
-    </div>
-
-    <!-- Event Alert Subscription -->
-    <div style="background:var(--sage-pale2); padding:40px 30px;">
-      <h3 style="color:var(--olive-darker); margin-bottom:.4em;">Get Notified of Upcoming Workshops</h3>
-      <p style="color:var(--ink); font-size:0.94rem; margin-bottom:1.4em;">Be the first to know when we announce weekend village tours and urban bamboo crafting sessions.</p>
-      <form class="sub-row" style="display:flex; gap:10px; justify-content:center; flex-wrap:wrap;">
-        <input type="email" placeholder="Enter your email" required style="background:#fff; border:1px solid var(--line-dark); padding:10px 16px; min-width:260px; font-family:var(--font-body);">
-        <button type="submit" class="btn btn-solid-olive">Notify Me</button>
-      </form>
-    </div>
-
-  </div>
+<a class="btn btn-solid-olive" href="ecotourism.html">Book a Private Group Visit</a>
+</div>
+<!-- Event Alert Subscription -->
+<div style="background:var(--sage-pale2); padding:40px 30px;">
+<h3 style="color:var(--olive-darker); margin-bottom:.4em;">Get Notified of Upcoming Workshops</h3>
+<p style="color:var(--ink); font-size:0.94rem; margin-bottom:1.4em;">Be the first to know when we announce weekend village tours and urban bamboo crafting sessions.</p>
+<form class="sub-row" style="display:flex; gap:10px; justify-content:center; flex-wrap:wrap;">
+<input placeholder="Enter your email" required="" style="background:#fff; border:1px solid var(--line-dark); padding:10px 16px; min-width:260px; font-family:var(--font-body);" type="email"/>
+<button class="btn btn-solid-olive" type="submit">Notify Me</button>
+</form>
+</div>
+</div>
 </section>
-
 <!-- FOOTER -->
 <footer class="site-footer">
-  <div class="footer-top">
-    <div>
-      <img src="https://static.wixstatic.com/media/c61a37_e3a74c17422047bfadd2b833b3b80562~mv2.jpg" alt="Bamboo First seal">
-      <p style="margin-top:14px; font-size:0.88rem; color:var(--cream-soft);">Vikramgad Bamboo Udyog Producer Company Limited. Supported by NABARD &amp; Keshav Srushti.</p>
-    </div>
-    
-    <div>
-      <h5>Helpful Links</h5>
-      <ul>
-        <li><a href="product-catalogue.html">Product Catalogue</a></li>
-        <li><a href="ecotourism.html">Eco-tourism</a></li>
-        <li><a href="media.html">Media</a></li>
-        <li><a href="blog.html">Blogs</a></li>
-        <li><a href="events.html">Events</a></li>
-      </ul>
-    </div>
-    
-    <div>
-      <h5>Company</h5>
-      <ul>
-        <li><a href="our-story.html">Our Story</a></li>
-        <li><a href="our-mentors.html">Our Mentors</a></li>
-        <li><a href="contact-us.html">Contact Us</a></li>
-      </ul>
-    </div>
-    
-    <div>
-      <h5>Contact</h5>
-      <address>
-        <strong>Registered Office:</strong><br>
-        Shop no. 1, 1st Floor, Arihant Heights, Above Janki Sarees, Vikramgad-Jawhar Rd, Vikramgad, Dist. Palghar, Maharashtra 401605 &ndash; INDIA<br><br>
-        <strong>Phone:</strong> +91 9152848332 / +91 7021490824<br>
-        <strong>Email:</strong> bamboofirstwebsite@gmail.com
-      </address>
-    </div>
-  </div>
-  
-  <div class="footer-bottom">
-    &copy; 2026 by Bamboo First &bull; Vikramgad Bamboo Udyog Producer Company Ltd. All rights reserved.
-  </div>
+<div class="footer-wrap">
+<div class="footer-top-rule"></div>
+<div class="footer-cols">
+<!-- Col 1: Logo -->
+<div class="footer-col footer-col-logo">
+<a aria-label="Bamboo First Home" class="footer-logo-link" href="index.html">
+<img alt="Bamboo First Beige Logo" height="110" src="https://static.wixstatic.com/media/c61a37_f0156aeabc774009b6f872ba276dd058~mv2.png/v1/fill/w_88,h_120,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/bamboo%20first%20beige%20logo_4x.png" width="80"/>
+</a>
+</div>
+<!-- Col 2: Helpful Links -->
+<div class="footer-col">
+<h4 class="footer-col-title">Helpful Links</h4>
+<ul class="footer-links">
+<li><a href="product-catalogue.html">Product Catalogue</a></li>
+<li><a href="ecotourism.html">Eco-tourism</a></li>
+<li><a href="media.html">Media</a></li>
+<li><a href="blog.html">Blogs</a></li>
+</ul>
+</div>
+<!-- Col 3: Company -->
+<div class="footer-col">
+<h4 class="footer-col-title">Company</h4>
+<ul class="footer-links">
+<li><a href="our-story.html">Our Story</a></li>
+<li><a href="contact-us.html">Contact Us</a></li>
+</ul>
+</div>
+<!-- Col 4: Contact -->
+<div class="footer-col footer-col-contact">
+<h4 class="footer-col-title">Contact</h4>
+<div class="footer-contact-text">
+          Shop no. 1, First Floor, Arihant<br/>
+          Heights, Above Janki Sarees,<br/>
+          Vikramgad-Jawhar Rd,<br/>
+          Vikramgad District Palghar,<br/>
+          Maharashtra, 401605 – INDIA
+        </div>
+</div>
+</div>
+<div class="footer-bot-rule"></div>
+<div class="footer-bottom">
+      © 2025 by Bamboo First. Powered and secured by <a href="https://www.wix.com" rel="noopener noreferrer" target="_blank">Wix</a>
+</div>
+</div>
 </footer>
-
 <script src="assets/site.js"></script>
 </body>
 </html>
