@@ -95,8 +95,9 @@ button {
 }
 
 /* ==========================================================================
-   ELEMENTOR FULL-BLEED & CONTAINER WIDTH NORMALIZATION
+   ELEMENTOR FULL-BLEED & CONTAINER PADDING/MARGIN RESET
    Ensures Header, Footer, and all Full-Width Sections Span 100% Screen Width
+   Eliminates unwanted Elementor default 10px gaps above/below Header and Footer
    ========================================================================== */
 
 .elementor,
@@ -116,11 +117,56 @@ button {
 .elementor-widget-container {
   width: 100% !important;
   max-width: 100% !important;
-  margin-left: 0 !important;
-  margin-right: 0 !important;
-  padding-left: 0 !important;
-  padding-right: 0 !important;
+  margin: 0 !important;
+  padding: 0 !important;
   box-sizing: border-box !important;
+}
+
+/* Eliminate Elementor default 10px column gap padding across all columns and widgets */
+.elementor-column-gap-default > .elementor-column > .elementor-element-populated,
+.elementor-widget-wrap.elementor-element-populated {
+  padding: 0 !important;
+  margin: 0 !important;
+}
+
+/* Ensure Header Section sits completely flush at top (0px top/bottom gap) */
+body .elementor-section:first-child,
+body .elementor-section:first-child > .elementor-container,
+body .elementor-section:first-child .elementor-column,
+body .elementor-section:first-child .elementor-widget-wrap,
+body .elementor-section:first-child .elementor-element-populated,
+body .elementor-section:first-child .elementor-widget,
+body .elementor-section:first-child .elementor-widget-container,
+body .elementor-element-populated:has(.site-header),
+body .elementor-section:has(.site-header) {
+  padding: 0 !important;
+  margin: 0 !important;
+}
+
+/* Ensure Section directly below Header has no top gap */
+body .elementor-section:nth-child(2),
+body .elementor-section:nth-child(2) > .elementor-container,
+body .elementor-section:nth-child(2) .elementor-column,
+body .elementor-section:nth-child(2) .elementor-widget-wrap,
+body .elementor-section:nth-child(2) .elementor-element-populated,
+body .elementor-section:nth-child(2) .elementor-widget,
+body .elementor-section:nth-child(2) .elementor-widget-container {
+  padding-top: 0 !important;
+  margin-top: 0 !important;
+}
+
+/* Ensure Footer Section sits completely flush at bottom (0px top/bottom gap) */
+body .elementor-section:last-child,
+body .elementor-section:last-child > .elementor-container,
+body .elementor-section:last-child .elementor-column,
+body .elementor-section:last-child .elementor-widget-wrap,
+body .elementor-section:last-child .elementor-element-populated,
+body .elementor-section:last-child .elementor-widget,
+body .elementor-section:last-child .elementor-widget-container,
+body .elementor-element-populated:has(.site-footer),
+body .elementor-section:has(.site-footer) {
+  padding: 0 !important;
+  margin: 0 !important;
 }
 
 /* ==========================================================================
