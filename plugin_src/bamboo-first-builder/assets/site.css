@@ -2762,6 +2762,7 @@ button#catalogueNext {
 }
 
 .heritage-origin-tag {
+  display: none !important;
   font-size: 0.76rem;
   font-weight: 600;
   color: #4a6332;
