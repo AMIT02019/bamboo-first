@@ -75,12 +75,38 @@ a {
   transition: all 0.25s ease;
 }
 
-button {
+/* Global Button Reset — Permanently overrides Hello Elementor pink/berry highlight (rgb(204, 51, 102)) */
+html body button,
+html body [type="button"],
+html body [type="reset"],
+html body [type="submit"] {
   font-family: inherit;
   cursor: pointer;
   border: none;
-  background: none;
+  background: transparent;
+  outline: none !important;
+  -webkit-tap-highlight-color: transparent !important;
+  transition: all 0.25s ease;
 }
+
+html body button:hover,
+html body button:focus,
+html body button:active,
+html body button:focus-visible,
+html body [type="button"]:hover,
+html body [type="button"]:focus,
+html body [type="button"]:active,
+html body [type="button"]:focus-visible,
+html body [type="submit"]:hover,
+html body [type="submit"]:focus,
+html body [type="submit"]:active,
+html body [type="submit"]:focus-visible {
+  border-color: transparent;
+  outline: none !important;
+  -webkit-tap-highlight-color: transparent !important;
+  box-shadow: none;
+}
+
 
 .sr-only {
   position: absolute !important;
@@ -6771,12 +6797,27 @@ body .elementor-column:has(.site-footer) {
   display: block;
 }
 
-.mentor-slider-arrow {
+.mentor-slider-arrow,
+.mentor-slider-arrow:hover,
+.mentor-slider-arrow:focus,
+.mentor-slider-arrow:active,
+.mentor-slider-arrow:focus-visible,
+button#mentorPrevBtn,
+button#mentorNextBtn,
+button#mentorPrevBtn:hover,
+button#mentorNextBtn:hover,
+button#mentorPrevBtn:focus,
+button#mentorNextBtn:focus,
+button#mentorPrevBtn:active,
+button#mentorNextBtn:active {
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
-  background: transparent;
-  border: none;
+  background: transparent !important;
+  background-color: transparent !important;
+  border: none !important;
+  outline: none !important;
+  box-shadow: none !important;
   cursor: pointer;
   padding: 0;
   width: 24px;
@@ -6785,43 +6826,103 @@ body .elementor-column:has(.site-footer) {
   align-items: center;
   justify-content: center;
   z-index: 10;
-  color: #333333;
+  color: #526A3D !important;
   opacity: 0.65;
-  transition: opacity 0.2s, transform 0.2s;
+  transition: opacity 0.2s ease, transform 0.2s ease, color 0.2s ease;
+  -webkit-tap-highlight-color: transparent !important;
 }
 
-.mentor-slider-arrow:hover {
-  opacity: 1;
-  transform: translateY(-50%) scale(1.1);
+.mentor-slider-arrow:hover,
+.mentor-slider-arrow:focus,
+button#mentorPrevBtn:hover,
+button#mentorNextBtn:hover,
+button#mentorPrevBtn:focus,
+button#mentorNextBtn:focus {
+  opacity: 1 !important;
+  transform: translateY(-50%) scale(1.1) !important;
+  background: transparent !important;
+  background-color: transparent !important;
 }
 
-.mentor-slider-arrow.prev {
+.mentor-slider-arrow.prev,
+button#mentorPrevBtn {
   left: -40px;
 }
 
-.mentor-slider-arrow.next {
+.mentor-slider-arrow.next,
+button#mentorNextBtn {
   right: -40px;
 }
 
-.mentor-slider-arrow svg {
+.mentor-slider-arrow svg,
+button#mentorPrevBtn svg,
+button#mentorNextBtn svg {
   width: 20px;
   height: 35px;
-  fill: currentColor;
+  fill: #526A3D !important;
+  color: #526A3D !important;
+  transition: fill 0.2s ease, transform 0.2s ease;
+}
+
+.mentor-slider-arrow:hover svg,
+button#mentorPrevBtn:hover svg,
+button#mentorNextBtn:hover svg {
+  fill: #2B3A1D !important;
+  color: #2B3A1D !important;
 }
 
 /* Responsive adjustments for mentors page */
 @media (max-width: 1320px) {
+  .mentor-slider-arrow.prev,
+  .mentor-slider-arrow.next,
+  button#mentorPrevBtn,
+  button#mentorNextBtn {
+    background: rgba(255, 251, 235, 0.92) !important;
+    background-color: rgba(255, 251, 235, 0.92) !important;
+    border: 1px solid #D9D5C5 !important;
+    border-radius: 4px !important;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.08) !important;
+    width: 32px !important;
+    height: 44px !important;
+    opacity: 0.9 !important;
+  }
   .mentor-slider-arrow.prev {
-    left: 8px;
-    background: rgba(255, 255, 255, 0.85);
-    border-radius: 4px;
-    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    left: 8px !important;
   }
   .mentor-slider-arrow.next {
-    right: 8px;
-    background: rgba(255, 255, 255, 0.85);
-    border-radius: 4px;
-    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    right: 8px !important;
+  }
+  .mentor-slider-arrow.prev:hover,
+  .mentor-slider-arrow.next:hover,
+  .mentor-slider-arrow.prev:focus,
+  .mentor-slider-arrow.next:focus,
+  .mentor-slider-arrow.prev:active,
+  .mentor-slider-arrow.next:active,
+  button#mentorPrevBtn:hover,
+  button#mentorNextBtn:hover,
+  button#mentorPrevBtn:focus,
+  button#mentorNextBtn:focus,
+  button#mentorPrevBtn:active,
+  button#mentorNextBtn:active {
+    background: #526A3D !important;
+    background-color: #526A3D !important;
+    border-color: #526A3D !important;
+    box-shadow: 0 4px 12px rgba(82, 106, 61, 0.25) !important;
+  }
+  .mentor-slider-arrow.prev:hover svg,
+  .mentor-slider-arrow.next:hover svg,
+  .mentor-slider-arrow.prev:focus svg,
+  .mentor-slider-arrow.next:focus svg,
+  .mentor-slider-arrow.prev:active svg,
+  .mentor-slider-arrow.next:active svg,
+  button#mentorPrevBtn:hover svg,
+  button#mentorNextBtn:hover svg,
+  button#mentorPrevBtn:focus svg,
+  button#mentorNextBtn:focus svg,
+  button#mentorPrevBtn:active svg,
+  button#mentorNextBtn:active svg {
+    fill: #FFFBEB !important;
+    color: #FFFBEB !important;
   }
 }
 
@@ -7007,12 +7108,27 @@ body .elementor-column:has(.site-footer) {
   margin: 0 0 20px 0;
 }
 
-.media-slider-arrow {
+.media-slider-arrow,
+.media-slider-arrow:hover,
+.media-slider-arrow:focus,
+.media-slider-arrow:active,
+.media-slider-arrow:focus-visible,
+button#mediaPrevBtn,
+button#mediaNextBtn,
+button#mediaPrevBtn:hover,
+button#mediaNextBtn:hover,
+button#mediaPrevBtn:focus,
+button#mediaNextBtn:focus,
+button#mediaPrevBtn:active,
+button#mediaNextBtn:active {
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
-  background: transparent;
-  border: none;
+  background: transparent !important;
+  background-color: transparent !important;
+  border: none !important;
+  outline: none !important;
+  box-shadow: none !important;
   cursor: pointer;
   padding: 0;
   width: 24px;
@@ -7021,28 +7137,49 @@ body .elementor-column:has(.site-footer) {
   align-items: center;
   justify-content: center;
   z-index: 10;
-  color: #333333;
+  color: #526A3D !important;
   opacity: 0.65;
-  transition: opacity 0.2s, transform 0.2s;
+  transition: opacity 0.2s ease, transform 0.2s ease, color 0.2s ease;
+  -webkit-tap-highlight-color: transparent !important;
 }
 
-.media-slider-arrow:hover {
-  opacity: 1;
-  transform: translateY(-50%) scale(1.1);
+.media-slider-arrow:hover,
+.media-slider-arrow:focus,
+button#mediaPrevBtn:hover,
+button#mediaNextBtn:hover,
+button#mediaPrevBtn:focus,
+button#mediaNextBtn:focus {
+  opacity: 1 !important;
+  transform: translateY(-50%) scale(1.1) !important;
+  background: transparent !important;
+  background-color: transparent !important;
 }
 
-.media-slider-arrow.prev {
+.media-slider-arrow.prev,
+button#mediaPrevBtn {
   left: -55px;
 }
 
-.media-slider-arrow.next {
+.media-slider-arrow.next,
+button#mediaNextBtn {
   right: -55px;
 }
 
-.media-slider-arrow svg {
+.media-slider-arrow svg,
+button#mediaPrevBtn svg,
+button#mediaNextBtn svg {
   width: 22px;
   height: 38px;
-  fill: currentColor;
+  fill: #526A3D !important;
+  color: #526A3D !important;
+  transition: fill 0.2s ease, transform 0.2s ease;
+}
+
+.media-slider-arrow:hover svg,
+button#mediaPrevBtn:hover svg,
+button#mediaNextBtn:hover svg {
+  fill: #2B3A1D !important;
+  color: #2B3A1D !important;
 }
 
 /* Mann Ki Baat Section */
@@ -7122,17 +7259,56 @@ body .elementor-column:has(.site-footer) {
 
 /* Responsive adjustments for media page */
 @media (max-width: 1180px) {
+  .media-slider-arrow.prev,
+  .media-slider-arrow.next,
+  button#mediaPrevBtn,
+  button#mediaNextBtn {
+    background: rgba(255, 251, 235, 0.92) !important;
+    background-color: rgba(255, 251, 235, 0.92) !important;
+    border: 1px solid #D9D5C5 !important;
+    border-radius: 4px !important;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.08) !important;
+    width: 32px !important;
+    height: 44px !important;
+    opacity: 0.9 !important;
+  }
   .media-slider-arrow.prev {
-    left: 8px;
-    background: rgba(255, 255, 255, 0.85);
-    border-radius: 4px;
-    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    left: 8px !important;
   }
   .media-slider-arrow.next {
-    right: 8px;
-    background: rgba(255, 255, 255, 0.85);
-    border-radius: 4px;
-    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    right: 8px !important;
+  }
+  .media-slider-arrow.prev:hover,
+  .media-slider-arrow.next:hover,
+  .media-slider-arrow.prev:focus,
+  .media-slider-arrow.next:focus,
+  .media-slider-arrow.prev:active,
+  .media-slider-arrow.next:active,
+  button#mediaPrevBtn:hover,
+  button#mediaNextBtn:hover,
+  button#mediaPrevBtn:focus,
+  button#mediaNextBtn:focus,
+  button#mediaPrevBtn:active,
+  button#mediaNextBtn:active {
+    background: #526A3D !important;
+    background-color: #526A3D !important;
+    border-color: #526A3D !important;
+    box-shadow: 0 4px 12px rgba(82, 106, 61, 0.25) !important;
+  }
+  .media-slider-arrow.prev:hover svg,
+  .media-slider-arrow.next:hover svg,
+  .media-slider-arrow.prev:focus svg,
+  .media-slider-arrow.next:focus svg,
+  .media-slider-arrow.prev:active svg,
+  .media-slider-arrow.next:active svg,
+  button#mediaPrevBtn:hover svg,
+  button#mediaNextBtn:hover svg,
+  button#mediaPrevBtn:focus svg,
+  button#mediaNextBtn:focus svg,
+  button#mediaPrevBtn:active svg,
+  button#mediaNextBtn:active svg {
+    fill: #FFFBEB !important;
+    color: #FFFBEB !important;
   }
 }
 
