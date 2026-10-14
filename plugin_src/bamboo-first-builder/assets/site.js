@@ -9,6 +9,140 @@
   // Complete Product Database (26 Active Products from Official Catalog)
   const PRODUCTS = [
     {
+        "id": "kandil-sahyadri-big",
+        "name": "Sahyadri (Big) Bamboo Kandil",
+        "price": "INR 900/-",
+        "priceNum": 900,
+        "cost": "500",
+        "dimensions": "Large Diamond Frame (Non-Foldable)",
+        "category": "Festive & Kandil",
+        "img": "assets/products/kandil-sahyadri-big.webp?v=diwali_festive_real",
+        "gallery": [
+            "assets/products/kandil-sahyadri-big.webp?v=diwali_festive_real",
+            "assets/products/bamboo-kandil-collection-poster.webp?v=diwali_festive_real"
+        ],
+        "desc": "A grand handwoven bamboo Diwali lantern featuring rich red diamond panels with authentic Warli art, seasoned natural weave sections, cyan accents, and golden fringe tassels. Non-foldable and handmade by tribal women artisans in Vikramgad.",
+        "highlights": [
+            "100% Environment Friendly & Natural Mature Bamboo",
+            "Handmade with Love by Tribal Sisters in Vikramgad, Palghar",
+            "Non-Foldable Grand Festive Entrance Lantern",
+            "Your One Diwali lantern can illuminate two homes this festive season",
+            "An Initiative by Keshav Srushti, Supported by NABARD"
+        ]
+    },
+    {
+        "id": "kandil-anjaneri-big",
+        "name": "Anjaneri (Big) Bamboo Kandil",
+        "price": "INR 900/-",
+        "priceNum": 900,
+        "cost": "500",
+        "dimensions": "Tall Diamond Taper (Foldable)",
+        "category": "Festive & Kandil",
+        "img": "assets/products/kandil-anjaneri-big.webp?v=diwali_festive_real",
+        "gallery": [
+            "assets/products/kandil-anjaneri-big.webp?v=diwali_festive_real",
+            "assets/products/bamboo-kandil-collection-poster.webp?v=diwali_festive_real"
+        ],
+        "desc": "A tall handcrafted bamboo kandil in royal blue, golden yellow lattice weave, and festive magenta accents. Foldable for easy storage and shipping; handcrafted with love by tribal artisans.",
+        "highlights": [
+            "100% Environment Friendly & Natural Bamboo",
+            "Handmade with Love by Tribal Sisters in Vikramgad, Palghar",
+            "Convenient Foldable Design for Easy Storage",
+            "Delicate Woven Lattice with Warm Festive Ambient Glow",
+            "An Initiative by Keshav Srushti, Supported by NABARD"
+        ]
+    },
+    {
+        "id": "kandil-sahyadri-small",
+        "draft": true,
+        "name": "Sahyadri (Small) Bamboo Kandil",
+        "price": "INR 600/-",
+        "priceNum": 600,
+        "cost": "350",
+        "dimensions": "Compact Diamond Frame (Non-Foldable)",
+        "category": "Festive & Kandil",
+        "img": "assets/products/kandil-sahyadri-small.webp?v=diwali_festive_real",
+        "gallery": [
+            "assets/products/kandil-sahyadri-small.webp?v=diwali_festive_real",
+            "assets/products/bamboo-kandil-collection-poster.webp?v=diwali_festive_real"
+        ],
+        "desc": "A compact version of the Sahyadri lantern with vibrant colorful geometric weaves and cheerful golden fringe tassels. Non-foldable accent piece ideal for windows, balconies and indoor festive decor.",
+        "highlights": [
+            "100% Environment Friendly & Natural Bamboo",
+            "Handmade with Love by Tribal Sisters in Vikramgad, Palghar",
+            "Non-Foldable Compact Accent Lantern",
+            "Cheerful Golden Fringe & Vibrant Geometric Weave",
+            "An Initiative by Keshav Srushti, Supported by NABARD"
+        ]
+    },
+    {
+        "id": "kandil-shivneri-big",
+        "name": "Shivneri (Big) Bamboo Kandil",
+        "price": "INR 900/-",
+        "priceNum": 900,
+        "cost": "500",
+        "dimensions": "Sturdy Hexagonal Frame (Non-Foldable)",
+        "category": "Festive & Kandil",
+        "img": "assets/products/kandil-shivneri-big.webp?v=diwali_festive_real",
+        "gallery": [
+            "assets/products/kandil-shivneri-big.webp?v=diwali_festive_real",
+            "assets/products/bamboo-kandil-collection-poster.webp?v=diwali_festive_real"
+        ],
+        "desc": "A bold handcrafted bamboo kandil featuring vibrant magenta panels painted with traditional Warli dancing motifs alongside natural woven bamboo sections. Non-foldable statement piece celebrating indigenous tribal art.",
+        "highlights": [
+            "100% Environment Friendly & Natural Bamboo",
+            "Handmade with Love by Tribal Sisters in Vikramgad, Palghar",
+            "Authentic Handpainted Warli Tribal Art Motifs",
+            "Non-Foldable Sturdy Hexagonal Silhouette",
+            "An Initiative by Keshav Srushti, Supported by NABARD"
+        ]
+    },
+    {
+        "id": "kandil-purandar-big",
+        "name": "Purandar (Big) Bamboo Kandil",
+        "price": "INR 900/-",
+        "priceNum": 900,
+        "cost": "500",
+        "dimensions": "Cylindrical Weave (Non-Foldable)",
+        "category": "Festive & Kandil",
+        "img": "assets/products/kandil-purandar-big.webp?v=diwali_festive_real",
+        "gallery": [
+            "assets/products/kandil-purandar-big.webp?v=diwali_festive_real",
+            "assets/products/bamboo-kandil-collection-poster.webp?v=diwali_festive_real"
+        ],
+        "desc": "A sleek cylindrical bamboo lantern in warm orange and natural lattice weave with a contemporary minimal aesthetic that casts intricate light patterns. Non-foldable and handcrafted by tribal artisans.",
+        "highlights": [
+            "100% Environment Friendly & Natural Bamboo",
+            "Handmade with Love by Tribal Sisters in Vikramgad, Palghar",
+            "Contemporary Cylindrical Weave Pattern",
+            "Non-Foldable Sleek Architectural Design",
+            "An Initiative by Keshav Srushti, Supported by NABARD"
+        ]
+    },
+    {
+        "id": "kandil-anjaneri-small",
+        "draft": true,
+        "name": "Anjaneri (Small) Bamboo Kandil",
+        "price": "INR 600/-",
+        "priceNum": 600,
+        "cost": "350",
+        "dimensions": "Petite Diamond Taper (Foldable)",
+        "category": "Festive & Kandil",
+        "img": "assets/products/kandil-anjaneri-small.webp?v=diwali_festive_real",
+        "gallery": [
+            "assets/products/kandil-anjaneri-small.webp?v=diwali_festive_real",
+            "assets/products/bamboo-kandil-collection-poster.webp?v=diwali_festive_real"
+        ],
+        "desc": "A petite foldable bamboo kandil in royal blue and warm orange weaves, easy to hang and compact to store. Handmade by tribal sisters; ideal for gifting or festive accents.",
+        "highlights": [
+            "100% Environment Friendly & Natural Bamboo",
+            "Handmade with Love by Tribal Sisters in Vikramgad, Palghar",
+            "Compact & Foldable - Ideal for Gifting and Shipping",
+            "Rich Royal Blue & Warm Orange Festive Contrast",
+            "An Initiative by Keshav Srushti, Supported by NABARD"
+        ]
+    },
+    {
         "id": "key-chain",
         "name": "Key Chain",
         "price": "INR 40/-",
@@ -74,7 +208,7 @@
         "price": "INR 160/-",
         "priceNum": 160,
         "cost": "90",
-        "dimensions": "Clean Square Slat",
+        "dimensions": "3.5 x 3.5 x 4.5",
         "category": "Stationery & Office",
         "img": "assets/products/square-pen-stand.webp",
         "gallery": [
@@ -85,7 +219,7 @@
         "highlights": [
             "100% Biodegradable & Natural Bamboo",
             "Handcrafted by Palghar Tribal Artisans",
-            "Eco-Friendly Artisanal Finish"
+            "Dimensions: 3.5 x 3.5 x 4.5 inches"
         ]
     },
     {
@@ -301,7 +435,7 @@
         "price": "INR 100/-",
         "priceNum": 100,
         "cost": "55",
-        "dimensions": "12 x 8 x 1.5",
+        "dimensions": "6 x 6 x 1.5",
         "category": "Home & Kitchen",
         "img": "assets/products/small-serving-tray-6x6.webp",
         "gallery": [
@@ -311,7 +445,7 @@
         "highlights": [
             "100% Biodegradable & Natural Bamboo",
             "Handcrafted by Palghar Tribal Artisans",
-            "Dimensions: 12 x 8 x 1.5 inches"
+            "Dimensions: 6 x 6 x 1.5 inches"
         ]
     },
     {
@@ -529,137 +663,82 @@
         ]
     },
     {
-        "id": "kandil-sahyadri-big",
-        "name": "Sahyadri (Big) Bamboo Kandil",
+        "id": "gift-hamper-1",
+        "name": "Gift Hamper - 1",
+        "price": "INR 480/-",
+        "priceNum": 480,
+        "cost": "300",
+        "dimensions": "Curated Gift Box",
+        "category": "Decor & Lifestyle",
+        "img": "assets/products/gift-hamper-1.png",
+        "gallery": [
+            "assets/products/gift-hamper-1.png"
+        ],
+        "desc": "A curated eco-friendly bamboo gift hamper featuring handcrafted utility items by Palghar tribal artisans. Ideal for festive and corporate gifting.",
+        "highlights": [
+            "100% Biodegradable & Natural Bamboo",
+            "Handcrafted by Palghar Tribal Artisans",
+            "Artisanal Festive Packaging"
+        ]
+    },
+    {
+        "id": "gift-hamper-2",
+        "name": "Gift Hamper - 2",
+        "price": "INR 690/-",
+        "priceNum": 690,
+        "cost": "450",
+        "dimensions": "Premium Gift Box",
+        "category": "Decor & Lifestyle",
+        "img": "assets/products/gift-hamper-2.png",
+        "gallery": [
+            "assets/products/gift-hamper-2.png"
+        ],
+        "desc": "Deluxe bamboo gift hamper crafted by tribal women artisans of Palghar. Combines elegant bamboo tableware and stationery in an eco-friendly gift box.",
+        "highlights": [
+            "100% Biodegradable & Natural Bamboo",
+            "Handcrafted by Palghar Tribal Artisans",
+            "Premium Gift Presentation"
+        ]
+    },
+    {
+        "id": "gift-hamper-3",
+        "name": "Gift Hamper - 3",
         "price": "INR 900/-",
         "priceNum": 900,
-        "cost": "500",
-        "dimensions": "Large Diamond Frame (Non-Foldable)",
-        "category": "Festive & Kandil",
-        "img": "assets/products/kandil-sahyadri-big.webp",
+        "cost": "600",
+        "dimensions": "Grand Gift Set",
+        "category": "Decor & Lifestyle",
+        "img": "assets/products/gift-hamper-3.png",
         "gallery": [
-            "assets/products/kandil-sahyadri-big.webp",
-            "assets/products/bamboo-kandil-collection-poster.webp"
+            "assets/products/gift-hamper-3.png"
         ],
-        "desc": "A grand handwoven bamboo Diwali lantern with rich red diamond panels, natural weave sections and a golden fringe tassel. Handmade by tribal women artisans in Vikramgad; its big non-foldable frame makes a striking statement at entrances and balconies.",
+        "desc": "Premium festive bamboo gift hamper set with handcrafted artisan crafts and natural utility products. A thoughtful sustainable gift for any occasion.",
         "highlights": [
-            "100% Environment Friendly & Natural Bamboo",
-            "Handmade with Love by Tribal Sisters in Vikramgad, Palghar",
-            "Non-Foldable Grand Festive Entrance Lantern",
-            "Your One Diwali lantern can illuminate two homes this festive season",
-            "An Initiative by Keshav Srushti, Supported by NABARD"
+            "100% Biodegradable & Natural Bamboo",
+            "Handcrafted by Palghar Tribal Artisans",
+            "Grand Presentation Box"
         ]
     },
     {
-        "id": "kandil-anjaneri-big",
-        "name": "Anjaneri (Big) Bamboo Kandil",
-        "price": "INR 900/-",
-        "priceNum": 900,
-        "cost": "500",
-        "dimensions": "Tall Diamond Taper (Foldable)",
-        "category": "Festive & Kandil",
-        "img": "assets/products/kandil-anjaneri-big.webp",
+        "id": "gift-hamper-4",
+        "name": "Gift Hamper - 4",
+        "price": "INR 1305/-",
+        "priceNum": 1305,
+        "cost": "850",
+        "dimensions": "Executive Luxury Hamper",
+        "category": "Decor & Lifestyle",
+        "img": "assets/products/gift-hamper-4.png",
         "gallery": [
-            "assets/products/kandil-anjaneri-big.webp",
-            "assets/products/bamboo-kandil-collection-poster.webp"
+            "assets/products/gift-hamper-4.png"
         ],
-        "desc": "A tall handcrafted bamboo kandil in royal blue, gold and magenta with a delicate woven lattice that glows warmly when lit. Foldable for easy storage after the festive season; handcrafted by tribal artisans.",
+        "desc": "Grand festive corporate and celebration bamboo gift hamper collection with an array of handcrafted bamboo creations.",
         "highlights": [
-            "100% Environment Friendly & Natural Bamboo",
-            "Handmade with Love by Tribal Sisters in Vikramgad, Palghar",
-            "Convenient Foldable Design for Easy Storage",
-            "Delicate Woven Lattice with Warm Festive Ambient Glow",
-            "An Initiative by Keshav Srushti, Supported by NABARD"
-        ]
-    },
-    {
-        "id": "kandil-sahyadri-small",
-        "name": "Sahyadri (Small) Bamboo Kandil",
-        "price": "INR 600/-",
-        "priceNum": 600,
-        "cost": "350",
-        "dimensions": "Compact Diamond Frame (Non-Foldable)",
-        "category": "Festive & Kandil",
-        "img": "assets/products/kandil-sahyadri-small.webp",
-        "gallery": [
-            "assets/products/kandil-sahyadri-small.webp",
-            "assets/products/bamboo-kandil-collection-poster.webp"
-        ],
-        "desc": "A compact version of the Sahyadri lantern with colourful woven panels and a cheerful golden fringe. This non-foldable accent piece suits windows, small balconies and indoor decor.",
-        "highlights": [
-            "100% Environment Friendly & Natural Bamboo",
-            "Handmade with Love by Tribal Sisters in Vikramgad, Palghar",
-            "Non-Foldable Compact Accent Lantern",
-            "Cheerful Golden Fringe & Vibrant Geometric Weave",
-            "An Initiative by Keshav Srushti, Supported by NABARD"
-        ]
-    },
-    {
-        "id": "kandil-shivneri-big",
-        "name": "Shivneri (Big) Bamboo Kandil",
-        "price": "INR 900/-",
-        "priceNum": 900,
-        "cost": "500",
-        "dimensions": "Sturdy Hexagonal Frame (Non-Foldable)",
-        "category": "Festive & Kandil",
-        "img": "assets/products/kandil-shivneri-big.webp",
-        "gallery": [
-            "assets/products/kandil-shivneri-big.webp",
-            "assets/products/bamboo-kandil-collection-poster.webp"
-        ],
-        "desc": "A bold handcrafted bamboo kandil featuring vibrant magenta panels with white Warli-style tribal motifs alongside natural woven sections. A non-foldable statement piece celebrating tribal art, made in Palghar.",
-        "highlights": [
-            "100% Environment Friendly & Natural Bamboo",
-            "Handmade with Love by Tribal Sisters in Vikramgad, Palghar",
-            "Authentic Handpainted Warli Tribal Art Motifs",
-            "Non-Foldable Sturdy Hexagonal Silhouette",
-            "An Initiative by Keshav Srushti, Supported by NABARD"
-        ]
-    },
-    {
-        "id": "kandil-purandar-big",
-        "name": "Purandar (Big) Bamboo Kandil",
-        "price": "INR 900/-",
-        "priceNum": 900,
-        "cost": "500",
-        "dimensions": "Cylindrical Weave (Non-Foldable)",
-        "category": "Festive & Kandil",
-        "img": "assets/products/kandil-purandar-big.webp",
-        "gallery": [
-            "assets/products/kandil-purandar-big.webp",
-            "assets/products/bamboo-kandil-collection-poster.webp"
-        ],
-        "desc": "A sleek cylindrical bamboo lantern in a warm orange weave with a modern minimal look that casts beautiful patterned light. Non-foldable and handcrafted by tribal artisans; suits contemporary and traditional decor alike.",
-        "highlights": [
-            "100% Environment Friendly & Natural Bamboo",
-            "Handmade with Love by Tribal Sisters in Vikramgad, Palghar",
-            "Contemporary Cylindrical Weave Pattern",
-            "Non-Foldable Sleek Architectural Design",
-            "An Initiative by Keshav Srushti, Supported by NABARD"
-        ]
-    },
-    {
-        "id": "kandil-anjaneri-small",
-        "name": "Anjaneri (Small) Bamboo Kandil",
-        "price": "INR 600/-",
-        "priceNum": 600,
-        "cost": "350",
-        "dimensions": "Petite Diamond Taper (Foldable)",
-        "category": "Festive & Kandil",
-        "img": "assets/products/kandil-anjaneri-small.webp",
-        "gallery": [
-            "assets/products/kandil-anjaneri-small.webp",
-            "assets/products/bamboo-kandil-collection-poster.webp"
-        ],
-        "desc": "A petite foldable bamboo kandil in royal blue and warm orange weaves, easy to hang and store. Handmade by tribal sisters; ideal for gifting or adding festive glow to compact spaces.",
-        "highlights": [
-            "100% Environment Friendly & Natural Bamboo",
-            "Handmade with Love by Tribal Sisters in Vikramgad, Palghar",
-            "Compact & Foldable - Ideal for Gifting and Shipping",
-            "Rich Royal Blue & Warm Orange Festive Contrast",
-            "An Initiative by Keshav Srushti, Supported by NABARD"
+            "100% Biodegradable & Natural Bamboo",
+            "Handcrafted by Palghar Tribal Artisans",
+            "Executive Sustainable Luxury"
         ]
     }
+
 ];
 
   // Blog Database for Search
@@ -697,21 +776,30 @@
   // Helper function to resolve product detail URL based on environment
   
   // Helper function to resolve product image URL based on environment
+    // Environment helper
+  function isWordPressEnv() {
+    return !!(
+      window.location.hostname.includes('hostingersite.com') ||
+      window.location.hostname.includes('wp') ||
+      window.location.pathname.includes('/wp-content/') ||
+      document.querySelector('script[src*="wp-content"], link[href*="wp-content"]')
+    );
+  }
+
   function getProductImgUrl(path) {
     if (!path) return '';
     if (path.startsWith('http://') || path.startsWith('https://')) return path;
-    const isWP = !window.location.pathname.endsWith('.html');
-    if (isWP) {
-      return '/wp-content/plugins/bamboo-first-builder/' + path.replace(/^\//, '');
+    const cleanPath = path.replace(/^\//, '');
+    if (isWordPressEnv()) {
+      return '/wp-content/plugins/bamboo-first-builder/' + cleanPath;
     }
     const inSubfolder = window.location.pathname.includes('/post/');
     const prefix = inSubfolder ? '../' : '';
-    return prefix + path.replace(/^\//, '');
+    return prefix + cleanPath;
   }
 
   function getProductUrl(productId) {
-    const isWP = !window.location.pathname.endsWith('.html');
-    if (isWP) {
+    if (isWordPressEnv()) {
       return `/product/?id=${encodeURIComponent(productId)}`;
     }
     const inSubfolder = window.location.pathname.includes('/post/');
@@ -799,20 +887,83 @@
       const trigger = dd.querySelector('.nav-dropdown-trigger');
       if (!trigger) return;
 
-      trigger.addEventListener('click', (e) => {
-        if (window.innerWidth <= 860) {
-          e.preventDefault();
-          dd.classList.toggle('open');
+      let leaveTimer = null;
+
+      // Desktop mouse hover with 180ms grace period
+      dd.addEventListener('mouseenter', () => {
+        if (window.innerWidth > 860) {
+          if (leaveTimer) clearTimeout(leaveTimer);
+          dropdowns.forEach(other => {
+            if (other !== dd) other.classList.remove('open');
+          });
+          dd.classList.add('open');
+          trigger.setAttribute('aria-expanded', 'true');
         }
+      });
+
+      dd.addEventListener('mouseleave', () => {
+        if (window.innerWidth > 860) {
+          leaveTimer = setTimeout(() => {
+            dd.classList.remove('open');
+            trigger.setAttribute('aria-expanded', 'false');
+          }, 180);
+        }
+      });
+
+      // Click / Tap handler
+      trigger.addEventListener('click', (e) => {
+        e.preventDefault();
+        e.stopPropagation();
+
+        if (window.innerWidth <= 860) {
+          // Mobile accordion toggle
+          const wasOpen = dd.classList.contains('open');
+          dropdowns.forEach(other => {
+            other.classList.remove('open');
+            const otherTrig = other.querySelector('.nav-dropdown-trigger');
+            if (otherTrig) otherTrig.setAttribute('aria-expanded', 'false');
+          });
+          if (!wasOpen) {
+            dd.classList.add('open');
+            trigger.setAttribute('aria-expanded', 'true');
+          }
+        } else {
+          // Desktop click: toggle pinned open state
+          dd.classList.toggle('open');
+          trigger.setAttribute('aria-expanded', dd.classList.contains('open') ? 'true' : 'false');
+        }
+      });
+
+      // Close dropdown when any item inside is clicked
+      const menuLinks = dd.querySelectorAll('.nav-dropdown-menu a');
+      menuLinks.forEach(link => {
+        link.addEventListener('click', () => {
+          dd.classList.remove('open');
+          trigger.setAttribute('aria-expanded', 'false');
+        });
       });
     });
 
+    // Close on click outside
     document.addEventListener('click', (e) => {
       dropdowns.forEach(dd => {
         if (!dd.contains(e.target)) {
           dd.classList.remove('open');
+          const trig = dd.querySelector('.nav-dropdown-trigger');
+          if (trig) trig.setAttribute('aria-expanded', 'false');
         }
       });
+    });
+
+    // Close on Escape key
+    document.addEventListener('keydown', (e) => {
+      if (e.key === 'Escape') {
+        dropdowns.forEach(dd => {
+          dd.classList.remove('open');
+          const trig = dd.querySelector('.nav-dropdown-trigger');
+          if (trig) trig.setAttribute('aria-expanded', 'false');
+        });
+      }
     });
   }
 
@@ -837,6 +988,7 @@
 
     centerCol.querySelectorAll('.main-nav a').forEach(link => {
       link.addEventListener('click', () => {
+        if (link.classList.contains('nav-dropdown-trigger')) return;
         if (window.innerWidth <= 860) {
           centerCol.classList.remove('open');
         }
@@ -870,7 +1022,7 @@
           return;
         }
 
-        const matchingProducts = PRODUCTS.filter(p => 
+        const matchingProducts = PRODUCTS.filter(p => !p.draft).filter(p => 
           p.name.toLowerCase().includes(query) || 
           p.category.toLowerCase().includes(query) ||
           p.desc.toLowerCase().includes(query)
@@ -990,8 +1142,12 @@
     let activeCategory = 'all';
     let searchQuery = '';
 
-    // Check URL query parameters (e.g. ?cat=Festive or ?category=kandil)
+    // Check URL query parameters (e.g. ?cat=Festive or ?category=kandil or ?q=...)
     const urlParams = new URLSearchParams(window.location.search);
+    const qParam = urlParams.get('q') || '';
+    if (qParam) {
+      searchQuery = qParam.toLowerCase().trim();
+    }
     const catParam = urlParams.get('category') || urlParams.get('cat') || '';
     if (catParam) {
       const matchPill = Array.from(pills).find(p => {
@@ -1007,12 +1163,12 @@
     }
 
     function applyFilter() {
-      const cards = productGrid.querySelectorAll('.product-card');
+      const cards = productGrid.querySelectorAll('.product-card, .wix-product-card');
       let visibleCount = 0;
 
       cards.forEach(card => {
         const cardCategory = card.getAttribute('data-category') || '';
-        const cardTitle = (card.querySelector('h4') ? card.querySelector('h4').textContent : '').toLowerCase();
+        const cardTitle = (card.querySelector('h4, h3, .wix-product-title') ? card.querySelector('h4, h3, .wix-product-title').textContent : '').toLowerCase();
 
         const matchesCat = (activeCategory === 'all') || cardCategory.toLowerCase().includes(activeCategory.toLowerCase());
         const matchesSearch = !searchQuery || cardTitle.includes(searchQuery);
@@ -1208,6 +1364,13 @@
     if (detailMainImgEl) {
       detailMainImgEl.src = getProductImgUrl(product.img);
       detailMainImgEl.alt = product.name;
+      detailMainImgEl.onerror = function() {
+        if (this.src.includes('?')) {
+          this.src = this.src.split('?')[0];
+        } else if (this.src.endsWith('.webp')) {
+          this.src = this.src.replace(/\.webp$/, '.png');
+        }
+      };
     }
 
     const catEl = document.getElementById('detailCategory');
@@ -1215,138 +1378,41 @@
 
     if (detailTitleEl) detailTitleEl.textContent = product.name;
 
-    const subtitleEl = document.getElementById('detailSubtitle');
-    if (subtitleEl) {
-      if (product.id.includes('kandil')) {
-        subtitleEl.textContent = 'सह्याद्री बांबू कंदील · Grand Heritage Festive Lantern (Warm Ambient Glow)';
-      } else if (product.category && (product.category.includes('Office') || product.category.includes('Stationery'))) {
-        subtitleEl.textContent = 'Handcrafted Natural Desk Accent · 100% Solid Seasoned Bamboo';
-      } else if (product.category && product.category.includes('Kitchen')) {
-        subtitleEl.textContent = 'Artisanal Eco Tableware · Handcrafted by Palghar Tribal Sisters';
-      } else {
-        subtitleEl.textContent = 'Organic Artisan Home Accent · 100% Biodegradable & Handcrafted';
-      }
-    }
-
-    // Dynamic What's in the Box Checklist
-    const inBoxContainer = document.getElementById('detailInBoxList');
-    if (inBoxContainer) {
-      if (product.id.includes('kandil')) {
-        inBoxContainer.innerHTML = `
-          <div class="inbox-item">
-            <div class="inbox-icon">
-              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="var(--olive)" stroke-width="2"><path d="M12 2v3m0 14v3M8 5h8l2 6-4 8H10L6 11l2-6z"/><line x1="12" y1="9" x2="12" y2="13"/></svg>
-            </div>
-            <div>
-              <strong>1× Handwoven Bamboo Lantern</strong>
-              <p>Pest-treated seasoned golden bamboo with handwoven lattices</p>
-            </div>
-          </div>
-          <div class="inbox-item">
-            <div class="inbox-icon">
-              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="var(--olive)" stroke-width="2"><path d="M9 18h6m-4 4h2m-5-8.5a6 6 0 1 1 8 0c-.5.8-1 1.5-1 2.5h-6c0-1-.5-1.7-1-2.5z"/></svg>
-            </div>
-            <div>
-              <strong>1× Pre-Installed Bulb Socket &amp; Cord</strong>
-              <p>Standard E27/B22 brass/eco socket with 1-metre cord (ready to light)</p>
-            </div>
-          </div>
-          <div class="inbox-item">
-            <div class="inbox-icon">
-              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="var(--olive)" stroke-width="2"><circle cx="12" cy="7" r="4"/><path d="M12 11v11m-6-5h12"/></svg>
-            </div>
-            <div>
-              <strong>1× Sturdy Ceiling Hanging Loop</strong>
-              <p>Reinforced natural jute/cotton loop ready to hang from any ceiling hook</p>
-            </div>
-          </div>
-          <div class="inbox-item">
-            <div class="inbox-icon">
-              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="var(--olive)" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/></svg>
-            </div>
-            <div>
-              <strong>1× Authenticity Card &amp; Care Guide</strong>
-              <p>Signed certificate from the Vikramgad Tribal Women Producer Company</p>
-            </div>
-          </div>
-        `;
-      } else {
-        inBoxContainer.innerHTML = `
-          <div class="inbox-item">
-            <div class="inbox-icon">
-              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="var(--olive)" stroke-width="2"><path d="M11 20A7 7 0 0 1 9.8 6.1C15.5 5 17 4.48 19 2c1 2 2 4.18 2 8 0 5.5-4.78 10-10 10Z"/><path d="M2 21c0-3 1.85-5.36 5.08-6C9.5 14.52 12 13 13 12"/></svg>
-            </div>
-            <div>
-              <strong>1× Handcrafted Bamboo Creation</strong>
-              <p>${escapeHtml(product.name)} ${product.dimensions ? `(${escapeHtml(product.dimensions)} in)` : ''}</p>
-            </div>
-          </div>
-          <div class="inbox-item">
-            <div class="inbox-icon">
-              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="var(--olive)" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="2" ry="2"/><line x1="9" y1="9" x2="15" y2="15"/><line x1="15" y1="9" x2="9" y2="15"/></svg>
-            </div>
-            <div>
-              <strong>1× Eco Cotton/Jute Dust Wrap</strong>
-              <p>100% plastic-free biodegradable protective wrapping</p>
-            </div>
-          </div>
-          <div class="inbox-item">
-            <div class="inbox-icon">
-              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="var(--olive)" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/></svg>
-            </div>
-            <div>
-              <strong>1× Authenticity Certificate</strong>
-              <p>Supported by NABARD &amp; Keshav Srushti</p>
-            </div>
-          </div>
-          <div class="inbox-item">
-            <div class="inbox-icon">
-              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="var(--olive)" stroke-width="2"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
-            </div>
-            <div>
-              <strong>1× Bamboo Care &amp; Longevity Guide</strong>
-              <p>Natural oil maintenance tips for decades of durability</p>
-            </div>
-          </div>
-        `;
-      }
-    }
-
-    const skuEl = document.getElementById('detailSku');
-    if (skuEl) skuEl.textContent = `SKU: BF-${product.id.toUpperCase().replace(/[^A-Z0-9]/g, '')}`;
-
     const priceEl = document.getElementById('detailPrice');
     if (priceEl) priceEl.textContent = product.price;
 
-    // Calculate Authentic MRP & Savings Pill
     const unitPrice = product.priceNum || 100;
-    let mrpVal = Math.round((unitPrice * 1.33) / 10) * 10;
-    if (mrpVal <= unitPrice) mrpVal = unitPrice + 50;
-    const discountPct = Math.max(15, Math.round(((mrpVal - unitPrice) / mrpVal) * 100));
-
-    const mrpEl = document.getElementById('detailMrp');
-    if (mrpEl) mrpEl.textContent = `MRP: INR ${mrpVal}/-`;
-
-    const saveBadge = document.getElementById('detailSaveBadge');
-    if (saveBadge) saveBadge.textContent = `Save ${discountPct}%`;
-
-    // Special Floating Badge in Gallery
-    const badgeSpecial = document.getElementById('galleryBadgeSpecial');
-    if (badgeSpecial) {
-      if (product.id.includes('kandil')) {
-        badgeSpecial.textContent = 'Diwali Special';
-        badgeSpecial.className = 'gallery-badge gallery-badge-special';
-      } else if (['planter', 'wall-clock', 'tea-coaster', 'round-pen-stand', 'bowl'].includes(product.id)) {
-        badgeSpecial.textContent = 'Bestseller';
-        badgeSpecial.className = 'gallery-badge gallery-badge-special';
-      } else {
-        badgeSpecial.textContent = 'Tribal Craft';
-        badgeSpecial.className = 'gallery-badge gallery-badge-eco';
-      }
-    }
 
     const descEl = document.getElementById('detailDesc');
     if (descEl) descEl.textContent = product.desc;
+
+    // Update narrative lead summary
+    const leadSummEl = document.getElementById('detailLeadSummary');
+    if (leadSummEl) {
+      if (product.category && product.category.toLowerCase().includes('kandil')) {
+        leadSummEl.textContent = 'Handwoven by tribal women artisans of Vikramgad, Palghar using seasoned indigenous bamboo. Featuring natural lattice weaving, rich traditional accents, and ambient festive warmth.';
+      } else {
+        leadSummEl.textContent = product.desc || 'Meticulously handcrafted from sustainably harvested Palghar bamboo by rural women artisans. Designed for eco-conscious living, natural warmth, and timeless durability.';
+      }
+    }
+
+    // Update attributes strip
+    const attrMat = document.getElementById('attrMaterial');
+    if (attrMat) attrMat.textContent = product.material || '100% Mature Palghar Bamboo';
+
+    const attrCraft = document.getElementById('attrCraft');
+    if (attrCraft) attrCraft.textContent = product.craft || 'Hand-lathed & Hand-woven';
+
+    const attrFit = document.getElementById('attrFitting');
+    if (attrFit) {
+      attrFit.textContent = (product.category && product.category.toLowerCase().includes('kandil'))
+        ? 'Pre-fitted Bulb Socket & Cord'
+        : 'Natural Artisanal Finish';
+    }
+
+    const attrOrig = document.getElementById('attrOrigin');
+    if (attrOrig) attrOrig.textContent = 'Keshav Srushti & NABARD';
+
 
     // 4. Populate Highlights with SVGs
     const hlContainer = document.getElementById('detailHighlights');
@@ -1392,7 +1458,13 @@
     // 6. Update Specifications Dimensions
     const dimsEl = document.getElementById('detailDimensions');
     if (dimsEl) {
-      dimsEl.textContent = product.dimensions ? `${product.dimensions} inches` : 'Handcrafted standard artisanal size';
+      if (!product.dimensions) {
+        dimsEl.textContent = 'Handcrafted standard artisanal size';
+      } else if (/^\d/.test(product.dimensions.trim())) {
+        dimsEl.textContent = `${product.dimensions} inches (L x W x H)`;
+      } else {
+        dimsEl.textContent = product.dimensions;
+      }
     }
 
     // 7. Bulk Inquiry Product Name Field
@@ -1563,7 +1635,7 @@
     // 11. Populate Related Products
     const relatedGrid = document.getElementById('relatedProductsGrid');
     if (relatedGrid) {
-      const otherProducts = PRODUCTS.filter(p => p.id !== product.id);
+      const otherProducts = PRODUCTS.filter(p => !p.draft && p.id !== product.id);
       const sameCat = otherProducts.filter(p => p.category === product.category);
       const diffCat = otherProducts.filter(p => p.category !== product.category);
       const related = [...sameCat, ...diffCat].slice(0, 4);
@@ -2264,6 +2336,177 @@
     }
   }
 
+  // Mentor Slider
+  function initMentorSlider() {
+    const track = document.getElementById('mentorTrack');
+    const prevBtn = document.getElementById('mentorPrevBtn');
+    const nextBtn = document.getElementById('mentorNextBtn');
+    if (!track || !prevBtn || !nextBtn) return;
+
+    const cards = track.querySelectorAll('.mentor-logo-card');
+    if (cards.length === 0) return;
+
+    // Start with index 1 so CACTUS, G&J, YVO, and Keshav Srushti are shown initially, matching the authentic reference view
+    let currentIndex = 1;
+
+    function getStep() {
+      const card = cards[0];
+      const gap = 34.6;
+      return (card ? card.offsetWidth : 239) + gap;
+    }
+
+    function getMaxIndex() {
+      const wrap = track.parentElement;
+      const visibleCount = Math.floor((wrap.offsetWidth + 10) / getStep());
+      return Math.max(0, cards.length - visibleCount);
+    }
+
+    function updateTrack() {
+      const step = getStep();
+      const maxIdx = getMaxIndex();
+      if (currentIndex > maxIdx) currentIndex = maxIdx;
+      if (currentIndex < 0) currentIndex = 0;
+      track.style.transform = `translateX(-${currentIndex * step}px)`;
+    }
+
+    nextBtn.addEventListener('click', function () {
+      const maxIdx = getMaxIndex();
+      if (currentIndex < maxIdx) {
+        currentIndex++;
+      } else {
+        currentIndex = 0;
+      }
+      updateTrack();
+    });
+
+    prevBtn.addEventListener('click', function () {
+      const maxIdx = getMaxIndex();
+      if (currentIndex > 0) {
+        currentIndex--;
+      } else {
+        currentIndex = maxIdx;
+      }
+      updateTrack();
+    });
+
+    window.addEventListener('resize', updateTrack);
+    setTimeout(updateTrack, 100);
+  }
+
+  // Media Slideshow
+  function initMediaSlideshow() {
+    const slides = document.querySelectorAll('.media-slide-container');
+    const prevBtn = document.getElementById('mediaPrevBtn');
+    const nextBtn = document.getElementById('mediaNextBtn');
+    if (!slides || slides.length === 0 || !prevBtn || !nextBtn) return;
+
+    let currentSlide = 0;
+
+    function showSlide(index) {
+      slides.forEach((s, idx) => {
+        if (idx === index) {
+          s.classList.add('active');
+        } else {
+          s.classList.remove('active');
+        }
+      });
+    }
+
+    nextBtn.addEventListener('click', function () {
+      currentSlide = (currentSlide + 1) % slides.length;
+      showSlide(currentSlide);
+    });
+
+    prevBtn.addEventListener('click', function () {
+      currentSlide = (currentSlide - 1 + slides.length) % slides.length;
+      showSlide(currentSlide);
+    });
+
+    // Touch swipe support
+    const outer = document.querySelector('.media-slideshow-outer');
+    if (outer) {
+      let startX = 0;
+      outer.addEventListener('touchstart', function (e) {
+        startX = e.changedTouches[0].screenX;
+      }, { passive: true });
+      outer.addEventListener('touchend', function (e) {
+        const diffX = e.changedTouches[0].screenX - startX;
+        if (diffX > 45) {
+          currentSlide = (currentSlide - 1 + slides.length) % slides.length;
+          showSlide(currentSlide);
+        } else if (diffX < -45) {
+          currentSlide = (currentSlide + 1) % slides.length;
+          showSlide(currentSlide);
+        }
+      }, { passive: true });
+    }
+  }
+
+  /* ==========================================================================
+     BAMBOO KANDIL HERO PHYSICS & HOVER EFFECT (Matches bamboofirst.in)
+     ========================================================================== */
+  function initHeroKandilPhysics() {
+    var section = document.getElementById('heroBanner');
+    if (!section) return;
+
+    var MOTION = [
+      { amp: 1.0, speed: 1.10, phase: 0.0, phase2: 1.3 },
+      { amp: 0.7, speed: 1.55, phase: 2.4, phase2: 0.4 },
+      { amp: 1.1, speed: 0.90, phase: 4.1, phase2: 2.6 },
+      { amp: 0.8, speed: 1.30, phase: 1.2, phase2: 3.8 }
+    ];
+
+    var cards = Array.from(section.querySelectorAll('.bk-grid .card, #kandilGrid .card, .grid .card'));
+    var imgs = Array.from(section.querySelectorAll('.bk-grid .card img, #kandilGrid .card img, .grid .card img'));
+    if (!cards.length || !imgs.length) return;
+
+    var reduce = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+    var intensity = 0, target = 0, last = 0, raf = 0;
+
+    function frame(now) {
+      var dt = Math.min((now - last) / 1000, 0.1);
+      last = now;
+      intensity += (target - intensity) * (1 - Math.exp(-dt / 0.55));
+      if (Math.abs(target - intensity) < 0.002) { intensity = target; }
+
+      var t = now / 1000;
+      for (var i = 0; i < imgs.length; i++) {
+        var m = MOTION[i % MOTION.length];
+        var a = t * m.speed + m.phase;
+        var deg = m.amp * (Math.sin(a) + 0.35 * Math.sin(a * 2.3 + m.phase2)) * intensity;
+        imgs[i].style.transform = 'rotate(' + deg.toFixed(3) + 'deg)';
+      }
+
+      if (target > 0 || intensity > 0) {
+        raf = requestAnimationFrame(frame);
+      } else {
+        raf = 0;
+        for (var j = 0; j < imgs.length; j++) { imgs[j].style.transform = ''; }
+      }
+    }
+
+    function setLit(on) {
+      cards.forEach(function(c) { c.classList.toggle('is-lit', on); });
+      target = on ? 1 : 0;
+      if (!reduce && !raf) {
+        last = performance.now();
+        raf = requestAnimationFrame(frame);
+      }
+    }
+
+    var isDesktop = window.matchMedia('(hover:hover) and (pointer:fine)').matches;
+    if (isDesktop) {
+      // desktop: hovering anywhere on the section lights all kandils and sways them
+      section.addEventListener('mouseenter', function() { setLit(true); });
+      section.addEventListener('mouseleave', function() { setLit(false); });
+    } else if ('IntersectionObserver' in window) {
+      // mobile: animate only while the section is on screen
+      new IntersectionObserver(function(entries) {
+        setLit(entries[0].isIntersecting);
+      }, { threshold: 0.1 }).observe(section);
+    }
+  }
+
   // Master Initializer
   function initializeAll() {
     initStickyHeader();
@@ -2271,14 +2514,340 @@
     initMobileNav();
     initLiveSearch();
     initHeroCarousel();
+    initHeroKandilPhysics();
     initCatalogueFilters();
     initQuickViewModal();
     initProductDetailPage();
     initForms();
-    initFloatingWhatsApp();
+    // initFloatingWhatsApp(); // Disabled to match reference Wix site (no floating WhatsApp circle widget)
     initCartSystem();
     initCartPage();
     initCheckoutPage();
+    initMentorSlider();
+    initMediaSlideshow();
+    initMahilaGallery();
+    initScrollReveal();
+    initHomepageCarousels();
+  }
+
+  /* ==========================================================================
+     SCROLL REVEAL (INTERSECTION OBSERVER)
+     ========================================================================== */
+  function initScrollReveal() {
+    var targets = document.querySelectorAll('[data-reveal]');
+    if (!targets.length) return;
+    if (!('IntersectionObserver' in window)) {
+      targets.forEach(function(el) { el.classList.add('revealed'); });
+      return;
+    }
+    var observer = new IntersectionObserver(function(entries, obs) {
+      entries.forEach(function(entry) {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('revealed');
+          obs.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.08, rootMargin: '0px 0px -40px 0px' });
+
+    targets.forEach(function(el) {
+      observer.observe(el);
+    });
+  }
+
+  /* ==========================================================================
+     HOMEPAGE CAROUSELS (PHOTO STRIP, CATALOGUE, ECO-TOURISM)
+     ========================================================================== */
+  function initHomepageCarousels() {
+    var photoTrack = document.getElementById('photoStripTrack');
+    var photoNext = document.getElementById('photoStripNext');
+    var photoPrev = document.getElementById('photoStripPrev');
+    if (photoTrack) {
+      var autoScrollTimer = null;
+      var isHovered = false;
+
+      function getPhotoStep() {
+        var firstItem = photoTrack.firstElementChild;
+        return firstItem ? (firstItem.offsetWidth + 20) : 380;
+      }
+
+      function scrollPhotoNext() {
+        var step = getPhotoStep();
+        var maxScroll = photoTrack.scrollWidth - photoTrack.clientWidth;
+        if (photoTrack.scrollLeft >= maxScroll - 15) {
+          photoTrack.scrollTo({ left: 0, behavior: 'smooth' });
+        } else {
+          photoTrack.scrollBy({ left: step, behavior: 'smooth' });
+        }
+      }
+
+      function scrollPhotoPrev() {
+        var step = getPhotoStep();
+        var maxScroll = photoTrack.scrollWidth - photoTrack.clientWidth;
+        if (photoTrack.scrollLeft <= 15) {
+          photoTrack.scrollTo({ left: maxScroll, behavior: 'smooth' });
+        } else {
+          photoTrack.scrollBy({ left: -step, behavior: 'smooth' });
+        }
+      }
+
+      function startAutoScroll() {
+        stopAutoScroll();
+        autoScrollTimer = setInterval(function() {
+          if (!isHovered) {
+            scrollPhotoNext();
+          }
+        }, 2800);
+      }
+
+      function stopAutoScroll() {
+        if (autoScrollTimer) {
+          clearInterval(autoScrollTimer);
+          autoScrollTimer = null;
+        }
+      }
+
+      if (photoNext) {
+        photoNext.addEventListener('click', function() {
+          scrollPhotoNext();
+          startAutoScroll();
+        });
+      }
+
+      if (photoPrev) {
+        photoPrev.addEventListener('click', function() {
+          scrollPhotoPrev();
+          startAutoScroll();
+        });
+      }
+
+      var sliderWrap = photoTrack.closest('.photo-strip-slider-container') || photoTrack;
+      sliderWrap.addEventListener('mouseenter', function() {
+        isHovered = true;
+        stopAutoScroll();
+      });
+
+      sliderWrap.addEventListener('mouseleave', function() {
+        isHovered = false;
+        startAutoScroll();
+      });
+
+      sliderWrap.addEventListener('touchstart', function() {
+        isHovered = true;
+        stopAutoScroll();
+      }, { passive: true });
+
+      sliderWrap.addEventListener('touchend', function() {
+        isHovered = false;
+        startAutoScroll();
+      }, { passive: true });
+
+      // Start auto scroll
+      startAutoScroll();
+    }
+
+    var catTrack = document.getElementById('catalogueCutoutTrack');
+    var catNext = document.getElementById('catalogueNext');
+    var catPrev = document.getElementById('cataloguePrev');
+    if (catTrack) {
+      if (catNext) {
+        catNext.addEventListener('click', function() {
+          var cardWidth = catTrack.firstElementChild ? catTrack.firstElementChild.offsetWidth + 24 : 280;
+          var maxScroll = catTrack.scrollWidth - catTrack.clientWidth;
+          if (catTrack.scrollLeft >= maxScroll - 10) {
+            catTrack.scrollTo({ left: 0, behavior: 'smooth' });
+          } else {
+            catTrack.scrollBy({ left: cardWidth, behavior: 'smooth' });
+          }
+        });
+      }
+      if (catPrev) {
+        catPrev.addEventListener('click', function() {
+          var cardWidth = catTrack.firstElementChild ? catTrack.firstElementChild.offsetWidth + 24 : 280;
+          if (catTrack.scrollLeft <= 10) {
+            catTrack.scrollTo({ left: catTrack.scrollWidth, behavior: 'smooth' });
+          } else {
+            catTrack.scrollBy({ left: -cardWidth, behavior: 'smooth' });
+          }
+        });
+      }
+    }
+
+    var ecoTrack = document.getElementById('ecoPhotoTrack');
+    var ecoNext = document.getElementById('ecoPhotoNext');
+    if (ecoTrack && ecoNext) {
+      ecoNext.addEventListener('click', function() {
+        var cardWidth = ecoTrack.firstElementChild ? ecoTrack.firstElementChild.offsetWidth + 24 : 380;
+        var maxScroll = ecoTrack.scrollWidth - ecoTrack.clientWidth;
+        if (ecoTrack.scrollLeft >= maxScroll - 10) {
+          ecoTrack.scrollTo({ left: 0, behavior: 'smooth' });
+        } else {
+          ecoTrack.scrollBy({ left: cardWidth, behavior: 'smooth' });
+        }
+      });
+    }
+  }
+
+  /* ==========================================================================
+     11. MAHILA SWAVALAMBAN KENDRE GALLERY & LIGHTBOX
+     ========================================================================== */
+  function initMahilaGallery() {
+    var mskVp = document.getElementById('mskVp');
+    var mskTrack = document.getElementById('mskTrack');
+    var mskDots = document.getElementById('mskDots');
+    if (!mskVp || !mskTrack) return;
+
+    var MSK_SLIDER_IMAGES = [
+      "https://static.wixstatic.com/media/e0afb1_7cb9263e39854fa88bf3b190ff606412~mv2.jpeg",
+      "https://static.wixstatic.com/media/e0afb1_049003c187684ddc8ec6be35f3486e72~mv2.jpeg",
+      "https://static.wixstatic.com/media/e0afb1_a7c43990016b47e6a98da9c84b9f971b~mv2.jpeg",
+      "https://static.wixstatic.com/media/e0afb1_6729a06c3b93485eb27163289b5fa4dd~mv2.jpeg",
+      "https://static.wixstatic.com/media/e0afb1_5e48cb12ca4c4cb18db51d9cc943bcc6~mv2.jpeg",
+      "https://static.wixstatic.com/media/e0afb1_04730373c83e4367a13e9787d87a09c0~mv2.jpeg",
+      "https://static.wixstatic.com/media/e0afb1_fa70e562395c48bf8d1180de0fce6f8b~mv2.jpeg",
+      "https://static.wixstatic.com/media/e0afb1_b79b78874c05408ba17d4ff1e4c1c5d1~mv2.jpeg",
+      "https://static.wixstatic.com/media/e0afb1_717de6e2c1f84730af35077e9f8c010e~mv2.jpeg",
+      "https://static.wixstatic.com/media/e0afb1_45a690e76b574c0099b9f114ecc37dc5~mv2.jpeg",
+      "https://static.wixstatic.com/media/e0afb1_d8aff4160e0146d3865f445109efd12c~mv2.jpeg"
+    ];
+
+    var mskSlides = Array.from(mskTrack.children);
+    var mskCur = 0, mskPer = 3.2, mskSw = 300, mskMaxIdx = 0, mskTimer, mskMoved = false;
+
+    function getMskPerView() {
+      var w = window.innerWidth;
+      return w > 1000 ? 3.2 : w > 650 ? 2.2 : 1.15;
+    }
+    function getMskPadL() {
+      return parseFloat(getComputedStyle(mskVp).paddingLeft) || 0;
+    }
+    function layoutMsk() {
+      mskPer = getMskPerView();
+      mskSw = (mskVp.clientWidth - getMskPadL()) / mskPer;
+      mskSlides.forEach(function(s) { s.style.width = mskSw + 'px'; });
+      mskMaxIdx = Math.max(0, mskSlides.length - Math.floor(mskPer));
+      if (mskDots) {
+        mskDots.innerHTML = '';
+        for (var k = 0; k <= mskMaxIdx; k++) {
+          var d = document.createElement('button');
+          d.setAttribute('aria-label', 'Go to ' + (k + 1));
+          (function(n) { d.onclick = function() { goMsk(n); resetMskTimer(); }; })(k);
+          mskDots.appendChild(d);
+        }
+      }
+      goMsk(Math.min(mskCur, mskMaxIdx));
+    }
+    function goMsk(n) {
+      mskCur = Math.max(0, Math.min(n, mskMaxIdx));
+      var x = Math.min(mskCur * mskSw, mskSlides.length * mskSw - (mskVp.clientWidth - getMskPadL()));
+      mskTrack.style.transform = 'translateX(-' + Math.max(0, x) + 'px)';
+      if (mskDots) {
+        for (var k = 0; k < mskDots.children.length; k++) {
+          mskDots.children[k].className = (k === mskCur ? 'on' : '');
+        }
+      }
+    }
+    function nxtMsk() { goMsk(mskCur >= mskMaxIdx ? 0 : mskCur + 1); }
+    function prvMsk() { goMsk(mskCur <= 0 ? mskMaxIdx : mskCur - 1); }
+    function resetMskTimer() {
+      clearInterval(mskTimer);
+      mskTimer = setInterval(nxtMsk, 3500);
+    }
+
+    var nextBtn = document.getElementById('mskNext');
+    var prevBtn = document.getElementById('mskPrev');
+    if (nextBtn) nextBtn.onclick = function() { nxtMsk(); resetMskTimer(); };
+    if (prevBtn) prevBtn.onclick = function() { prvMsk(); resetMskTimer(); };
+
+    mskVp.onmouseenter = function() { clearInterval(mskTimer); };
+    mskVp.onmouseleave = resetMskTimer;
+
+    var sx = null;
+    mskVp.addEventListener('pointerdown', function(e) { sx = e.clientX; mskMoved = false; });
+    mskVp.addEventListener('pointerup', function(e) {
+      if (sx === null) return;
+      var dx = e.clientX - sx; sx = null;
+      if (Math.abs(dx) > 50) {
+        mskMoved = true;
+        dx < 0 ? nxtMsk() : prvMsk();
+        resetMskTimer();
+        setTimeout(function() { mskMoved = false; }, 50);
+      }
+    });
+
+    window.addEventListener('resize', layoutMsk);
+
+    /* Lightbox */
+    var mskLb = document.getElementById('mskLb');
+    var mskStage = document.getElementById('mskStage');
+    var mskCnt = document.getElementById('mskCnt');
+    var mskLi = 0, mskIsOpen = false;
+
+    function addMskSlide(n, dir) {
+      if (!mskStage) return;
+      var el = document.createElement('div');
+      el.className = 'msk-lbimg';
+      el.style.backgroundImage = 'url("' + MSK_SLIDER_IMAGES[n] + '")';
+      if (dir) { el.style.transform = 'translateX(' + (dir * 60) + '%)'; el.style.opacity = '0'; }
+      mskStage.appendChild(el);
+      if (dir) { el.getBoundingClientRect(); el.style.transform = 'none'; el.style.opacity = '1'; }
+    }
+    function showMskLB(n, dir) {
+      if (!mskStage) return;
+      mskLi = (n + MSK_SLIDER_IMAGES.length) % MSK_SLIDER_IMAGES.length;
+      var olds = mskStage.querySelectorAll('.msk-lbimg');
+      for (var k = 0; k < olds.length; k++) {
+        (function(o) {
+          if (dir) { o.style.transform = 'translateX(' + (-dir * 60) + '%)'; o.style.opacity = '0'; }
+          setTimeout(function() { if (o.parentNode) o.parentNode.removeChild(o); }, dir ? 560 : 0);
+        })(olds[k]);
+      }
+      addMskSlide(mskLi, dir);
+      if (mskCnt) mskCnt.textContent = (mskLi + 1) + ' / ' + MSK_SLIDER_IMAGES.length;
+    }
+
+    window.openMskLB = function(n) {
+      if (mskMoved || !mskLb || !mskStage) return;
+      clearInterval(mskTimer);
+      mskStage.innerHTML = '';
+      showMskLB(n, 0);
+      mskLb.className = 'msk-lb open';
+      mskIsOpen = true;
+    };
+
+    window.closeMskLB = function() {
+      if (!mskLb) return;
+      mskIsOpen = false;
+      mskLb.className = 'msk-lb';
+      resetMskTimer();
+    };
+
+    var lxBtn = document.getElementById('mskLx');
+    var lpBtn = document.getElementById('mskLp');
+    var lnBtn = document.getElementById('mskLn');
+    if (lxBtn) lxBtn.onclick = window.closeMskLB;
+    if (lpBtn) lpBtn.onclick = function() { showMskLB(mskLi - 1, -1); };
+    if (lnBtn) lnBtn.onclick = function() { showMskLB(mskLi + 1, 1); };
+
+    if (mskLb) {
+      mskLb.addEventListener('click', function(e) { if (e.target === mskLb) window.closeMskLB(); });
+      var mskTx = null;
+      mskLb.addEventListener('touchstart', function(e) { mskTx = e.touches[0].clientX; }, { passive: true });
+      mskLb.addEventListener('touchend', function(e) {
+        if (mskTx === null) return;
+        var dx = e.changedTouches[0].clientX - mskTx; mskTx = null;
+        if (Math.abs(dx) > 50) { dx < 0 ? showMskLB(mskLi + 1, 1) : showMskLB(mskLi - 1, -1); }
+      });
+    }
+
+    document.addEventListener('keydown', function(e) {
+      if (!mskIsOpen) return;
+      if (e.key === 'Escape') window.closeMskLB();
+      if (e.key === 'ArrowLeft') showMskLB(mskLi - 1, -1);
+      if (e.key === 'ArrowRight') showMskLB(mskLi + 1, 1);
+    });
+
+    layoutMsk();
+    resetMskTimer();
   }
 
   // Bind to DOM Ready
