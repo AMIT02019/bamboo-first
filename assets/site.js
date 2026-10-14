@@ -16,11 +16,15 @@
         "cost": "500",
         "dimensions": "Large Diamond Frame (Non-Foldable)",
         "category": "Festive & Kandil",
-        "img": "assets/products/kandil-sahyadri-big.webp?v=diwali_festive_real",
-        "gallery": [
-            "assets/products/kandil-sahyadri-big.webp?v=diwali_festive_real",
-            "assets/products/bamboo-kandil-collection-poster.webp?v=diwali_festive_real"
-        ],
+        "img": "assets/products/kandil-sahyadri-big.webp?v=diwali2026_creative",
+        "gallery": [[
+            "assets/products/kandil-sahyadri-big.webp?v=diwali2026_creative",
+            "assets/products/kandil-sahyadri-big-gallery-1.webp?v=diwali2026_creative",
+            "assets/products/kandil-sahyadri-big-gallery-2.webp?v=diwali2026_creative",
+            "assets/products/kandil-sahyadri-big-gallery-3.webp?v=diwali2026_creative",
+            "assets/products/kandil-sahyadri-big-gallery-4.webp?v=diwali2026_creative",
+            "assets/products/kandil-sahyadri-big-gallery-5.webp?v=diwali2026_creative"
+]],
         "desc": "A grand handwoven bamboo Diwali lantern featuring rich red diamond panels with authentic Warli art, seasoned natural weave sections, cyan accents, and golden fringe tassels. Non-foldable and handmade by tribal women artisans in Vikramgad.",
         "highlights": [
             "100% Environment Friendly & Natural Mature Bamboo",
@@ -38,11 +42,14 @@
         "cost": "500",
         "dimensions": "Tall Diamond Taper (Foldable)",
         "category": "Festive & Kandil",
-        "img": "assets/products/kandil-anjaneri-big.webp?v=diwali_festive_real",
-        "gallery": [
-            "assets/products/kandil-anjaneri-big.webp?v=diwali_festive_real",
-            "assets/products/bamboo-kandil-collection-poster.webp?v=diwali_festive_real"
-        ],
+        "img": "assets/products/kandil-anjaneri-big.webp?v=diwali2026_creative",
+        "gallery": [[
+            "assets/products/kandil-anjaneri-big.webp?v=diwali2026_creative",
+            "assets/products/kandil-anjaneri-big-gallery-1.webp?v=diwali2026_creative",
+            "assets/products/kandil-anjaneri-big-gallery-2.webp?v=diwali2026_creative",
+            "assets/products/kandil-anjaneri-big-gallery-3.webp?v=diwali2026_creative",
+            "assets/products/kandil-anjaneri-big-gallery-4.webp?v=diwali2026_creative"
+]],
         "desc": "A tall handcrafted bamboo kandil in royal blue, golden yellow lattice weave, and festive magenta accents. Foldable for easy storage and shipping; handcrafted with love by tribal artisans.",
         "highlights": [
             "100% Environment Friendly & Natural Bamboo",
@@ -61,11 +68,15 @@
         "cost": "350",
         "dimensions": "Compact Diamond Frame (Non-Foldable)",
         "category": "Festive & Kandil",
-        "img": "assets/products/kandil-sahyadri-small.webp?v=diwali_festive_real",
-        "gallery": [
-            "assets/products/kandil-sahyadri-small.webp?v=diwali_festive_real",
-            "assets/products/bamboo-kandil-collection-poster.webp?v=diwali_festive_real"
-        ],
+        "img": "assets/products/kandil-sahyadri-small.webp?v=diwali2026_creative",
+        "gallery": [[
+            "assets/products/kandil-sahyadri-small.webp?v=diwali2026_creative",
+            "assets/products/kandil-sahyadri-small-gallery-1.webp?v=diwali2026_creative",
+            "assets/products/kandil-sahyadri-small-gallery-2.webp?v=diwali2026_creative",
+            "assets/products/kandil-sahyadri-small-gallery-3.webp?v=diwali2026_creative",
+            "assets/products/kandil-sahyadri-small-gallery-4.webp?v=diwali2026_creative",
+            "assets/products/kandil-sahyadri-small-gallery-5.webp?v=diwali2026_creative"
+]],
         "desc": "A compact version of the Sahyadri lantern with vibrant colorful geometric weaves and cheerful golden fringe tassels. Non-foldable accent piece ideal for windows, balconies and indoor festive decor.",
         "highlights": [
             "100% Environment Friendly & Natural Bamboo",
@@ -83,11 +94,15 @@
         "cost": "500",
         "dimensions": "Sturdy Hexagonal Frame (Non-Foldable)",
         "category": "Festive & Kandil",
-        "img": "assets/products/kandil-shivneri-big.webp?v=diwali_festive_real",
-        "gallery": [
-            "assets/products/kandil-shivneri-big.webp?v=diwali_festive_real",
-            "assets/products/bamboo-kandil-collection-poster.webp?v=diwali_festive_real"
-        ],
+        "img": "assets/products/kandil-shivneri-big.webp?v=diwali2026_creative",
+        "gallery": [[
+            "assets/products/kandil-shivneri-big.webp?v=diwali2026_creative",
+            "assets/products/kandil-shivneri-big-gallery-1.webp?v=diwali2026_creative",
+            "assets/products/kandil-shivneri-big-gallery-2.webp?v=diwali2026_creative",
+            "assets/products/kandil-shivneri-big-gallery-3.webp?v=diwali2026_creative",
+            "assets/products/kandil-shivneri-big-gallery-4.webp?v=diwali2026_creative",
+            "assets/products/kandil-shivneri-big-gallery-5.webp?v=diwali2026_creative"
+]],
         "desc": "A bold handcrafted bamboo kandil featuring vibrant magenta panels painted with traditional Warli dancing motifs alongside natural woven bamboo sections. Non-foldable statement piece celebrating indigenous tribal art.",
         "highlights": [
             "100% Environment Friendly & Natural Bamboo",
@@ -105,11 +120,15 @@
         "cost": "500",
         "dimensions": "Cylindrical Weave (Non-Foldable)",
         "category": "Festive & Kandil",
-        "img": "assets/products/kandil-purandar-big.webp?v=diwali_festive_real",
-        "gallery": [
-            "assets/products/kandil-purandar-big.webp?v=diwali_festive_real",
-            "assets/products/bamboo-kandil-collection-poster.webp?v=diwali_festive_real"
-        ],
+        "img": "assets/products/kandil-purandar-big.webp?v=diwali2026_creative",
+        "gallery": [[
+            "assets/products/kandil-purandar-big.webp?v=diwali2026_creative",
+            "assets/products/kandil-purandar-big-gallery-1.webp?v=diwali2026_creative",
+            "assets/products/kandil-purandar-big-gallery-2.webp?v=diwali2026_creative",
+            "assets/products/kandil-purandar-big-gallery-3.webp?v=diwali2026_creative",
+            "assets/products/kandil-purandar-big-gallery-4.webp?v=diwali2026_creative",
+            "assets/products/kandil-purandar-big-gallery-5.webp?v=diwali2026_creative"
+]],
         "desc": "A sleek cylindrical bamboo lantern in warm orange and natural lattice weave with a contemporary minimal aesthetic that casts intricate light patterns. Non-foldable and handcrafted by tribal artisans.",
         "highlights": [
             "100% Environment Friendly & Natural Bamboo",
@@ -128,11 +147,14 @@
         "cost": "350",
         "dimensions": "Petite Diamond Taper (Foldable)",
         "category": "Festive & Kandil",
-        "img": "assets/products/kandil-anjaneri-small.webp?v=diwali_festive_real",
-        "gallery": [
-            "assets/products/kandil-anjaneri-small.webp?v=diwali_festive_real",
-            "assets/products/bamboo-kandil-collection-poster.webp?v=diwali_festive_real"
-        ],
+        "img": "assets/products/kandil-anjaneri-small.webp?v=diwali2026_creative",
+        "gallery": [[
+            "assets/products/kandil-anjaneri-small.webp?v=diwali2026_creative",
+            "assets/products/kandil-anjaneri-small-gallery-1.webp?v=diwali2026_creative",
+            "assets/products/kandil-anjaneri-small-gallery-2.webp?v=diwali2026_creative",
+            "assets/products/kandil-anjaneri-small-gallery-3.webp?v=diwali2026_creative",
+            "assets/products/kandil-anjaneri-small-gallery-4.webp?v=diwali2026_creative"
+]],
         "desc": "A petite foldable bamboo kandil in royal blue and warm orange weaves, easy to hang and compact to store. Handmade by tribal sisters; ideal for gifting or festive accents.",
         "highlights": [
             "100% Environment Friendly & Natural Bamboo",

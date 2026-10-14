@@ -1,0 +1,246 @@
+{
+  "key-chain": {
+    "main": "assets/products/key-chain.webp",
+    "gallery": [
+      "assets/products/key-chain.webp",
+      "assets/products/key-chain-2.webp"
+    ]
+  },
+  "paper-weight": {
+    "main": "assets/products/paper-weight.webp",
+    "gallery": [
+      "assets/products/paper-weight.webp"
+    ]
+  },
+  "round-pen-stand": {
+    "main": "assets/products/round-pen-stand.webp",
+    "gallery": [
+      "assets/products/round-pen-stand.webp"
+    ]
+  },
+  "square-pen-stand": {
+    "main": "assets/products/square-pen-stand.webp",
+    "gallery": [
+      "assets/products/square-pen-stand.webp",
+      "assets/products/square-pen-stand-2.webp"
+    ]
+  },
+  "mu-pen-stand": {
+    "main": "assets/products/mu-pen-stand.webp",
+    "gallery": [
+      "assets/products/mu-pen-stand.webp"
+    ]
+  },
+  "amplifier": {
+    "main": "assets/products/amplifier.webp",
+    "gallery": [
+      "assets/products/amplifier.webp",
+      "assets/products/amplifier-2.webp"
+    ]
+  },
+  "bowl": {
+    "main": "assets/products/bowl.webp",
+    "gallery": [
+      "assets/products/bowl.webp",
+      "assets/products/bowl-2.webp"
+    ]
+  },
+  "fruit-basket": {
+    "main": "assets/products/fruit-basket.webp",
+    "gallery": [
+      "assets/products/fruit-basket.webp",
+      "assets/products/fruit-basket-2.webp",
+      "assets/products/fruit-basket-3.webp"
+    ]
+  },
+  "tea-coaster": {
+    "main": "assets/products/tea-coaster.webp",
+    "gallery": [
+      "assets/products/tea-coaster.webp",
+      "assets/products/tea-coaster-2.webp",
+      "assets/products/tea-coaster-3.webp",
+      "assets/products/tea-coaster-4.webp"
+    ]
+  },
+  "zig-zag-pen-stand": {
+    "main": "assets/products/zig-zag-pen-stand.webp",
+    "gallery": [
+      "assets/products/zig-zag-pen-stand.webp",
+      "assets/products/zig-zag-pen-stand-2.webp"
+    ]
+  },
+  "wall-clock": {
+    "main": "assets/products/wall-clock.webp",
+    "gallery": [
+      "assets/products/wall-clock.webp",
+      "assets/products/wall-clock-2.webp",
+      "assets/products/wall-clock-3.webp"
+    ]
+  },
+  "serving-tray": {
+    "main": "assets/products/serving-tray.webp",
+    "gallery": [
+      "assets/products/serving-tray.webp",
+      "assets/products/serving-tray-2.webp",
+      "assets/products/serving-tray-3.webp"
+    ]
+  },
+  "handle-office-tray": {
+    "main": "assets/products/handle-office-tray.webp",
+    "gallery": [
+      "assets/products/handle-office-tray.webp",
+      "assets/products/handle-office-tray-2.webp",
+      "assets/products/handle-office-tray-3.webp"
+    ]
+  },
+  "small-serving-tray": {
+    "main": "assets/products/small-serving-tray.webp",
+    "gallery": [
+      "assets/products/small-serving-tray.webp",
+      "assets/products/small-serving-tray-2.webp",
+      "assets/products/small-serving-tray-3.webp",
+      "assets/products/small-serving-tray-4.webp"
+    ]
+  },
+  "small-serving-tray-6x6": {
+    "main": "assets/products/small-serving-tray-6x6.webp",
+    "gallery": [
+      "assets/products/small-serving-tray-6x6.webp"
+    ]
+  },
+  "bullock-cart": {
+    "main": "assets/products/bullock-cart.webp",
+    "gallery": [
+      "assets/products/bullock-cart.webp"
+    ]
+  },
+  "planter": {
+    "main": "assets/products/planter.webp",
+    "gallery": [
+      "assets/products/planter.webp"
+    ]
+  },
+  "auto-rikshaw": {
+    "main": "assets/products/auto-rikshaw.webp",
+    "gallery": [
+      "assets/products/auto-rikshaw.webp"
+    ]
+  },
+  "candy-holder": {
+    "main": "assets/products/candy-holder.webp",
+    "gallery": [
+      "assets/products/candy-holder.webp",
+      "assets/products/candy-holder-2.webp"
+    ]
+  },
+  "tea-light-holder": {
+    "main": "assets/products/tea-light-holder.webp",
+    "gallery": [
+      "assets/products/tea-light-holder.webp"
+    ]
+  },
+  "makeup-box": {
+    "main": "assets/products/makeup-box.webp",
+    "gallery": [
+      "assets/products/makeup-box.webp",
+      "assets/products/makeup-box-2.webp",
+      "assets/products/makeup-box-3.webp"
+    ]
+  },
+  "book-cover": {
+    "main": "assets/products/book-cover.webp",
+    "gallery": [
+      "assets/products/book-cover.webp"
+    ]
+  },
+  "basket": {
+    "main": "assets/products/basket.webp",
+    "gallery": [
+      "assets/products/basket.webp"
+    ]
+  },
+  "toy-car": {
+    "main": "assets/products/toy-car.webp",
+    "gallery": [
+      "assets/products/toy-car.webp"
+    ]
+  },
+  "gifting-bottle": {
+    "main": "assets/products/gifting-bottle.webp",
+    "gallery": [
+      "assets/products/gifting-bottle.webp"
+    ]
+  },
+  "national-flag": {
+    "main": "assets/products/national-flag.webp",
+    "gallery": [
+      "assets/products/national-flag.webp",
+      "assets/products/national-flag-2.webp",
+      "assets/products/national-flag-3.webp"
+    ]
+  },
+  "kandil-sahyadri-big": {
+    "main": "assets/products/kandil-sahyadri-big.webp?v=diwali2026_creative",
+    "gallery": [
+      "assets/products/kandil-sahyadri-big.webp?v=diwali2026_creative",
+      "assets/products/kandil-sahyadri-big-gallery-1.webp?v=diwali2026_creative",
+      "assets/products/kandil-sahyadri-big-gallery-2.webp?v=diwali2026_creative",
+      "assets/products/kandil-sahyadri-big-gallery-3.webp?v=diwali2026_creative",
+      "assets/products/kandil-sahyadri-big-gallery-4.webp?v=diwali2026_creative",
+      "assets/products/kandil-sahyadri-big-gallery-5.webp?v=diwali2026_creative"
+    ]
+  },
+  "kandil-anjaneri-big": {
+    "main": "assets/products/kandil-anjaneri-big.webp?v=diwali2026_creative",
+    "gallery": [
+      "assets/products/kandil-anjaneri-big.webp?v=diwali2026_creative",
+      "assets/products/kandil-anjaneri-big-gallery-1.webp?v=diwali2026_creative",
+      "assets/products/kandil-anjaneri-big-gallery-2.webp?v=diwali2026_creative",
+      "assets/products/kandil-anjaneri-big-gallery-3.webp?v=diwali2026_creative",
+      "assets/products/kandil-anjaneri-big-gallery-4.webp?v=diwali2026_creative"
+    ]
+  },
+  "kandil-sahyadri-small": {
+    "main": "assets/products/kandil-sahyadri-small.webp?v=diwali2026_creative",
+    "gallery": [
+      "assets/products/kandil-sahyadri-small.webp?v=diwali2026_creative",
+      "assets/products/kandil-sahyadri-small-gallery-1.webp?v=diwali2026_creative",
+      "assets/products/kandil-sahyadri-small-gallery-2.webp?v=diwali2026_creative",
+      "assets/products/kandil-sahyadri-small-gallery-3.webp?v=diwali2026_creative",
+      "assets/products/kandil-sahyadri-small-gallery-4.webp?v=diwali2026_creative",
+      "assets/products/kandil-sahyadri-small-gallery-5.webp?v=diwali2026_creative"
+    ]
+  },
+  "kandil-shivneri-big": {
+    "main": "assets/products/kandil-shivneri-big.webp?v=diwali2026_creative",
+    "gallery": [
+      "assets/products/kandil-shivneri-big.webp?v=diwali2026_creative",
+      "assets/products/kandil-shivneri-big-gallery-1.webp?v=diwali2026_creative",
+      "assets/products/kandil-shivneri-big-gallery-2.webp?v=diwali2026_creative",
+      "assets/products/kandil-shivneri-big-gallery-3.webp?v=diwali2026_creative",
+      "assets/products/kandil-shivneri-big-gallery-4.webp?v=diwali2026_creative",
+      "assets/products/kandil-shivneri-big-gallery-5.webp?v=diwali2026_creative"
+    ]
+  },
+  "kandil-purandar-big": {
+    "main": "assets/products/kandil-purandar-big.webp?v=diwali2026_creative",
+    "gallery": [
+      "assets/products/kandil-purandar-big.webp?v=diwali2026_creative",
+      "assets/products/kandil-purandar-big-gallery-1.webp?v=diwali2026_creative",
+      "assets/products/kandil-purandar-big-gallery-2.webp?v=diwali2026_creative",
+      "assets/products/kandil-purandar-big-gallery-3.webp?v=diwali2026_creative",
+      "assets/products/kandil-purandar-big-gallery-4.webp?v=diwali2026_creative",
+      "assets/products/kandil-purandar-big-gallery-5.webp?v=diwali2026_creative"
+    ]
+  },
+  "kandil-anjaneri-small": {
+    "main": "assets/products/kandil-anjaneri-small.webp?v=diwali2026_creative",
+    "gallery": [
+      "assets/products/kandil-anjaneri-small.webp?v=diwali2026_creative",
+      "assets/products/kandil-anjaneri-small-gallery-1.webp?v=diwali2026_creative",
+      "assets/products/kandil-anjaneri-small-gallery-2.webp?v=diwali2026_creative",
+      "assets/products/kandil-anjaneri-small-gallery-3.webp?v=diwali2026_creative",
+      "assets/products/kandil-anjaneri-small-gallery-4.webp?v=diwali2026_creative"
+    ]
+  }
+}
