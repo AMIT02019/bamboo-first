@@ -24,9 +24,61 @@ class Bamboo_First_Elementor_Builder {
     }
 
     public function __construct() {
+        add_action('template_redirect', [$this, 'handle_legacy_url_redirects'], 1);
         add_action('wp_enqueue_scripts', [$this, 'enqueue_assets'], 999);
         add_action('admin_menu', [$this, 'add_admin_menu']);
         add_action('admin_init', [$this, 'handle_builder_actions']);
+    }
+
+    public function handle_legacy_url_redirects() {
+        $uri = $_SERVER['REQUEST_URI'] ?? '';
+        $path = parse_url($uri, PHP_URL_PATH);
+        
+        // Fix double /events/events.html or /events.html
+        if (strpos($path, 'events.html') !== false) {
+            wp_safe_redirect(home_url('/events/'), 301);
+            exit;
+        }
+
+        // Clean any .html suffix on pages
+        if (preg_match('#^/([a-zA-Z0-9_-]+)\.html$#', $path, $matches)) {
+            $slug = $matches[1];
+            if ($slug === 'index') {
+                wp_safe_redirect(home_url('/'), 301);
+                exit;
+            }
+            if ($slug === '3rd-agm') {
+                wp_safe_redirect(home_url('/3rd-agm/'), 301);
+                exit;
+            }
+            if ($slug === 'rakshabandhan' || $slug === 'rakshabandhan-at-ins-angre') {
+                wp_safe_redirect(home_url('/rakshabandhan-at-ins-angre/'), 301);
+                exit;
+            }
+            wp_safe_redirect(home_url('/' . $slug . '/'), 301);
+            exit;
+        }
+
+        // Redirect /rakshabandhan or /rakshabandhan/ to /rakshabandhan-at-ins-angre/
+        if (rtrim($path, '/') === '/rakshabandhan') {
+            wp_safe_redirect(home_url('/rakshabandhan-at-ins-angre/'), 301);
+            exit;
+        }
+
+        if (is_404()) {
+            if (strpos($uri, 'events.html') !== false || strpos($uri, 'events') !== false) {
+                wp_safe_redirect(home_url('/events/'), 301);
+                exit;
+            }
+            if (strpos($uri, '3rd-agm') !== false) {
+                wp_safe_redirect(home_url('/3rd-agm/'), 301);
+                exit;
+            }
+            if (strpos($uri, 'rakshabandhan') !== false) {
+                wp_safe_redirect(home_url('/rakshabandhan-at-ins-angre/'), 301);
+                exit;
+            }
+        }
     }
 
     public function enqueue_assets() {
