@@ -70,7 +70,7 @@
       {
         "id": "sec_home_14",
         "title": "Section 14",
-        "html": "<section class=\"subscribe-wix-section\" data-reveal=\"\">\n<div class=\"subscribe-wix-wrap\">\n<h2>Everything You Need to Know About Bamboo First, the story, products, social impact and more.</h2>\n<div class=\"subscribe-wix-subtitle\">Subscribe now</div>\n<form class=\"subscribe-wix-form\" onsubmit=\"event.preventDefault(); alert('Thank you for subscribing to Bamboo First!');\">\n<div class=\"form-group\">\n<label for=\"subEmail\">Email</label>\n<input id=\"subEmail\" placeholder=\"Enter your email address\" required=\"\" type=\"email\"/>\n</div>\n<button class=\"btn-subscribe-wix\" type=\"submit\">Subscribe</button>\n</form>\n</div>\n</section>"
+        "html": "<section class=\"subscribe-wix-section\" data-reveal=\"\">\n<div class=\"subscribe-wix-wrap\">\n<h2>Everything You Need to Know About Bamboo First, the story, products, social impact and more.</h2>\n<div class=\"subscribe-wix-subtitle\">Subscribe now</div>\n<form class=\"subscribe-wix-form\" onsubmit=\"event.preventDefault(); alert('Thank you for subscribing to Bamboo First!');\">\n<div class=\"form-group\">\n<input id=\"subEmail\" placeholder=\"Enter your email address\" required=\"\" type=\"email\"/>\n</div>\n<button class=\"btn-subscribe-wix\" type=\"submit\">Subscribe</button>\n</form>\n</div>\n</section>"
       },
       {
         "id": "sec_home_15",

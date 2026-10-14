@@ -4396,12 +4396,7 @@ button.faq-question:focus,
 }
 
 .subscribe-wix-form label {
-  display: block;
-  font-family: var(--font-body);
-  font-size: 14px;
-  font-weight: 400;
-  color: #333333;
-  margin-bottom: 6px;
+  display: none !important;
 }
 
 .subscribe-wix-form input {
