@@ -1,0 +1,386 @@
+<!DOCTYPE html><html lang="en"><head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link href="https://fonts.googleapis.com/css2?family=Forum&amp;family=Questrial&amp;display=swap" rel="stylesheet">
+<style>
+:root{
+  --green:#526A3D; --green2:#3F7652; --cream:#FFFBEB; --sage:#D4D7C0;
+  --peach:#F8B389; --lav:#CCC8F1; --ink:#1c2416;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html,body{overflow:hidden;scrollbar-width:none}
+html::-webkit-scrollbar,body::-webkit-scrollbar{display:none}
+body{font-family:'Questrial',Arial,sans-serif;color:var(--ink);background:var(--cream);line-height:1.7}
+h1,h2,h3{font-family:'Forum',serif;font-weight:400}
+
+/* IMAGE (3:2) */
+.img{background:var(--sage) center/cover no-repeat;position:relative;width:100%;aspect-ratio:3/2;border-radius:10px;overflow:hidden}
+.img:not([style*="background-image"])::after{
+  content:attr(data-ph);position:absolute;inset:0;display:flex;align-items:center;justify-content:center;text-align:center;padding:10px;
+  color:var(--green);font-size:14px;letter-spacing:2px;text-transform:uppercase;
+  background:repeating-linear-gradient(45deg,transparent 0 14px,rgba(82,106,61,.08) 14px 28px)}
+
+/* HERO (centered) */
+.hero{background:var(--green);color:var(--cream);display:flex;flex-direction:column;align-items:center;text-align:center;gap:18px;padding:70px 6% 64px}
+.tag{display:inline-block;background:var(--peach);color:var(--ink);font-size:13px;letter-spacing:2px;text-transform:uppercase;padding:6px 16px;border-radius:30px}
+.hero h1{font-size:clamp(36px,5.5vw,68px);line-height:1.12;max-width:900px}
+.hero p{max-width:620px;opacity:.9;font-size:18px}
+.hero .frame{width:100%;max-width:900px;margin-top:22px}
+
+/* MARQUEE */
+.marquee{background:var(--green2);color:var(--cream);overflow:hidden;padding:18px 0;
+  -webkit-mask-image:linear-gradient(90deg,transparent,#000 6%,#000 94%,transparent);
+  mask-image:linear-gradient(90deg,transparent,#000 6%,#000 94%,transparent)}
+.mq-track{display:flex;width:max-content;animation:mq 45s linear infinite}
+.marquee:hover .mq-track{animation-play-state:paused}
+.mq-group{display:flex;flex:none}
+.mq-group span{display:flex;align-items:center;white-space:nowrap;padding:0 30px;
+  font-size:clamp(16px,2vw,26px);letter-spacing:3px;text-transform:uppercase}
+.mq-group span::after{content:"";width:7px;height:7px;border-radius:50%;background:var(--peach);margin-left:60px}
+@keyframes mq{to{transform:translateX(-50%)}}
+@media(prefers-reduced-motion:reduce){.mq-track{animation:none}}
+
+/* SPLIT */
+.split{display:grid;grid-template-columns:1.15fr 1fr;align-items:center}
+.split .media{padding:64px 4% 64px 6%;display:flex;justify-content:center}
+.split .frame{width:100%;max-width:680px}
+.split .txt{padding:64px 6% 64px 4%;display:flex;flex-direction:column;gap:18px}
+.split h2{font-size:clamp(28px,3.4vw,46px);color:var(--green);line-height:1.2}
+.split p{font-size:17px}
+.split.rev{grid-template-columns:1fr 1.15fr}
+.split.rev .media{order:2;padding:64px 6% 64px 4%}
+.split.rev .txt{padding:64px 4% 64px 6%}
+.split.light{background:var(--cream)}
+.split.dark{background:var(--green);color:var(--cream)}
+.split.dark h2{color:var(--cream)}
+.split.sage{background:var(--sage)}
+.rule{width:60px;height:3px;background:var(--peach)}
+
+/* OPEN SLIDER */
+.gallery{background:var(--sage);padding:70px 0 60px;text-align:center;overflow:hidden}
+.gallery h2{font-size:clamp(28px,3.4vw,44px);color:var(--green);margin-bottom:34px;padding:0 24px}
+.vp{overflow:hidden;padding-left:6%;touch-action:pan-y;cursor:grab}
+.track{display:flex;transition:transform .6s ease}
+.slide{flex:0 0 auto;padding-right:16px}
+.slide .img{cursor:zoom-in;transition:transform .3s}
+.slide .img:hover{transform:translateY(-4px)}
+.ctrl{display:flex;align-items:center;justify-content:center;gap:18px;margin-top:30px;padding:0 24px}
+.arrow{width:46px;height:46px;border-radius:50%;border:1px solid var(--green);background:transparent;color:var(--green);font-size:24px;cursor:pointer;flex:none;transition:background .25s,color .25s}
+.arrow:hover{background:var(--green);color:var(--cream)}
+.dots{display:flex;gap:8px;flex-wrap:wrap;justify-content:center}
+.dots button{width:10px;height:10px;border-radius:50%;border:none;background:var(--green2);opacity:.3;cursor:pointer;padding:0;transition:opacity .25s,transform .25s}
+.dots button.on{opacity:1;transform:scale(1.25)}
+
+/* LIGHTBOX (full visible screen) */
+.probe{position:fixed;inset:0;opacity:0;pointer-events:none}
+.lb{position:fixed;left:0;top:0;width:100%;height:100%;background:rgba(14,20,11,.97);z-index:9999;
+  display:flex;align-items:center;justify-content:center;overflow:hidden;
+  opacity:0;visibility:hidden;pointer-events:none;
+  transition:opacity .45s ease,visibility 0s linear .45s}
+.lb.open{opacity:1;visibility:visible;pointer-events:auto;transition:opacity .45s ease,visibility 0s}
+.lb .stage{position:relative;width:min(90%,calc(var(--lh,700px) * .82 * 1.5));aspect-ratio:3/2;
+  transform:scale(.92);opacity:0;transition:transform .55s cubic-bezier(.22,.8,.3,1),opacity .45s ease}
+.lb.open .stage{transform:scale(1);opacity:1}
+.lbimg{position:absolute;inset:0;border-radius:8px;background:center/contain no-repeat;
+  transition:transform .55s cubic-bezier(.22,.8,.3,1),opacity .55s ease}
+.lbimg.ph{background:rgba(212,215,192,.06);border:1px dashed var(--sage)}
+.lbimg.ph::after{content:attr(data-ph);position:absolute;inset:0;display:flex;align-items:center;justify-content:center;
+  color:var(--sage);letter-spacing:2px;text-transform:uppercase}
+.lb button{position:absolute;background:rgba(82,106,61,.9);color:var(--cream);border:1px solid var(--cream);border-radius:50%;
+  width:48px;height:48px;font-size:24px;cursor:pointer;z-index:3;transition:background .25s,transform .25s}
+.lb button:hover{background:var(--green)}
+.lb .lp{left:22px;top:50%;margin-top:-24px}
+.lb .ln{right:22px;top:50%;margin-top:-24px}
+.lb .lp:hover{transform:translateX(-3px)}
+.lb .ln:hover{transform:translateX(3px)}
+.lb .lx{right:22px;top:22px;font-size:20px}
+.lb .lx:hover{transform:rotate(90deg)}
+.lb .cnt{position:absolute;bottom:20px;left:0;right:0;text-align:center;color:var(--cream);letter-spacing:3px;font-size:14px}
+
+/* VALUES */
+.values{background:var(--green);color:var(--cream);text-align:center;padding:70px 24px}
+.values p{max-width:760px;margin:0 auto;font-family:'Forum',serif;font-size:clamp(22px,2.8vw,34px);line-height:1.4}
+.values .tag{background:var(--lav);margin-bottom:24px}
+
+@media(max-width:800px){
+  .hero{padding:50px 24px 44px}
+  .split,.split.rev{grid-template-columns:1fr}
+  .split.rev .media{order:0}
+  .split .media,.split.rev .media{padding:44px 24px 0}
+  .split .txt,.split.rev .txt{padding:32px 24px 52px}
+  .vp{padding-left:24px}
+  .lb .stage{width:94%}
+  .lb .lp{left:10px}.lb .ln{right:10px}
+  .lb .lx{right:12px;top:12px}
+}
+</style>
+</head>
+<body>
+
+<!-- HERO -->
+<section class="hero">
+  <span class="tag">26th Sep 2026</span>
+  <h1>Mahila Swavalamban Kendre</h1>
+  <p>Common Facility Centre inaugurated at the Keshav Srushti Oxygen Park</p>
+  <div class="frame"><div class="img" data-img="1" data-ph="Image 1 | Hero" style="background-image: url(&quot;https://static.wixstatic.com/media/e0afb1_5469a023aa0a40c3af47fba0abe14bc3~mv2.jpeg&quot;);"></div></div>
+</section>
+
+<!-- MARQUEE -->
+<div class="marquee"><div class="mq-track">
+  <div class="mq-group">
+    <span>Bamboo</span><span>Sustainability</span><span>Green Living</span><span>Oxygen Park</span>
+    <span>Eco Friendly</span><span>Renewable</span><span>Clean Air</span><span>Nature</span>
+  </div>
+  <div class="mq-group">
+    <span>Bamboo</span><span>Sustainability</span><span>Green Living</span><span>Oxygen Park</span>
+    <span>Eco Friendly</span><span>Renewable</span><span>Clean Air</span><span>Nature</span>
+  </div>
+</div></div>
+
+<!-- INTRO -->
+<section class="split light">
+  <div class="media"><div class="frame"><div class="img" data-img="2" data-ph="Image 2" style="background-image: url(&quot;https://static.wixstatic.com/media/e0afb1_1cce7788cdf04d1a9b482366bf22af1a~mv2.jpeg&quot;);"></div></div></div>
+  <div class="txt">
+    <h2>Another Milestone</h2>
+    <div class="rule"></div>
+    <p>Keshav Srushti achieved another milestone in it's bamboo skill &amp; enterprise development journey as it inaugurated the 'Mahila Swavalamban Kendre' (Common Facility Centre) at the Keshav Srushti Oxygen Park on 26th Sep 2026.</p>
+  </div>
+</section>
+
+<!-- CSR -->
+<section class="split dark rev">
+  <div class="media"><div class="frame"><div class="img" data-img="3" data-ph="Image 3" style="background-image: url(&quot;https://static.wixstatic.com/media/e0afb1_ce010c269e4445f6828585d5810a32ff~mv2.jpeg&quot;);"></div></div></div>
+  <div class="txt">
+    <h2>Built Under CSR Initiative 'Roshni'</h2>
+    <div class="rule"></div>
+    <p>The CFC is built under the CSR initiative 'Roshni' by renowned business group RR Kabel. Machines for the CFC are supported by NABARD.</p>
+  </div>
+</section>
+
+<!-- DIGNITARIES -->
+<section class="split sage">
+  <div class="media"><div class="frame"><div class="img" data-img="4" data-ph="Image 4" style="background-image: url(&quot;https://static.wixstatic.com/media/e0afb1_a02f19eca6964e958f70a61e99c09a2c~mv2.jpeg&quot;);"></div></div></div>
+  <div class="txt">
+    <h2>Dignitaries Present</h2>
+    <div class="rule"></div>
+    <p>RR Kabel Chairman Shri. Rameshwarlal Kabra, Smt. Ratnidevi Kabra, MD Shri. Mahendra Kabra, RSS Mumbai Mahanagar Sanghachalak Shri. Suresh Bhageria, Keshav Srushti Margadarshak Shri. Bimal Kedia, AGM NABARD RO Shri. Khokan Dey, DDM NABARD Palghar Shri. Sudhanshu Ashwini, Project Officer &amp; SDM Jawhar Shri. Sidharth Ramkumar (IAS) were the dignitaries present during inauguration ceremony who showered their wishes &amp; blessings for future.</p>
+  </div>
+</section>
+
+<!-- GALLERY -->
+<section class="gallery">
+  <h2>Glimpses From The Inauguration</h2>
+  <div class="vp" id="vp"><div class="track" id="track" style="transform: translateX(0px);"><div class="slide" style="width: 423.003px;"><div class="img" data-ph="Image 6" style="background-image: url(&quot;https://static.wixstatic.com/media/e0afb1_7cb9263e39854fa88bf3b190ff606412~mv2.jpeg&quot;);"></div></div><div class="slide" style="width: 423.003px;"><div class="img" data-ph="Image 7" style="background-image: url(&quot;https://static.wixstatic.com/media/e0afb1_049003c187684ddc8ec6be35f3486e72~mv2.jpeg&quot;);"></div></div><div class="slide" style="width: 423.003px;"><div class="img" data-ph="Image 8" style="background-image: url(&quot;https://static.wixstatic.com/media/e0afb1_a7c43990016b47e6a98da9c84b9f971b~mv2.jpeg&quot;);"></div></div><div class="slide" style="width: 423.003px;"><div class="img" data-ph="Image 9" style="background-image: url(&quot;https://static.wixstatic.com/media/e0afb1_6729a06c3b93485eb27163289b5fa4dd~mv2.jpeg&quot;);"></div></div><div class="slide" style="width: 423.003px;"><div class="img" data-ph="Image 10" style="background-image: url(&quot;https://static.wixstatic.com/media/e0afb1_5e48cb12ca4c4cb18db51d9cc943bcc6~mv2.jpeg&quot;);"></div></div><div class="slide" style="width: 423.003px;"><div class="img" data-ph="Image 11" style="background-image: url(&quot;https://static.wixstatic.com/media/e0afb1_04730373c83e4367a13e9787d87a09c0~mv2.jpeg&quot;);"></div></div><div class="slide" style="width: 423.003px;"><div class="img" data-ph="Image 12" style="background-image: url(&quot;https://static.wixstatic.com/media/e0afb1_fa70e562395c48bf8d1180de0fce6f8b~mv2.jpeg&quot;);"></div></div><div class="slide" style="width: 423.003px;"><div class="img" data-ph="Image 13" style="background-image: url(&quot;https://static.wixstatic.com/media/e0afb1_b79b78874c05408ba17d4ff1e4c1c5d1~mv2.jpeg&quot;);"></div></div><div class="slide" style="width: 423.003px;"><div class="img" data-ph="Image 14" style="background-image: url(&quot;https://static.wixstatic.com/media/e0afb1_717de6e2c1f84730af35077e9f8c010e~mv2.jpeg&quot;);"></div></div><div class="slide" style="width: 423.003px;"><div class="img" data-ph="Image 15" style="background-image: url(&quot;https://static.wixstatic.com/media/e0afb1_45a690e76b574c0099b9f114ecc37dc5~mv2.jpeg&quot;);"></div></div><div class="slide" style="width: 423.003px;"><div class="img" data-ph="Image 16" style="background-image: url(&quot;https://static.wixstatic.com/media/e0afb1_d8aff4160e0146d3865f445109efd12c~mv2.jpeg&quot;);"></div></div></div></div>
+  <div class="ctrl">
+    <button class="arrow" id="prev" aria-label="Previous">‹</button>
+    <div class="dots" id="dots"><button aria-label="Go to 1" class="on"></button><button aria-label="Go to 2" class=""></button><button aria-label="Go to 3" class=""></button><button aria-label="Go to 4" class=""></button><button aria-label="Go to 5" class=""></button><button aria-label="Go to 6" class=""></button><button aria-label="Go to 7" class=""></button><button aria-label="Go to 8" class=""></button><button aria-label="Go to 9" class=""></button></div>
+    <button class="arrow" id="next" aria-label="Next">›</button>
+  </div>
+</section>
+
+<!-- SUCCESS -->
+<section class="split light rev">
+  <div class="media"><div class="frame"><div class="img" data-img="5" data-ph="Image 5" style="background-image: url(&quot;https://static.wixstatic.com/media/e0afb1_fa70e562395c48bf8d1180de0fce6f8b~mv2.jpeg&quot;);"></div></div></div>
+  <div class="txt">
+    <h2>A Sustainable Tribal Business Model</h2>
+    <div class="rule"></div>
+    <p>The occasion marked the success of a sustainable tribal business model with humble support from the society through CSR, Govt. Institutions, Local authorities, other NGOs, &amp; untiring efforts by dedicated volunteers.</p>
+  </div>
+</section>
+
+<!-- VALUES -->
+<section class="values">
+  <span class="tag">Core Values</span>
+  <p>The entire initiative is driven by core values of selfless sewa, convergence &amp; coordinated success. We look forward to make this CFC the most happening one.</p>
+</section>
+
+<!-- LIGHTBOX -->
+<div class="probe" id="probe"></div>
+<div class="lb" id="lb">
+  <button class="lx" id="lx" aria-label="Close">✕</button>
+  <button class="lp" id="lp" aria-label="Previous">‹</button>
+  <div class="stage" id="stage"></div>
+  <button class="ln" id="ln" aria-label="Next">›</button>
+  <div class="cnt" id="cnt"></div>
+</div>
+
+<script>
+/* ==========================================================
+   PASTE ALL IMAGE LINKS HERE (19 total, in order).
+   Keep the quotes and commas. Leave "" for any not ready.
+   Slider shows only the filled slots from 6 onwards.
+   ========================================================== */
+var IMAGES = [
+  "https://static.wixstatic.com/media/e0afb1_5469a023aa0a40c3af47fba0abe14bc3~mv2.jpeg",  /* 1  Hero */
+  "https://static.wixstatic.com/media/e0afb1_1cce7788cdf04d1a9b482366bf22af1a~mv2.jpeg",  /* 2  Another Milestone */
+  "https://static.wixstatic.com/media/e0afb1_ce010c269e4445f6828585d5810a32ff~mv2.jpeg",  /* 3  CSR Roshni */
+  "https://static.wixstatic.com/media/e0afb1_a02f19eca6964e958f70a61e99c09a2c~mv2.jpeg",  /* 4  Dignitaries */
+  "https://static.wixstatic.com/media/e0afb1_fa70e562395c48bf8d1180de0fce6f8b~mv2.jpeg",  /* 5  Sustainable Business Model */
+
+  "https://static.wixstatic.com/media/e0afb1_7cb9263e39854fa88bf3b190ff606412~mv2.jpeg",  /* 6  Slider 1 */
+  "https://static.wixstatic.com/media/e0afb1_049003c187684ddc8ec6be35f3486e72~mv2.jpeg",  /* 7  Slider 2 */
+  "https://static.wixstatic.com/media/e0afb1_a7c43990016b47e6a98da9c84b9f971b~mv2.jpeg",  /* 8  Slider 3 */
+  "https://static.wixstatic.com/media/e0afb1_6729a06c3b93485eb27163289b5fa4dd~mv2.jpeg",  /* 9  Slider 4 */
+  "https://static.wixstatic.com/media/e0afb1_5e48cb12ca4c4cb18db51d9cc943bcc6~mv2.jpeg",  /* 10 Slider 5 */
+  "https://static.wixstatic.com/media/e0afb1_04730373c83e4367a13e9787d87a09c0~mv2.jpeg",  /* 11 Slider 6 */
+  "https://static.wixstatic.com/media/e0afb1_fa70e562395c48bf8d1180de0fce6f8b~mv2.jpeg",  /* 12 Slider 7 */
+  "https://static.wixstatic.com/media/e0afb1_b79b78874c05408ba17d4ff1e4c1c5d1~mv2.jpeg",  /* 13 Slider 8 */
+  "https://static.wixstatic.com/media/e0afb1_717de6e2c1f84730af35077e9f8c010e~mv2.jpeg",  /* 14 Slider 9 */
+  "https://static.wixstatic.com/media/e0afb1_45a690e76b574c0099b9f114ecc37dc5~mv2.jpeg",  /* 15 Slider 10 */
+  "https://static.wixstatic.com/media/e0afb1_d8aff4160e0146d3865f445109efd12c~mv2.jpeg",  /* 16 Slider 11 */
+  "",  /* 17 Slider 12 */
+  "",  /* 18 Slider 13 */
+  ""   /* 19 Slider 14 */
+];
+/* ========================================================== */
+
+var OFFSET = 5;
+var COUNT = IMAGES.slice(OFFSET).filter(function(u){return u;}).length || 14;
+function bg(u){return 'url("'+u+'")';}
+
+/* fill standalone images */
+var fixed=document.querySelectorAll('[data-img]');
+for(var f=0;f<fixed.length;f++){
+  var u=IMAGES[parseInt(fixed[f].getAttribute('data-img'),10)-1];
+  if(u) fixed[f].style.backgroundImage=bg(u);
+}
+
+var vp=document.getElementById('vp'), track=document.getElementById('track'), dots=document.getElementById('dots');
+var slides=[], cur=0, per=3.2, sw=300, maxIdx=0, timer, moved=false;
+
+for(var i=0;i<COUNT;i++){
+  var s=document.createElement('div'); s.className='slide';
+  var im=document.createElement('div'); im.className='img';
+  im.setAttribute('data-ph','Image '+(i+OFFSET+1));
+  if(IMAGES[i+OFFSET]) im.style.backgroundImage=bg(IMAGES[i+OFFSET]);
+  (function(n){im.onclick=function(){if(!moved)openLB(n);};})(i);
+  s.appendChild(im); track.appendChild(s); slides.push(s);
+}
+
+function perView(){var w=window.innerWidth;return w>1000?3.2:w>650?2.2:1.15;}
+function padL(){return parseFloat(getComputedStyle(vp).paddingLeft)||0;}
+function layout(){
+  per=perView();
+  sw=(vp.clientWidth-padL())/per;
+  slides.forEach(function(s){s.style.width=sw+'px';});
+  maxIdx=Math.max(0,COUNT-Math.floor(per));
+  dots.innerHTML='';
+  for(var k=0;k<=maxIdx;k++){
+    var d=document.createElement('button'); d.setAttribute('aria-label','Go to '+(k+1));
+    (function(n){d.onclick=function(){go(n);reset();};})(k);
+    dots.appendChild(d);
+  }
+  go(Math.min(cur,maxIdx));
+}
+function go(n){
+  cur=Math.max(0,Math.min(n,maxIdx));
+  var x=Math.min(cur*sw, COUNT*sw-(vp.clientWidth-padL()));
+  track.style.transform='translateX(-'+Math.max(0,x)+'px)';
+  for(var k=0;k<dots.children.length;k++) dots.children[k].className=(k===cur?'on':'');
+}
+function nxt(){go(cur>=maxIdx?0:cur+1);}
+function prv(){go(cur<=0?maxIdx:cur-1);}
+function reset(){clearInterval(timer);timer=setInterval(nxt,3500);}
+document.getElementById('next').onclick=function(){nxt();reset();};
+document.getElementById('prev').onclick=function(){prv();reset();};
+vp.onmouseenter=function(){clearInterval(timer)};
+vp.onmouseleave=reset;
+
+/* swipe (slider) */
+var sx=null;
+vp.addEventListener('pointerdown',function(e){sx=e.clientX;moved=false;});
+vp.addEventListener('pointerup',function(e){
+  if(sx===null)return; var dx=e.clientX-sx; sx=null;
+  if(Math.abs(dx)>50){moved=true;dx<0?nxt():prv();reset();setTimeout(function(){moved=false;},50);}
+});
+window.addEventListener('resize',layout);
+
+/* ---------- LIGHTBOX ---------- */
+var lb=document.getElementById('lb'), stage=document.getElementById('stage'),
+    cnt=document.getElementById('cnt'), probe=document.getElementById('probe'),
+    li=0, poll=null, isOpen=false;
+
+function measure(cb){
+  var fallback={top:0,height:window.innerHeight};
+  if(window.self===window.top || !('IntersectionObserver' in window)){cb(fallback);return;}
+  var io=new IntersectionObserver(function(es){
+    io.disconnect();
+    var r=es[0].intersectionRect;
+    cb(r.height>80?{top:r.top,height:r.height}:fallback);
+  });
+  io.observe(probe);
+}
+function place(r){
+  lb.style.top=r.top+'px';
+  lb.style.height=r.height+'px';
+  lb.style.setProperty('--lh',r.height+'px');
+}
+
+function addSlide(n,dir){
+  var el=document.createElement('div');
+  el.className='lbimg';
+  if(IMAGES[n+OFFSET]) el.style.backgroundImage=bg(IMAGES[n+OFFSET]);
+  else{el.className+=' ph';el.setAttribute('data-ph','Image '+(n+OFFSET+1));}
+  if(dir){el.style.transform='translateX('+(dir*60)+'%)';el.style.opacity='0';}
+  stage.appendChild(el);
+  if(dir){el.getBoundingClientRect();el.style.transform='none';el.style.opacity='1';}
+}
+function showLB(n,dir){
+  li=(n+COUNT)%COUNT;
+  var olds=stage.querySelectorAll('.lbimg');
+  for(var k=0;k<olds.length;k++){
+    (function(o){
+      if(dir){o.style.transform='translateX('+(-dir*60)+'%)';o.style.opacity='0';}
+      setTimeout(function(){if(o.parentNode)o.parentNode.removeChild(o);},dir?560:0);
+    })(olds[k]);
+  }
+  addSlide(li,dir);
+  cnt.textContent=(li+1)+' / '+COUNT;
+}
+function openLB(n){
+  clearInterval(timer);
+  measure(function(r){
+    place(r);
+    stage.innerHTML='';
+    showLB(n,0);
+    lb.className='lb open'; isOpen=true;
+    clearInterval(poll);
+    poll=setInterval(function(){measure(place);},100);
+  });
+}
+function closeLB(){
+  isOpen=false;
+  lb.className='lb';
+  clearInterval(poll);
+  reset();
+}
+function lbNext(){showLB(li+1,1);}
+function lbPrev(){showLB(li-1,-1);}
+
+document.getElementById('lx').onclick=closeLB;
+document.getElementById('lp').onclick=lbPrev;
+document.getElementById('ln').onclick=lbNext;
+lb.addEventListener('click',function(e){if(e.target===lb)closeLB();});
+
+lb.addEventListener('wheel',function(e){e.preventDefault();},{passive:false});
+lb.addEventListener('touchmove',function(e){e.preventDefault();},{passive:false});
+
+var tx=null;
+lb.addEventListener('touchstart',function(e){tx=e.touches[0].clientX;},{passive:true});
+lb.addEventListener('touchend',function(e){
+  if(tx===null)return;
+  var dx=e.changedTouches[0].clientX-tx; tx=null;
+  if(Math.abs(dx)>50){dx<0?lbNext():lbPrev();}
+});
+
+document.addEventListener('keydown',function(e){
+  if(!isOpen)return;
+  if(e.key==='Escape')closeLB();
+  if(e.key==='ArrowLeft')lbPrev();
+  if(e.key==='ArrowRight')lbNext();
+});
+
+layout();reset();
+</script>
+
+</body></html>

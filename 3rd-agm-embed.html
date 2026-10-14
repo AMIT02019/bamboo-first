@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link href="https://fonts.googleapis.com/css2?family=Forum&family=Questrial&display=swap" rel="stylesheet">
+<style>
+:root{
+  --green:#526A3D; --green2:#3F7652; --cream:#FFFBEB; --sage:#D4D7C0;
+  --peach:#F8B389; --lav:#CCC8F1; --ink:#1c2416;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html,body{overflow:hidden;scrollbar-width:none}
+html::-webkit-scrollbar,body::-webkit-scrollbar{display:none}
+body{font-family:'Questrial',Arial,sans-serif;color:var(--ink);background:var(--cream);line-height:1.7}
+h1,h2,h3{font-family:'Forum',serif;font-weight:400}
+
+/* IMAGES */
+.img{background:var(--sage) center/cover no-repeat;position:relative;width:100%;aspect-ratio:3/2;border-radius:10px;overflow:hidden}
+.img.w{aspect-ratio:16/9}
+.img.p{aspect-ratio:5/7}
+.img.sq{aspect-ratio:1/1}
+.img:not([style*="background-image"])::after{
+  content:attr(data-ph);position:absolute;inset:0;display:flex;align-items:center;justify-content:center;text-align:center;padding:10px;
+  color:var(--green);font-size:14px;letter-spacing:2px;text-transform:uppercase;
+  background:repeating-linear-gradient(45deg,transparent 0 14px,rgba(82,106,61,.08) 14px 28px)}
+
+/* HERO */
+.hero{background:var(--green);color:var(--cream);display:flex;flex-direction:column;align-items:center;text-align:center;gap:18px;padding:70px 6% 64px}
+.tag{display:inline-block;background:var(--peach);color:var(--ink);font-size:13px;letter-spacing:2px;text-transform:uppercase;padding:6px 16px;border-radius:30px}
+.hero h1{font-size:clamp(36px,5.5vw,68px);line-height:1.12;max-width:900px}
+.hero p{max-width:640px;opacity:.9;font-size:18px}
+.hero .frame{width:100%;max-width:1000px;margin-top:22px}
+
+/* MARQUEE */
+.marquee{background:var(--green2);color:var(--cream);overflow:hidden;padding:18px 0;
+  -webkit-mask-image:linear-gradient(90deg,transparent,#000 6%,#000 94%,transparent);
+  mask-image:linear-gradient(90deg,transparent,#000 6%,#000 94%,transparent)}
+.mq-track{display:flex;width:max-content;animation:mq 45s linear infinite}
+.marquee:hover .mq-track{animation-play-state:paused}
+.mq-group{display:flex;flex:none}
+.mq-group span{display:flex;align-items:center;white-space:nowrap;padding:0 30px;
+  font-size:clamp(16px,2vw,26px);letter-spacing:3px;text-transform:uppercase}
+.mq-group span::after{content:"";width:7px;height:7px;border-radius:50%;background:var(--peach);margin-left:60px}
+@keyframes mq{to{transform:translateX(-50%)}}
+@media(prefers-reduced-motion:reduce){.mq-track{animation:none}}
+
+/* SPLIT */
+.split{display:grid;grid-template-columns:1.15fr 1fr;align-items:center}
+.split .media{padding:64px 4% 64px 6%;display:flex;justify-content:center}
+.split .frame{width:100%;max-width:680px}
+.split .frame.pf{max-width:400px}
+.split .frame.sf{max-width:520px}
+.split .txt{padding:64px 6% 64px 4%;display:flex;flex-direction:column;gap:18px}
+.split h2{font-size:clamp(28px,3.4vw,46px);color:var(--green);line-height:1.2}
+.split p{font-size:17px}
+.split.rev{grid-template-columns:1fr 1.15fr}
+.split.rev .media{order:2;padding:64px 6% 64px 4%}
+.split.rev .txt{padding:64px 4% 64px 6%}
+.split.light{background:var(--cream)}
+.split.dark{background:var(--green);color:var(--cream)}
+.split.dark h2{color:var(--cream)}
+.split.sage{background:var(--sage)}
+.rule{width:60px;height:3px;background:var(--peach)}
+
+/* DUO */
+.duo{background:var(--green);padding:70px 6%;display:grid;grid-template-columns:1fr 1fr;gap:24px}
+
+@media(max-width:800px){
+  .hero{padding:50px 24px 44px}
+  .split,.split.rev{grid-template-columns:1fr}
+  .split.rev .media{order:0}
+  .split .media,.split.rev .media{padding:44px 24px 0}
+  .split .txt,.split.rev .txt{padding:32px 24px 52px}
+  .duo{grid-template-columns:1fr;padding:44px 24px}
+}
+</style>
+</head>
+<body>
+
+<!-- HERO -->
+<section class="hero">
+  <span class="tag">Bamboo First</span>
+  <h1>3rd Annual General Meeting</h1>
+  <p>Tribal enterprise Bamboo First concluded it's 3rd Annual General Meeting</p>
+  <div class="frame"><div class="img w" data-img="1" data-ph="Image 1 | Hero | 16:9"></div></div>
+</section>
+
+<!-- MARQUEE -->
+<div class="marquee"><div class="mq-track">
+  <div class="mq-group">
+    <span>Bamboo</span><span>Sustainability</span><span>Green Living</span><span>Oxygen Park</span>
+    <span>Eco Friendly</span><span>Renewable</span><span>Clean Air</span><span>Nature</span>
+  </div>
+  <div class="mq-group">
+    <span>Bamboo</span><span>Sustainability</span><span>Green Living</span><span>Oxygen Park</span>
+    <span>Eco Friendly</span><span>Renewable</span><span>Clean Air</span><span>Nature</span>
+  </div>
+</div></div>
+
+<!-- 1 (5:7) -->
+<section class="split light">
+  <div class="media"><div class="frame pf"><div class="img p" data-img="2" data-ph="Image 2 | 5:7"></div></div></div>
+  <div class="txt">
+    <h2>With The Chief Guest</h2>
+    <div class="rule"></div>
+    <p>Tribal enterprise Bamboo First concluded it's 3rd Annual General Meeting in presence of Chief Guest Shri. Vinay Kolte with great energy &amp; enthusiasm.</p>
+  </div>
+</section>
+
+<!-- 2 (1:1) -->
+<section class="split dark rev">
+  <div class="media"><div class="frame sf"><div class="img sq" data-img="3" data-ph="Image 3 | 1:1"></div></div></div>
+  <div class="txt">
+    <h2>Voices Of The Artisans</h2>
+    <div class="rule"></div>
+    <p>Tribal artisans discussed the achievements, challenges, business growth &amp; future plans while highlighting the unusual success achieved with help of Keshav Srushti &amp; NABARD.</p>
+  </div>
+</section>
+
+<!-- 3 (horizontal) -->
+<section class="split sage">
+  <div class="media"><div class="frame"><div class="img" data-img="4" data-ph="Image 4 | 3:2"></div></div></div>
+  <div class="txt">
+    <h2>Guidance &amp; Takeaway</h2>
+    <div class="rule"></div>
+    <p>Vinay ji's brilliant guidance &amp; assurance of support with his Bamboo Knowledge Bank made our day. Nothing big, but small milestones achieved with great patience, perseverance, &amp; practice can pave the way to sustainable success was the takeaway.</p>
+  </div>
+</section>
+
+<!-- DUO -->
+<section class="duo">
+  <div class="img w" data-img="5" data-ph="Image 5 | 16:9"></div>
+  <div class="img w" data-img="6" data-ph="Image 6 | 16:9"></div>
+</section>
+
+<script>
+/* IMAGE LINKS (6 total, in order). */
+var IMAGES = [
+  "https://static.wixstatic.com/media/e0afb1_75afc151323444deb2506bce40f2ae2c~mv2.jpeg",  /* 1 Hero (horizontal) */
+  "https://static.wixstatic.com/media/e0afb1_790a900442c74469948cfa55cb0ebdbb~mv2.jpeg",  /* 2 Chief Guest (5:7) */
+  "https://static.wixstatic.com/media/e0afb1_cbdead8f009d4c8689b1b49f658e9199~mv2.jpeg",  /* 3 Artisans (1:1) */
+  "https://static.wixstatic.com/media/e0afb1_3e5e55c03e6543b8912f79bcf49b6d49~mv2.jpeg",  /* 4 Guidance (horizontal) */
+  "https://static.wixstatic.com/media/e0afb1_e07f26e1d724488ab87f51f3f8d2fed1~mv2.jpeg",  /* 5 Duo left (horizontal) */
+  "https://static.wixstatic.com/media/e0afb1_68398e8afdda4816ab592aaa9dddfd5a~mv2.jpeg"   /* 6 Duo right (horizontal) */
+];
+
+var fixed=document.querySelectorAll('[data-img]');
+for(var f=0;f<fixed.length;f++){
+  var u=IMAGES[parseInt(fixed[f].getAttribute('data-img'),10)-1];
+  if(u) fixed[f].style.backgroundImage='url("'+u+'")';
+}
+</script>
+</body>
+</html>

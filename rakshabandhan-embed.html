@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link href="https://fonts.googleapis.com/css2?family=Forum&family=Questrial&display=swap" rel="stylesheet">
+<style>
+:root{
+  --green:#526A3D; --green2:#3F7652; --cream:#FFFBEB; --sage:#D4D7C0;
+  --peach:#F8B389; --lav:#CCC8F1; --ink:#1c2416;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html,body{overflow:hidden;scrollbar-width:none}
+html::-webkit-scrollbar,body::-webkit-scrollbar{display:none}
+body{font-family:'Questrial',Arial,sans-serif;color:var(--ink);background:var(--cream);line-height:1.7}
+h1,h2,h3{font-family:'Forum',serif;font-weight:400}
+
+/* IMAGES */
+.img{background:var(--sage) center/cover no-repeat;position:relative;width:100%;aspect-ratio:3/2;border-radius:10px;overflow:hidden}
+.img:not([style*="background-image"])::after{
+  content:attr(data-ph);position:absolute;inset:0;display:flex;align-items:center;justify-content:center;text-align:center;padding:10px;
+  color:var(--green);font-size:14px;letter-spacing:2px;text-transform:uppercase;
+  background:repeating-linear-gradient(45deg,transparent 0 14px,rgba(82,106,61,.08) 14px 28px)}
+
+/* HERO */
+.hero{background:var(--green);color:var(--cream);display:flex;flex-direction:column;align-items:center;text-align:center;gap:18px;padding:70px 6% 64px}
+.tag{display:inline-block;background:var(--peach);color:var(--ink);font-size:13px;letter-spacing:2px;text-transform:uppercase;padding:6px 16px;border-radius:30px}
+.hero h1{font-size:clamp(36px,5.5vw,68px);line-height:1.12;max-width:900px}
+.hero p{max-width:640px;opacity:.9;font-size:18px}
+.hero .frame{width:100%;max-width:900px;margin-top:22px}
+
+/* MARQUEE */
+.marquee{background:var(--green2);color:var(--cream);overflow:hidden;padding:18px 0;
+  -webkit-mask-image:linear-gradient(90deg,transparent,#000 6%,#000 94%,transparent);
+  mask-image:linear-gradient(90deg,transparent,#000 6%,#000 94%,transparent)}
+.mq-track{display:flex;width:max-content;animation:mq 45s linear infinite}
+.marquee:hover .mq-track{animation-play-state:paused}
+.mq-group{display:flex;flex:none}
+.mq-group span{display:flex;align-items:center;white-space:nowrap;padding:0 30px;
+  font-size:clamp(16px,2vw,26px);letter-spacing:3px;text-transform:uppercase}
+.mq-group span::after{content:"";width:7px;height:7px;border-radius:50%;background:var(--peach);margin-left:60px}
+@keyframes mq{to{transform:translateX(-50%)}}
+@media(prefers-reduced-motion:reduce){.mq-track{animation:none}}
+
+/* SPLIT */
+.split{display:grid;grid-template-columns:1.15fr 1fr;align-items:center}
+.split .media{padding:64px 4% 64px 6%;display:flex;justify-content:center}
+.split .frame{width:100%;max-width:680px}
+.split .txt{padding:64px 6% 64px 4%;display:flex;flex-direction:column;gap:18px}
+.split h2{font-size:clamp(28px,3.4vw,46px);color:var(--green);line-height:1.2}
+.split p{font-size:17px}
+.split.rev{grid-template-columns:1fr 1.15fr}
+.split.rev .media{order:2;padding:64px 6% 64px 4%}
+.split.rev .txt{padding:64px 4% 64px 6%}
+.split.light{background:var(--cream)}
+.split.dark{background:var(--green);color:var(--cream)}
+.split.dark h2{color:var(--cream)}
+.split.sage{background:var(--sage)}
+.rule{width:60px;height:3px;background:var(--peach)}
+
+/* CLOSING */
+.values{background:var(--sage);color:var(--green);text-align:center;padding:70px 24px}
+.values p{max-width:760px;margin:0 auto;font-family:'Forum',serif;font-size:clamp(22px,2.8vw,34px);line-height:1.4}
+.values .tag{background:var(--lav);color:var(--ink);margin-bottom:24px}
+
+@media(max-width:800px){
+  .hero{padding:50px 24px 44px}
+  .split,.split.rev{grid-template-columns:1fr}
+  .split.rev .media{order:0}
+  .split .media,.split.rev .media{padding:44px 24px 0}
+  .split .txt,.split.rev .txt{padding:32px 24px 52px}
+}
+</style>
+</head>
+<body>
+
+<!-- HERO -->
+<section class="hero">
+  <span class="tag">Bamboo First</span>
+  <h1>Rakshabandhan at INS Angre</h1>
+  <p>Tribal sisters of Bamboo First celebrate rakshabandhan with navy officers at naval base INS Angre, Mumbai</p>
+  <div class="frame"><div class="img" data-img="1" data-ph="Image 1 | Hero"></div></div>
+</section>
+
+<!-- MARQUEE -->
+<div class="marquee"><div class="mq-track">
+  <div class="mq-group">
+    <span>Bamboo</span><span>Sustainability</span><span>Green Living</span><span>Oxygen Park</span>
+    <span>Eco Friendly</span><span>Renewable</span><span>Clean Air</span><span>Nature</span>
+  </div>
+  <div class="mq-group">
+    <span>Bamboo</span><span>Sustainability</span><span>Green Living</span><span>Oxygen Park</span>
+    <span>Eco Friendly</span><span>Renewable</span><span>Clean Air</span><span>Nature</span>
+  </div>
+</div></div>
+
+<!-- 1 -->
+<section class="split light">
+  <div class="media"><div class="frame"><div class="img" data-img="2" data-ph="Image 2"></div></div></div>
+  <div class="txt">
+    <h2>A Year Of Honour &amp; Pride</h2>
+    <div class="rule"></div>
+    <p>Yet another year of honour &amp; pride for tribal sisters of Bamboo First as they celebrate rakshabandhan with navy officers at naval base INS Angre, Mumbai. They were accompanied by sisters from Mumbai who are part of this Keshav Srushti led noble cause for tribal upliftment.</p>
+  </div>
+</section>
+
+<!-- 2 -->
+<section class="split dark rev">
+  <div class="media"><div class="frame"><div class="img" data-img="3" data-ph="Image 3"></div></div></div>
+  <div class="txt">
+    <h2>Bamboo Rakhis For The Navy</h2>
+    <div class="rule"></div>
+    <p>They tied bamboo rakhis to navy officers &amp; expressed gratitude. Company CEO Dilip Ghatal shared information about the life transforming bamboo project. Navy officers said this rakhi gives us strength while we are away from home in service to nation.</p>
+  </div>
+</section>
+
+<!-- CLOSING -->
+<section class="values">
+  <span class="tag">Gratitude</span>
+  <p>Grateful to Laksh Atha ji &amp; Manoj Bubna ji for their consistent efforts to make this memorable celebration possible for consecutive 3 years.</p>
+</section>
+
+<script>
+/* PASTE IMAGE LINKS HERE (3 total, in order). */
+var IMAGES = [
+  "https://static.wixstatic.com/media/e0afb1_72fd3cd547b540d48b3b47267b1820c3~mv2.jpeg",  /* 1 Hero */
+  "https://static.wixstatic.com/media/e0afb1_b9d5497a79d541518bdf3f820140c4a8~mv2.jpeg",  /* 2 A Year Of Honour & Pride */
+  "https://static.wixstatic.com/media/e0afb1_871470818c5c44ed9b31ad3e7dfe4a61~mv2.jpeg"   /* 3 Bamboo Rakhis For The Navy */
+];
+
+var fixed=document.querySelectorAll('[data-img]');
+for(var f=0;f<fixed.length;f++){
+  var u=IMAGES[parseInt(fixed[f].getAttribute('data-img'),10)-1];
+  if(u) fixed[f].style.backgroundImage='url("'+u+'")';
+}
+</script>
+</body>
+</html>
