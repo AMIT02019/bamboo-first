@@ -3,7 +3,7 @@
  * Plugin Name: Bamboo First - Elementor Site Builder
  * Plugin URI: https://bamoo.vercel.app
  * Description: Generates pixel-perfect, 100% Elementor-editable pages, modular sections, and styling for Bamboo First.
- * Version: 1.1.0
+ * Version: 1.1.20
  * Author: Bamboo First Team
  * Text Domain: bamboo-first
  */
@@ -38,11 +38,13 @@ class Bamboo_First_Elementor_Builder {
             null
         );
         
-        // Enqueue Bamboo First Unified CSS (v1.2.6)
-        wp_enqueue_style('bamboo-site-css', plugins_url('assets/site.css', __FILE__), [], '1.2.6');
+        // Enqueue Bamboo First Unified CSS with filemtime cache-busting
+        $css_ver = file_exists(__DIR__ . '/assets/site.css') ? filemtime(__DIR__ . '/assets/site.css') : '2.0.0';
+        wp_enqueue_style('bamboo-site-css', plugins_url('assets/site.css', __FILE__), [], $css_ver);
 
-        // Enqueue Bamboo First Interactive JS (v1.2.6)
-        wp_enqueue_script('bamboo-site-js', plugins_url('assets/site.js', __FILE__), ['jquery'], '1.2.6', true);
+        // Enqueue Bamboo First Interactive JS with filemtime cache-busting
+        $js_ver = file_exists(__DIR__ . '/assets/site.js') ? filemtime(__DIR__ . '/assets/site.js') : '2.0.0';
+        wp_enqueue_script('bamboo-site-js', plugins_url('assets/site.js', __FILE__), ['jquery'], $js_ver, true);
     }
 
     public function add_admin_menu() {
@@ -112,3 +114,6 @@ class Bamboo_First_Elementor_Builder {
 }
 
 Bamboo_First_Elementor_Builder::get_instance();
+
+// Initialize WooCommerce Sync & Integration
+require_once plugin_dir_path(__FILE__) . 'includes/woocommerce-sync.php';

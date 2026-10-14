@@ -1733,7 +1733,7 @@
 
   function initForms() {
     document.querySelectorAll('form').forEach(form => {
-      if (form.classList.contains('search-box') || form.closest('.search-box')) return;
+      if (form.id === 'checkoutForm' || form.classList.contains('search-box') || form.closest('.search-box')) return;
 
       form.addEventListener('submit', (e) => {
         e.preventDefault();
@@ -1838,6 +1838,20 @@
     }
 
     saveCart(cart);
+
+    // Sync with WooCommerce if on WordPress
+    if (window.BAMBOO_WOO_CONFIG && window.BAMBOO_WOO_CONFIG.products) {
+      const wcId = window.BAMBOO_WOO_CONFIG.products[productId];
+      if (wcId) {
+        const formData = new FormData();
+        formData.append('product_id', wcId);
+        formData.append('quantity', qty);
+        fetch('/?wc-ajax=add_to_cart', {
+          method: 'POST',
+          body: formData
+        }).catch(err => console.warn('WooCommerce add to cart error:', err));
+      }
+    }
 
     // Visual button feedback
     const activeBtn = (window.event && window.event.target) ? window.event.target.closest('.btn-add-to-cart') : null;
@@ -2279,6 +2293,17 @@
           localStorage.setItem('bamboo_last_completed_order', JSON.stringify(orderData));
         } catch (err) {
           console.error(err);
+        }
+
+        // Sync order with WooCommerce
+        if (window.BAMBOO_WOO_CONFIG && window.BAMBOO_WOO_CONFIG.ajax_url) {
+          fetch(window.BAMBOO_WOO_CONFIG.ajax_url + '?action=bamboo_create_wc_order', {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify(orderData)
+          }).then(r => r.json()).then(res => {
+            console.log('WooCommerce Order Created:', res);
+          }).catch(err => console.warn('WooCommerce Order sync error:', err));
         }
 
         // Clear cart

@@ -1,0 +1,732 @@
+[
+  {
+    "id": "kandil-sahyadri-big",
+    "name": "Sahyadri (Big) Bamboo Kandil",
+    "price": "INR 900/-",
+    "priceNum": 900,
+    "cost": "500",
+    "dimensions": "Large Diamond Frame (Non-Foldable)",
+    "category": "Festive & Kandil",
+    "img": "assets/products/kandil-sahyadri-big.webp?v=diwali_festive_real",
+    "gallery": [
+      "assets/products/kandil-sahyadri-big.webp?v=diwali_festive_real",
+      "assets/products/bamboo-kandil-collection-poster.webp?v=diwali_festive_real"
+    ],
+    "desc": "A grand handwoven bamboo Diwali lantern featuring rich red diamond panels with authentic Warli art, seasoned natural weave sections, cyan accents, and golden fringe tassels. Non-foldable and handmade by tribal women artisans in Vikramgad.",
+    "highlights": [
+      "100% Environment Friendly & Natural Mature Bamboo",
+      "Handmade with Love by Tribal Sisters in Vikramgad, Palghar",
+      "Non-Foldable Grand Festive Entrance Lantern",
+      "Your One Diwali lantern can illuminate two homes this festive season",
+      "An Initiative by Keshav Srushti, Supported by NABARD"
+    ]
+  },
+  {
+    "id": "kandil-anjaneri-big",
+    "name": "Anjaneri (Big) Bamboo Kandil",
+    "price": "INR 900/-",
+    "priceNum": 900,
+    "cost": "500",
+    "dimensions": "Tall Diamond Taper (Foldable)",
+    "category": "Festive & Kandil",
+    "img": "assets/products/kandil-anjaneri-big.webp?v=diwali_festive_real",
+    "gallery": [
+      "assets/products/kandil-anjaneri-big.webp?v=diwali_festive_real",
+      "assets/products/bamboo-kandil-collection-poster.webp?v=diwali_festive_real"
+    ],
+    "desc": "A tall handcrafted bamboo kandil in royal blue, golden yellow lattice weave, and festive magenta accents. Foldable for easy storage and shipping; handcrafted with love by tribal artisans.",
+    "highlights": [
+      "100% Environment Friendly & Natural Bamboo",
+      "Handmade with Love by Tribal Sisters in Vikramgad, Palghar",
+      "Convenient Foldable Design for Easy Storage",
+      "Delicate Woven Lattice with Warm Festive Ambient Glow",
+      "An Initiative by Keshav Srushti, Supported by NABARD"
+    ]
+  },
+  {
+    "id": "kandil-sahyadri-small",
+    "draft": true,
+    "name": "Sahyadri (Small) Bamboo Kandil",
+    "price": "INR 600/-",
+    "priceNum": 600,
+    "cost": "350",
+    "dimensions": "Compact Diamond Frame (Non-Foldable)",
+    "category": "Festive & Kandil",
+    "img": "assets/products/kandil-sahyadri-small.webp?v=diwali_festive_real",
+    "gallery": [
+      "assets/products/kandil-sahyadri-small.webp?v=diwali_festive_real",
+      "assets/products/bamboo-kandil-collection-poster.webp?v=diwali_festive_real"
+    ],
+    "desc": "A compact version of the Sahyadri lantern with vibrant colorful geometric weaves and cheerful golden fringe tassels. Non-foldable accent piece ideal for windows, balconies and indoor festive decor.",
+    "highlights": [
+      "100% Environment Friendly & Natural Bamboo",
+      "Handmade with Love by Tribal Sisters in Vikramgad, Palghar",
+      "Non-Foldable Compact Accent Lantern",
+      "Cheerful Golden Fringe & Vibrant Geometric Weave",
+      "An Initiative by Keshav Srushti, Supported by NABARD"
+    ]
+  },
+  {
+    "id": "kandil-shivneri-big",
+    "name": "Shivneri (Big) Bamboo Kandil",
+    "price": "INR 900/-",
+    "priceNum": 900,
+    "cost": "500",
+    "dimensions": "Sturdy Hexagonal Frame (Non-Foldable)",
+    "category": "Festive & Kandil",
+    "img": "assets/products/kandil-shivneri-big.webp?v=diwali_festive_real",
+    "gallery": [
+      "assets/products/kandil-shivneri-big.webp?v=diwali_festive_real",
+      "assets/products/bamboo-kandil-collection-poster.webp?v=diwali_festive_real"
+    ],
+    "desc": "A bold handcrafted bamboo kandil featuring vibrant magenta panels painted with traditional Warli dancing motifs alongside natural woven bamboo sections. Non-foldable statement piece celebrating indigenous tribal art.",
+    "highlights": [
+      "100% Environment Friendly & Natural Bamboo",
+      "Handmade with Love by Tribal Sisters in Vikramgad, Palghar",
+      "Authentic Handpainted Warli Tribal Art Motifs",
+      "Non-Foldable Sturdy Hexagonal Silhouette",
+      "An Initiative by Keshav Srushti, Supported by NABARD"
+    ]
+  },
+  {
+    "id": "kandil-purandar-big",
+    "name": "Purandar (Big) Bamboo Kandil",
+    "price": "INR 900/-",
+    "priceNum": 900,
+    "cost": "500",
+    "dimensions": "Cylindrical Weave (Non-Foldable)",
+    "category": "Festive & Kandil",
+    "img": "assets/products/kandil-purandar-big.webp?v=diwali_festive_real",
+    "gallery": [
+      "assets/products/kandil-purandar-big.webp?v=diwali_festive_real",
+      "assets/products/bamboo-kandil-collection-poster.webp?v=diwali_festive_real"
+    ],
+    "desc": "A sleek cylindrical bamboo lantern in warm orange and natural lattice weave with a contemporary minimal aesthetic that casts intricate light patterns. Non-foldable and handcrafted by tribal artisans.",
+    "highlights": [
+      "100% Environment Friendly & Natural Bamboo",
+      "Handmade with Love by Tribal Sisters in Vikramgad, Palghar",
+      "Contemporary Cylindrical Weave Pattern",
+      "Non-Foldable Sleek Architectural Design",
+      "An Initiative by Keshav Srushti, Supported by NABARD"
+    ]
+  },
+  {
+    "id": "kandil-anjaneri-small",
+    "draft": true,
+    "name": "Anjaneri (Small) Bamboo Kandil",
+    "price": "INR 600/-",
+    "priceNum": 600,
+    "cost": "350",
+    "dimensions": "Petite Diamond Taper (Foldable)",
+    "category": "Festive & Kandil",
+    "img": "assets/products/kandil-anjaneri-small.webp?v=diwali_festive_real",
+    "gallery": [
+      "assets/products/kandil-anjaneri-small.webp?v=diwali_festive_real",
+      "assets/products/bamboo-kandil-collection-poster.webp?v=diwali_festive_real"
+    ],
+    "desc": "A petite foldable bamboo kandil in royal blue and warm orange weaves, easy to hang and compact to store. Handmade by tribal sisters; ideal for gifting or festive accents.",
+    "highlights": [
+      "100% Environment Friendly & Natural Bamboo",
+      "Handmade with Love by Tribal Sisters in Vikramgad, Palghar",
+      "Compact & Foldable - Ideal for Gifting and Shipping",
+      "Rich Royal Blue & Warm Orange Festive Contrast",
+      "An Initiative by Keshav Srushti, Supported by NABARD"
+    ]
+  },
+  {
+    "id": "key-chain",
+    "name": "Key Chain",
+    "price": "INR 40/-",
+    "priceNum": 40,
+    "cost": "20",
+    "dimensions": "2 x 1.5 x 1.5",
+    "category": "Stationery & Accessories",
+    "img": "assets/products/key-chain.webp",
+    "gallery": [
+      "assets/products/key-chain.webp",
+      "assets/products/key-chain-2.webp"
+    ],
+    "desc": "A compact handcrafted bamboo key chain that keeps your keys organized in style. Its smooth natural finish makes it a practical everyday accessory and a charming eco-friendly gift.",
+    "highlights": [
+      "100% Biodegradable & Natural Bamboo",
+      "Handcrafted by Palghar Tribal Artisans",
+      "Dimensions: 2 x 1.5 x 1.5 inches"
+    ]
+  },
+  {
+    "id": "paper-weight",
+    "name": "Paper Weight",
+    "price": "INR 80/-",
+    "priceNum": 80,
+    "cost": "45",
+    "dimensions": "3 x 2 x 1.1",
+    "category": "Stationery & Office",
+    "img": "assets/products/paper-weight.webp",
+    "gallery": [
+      "assets/products/paper-weight.webp",
+      "assets/products/handle-office-tray-2.webp"
+    ],
+    "desc": "A delightful paperweight shaped like a traditional Indian hut, handcrafted from bamboo. It holds papers and documents in place while adding rustic charm to any desk or study.",
+    "highlights": [
+      "100% Biodegradable & Natural Bamboo",
+      "Handcrafted by Palghar Tribal Artisans",
+      "Dimensions: 3 x 2 x 1.1 inches"
+    ]
+  },
+  {
+    "id": "round-pen-stand",
+    "name": "Round Pen Stand",
+    "price": "INR 100/-",
+    "priceNum": 100,
+    "cost": "55",
+    "dimensions": "5.5 x 2.5 x 4.5",
+    "category": "Stationery & Office",
+    "img": "assets/products/round-pen-stand.webp",
+    "gallery": [
+      "assets/products/round-pen-stand.webp",
+      "assets/products/small-serving-tray-4.webp"
+    ],
+    "desc": "A round handcrafted bamboo pen stand that keeps pens, pencils, and brushes neatly organized on your desk. Its warm natural texture adds an elegant eco-friendly touch to home or office workspaces.",
+    "highlights": [
+      "100% Biodegradable & Natural Bamboo",
+      "Handcrafted by Palghar Tribal Artisans",
+      "Dimensions: 5.5 x 2.5 x 4.5 inches"
+    ]
+  },
+  {
+    "id": "square-pen-stand",
+    "name": "Square Pen Stand",
+    "price": "INR 160/-",
+    "priceNum": 160,
+    "cost": "90",
+    "dimensions": "3.5 x 3.5 x 4.5",
+    "category": "Stationery & Office",
+    "img": "assets/products/square-pen-stand.webp",
+    "gallery": [
+      "assets/products/square-pen-stand.webp",
+      "assets/products/square-pen-stand-2.webp"
+    ],
+    "desc": "A sturdy handcrafted bamboo pen stand with a clean square silhouette. It holds pens, pencils, and stationery within easy reach and suits both modern and traditional desk setups.",
+    "highlights": [
+      "100% Biodegradable & Natural Bamboo",
+      "Handcrafted by Palghar Tribal Artisans",
+      "Dimensions: 3.5 x 3.5 x 4.5 inches"
+    ]
+  },
+  {
+    "id": "mu-pen-stand",
+    "name": "M-U Pen Stand",
+    "price": "INR 160/-",
+    "priceNum": 160,
+    "cost": "90",
+    "dimensions": "5.5 x 2.5 x 4",
+    "category": "Stationery & Office",
+    "img": "assets/products/mu-pen-stand.webp",
+    "gallery": [
+      "assets/products/mu-pen-stand.webp"
+    ],
+    "desc": "A distinctive handcrafted bamboo pen stand designed in a M and U-inspired shape. Its eye-catching form makes it a conversation piece while keeping your writing essentials organized.",
+    "highlights": [
+      "100% Biodegradable & Natural Bamboo",
+      "Handcrafted by Palghar Tribal Artisans",
+      "Dimensions: 5.5 x 2.5 x 4 inches"
+    ]
+  },
+  {
+    "id": "amplifier",
+    "name": "Amplifier",
+    "price": "INR 260/-",
+    "priceNum": 260,
+    "cost": "160",
+    "dimensions": "12 x 3 x 3",
+    "category": "Decor & Lifestyle",
+    "img": "assets/products/amplifier.webp",
+    "gallery": [
+      "assets/products/amplifier.webp",
+      "assets/products/amplifier-2.webp"
+    ],
+    "desc": "A passive acoustic amplifier dock handcrafted from bamboo that naturally boosts your phone's speaker sound with no power or wires needed. Simply slot your phone in and enjoy louder, richer audio on your desk or bedside table.",
+    "highlights": [
+      "100% Biodegradable & Natural Bamboo",
+      "Handcrafted by Palghar Tribal Artisans",
+      "Dimensions: 12 x 3 x 3 inches"
+    ]
+  },
+  {
+    "id": "bowl",
+    "name": "Bowl",
+    "price": "INR 140/-",
+    "priceNum": 140,
+    "cost": "95",
+    "dimensions": "5 x 5 x 2.5",
+    "category": "Home & Kitchen",
+    "img": "assets/products/bowl.webp",
+    "gallery": [
+      "assets/products/bowl.webp",
+      "assets/products/bowl-2.webp"
+    ],
+    "desc": "A handcrafted bamboo bowl ideal for serving snacks, salads, fruits, or dry items. Its natural grain and smooth finish bring warmth to dining tables and make everyday serving feel special.",
+    "highlights": [
+      "100% Biodegradable & Natural Bamboo",
+      "Handcrafted by Palghar Tribal Artisans",
+      "Dimensions: 5 x 5 x 2.5 inches"
+    ]
+  },
+  {
+    "id": "fruit-basket",
+    "name": "Fruit Basket",
+    "price": "INR 200/-",
+    "priceNum": 200,
+    "cost": "130",
+    "dimensions": "10 x 10 x 4",
+    "category": "Home & Kitchen",
+    "img": "assets/products/fruit-basket.webp",
+    "gallery": [
+      "assets/products/fruit-basket.webp",
+      "assets/products/fruit-basket-2.webp",
+      "assets/products/fruit-basket-3.webp"
+    ],
+    "desc": "A spacious handcrafted bamboo fruit basket that displays fresh fruit beautifully while keeping air circulating. A functional centrepiece for kitchens and dining tables, also suited to gifting.",
+    "highlights": [
+      "100% Biodegradable & Natural Bamboo",
+      "Handcrafted by Palghar Tribal Artisans",
+      "Dimensions: 10 x 10 x 4 inches"
+    ]
+  },
+  {
+    "id": "tea-coaster",
+    "name": "Tea Coaster",
+    "price": "INR 200/-",
+    "priceNum": 200,
+    "cost": "120",
+    "dimensions": "4 x 4 x 2",
+    "category": "Home & Kitchen",
+    "img": "assets/products/tea-coaster.webp",
+    "gallery": [
+      "assets/products/tea-coaster.webp",
+      "assets/products/tea-coaster-2.webp",
+      "assets/products/tea-coaster-3.webp",
+      "assets/products/tea-coaster-4.webp"
+    ],
+    "desc": "A handcrafted bamboo tea coaster set with matching holder that protects your tables from heat marks and spills. Durable, easy to wipe clean, and a natural complement to tea cups and mugs.",
+    "highlights": [
+      "100% Biodegradable & Natural Bamboo",
+      "Handcrafted by Palghar Tribal Artisans",
+      "Dimensions: 4 x 4 x 2 inches"
+    ]
+  },
+  {
+    "id": "zig-zag-pen-stand",
+    "name": "Zig-Zag Pen Stand",
+    "price": "INR 160/-",
+    "priceNum": 160,
+    "cost": "85",
+    "dimensions": "3.5 x 2.6 x 5",
+    "category": "Stationery & Office",
+    "img": "assets/products/zig-zag-pen-stand.webp",
+    "gallery": [
+      "assets/products/zig-zag-pen-stand.webp",
+      "assets/products/zig-zag-pen-stand-2.webp"
+    ],
+    "desc": "A handcrafted bamboo pen stand with a striking zig-zag design that adds sculptural interest to any desk. It keeps pens and stationery organized while doubling as a decorative accent.",
+    "highlights": [
+      "100% Biodegradable & Natural Bamboo",
+      "Handcrafted by Palghar Tribal Artisans",
+      "Dimensions: 3.5 x 2.6 x 5 inches"
+    ]
+  },
+  {
+    "id": "wall-clock",
+    "name": "Wall Clock",
+    "price": "INR 600/-",
+    "priceNum": 600,
+    "cost": "400",
+    "dimensions": "11 x 11 x 1",
+    "category": "Decor & Lifestyle",
+    "img": "assets/products/wall-clock.webp",
+    "gallery": [
+      "assets/products/wall-clock.webp",
+      "assets/products/wall-clock-2.webp",
+      "assets/products/wall-clock-3.webp"
+    ],
+    "desc": "A handcrafted bamboo wall clock that blends natural warmth with clear timekeeping. Its generous face suits living rooms, offices, and hallways, making time-telling a decorative statement.",
+    "highlights": [
+      "100% Biodegradable & Natural Bamboo",
+      "Handcrafted by Palghar Tribal Artisans",
+      "Dimensions: 11 x 11 x 1 inches"
+    ]
+  },
+  {
+    "id": "serving-tray",
+    "name": "Serving Tray",
+    "price": "INR 300/-",
+    "priceNum": 300,
+    "cost": "190",
+    "dimensions": "10 x 10 x 1",
+    "category": "Home & Kitchen",
+    "img": "assets/products/serving-tray.webp",
+    "gallery": [
+      "assets/products/serving-tray.webp",
+      "assets/products/serving-tray-2.webp",
+      "assets/products/serving-tray-3.webp"
+    ],
+    "desc": "A handcrafted bamboo serving tray sized for carrying tea, snacks, and refreshments. Lightweight yet sturdy, with a smooth finish that is easy to clean and lovely to serve from.",
+    "highlights": [
+      "100% Biodegradable & Natural Bamboo",
+      "Handcrafted by Palghar Tribal Artisans",
+      "Dimensions: 10 x 10 x 1 inches"
+    ]
+  },
+  {
+    "id": "handle-office-tray",
+    "name": "Handle Office Tray",
+    "price": "INR 300/-",
+    "priceNum": 300,
+    "cost": "190",
+    "dimensions": "13 x 9 x 3",
+    "category": "Stationery & Office",
+    "img": "assets/products/handle-office-tray.webp",
+    "gallery": [
+      "assets/products/handle-office-tray.webp",
+      "assets/products/handle-office-tray-2.webp",
+      "assets/products/handle-office-tray-3.webp"
+    ],
+    "desc": "A handcrafted bamboo office tray with handles for carrying documents, files, breakfast, and desk essentials. It keeps workspaces tidy and makes it easy to move items between desks and meeting rooms.",
+    "highlights": [
+      "100% Biodegradable & Natural Bamboo",
+      "Handcrafted by Palghar Tribal Artisans",
+      "Dimensions: 13 x 9 x 3 inches"
+    ]
+  },
+  {
+    "id": "small-serving-tray",
+    "name": "Small Serving Tray",
+    "price": "INR 250/-",
+    "priceNum": 250,
+    "cost": "150",
+    "dimensions": "9 x 9 x 1.5",
+    "category": "Home & Kitchen",
+    "img": "assets/products/small-serving-tray.webp",
+    "gallery": [
+      "assets/products/small-serving-tray.webp",
+      "assets/products/small-serving-tray-2.webp",
+      "assets/products/small-serving-tray-3.webp",
+      "assets/products/small-serving-tray-4.webp"
+    ],
+    "desc": "A compact handcrafted bamboo serving tray, ideal for serving tea for two or presenting small snacks. Its petite size fits neatly on side tables and kitchen counters.",
+    "highlights": [
+      "100% Biodegradable & Natural Bamboo",
+      "Handcrafted by Palghar Tribal Artisans",
+      "Dimensions: 9 x 9 x 1.5 inches"
+    ]
+  },
+  {
+    "id": "small-serving-tray-6x6",
+    "name": "Small Serving Tray 6x6",
+    "price": "INR 100/-",
+    "priceNum": 100,
+    "cost": "55",
+    "dimensions": "6 x 6 x 1.5",
+    "category": "Home & Kitchen",
+    "img": "assets/products/small-serving-tray-6x6.webp",
+    "gallery": [
+      "assets/products/small-serving-tray-6x6.webp"
+    ],
+    "desc": "A slim handcrafted modular bamboo spice and snack tray with a generous serving surface and low profile. Well suited for spices, snacks, and condiments.",
+    "highlights": [
+      "100% Biodegradable & Natural Bamboo",
+      "Handcrafted by Palghar Tribal Artisans",
+      "Dimensions: 6 x 6 x 1.5 inches"
+    ]
+  },
+  {
+    "id": "bullock-cart",
+    "name": "Bullock Cart",
+    "price": "INR 325/-",
+    "priceNum": 325,
+    "cost": "200",
+    "dimensions": "12.3 x 4 x 6",
+    "category": "Toys & Crafts",
+    "img": "assets/products/bullock-cart.webp",
+    "gallery": [
+      "assets/products/bullock-cart.webp"
+    ],
+    "desc": "A decorative miniature bullock cart handcrafted from bamboo, capturing the charm of traditional rural India. A nostalgic showpiece for shelves, desks, and gift-giving.",
+    "highlights": [
+      "100% Biodegradable & Natural Bamboo",
+      "Handcrafted by Palghar Tribal Artisans",
+      "Dimensions: 12.3 x 4 x 6 inches"
+    ]
+  },
+  {
+    "id": "planter",
+    "name": "Planter",
+    "price": "INR 150/-",
+    "priceNum": 150,
+    "cost": "100",
+    "dimensions": "5 x 5 x 6",
+    "category": "Decor & Lifestyle",
+    "img": "assets/products/planter.webp",
+    "gallery": [
+      "assets/products/planter.webp"
+    ],
+    "desc": "A handcrafted bamboo planter that gives indoor plants a natural, earthy home. Its sturdy build suits small to medium plants and brightens desks, balconies, and living spaces.",
+    "highlights": [
+      "100% Biodegradable & Natural Bamboo",
+      "Handcrafted by Palghar Tribal Artisans",
+      "Dimensions: 5 x 5 x 6 inches"
+    ]
+  },
+  {
+    "id": "auto-rikshaw",
+    "name": "Auto Rickshaw",
+    "price": "INR 650/-",
+    "priceNum": 650,
+    "cost": "400",
+    "dimensions": "7 x 4.5 x 7",
+    "category": "Toys & Crafts",
+    "img": "assets/products/auto-rikshaw.webp",
+    "gallery": [
+      "assets/products/auto-rikshaw.webp"
+    ],
+    "desc": "A decorative miniature auto rickshaw handcrafted from bamboo, celebrating an icon of Indian streets. A fun, colourful accent for desks, shelves, and souvenir collections.",
+    "highlights": [
+      "100% Biodegradable & Natural Bamboo",
+      "Handcrafted by Palghar Tribal Artisans",
+      "Dimensions: 7 x 4.5 x 7 inches"
+    ]
+  },
+  {
+    "id": "candy-holder",
+    "name": "Candy Holder",
+    "price": "INR 100/-",
+    "priceNum": 100,
+    "cost": "65",
+    "dimensions": "6 x 6 x 3",
+    "category": "Home & Kitchen",
+    "img": "assets/products/candy-holder.webp",
+    "gallery": [
+      "assets/products/candy-holder.webp",
+      "assets/products/candy-holder-2.webp"
+    ],
+    "desc": "A compact handcrafted bamboo container with legs, created for candies, mints, and small treats. Adds natural texture to coffee tables and makes a sweet gift accessory.",
+    "highlights": [
+      "100% Biodegradable & Natural Bamboo",
+      "Handcrafted by Palghar Tribal Artisans",
+      "Dimensions: 6 x 6 x 3 inches"
+    ]
+  },
+  {
+    "id": "tea-light-holder",
+    "name": "Tea Light Holder",
+    "price": "INR 200/-",
+    "priceNum": 200,
+    "cost": "120",
+    "dimensions": "8 x 7 x 10",
+    "category": "Decor & Lifestyle",
+    "img": "assets/products/tea-light-holder.webp",
+    "gallery": [
+      "assets/products/tea-light-holder.webp"
+    ],
+    "desc": "A handcrafted tiered bamboo tea light holder that casts warm, patterned shadows when lit. Creates a cozy, festive ambiance for dinners, meditation spaces, and evening gatherings.",
+    "highlights": [
+      "100% Biodegradable & Natural Bamboo",
+      "Handcrafted by Palghar Tribal Artisans",
+      "Dimensions: 8 x 7 x 10 inches"
+    ]
+  },
+  {
+    "id": "makeup-box",
+    "name": "Makeup Box",
+    "price": "INR 500/-",
+    "priceNum": 500,
+    "cost": "320",
+    "dimensions": "10 x 10 x 2.5",
+    "category": "Decor & Lifestyle",
+    "img": "assets/products/makeup-box.webp",
+    "gallery": [
+      "assets/products/makeup-box.webp",
+      "assets/products/makeup-box-2.webp",
+      "assets/products/makeup-box-3.webp"
+    ],
+    "desc": "An elegant handcrafted bamboo vanity box designed to hold cosmetics, jewelry, and personal accessories. A timeless storage solution that looks beautiful on dressing tables.",
+    "highlights": [
+      "100% Biodegradable & Natural Bamboo",
+      "Handcrafted by Palghar Tribal Artisans",
+      "Dimensions: 10 x 10 x 2.5 inches"
+    ]
+  },
+  {
+    "id": "book-cover",
+    "name": "Book Cover / Diary Sleeve",
+    "price": "INR 150/-",
+    "priceNum": 150,
+    "cost": "90",
+    "dimensions": "10 x 8 x 1",
+    "category": "Stationery & Accessories",
+    "img": "assets/products/book-cover.webp",
+    "gallery": [
+      "assets/products/book-cover.webp"
+    ],
+    "desc": "A flexible handcrafted bamboo book sleeve and diary cover that protects your journals and reading books in natural style. Lightweight, durable, and distinctive.",
+    "highlights": [
+      "100% Biodegradable & Natural Bamboo",
+      "Handcrafted by Palghar Tribal Artisans",
+      "Dimensions: 10 x 8 x 1 inches"
+    ]
+  },
+  {
+    "id": "basket",
+    "name": "Basket",
+    "price": "INR 200/-",
+    "priceNum": 200,
+    "cost": "130",
+    "dimensions": "7 x 3 x 7",
+    "category": "Home & Kitchen",
+    "img": "assets/products/basket.webp",
+    "gallery": [
+      "assets/products/basket.webp"
+    ],
+    "desc": "A versatile handcrafted bamboo basket with sturdy weave, ideal for flowers, fruits, knick-knacks, toiletries, or crafting supplies. Practical, breathable, and rustic.",
+    "highlights": [
+      "100% Biodegradable & Natural Bamboo",
+      "Handcrafted by Palghar Tribal Artisans",
+      "Dimensions: 7 x 3 x 7 inches"
+    ]
+  },
+  {
+    "id": "toy-car",
+    "name": "Toy Car",
+    "price": "INR 175/-",
+    "priceNum": 175,
+    "cost": "110",
+    "dimensions": "6.5 x 3 x 2.5",
+    "category": "Toys & Crafts",
+    "img": "assets/products/toy-car.webp",
+    "gallery": [
+      "assets/products/toy-car.webp"
+    ],
+    "desc": "A delightful handcrafted bamboo toy car with smooth rolling wooden wheels. An eco-friendly, non-toxic alternative to plastic toys that sparks imaginative play for children.",
+    "highlights": [
+      "100% Biodegradable & Natural Bamboo",
+      "Handcrafted by Palghar Tribal Artisans",
+      "Dimensions: 6.5 x 3 x 2.5 inches"
+    ]
+  },
+  {
+    "id": "gifting-bottle",
+    "name": "Gifting Bottle Packaging",
+    "price": "INR 125/-",
+    "priceNum": 125,
+    "cost": "75",
+    "dimensions": "3.5 x 17 x 3.3",
+    "category": "Decor & Lifestyle",
+    "img": "assets/products/gifting-bottle.webp",
+    "gallery": [
+      "assets/products/gifting-bottle.webp"
+    ],
+    "desc": "A cylindrical handcrafted bamboo case designed for premium beverage bottles and festive gifting. Replaces disposable packaging with a reusable artisanal container.",
+    "highlights": [
+      "100% Biodegradable & Natural Bamboo",
+      "Handcrafted by Palghar Tribal Artisans",
+      "Dimensions: 3.5 x 17 x 3.3 inches"
+    ]
+  },
+  {
+    "id": "national-flag",
+    "name": "National Flag Stand",
+    "price": "INR 225/-",
+    "priceNum": 225,
+    "cost": "140",
+    "dimensions": "3 x 2.5 x 13",
+    "category": "Decor & Lifestyle",
+    "img": "assets/products/national-flag.webp",
+    "gallery": [
+      "assets/products/national-flag.webp",
+      "assets/products/national-flag-2.webp",
+      "assets/products/national-flag-3.webp"
+    ],
+    "desc": "A handcrafted bamboo national desk flag stand with a sturdy polished base. Ideal for offices, study desks, and commemorative events to proudly display the tricolour.",
+    "highlights": [
+      "100% Biodegradable & Natural Bamboo",
+      "Handcrafted by Palghar Tribal Artisans",
+      "Dimensions: 3 x 2.5 x 13 inches"
+    ]
+  },
+  {
+    "id": "gift-hamper-1",
+    "name": "Gift Hamper - 1",
+    "price": "INR 480/-",
+    "priceNum": 480,
+    "cost": "300",
+    "dimensions": "Curated Gift Box",
+    "category": "Decor & Lifestyle",
+    "img": "assets/products/gift-hamper-1.png",
+    "gallery": [
+      "assets/products/gift-hamper-1.png"
+    ],
+    "desc": "A curated eco-friendly bamboo gift hamper featuring handcrafted utility items by Palghar tribal artisans. Ideal for festive and corporate gifting.",
+    "highlights": [
+      "100% Biodegradable & Natural Bamboo",
+      "Handcrafted by Palghar Tribal Artisans",
+      "Artisanal Festive Packaging"
+    ]
+  },
+  {
+    "id": "gift-hamper-2",
+    "name": "Gift Hamper - 2",
+    "price": "INR 690/-",
+    "priceNum": 690,
+    "cost": "450",
+    "dimensions": "Premium Gift Box",
+    "category": "Decor & Lifestyle",
+    "img": "assets/products/gift-hamper-2.png",
+    "gallery": [
+      "assets/products/gift-hamper-2.png"
+    ],
+    "desc": "Deluxe bamboo gift hamper crafted by tribal women artisans of Palghar. Combines elegant bamboo tableware and stationery in an eco-friendly gift box.",
+    "highlights": [
+      "100% Biodegradable & Natural Bamboo",
+      "Handcrafted by Palghar Tribal Artisans",
+      "Premium Gift Presentation"
+    ]
+  },
+  {
+    "id": "gift-hamper-3",
+    "name": "Gift Hamper - 3",
+    "price": "INR 900/-",
+    "priceNum": 900,
+    "cost": "600",
+    "dimensions": "Grand Gift Set",
+    "category": "Decor & Lifestyle",
+    "img": "assets/products/gift-hamper-3.png",
+    "gallery": [
+      "assets/products/gift-hamper-3.png"
+    ],
+    "desc": "Premium festive bamboo gift hamper set with handcrafted artisan crafts and natural utility products. A thoughtful sustainable gift for any occasion.",
+    "highlights": [
+      "100% Biodegradable & Natural Bamboo",
+      "Handcrafted by Palghar Tribal Artisans",
+      "Grand Presentation Box"
+    ]
+  },
+  {
+    "id": "gift-hamper-4",
+    "name": "Gift Hamper - 4",
+    "price": "INR 1305/-",
+    "priceNum": 1305,
+    "cost": "850",
+    "dimensions": "Executive Luxury Hamper",
+    "category": "Decor & Lifestyle",
+    "img": "assets/products/gift-hamper-4.png",
+    "gallery": [
+      "assets/products/gift-hamper-4.png"
+    ],
+    "desc": "Grand festive corporate and celebration bamboo gift hamper collection with an array of handcrafted bamboo creations.",
+    "highlights": [
+      "100% Biodegradable & Natural Bamboo",
+      "Handcrafted by Palghar Tribal Artisans",
+      "Executive Sustainable Luxury"
+    ]
+  }
+]
